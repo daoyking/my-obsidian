@@ -18,10 +18,17 @@ status: active
 ## 关键子主题
 
 - **LLM 基础**：Transformer、上下文窗口、Token、推理 vs 训练
+- **训练与对齐**：[[微调]]（SFT/LoRA）· [[RLHF]]（PPO 对齐）· [[蒸馏]]
+- **提示与推理**：[[思维链]]（CoT）· Prompt 工程
+- **安全攻防**：[[越狱攻击]] · [[模型水印]] · [[隐写术]] · [[Agent安全]]
+- **能力扩展**：[[多模态大模型]] · [[Agent]] · [[知识编辑]]
 - **Agent 与工具调用**：Function Calling、MCP、Claude Code、WorkBuddy
 - **知识管理**：卡帕西 LLM Wiki 方法（本知识库的奠基理论，见 [[CLAUDE]]）
 - **前端 × AI**：AI 辅助编码、AI 生成 UI、Copilot 集成
-- **多模态**：文生图 / 文生视频 / 3D 生成
+
+## 学习资源
+
+- [[动手学大模型]]（dive-into-llms，11 章全栈 LLM 实践，主线资料）
 
 ## 我的观点
 
@@ -39,3 +46,4 @@ status: active
 
 - 卡帕西 LLM Wiki Gist
 - AI HOT 日报（日常追踪）
+- [[raw/articles/dive-into-llms-overview]]（《动手学大模型》教程）

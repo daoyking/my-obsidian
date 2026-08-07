@@ -42,3 +42,17 @@ status: active
   - `wiki/concepts/虚拟DOM.md`（补 mini-vue/mini-react 实现参考，status→seed）
 - 影响 6 个 wiki 页面 + 1 个 raw 源，建立 8+ 交叉链接
 - 备注：本次为首次 Ingest 演示，验证「raw→编译→联动更新→记日志」流程闭环。
+
+### 2026-08-07 12:35 | Ingest | 《动手学大模型》dive-into-llms
+- 来源：https://github.com/Lordog/dive-into-llms（上海交大张倬胜，11 章 LLM 实践教程），存入 `raw/articles/dive-into-llms-overview.md`
+- 编译产出（新建）：
+  - `wiki/topics/动手学大模型.md`（主题页，11 章地图 + 学习优先级建议）
+  - `wiki/concepts/思维链.md`（CoT）
+  - `wiki/concepts/微调.md`（SFT/LoRA/QLoRA）
+  - `wiki/concepts/RLHF.md`（三阶段 + DPO 演进）
+  - `wiki/concepts/越狱攻击.md`（攻击手法 + 防御）
+  - `wiki/concepts/多模态大模型.md`（MLLM + 前端结合点）
+- 联动更新：
+  - `wiki/topics/AI.md`（升级为 AI 知识枢纽：补训练对齐/提示推理/安全攻防/能力扩展子主题，链 6 个新概念页 + 动手学大模型主题，加来源）
+- 影响 7 个 wiki 页面 + 1 个 raw 源，建立 15+ 交叉链接
+- 备注：本次为第二次 Ingest，AI 主题体系初步成型。待建概念页（Prompt工程/蒸馏/量化/Agent/Agent安全/知识编辑/模型水印/隐写术）作为后续 Ingest/Query 的生长点。
