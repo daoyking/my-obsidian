@@ -70,3 +70,17 @@ status: active
   - 补孤立页入链：`Vite.md` 增链 [[前端工程化]]
 - 复检结果：悬空链接 0、孤立页 0、wiki 页面总数 38
 - 备注：首次 Lint 闭环，知识库结构健康。后续建议每轮 Ingest 后跑一次 Lint。
+
+### 2026-08-07 12:54 | Ingest | 《AI Agents in Depth》PDF（316 页）
+- 来源：`~/Downloads/about-jindy/AI-Agents-in-Depth-zh-CN.pdf`（316 页 Agent 工程专著），用 pypdf 提取全文+大纲，存入 `raw/papers/ai-agents-in-depth.md`
+- 编译产出（新建 11 页）：
+  - 主题页 `AI-Agents-in-Depth`（9 章地图 + 与动手学大模型互补定位）
+  - 概念页：`Harness工程`、`上下文工程`、`ReAct`、`提示注入`、`记忆系统`、`MCP`、`Coding-Agent`、`Agent持续进化`、`RAG`、`Agent评估`
+- 联动更新：
+  - `Agent.md`（status→active，补 Harness/ReAct/上下文工程/MCP/记忆系统，加来源）
+  - `RLHF.md`（补多轮信用分配/过程vs结果奖励，链 Agent持续进化，加来源）
+  - `AI.md`（新增 Agent 工程子主题组 + 第二本学习资源 + 来源）
+  - `思维链.md`（链 ReAct：CoT 是 ReAct 推理子环节）
+- Lint 复检：补建 RAG/Agent评估 后悬空 0、孤立 0、共 49 页
+- 影响 15 个 wiki 页面 + 1 个 raw 源，建立 30+ 交叉链接
+- 备注：第三次 Ingest，Agent 工程体系成型。「Agent持续进化四法」与本库自成长理念高度同构（→知识=Ingest、→指令=CLAUDE.md、→程序=Skill、→参数=训练）。

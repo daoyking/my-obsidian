@@ -5,7 +5,7 @@ type: concept
 tags: [ai, llm, training, alignment, rlhf]
 created: 2026-08-07
 updated: 2026-08-07
-sources: ["[[raw/articles/dive-into-llms-overview]]"]
+sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/papers/ai-agents-in-depth]]"]
 status: active
 ---
 
@@ -43,9 +43,17 @@ status: active
 - **RLAIF**：用 AI 代替人类给反馈
 - **Constitutional AI**（Anthropic）：基于宪法的自我修正
 
+## 多轮任务的信用分配（《AI Agents in Depth》第 7 章）
+
+来自 [[raw/papers/ai-agents-in-depth]]：Agent 多轮任务的核心挑战是信用分配——
+- **过程奖励 vs 结果奖励**：只奖励最终结果易稀疏，过程奖励更密但难设计
+- **RLVP（验证路径惩罚）与部分奖励**：奖励结果、约束过程
+- RL 学工具调用：让模型在实践中学会何时调用哪个工具
+- 与 [[Agent持续进化]] 呼应：轨迹信号既可写参数，也可沉淀为知识/指令/程序
+
 ## 相关概念
 
-- [[微调]] · [[安全对齐]]（待建）· [[越狱攻击]]（对齐的反面攻防）
+- [[微调]] · [[安全对齐]]（待建）· [[越狱攻击]]（对齐的反面攻防）· [[Agent持续进化]] · [[蒸馏]]
 
 ## 相关主题
 

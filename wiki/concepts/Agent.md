@@ -5,15 +5,15 @@ type: concept
 tags: [ai, llm, agent]
 created: 2026-08-07
 updated: 2026-08-07
-sources: ["[[raw/articles/dive-into-llms-overview]]"]
-status: seed
+sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/papers/ai-agents-in-depth]]"]
+status: active
 ---
 
 # Agent（智能体）
 
 ## 定义
 
-以 LLM 为大脑，能感知环境、规划步骤、调用工具、执行动作以完成目标的自主系统。核心循环：感知 → 规划 → 行动 → 观察。
+以 LLM 为大脑，能感知环境、规划步骤、调用工具、执行动作以完成目标的自主系统。现代 Agent = LLM + 上下文 + 工具（《AI Agents in Depth》）。核心循环是 [[ReAct]]：思考 → 行动 → 观察。
 
 ## 为什么重要
 
@@ -23,24 +23,26 @@ status: seed
 
 ## 核心机制
 
-- **规划（Planning）**：任务分解、ReAct（推理+行动交替）
-- **工具调用**：Function Calling、MCP
-- **记忆**：短期上下文 + 长期向量记忆
+- **规划（Planning）**：任务分解、[[ReAct]] 循环
+- **工具调用**：Function Calling、[[MCP]]
+- **记忆**：短期上下文 + 长期记忆（见 [[记忆系统]]）
 - **行动**：调用 API、操作 GUI、读写文件
-- 形态：单 Agent / 多 Agent 协作
+- **能力边界由 [[Harness工程]] 兜底**：模型做不稳的由工程补足
 
-## dive-into-llms 第 9 章
+## 两个来源视角
 
-来自 [[raw/articles/dive-into-llms-overview]]：GUI 智能体——让 AI Agent 替你点外卖、回消息、购物比价。与 [[多模态大模型]] 视觉理解结合。
+- [[raw/articles/dive-into-llms-overview]] 第 9 章：GUI 智能体实践，与 [[多模态大模型]] 结合
+- [[raw/papers/ai-agents-in-depth]]：Agent 工程全栈——[[上下文工程]]、[[Harness工程]]、[[Coding-Agent]]、[[Agent持续进化]]
 
 ## 相关概念
 
-- [[多模态大模型]] · [[Agent安全]] · [[思维链]]（规划基础）
+- [[ReAct]] · [[Harness工程]] · [[上下文工程]] · [[MCP]] · [[记忆系统]] · [[多模态大模型]] · [[Agent安全]] · [[思维链]] · [[Coding-Agent]]
 
 ## 相关主题
 
-- [[动手学大模型]] · [[AI]]
+- [[动手学大模型]] · [[AI-Agents-in-Depth]] · [[AI]]
 
 ## 来源
 
 - [[raw/articles/dive-into-llms-overview]]（第 9 章）
+- [[raw/papers/ai-agents-in-depth]]

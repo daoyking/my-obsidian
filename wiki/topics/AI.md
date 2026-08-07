@@ -21,14 +21,16 @@ status: active
 - **训练与对齐**：[[微调]]（SFT/LoRA）· [[RLHF]]（PPO 对齐）· [[蒸馏]]
 - **提示与推理**：[[思维链]]（CoT）· Prompt 工程
 - **安全攻防**：[[越狱攻击]] · [[模型水印]] · [[隐写术]] · [[Agent安全]]
-- **能力扩展**：[[多模态大模型]] · [[Agent]] · [[知识编辑]]
-- **Agent 与工具调用**：Function Calling、MCP、Claude Code、WorkBuddy
+- **能力扩展**：[[多模态大模型]] · [[Agent]] · [[ReAct]] · [[MCP]] · [[知识编辑]]
+- **Agent 工程**：[[Harness工程]] · [[上下文工程]] · [[记忆系统]] · [[Coding-Agent]] · [[Agent持续进化]] · [[提示注入]]
+- **Agent 与工具调用**：Function Calling、[[MCP]]、Claude Code、WorkBuddy
 - **知识管理**：卡帕西 LLM Wiki 方法（本知识库的奠基理论，见 [[CLAUDE]]）
 - **前端 × AI**：AI 辅助编码、AI 生成 UI、Copilot 集成
 
 ## 学习资源
 
-- [[动手学大模型]]（dive-into-llms，11 章全栈 LLM 实践，主线资料）
+- [[动手学大模型]]（dive-into-llms，11 章全栈 LLM 实践，偏能力点）
+- [[AI-Agents-in-Depth]]（316 页 Agent 工程专著，偏系统工程，以 Harness 工程为主线）
 
 ## 我的观点
 
@@ -47,3 +49,4 @@ status: active
 - 卡帕西 LLM Wiki Gist
 - AI HOT 日报（日常追踪）
 - [[raw/articles/dive-into-llms-overview]]（《动手学大模型》教程）
+- [[raw/papers/ai-agents-in-depth]]（《AI Agents in Depth》专著）

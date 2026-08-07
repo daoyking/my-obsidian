@@ -1,0 +1,60 @@
+---
+title: Agent 持续进化
+aliases: [持续进化, Agent Self-Improvement, 持续学习]
+type: concept
+tags: [ai, llm, agent, evolution]
+created: 2026-08-07
+updated: 2026-08-07
+sources: ["[[raw/papers/ai-agents-in-depth]]"]
+status: active
+---
+
+# Agent 持续进化
+
+## 定义
+
+让 Agent 从自身运行轨迹中提取学习信号，持续变强的机制。不只是模型权重更新，而是把经验以多种形态沉淀，让 Agent 下次做得更好。
+
+## 为什么重要
+
+- 单次训练的模型会过时；持续进化让 Agent 越用越强
+- 是 Agent 从「工具」走向「同事」的关键
+- 本知识库的自成长理念与之同构
+
+## 四种进化方法（第 8 章）
+
+来自 [[raw/papers/ai-agents-in-depth]]，按「经验沉淀的形态」分四种：
+
+1. **经验 → 知识**：沉淀到知识库（语义记忆）——本库的 Ingest 即此
+2. **经验 → 指令**：写成提示词/SOP（程序记忆的轻量形态）
+3. **经验 → 程序**：写成工具/Skill（程序记忆，可执行）——本库的 Skill 沉淀即此
+4. **经验 → 参数**：微调/训练写入模型权重（最重，需大量数据）
+
+## 从运行轨迹获得学习信号
+
+- 轨迹（trajectory）= Agent 执行过程的完整记录
+- 成功轨迹→强化，失败轨迹→修正
+- 评估信号：任务结果奖励 + 过程奖励（见 [[RLHF]] 多轮信用分配）
+
+## 与本知识库的映射
+
+| 进化方法 | 本库对应 |
+|---|---|
+| →知识 | Ingest 编译成 wiki 页 |
+| →指令 | CLAUDE.md Schema 更新 |
+| →程序 | obsidian-llm-wiki Skill 沉淀 |
+| →参数 | （暂无，需训练资源） |
+
+本库已实现前三种，第四种待模型训练条件。
+
+## 相关概念
+
+- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]]
+
+## 相关主题
+
+- [[AI-Agents-in-Depth]]
+
+## 来源
+
+- [[raw/papers/ai-agents-in-depth]]（第 8 章）
