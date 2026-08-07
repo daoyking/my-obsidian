@@ -4,8 +4,8 @@ aliases: [人工智能, LLM, 大模型]
 type: topic
 tags: [ai, llm, topic]
 created: 2022-09-19
-updated: 2026-08-07
-sources: []
+updated: 2026-08-08
+sources: ["[[raw/articles/ai-hot-2026-08-07]]"]
 status: active
 ---
 
@@ -27,6 +27,10 @@ status: active
 - **知识管理**：卡帕西 LLM Wiki 方法（本知识库的奠基理论，见 [[CLAUDE]]）
 - **前端 × AI**：AI 辅助编码、AI 生成 UI、Copilot 集成
 
+## 每日动态
+
+- [[AI资讯]] — 每日 AI HOT 日报 Ingest 汇总（自动化 08:00 驱动），重要事件同步编译到本页及相关实体/概念页
+
 ## 学习资源
 
 - [[动手学大模型]]（dive-into-llms，11 章全栈 LLM 实践，偏能力点）
@@ -47,6 +51,7 @@ status: active
 ## 来源
 
 - 卡帕西 LLM Wiki Gist
-- AI HOT 日报（日常追踪）
+- AI HOT 日报（日常追踪，见 [[AI资讯]]）
 - [[raw/articles/dive-into-llms-overview]]（《动手学大模型》教程）
 - [[raw/papers/ai-agents-in-depth]]（《AI Agents in Depth》专著）
+- [[raw/articles/ai-hot-2026-08-07]]（AI HOT 日报 2026-08-07）

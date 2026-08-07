@@ -133,3 +133,19 @@ status: active
   - `Node.js.md` **seed→active**：补单进程非阻塞I/O/事件循环阶段/模块系统/核心模块/适合不适合
 - Lint：0 悬空 / 0 孤立 / 共 57 页；seed 19→16，active 33→36
 - 备注：前端核心实体（React/Vue/TS/Vite/Node）现已全部 active，仅余 Svelte/SolidJS 等仍 seed
+
+### 2026-08-08 08:00 | Ingest | AI HOT 日报 2026-08-07
+- 来源：AI HOT 日报（aihot skill，`/api/v1/dailies/latest`），存入 `raw/articles/ai-hot-2026-08-07.md`
+- 日报内容：5 个分区（模型发布/更新 · 产品发布/更新 · 行业动态 · 论文研究 · 技巧与观点），共 20 条
+- 编译产出（新建 4 页）：
+  - `wiki/topics/AI资讯.md`（主题页，当日 20 条事件汇总 + 观点 + 待研究问题）
+  - `wiki/concepts/Agent-Plugins.md`（seed，Agent Plugins 1.0.0 标准概念）
+  - `wiki/entities/Cursor.md`（seed，Cursor IDE 实体页，含 Router 机制）
+  - `wiki/entities/Claude-Code.md`（seed，Claude Code 实体页，含 v2.1.223 更新）
+- 联动更新：
+  - `wiki/topics/AI.md`（新增「每日动态」节链 AI资讯，补来源，updated→2026-08-08）
+  - `wiki/concepts/MCP.md`（链 Agent-Plugins，补 AI资讯 交叉链接与来源）
+  - `wiki/concepts/Coding-Agent.md`（新增「主流工具」节含 Claude-Code/Cursor/Copilot，链 Agent-Plugins）
+  - `wiki/concepts/Agent持续进化.md`（新增「近期动态」节：Prime Agent + SkillOpt，补来源）
+- 影响 8 个 wiki 页面 + 1 个 raw 源，建立 20+ 交叉链接
+- 备注：首次自动化 AI HOT 日报 Ingest。重点追踪 Agent Plugins 标准化、Prime Agent 自我改进、SkillOpt 跨模型技能迁移——均与本库 Agent 持续进化理念高度相关。

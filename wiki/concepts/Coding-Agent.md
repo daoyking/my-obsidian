@@ -35,14 +35,22 @@ status: active
 - 本库的 Ingest/Lint 流程就是由 Coding Agent（WorkBuddy）执行的
 - Skill 沉淀 = 「代码作为程序记忆」（见 [[记忆系统]]）
 
+## 主流工具
+
+- [[Claude-Code]]（Anthropic，CLI 原生）
+- [[Cursor]]（AI 原生编辑器，基于 VS Code 分支）
+- WorkBuddy（本知识库的日常驱动 Agent）
+- GitHub Copilot（斜杠命令工作流：/plan /spar /autopilot）
+
 ## 相关概念
 
-- [[Agent]] · [[Harness工程]] · [[上下文工程]] · [[记忆系统]]
+- [[Agent]] · [[Harness工程]] · [[上下文工程]] · [[记忆系统]] · [[Agent-Plugins]]
 
 ## 相关主题
 
-- [[AI-Agents-in-Depth]]
+- [[AI-Agents-in-Depth]] · [[AI资讯]]
 
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 5 章）
+- [[raw/articles/ai-hot-2026-08-07]]（Cursor Router、Claude Code v2.1.223、GitHub Copilot 斜杠命令等）

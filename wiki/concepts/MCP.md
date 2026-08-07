@@ -34,12 +34,13 @@ Anthropic 提出的开放协议，标准化 LLM/Agent 与外部工具、数据�
 
 ## 相关概念
 
-- [[Agent]] · [[上下文工程]] · [[Harness工程]]
+- [[Agent]] · [[上下文工程]] · [[Harness工程]] · [[Agent-Plugins]]（打包分发标准，与 MCP 互补）
 
 ## 相关主题
 
-- [[AI-Agents-in-Depth]] · [[AI]]
+- [[AI-Agents-in-Depth]] · [[AI]] · [[AI资讯]]
 
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 4 章 4.3）
+- [[raw/articles/ai-hot-2026-08-07]]（Agent Plugins 1.0.0 与 MCP 的互补关系）

@@ -47,14 +47,20 @@ status: active
 
 本库已实现前三种，第四种待模型训练条件。
 
+## 近期动态
+
+- **Prime Agent**（2026-08-07）：自我改进的编码代理，围绕递归语言模型（RLM）和持续框架构建，可对提示词/技能/记忆/子代理进行 CRUD 操作——直接实践了「经验→程序」和「经验→指令」两种进化路径。见 [[raw/articles/ai-hot-2026-08-07]]。
+- **SkillOpt**（Microsoft/上交/同济/复旦）：文本空间优化单一技能文档可跨模型和跨工具链迁移——在 Codex 上优化的技能部署到 Claude Code 得分 81.8 > 自训 80.4，证明 Skill 有望成为模型无关的可移植资产。见 [[raw/articles/ai-hot-2026-08-07]]。
+
 ## 相关概念
 
-- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]]
+- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]] · [[Agent-Plugins]]
 
 ## 相关主题
 
-- [[AI-Agents-in-Depth]]
+- [[AI-Agents-in-Depth]] · [[AI资讯]]
 
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 8 章）
+- [[raw/articles/ai-hot-2026-08-07]]（Prime Agent、SkillOpt）
