@@ -109,3 +109,16 @@ status: active
 - 标记：AI工具集.md 增「Lint 时效评估」节——确认存活 23+ / 改名 1(Bard→Gemini) / 疑似失效待确认 ~13(第三方镜像,mj.ink 500 最可能真死) / 巨头假阳性 ~28
 - 关键教训：外部 URL 时效检测不宜只靠 curl（反爬假阳性高），需 WebFetch 抽样+人工复核
 - 复检：0 悬空 / 0 孤立（顺手修了 LOG 里另一处 `wiki/snippets` 描述性链接误报）
+
+### 2026-08-07 13:48 | Ingest | vue/react family 深度文章（3 篇源码分析）
+- 来源（WebFetch 抓取）：React技术揭秘(react.iamkasong.com)、构建你自己的React(pomb.us Didact)、Vue.js技术揭秘(ustbhuangyi)
+- raw 存源 3 篇：`react-technology-revealed.md`、`build-your-own-react.md`、`vue-technology-revealed.md`
+- 编译/联动：
+  - 新建 `wiki/concepts/Fiber.md`（active）：三指针链表/工作循环/alternate/Lane
+  - 新建 `wiki/concepts/Reconciliation.md`（seed）：两阶段协调/Diff 规则
+  - `React.md`（**seed→active**）：补源码架构(render/commit两阶段)+Hooks实现+手写视角+学习资源
+  - `Vue.md`（enrich）：补 Vue2 源码架构(Observer/Dep/Watcher, parse/optimize/generate)+Vue2→Vue3演进表
+  - `虚拟DOM.md`（enrich）：补 React 两阶段协调 + Vue patch
+  - `依赖收集.md`（enrich）：补 Vue2 Observer/Dep/Watcher 三件套对照 Vue3 targetMap
+- Lint：补建 Reconciliation seed 后 0 悬空 / 0 孤立 / 共 54 页（seed 净减 1：React 升 active，+Fiber active +Reconciliation seed）
+- 影响 6 wiki 页 + 3 raw 源，建立 15+ 交叉链接
