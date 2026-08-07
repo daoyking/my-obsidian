@@ -138,6 +138,10 @@ status: seed | active | stale | archived
 | 每日AI资讯Ingest | 每天 08:00 | aihot skill 抓当日 AI HOT 日报 → 存 `raw/articles/ai-hot-YYYY-MM-DD.md` → 编译进 `wiki/topics/AI资讯.md` 及相关实体页 → LOG → commit+push |
 | 每周Lint体检 | 每周一 09:00 | 跑 `scripts/lint_wiki.sh`（obsidian-llm-wiki skill）→ 补悬空/孤立/命名冲突 → 复检归零 → LOG → commit+push |
 | 每周GitHub动态Ingest | 每周一 10:00 | gh CLI 查 daoyking 仓库近 7 天提交/release → 重要变更 Ingest 进 `projects/` → LOG → commit+push |
+| 每日知识库变更日记 | 每天 22:00 | 从当日 git log + LOG.md 提取变更 → 写入/更新 `daily/YYYY-MM-DD.md` 的「📚 知识库变更」节 → commit+push（无变更也记一条保持连续） |
+
+**daily 笔记约定**：`daily/` 下每日笔记记录当日知识库变更（提交列表 + Ingest/Lint 摘要 + 新建/更新页），模板见 `templates/tpl-daily.md`。「学到/想到」「待研究」节由人工填写，自动化不覆盖。
+
 
 **自动任务遵循的约定**：
 - 遵循本 Schema 全部规则（raw 不可变、frontmatter 规范、人机分工）。

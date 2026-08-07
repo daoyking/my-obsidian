@@ -13,12 +13,26 @@ status: active
 
 - 
 
+## 📚 知识库变更
+
+> 当日对 wiki/ 的改动摘要（Ingest/Lint/File Back）。可由夜间自动化从 git log + LOG.md 自动生成。
+
+- 提交数：
+- Ingest：
+- Lint：
+- 新建页：
+- 更新页：
+
 ## 学到 / 想到
 
 > 任何闪念，后续可被 AI 提炼成概念页或 QA。
 
 - 
 
-## 链接
+## 待研究 / 明日
 
 - 
+
+## 链接
+
+- [[wiki/INDEX]] · [[wiki/LOG]]
