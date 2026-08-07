@@ -99,5 +99,13 @@ status: active
 - ② vue family(133)+react family(30) → `raw/articles/vue-family-bookmarks.md`、`react-family-bookmarks.md`（生态资源列表），反哺 [[Vue]]/[[React]] 实体页加「学习资源」节
 - ③ 面试(15) → `wiki/topics/前端面试.md`（分5类：综合指南/手写代码/JS基础/Vue专题/大厂面经）
 - 联动：书签库索引页清单 3 项打勾，新增 2 条后续候选（AI工具集 stale 标记、3311 归属）
-- Lint：修 1 处目录式悬空链接([[wiki/snippets]]→纯文本)，复检 0 悬空/0 孤立/共 52 页
+- Lint：修 1 处目录式悬空链接（`wiki/snippets`→纯文本），复检 0 悬空/0 孤立/共 52 页
 - 备注：书签子集均为公开 dev/学习资源，可入库同步（仅全量 dump 含个人数据保持 gitignore）
+
+### 2026-08-07 13:25 | Lint | AI工具集 时效检测
+- 方法：curl 批量（Python 线程池 12 并发,6s 超时）+ WebFetch 抽样校准
+- 结果：200=23(存活) · 000=38(假阳性,含 github/chatgpt/perplexity 等确定存活巨头,反爬所致) · 403=2 · 401=1 · 500=1
+- WebFetch 校准：Bard→重定向 Gemini(改名非下线)；Forefront 仍在线(curl 误报 000)
+- 标记：AI工具集.md 增「Lint 时效评估」节——确认存活 23+ / 改名 1(Bard→Gemini) / 疑似失效待确认 ~13(第三方镜像,mj.ink 500 最可能真死) / 巨头假阳性 ~28
+- 关键教训：外部 URL 时效检测不宜只靠 curl（反爬假阳性高），需 WebFetch 抽样+人工复核
+- 复检：0 悬空 / 0 孤立（顺手修了 LOG 里另一处 `wiki/snippets` 描述性链接误报）

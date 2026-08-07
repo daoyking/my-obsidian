@@ -60,8 +60,33 @@ status: active
 
 ## 待研究
 
-- [ ] 标记过时/下线工具（Lint 任务）
+- [x] 标记过时/下线工具（Lint 任务，见下「Lint 时效评估」）
 - [ ] Dify/Coze 深入：能否用它们把本知识库的 Ingest 流程产品化？
+
+## Lint 时效评估（2026-08-07）
+
+> 方法：curl 批量检测 + WebFetch 抽样校准。
+> ⚠️ **重要局限**：curl 从本环境返回 000 共 38 条，但其中含 github.com / chatgpt.com / perplexity.ai / claude.ai / poe.com / huggingface.co 等确定存活的巨头——是反爬/TLS 拦截导致假阳性，**000 不代表死链**。故仅以 curl 200 + WebFetch 实测 + 产品公开命运为依据。
+
+### ✅ 确认存活（curl 200，23 条）
+通义千问 · 文心一言 · 讯飞星火 · Dify · Coze(中/外) · Anthropic · Kimi · ChatExcel · 通义听悟 · Codeium · aiXcoder · 白瓜AI · 酷表 · WebPilot · OpenGPT · ChatGPT-Next-Web(repo) 等。另 WebFetch 实测 **Forefront Chat 仍在线**（2M+ 用户）。
+
+### 🔄 改名/演进（非死链，已更新认知）
+- **Bard** → 已重定向到 **Gemini**（gemini.google.com），Google 改名非下线
+
+### ⚠️ 疑似失效 · 待人工确认（status: stale 候选）
+> 第三方镜像/聚合站，2023 年 ChatGPT 套壳潮产物，存活概率低，但 curl 假阳性无法定论——建议你浏览器实测后清理。
+- 超级AI大脑（mj.ink）— curl 返回 **500**，最可能真死
+- 也略（yelue.com）· Shared Chat（zhile.io）· BingAI（bing.vcanbb.top）· ChatGPT 导航站（quickso.cn）· top.justchatgpt · AutoGPT中文版 · Jarvis（ask.vuejs.news）· Star Flow AI · HoustonAI · Rely.io · Sweep（已被收购转型）
+- AItoolkit（403）/ Phind（403）— 站点在但拒绝访问，需人工确认
+
+### ℹ️ 巨头但 curl 被拦（确认存活，无需处理）
+github.com · chatgpt.com · claude.ai · perplexity.ai · poe.com · huggingface.co · microsoft.github.io · devv.ai · open-gpt.app
+
+### 结论
+- 65 条中：**确认存活 23+**、**改名 1**、**疑似失效待确认 ~13**、**巨头假阳性 ~28**
+- 自动化时效检测的可靠性瓶颈 = 反爬。后续 Lint 这类外部 URL 不宜只靠 curl，需 WebFetch 抽样 + 人工复核。
+- 建议：在 Chrome 里逐个打开「疑似失效」组，死链直接删；本库不动浏览器。
 
 ## 来源
 
