@@ -41,10 +41,15 @@ const vnode = { tag: 'div', props: { id: 'app' }, children: ['hello'] }
 - [[Vue]]：虚拟 DOM + 编译期静态标记（Block Tree）优化 diff
 - [[Svelte]] / [[SolidJS]]：无虚拟 DOM，编译期/细粒度更新（反例对照）
 
+## 实现参考
+
+- [[projects/mini-react]]：手写 fiber 协调算法
+- [[projects/mini-vue]]：runtime-core 实现 patch/diff（见 [[raw/articles/mini-vue-overview]]）
+
 ## 相关概念
 
-- [[响应式]] · [[组件化]]
+- [[响应式]] · [[依赖收集]] · [[组件化]]
 
 ## 来源
 
-- （待 Ingest：React Reconciliation 文档、Vue3 编译优化）
+- [[raw/articles/mini-vue-overview]]

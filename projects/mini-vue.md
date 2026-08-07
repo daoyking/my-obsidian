@@ -4,10 +4,11 @@ type: project
 tags: [learning, vue, source-code]
 created: 2026-08-07
 updated: 2026-08-07
-sources: []
+sources: ["[[raw/articles/mini-vue-overview]]"]
 status: active
-tech_stack: [JavaScript, Vue]
+tech_stack: [TypeScript, Vue, Rollup, pnpm]
 repo: "~/about-project/mini-vue"
+upstream: "https://github.com/cuixiaorui/mini-vue"
 ---
 
 # mini-vue
@@ -18,14 +19,21 @@ repo: "~/about-project/mini-vue"
 
 ## 技术栈
 
-- 原生 JavaScript
-- 参照 [[Vue]] 3 源码思路
+- TypeScript + Rollup 构建
+- pnpm monorepo（workspace）
+- vitest 测试
 
 ## 关键设计
 
-- 实现 `reactive` / `ref` / `effect`（基于 Proxy 依赖收集与派发更新）
-- 实现编译器：模板 → AST → render 函数
-- 实现渲染器：patch / diff
+- **reactivity**：`reactive`/`readonly`/`shallowReadonly` + WeakMap 缓存 + Proxy handlers，见 [[响应式]]、[[依赖收集]]、[[snippets/mini-vue-reactive]]
+- **runtime-core**：组件/element 渲染、props、emit、proxy、slots、provide/inject、nextTick、watchEffect；渲染器 patch/diff
+- **compiler-core**：解析插值/element/text → AST → render 函数
+- **runtime-dom**：custom renderer
+- 代码命名与 Vue3 源码一致，方便对照
+
+## 包结构
+
+reactivity · runtime-core · compiler-core · runtime-dom · runtime-test · shared · vue（聚合入口）
 
 ## 踩坑记录
 
@@ -38,8 +46,12 @@ repo: "~/about-project/mini-vue"
 
 ## 相关概念
 
-- [[响应式]] · [[虚拟DOM]] · [[组件化]]
+- [[响应式]] · [[依赖收集]] · [[虚拟DOM]] · [[组件化]]
 
 ## 相关实体
 
-- [[Vue]]
+- [[Vue]] · [[TypeScript]]
+
+## 来源
+
+- [[raw/articles/mini-vue-overview]]

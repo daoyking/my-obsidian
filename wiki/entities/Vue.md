@@ -5,8 +5,8 @@ type: entity
 tags: [frontend, framework, vue]
 created: 2026-08-07
 updated: 2026-08-07
-sources: []
-status: seed
+sources: ["[[raw/articles/mini-vue-overview]]"]
+status: active
 ---
 
 # Vue
@@ -42,8 +42,8 @@ status: seed
 
 ## 相关概念
 
-- [[响应式]] · [[虚拟DOM]] · [[组件化]] · [[状态管理]]
+- [[响应式]] · [[依赖收集]] · [[虚拟DOM]] · [[组件化]] · [[状态管理]]
 
 ## 来源
 
-- （待 Ingest：vuejs.org 官方文档）
+- [[raw/articles/mini-vue-overview]]（mini-vue 学习项目）
