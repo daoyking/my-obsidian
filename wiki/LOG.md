@@ -56,3 +56,17 @@ status: active
   - `wiki/topics/AI.md`（升级为 AI 知识枢纽：补训练对齐/提示推理/安全攻防/能力扩展子主题，链 6 个新概念页 + 动手学大模型主题，加来源）
 - 影响 7 个 wiki 页面 + 1 个 raw 源，建立 15+ 交叉链接
 - 备注：本次为第二次 Ingest，AI 主题体系初步成型。待建概念页（Prompt工程/蒸馏/量化/Agent/Agent安全/知识编辑/模型水印/隐写术）作为后续 Ingest/Query 的生长点。
+
+### 2026-08-07 12:41 | Lint | 首次健康检查
+- 检查项：悬空链接 / 孤立页 / frontmatter 完整性 / 连通性
+- 发现问题：
+  - 悬空链接 9 个（被引用但无页面）：蒸馏、Agent、Agent安全/智能体安全（命名冲突）、Prompt工程、模型水印、隐写术、知识编辑、量化、Linter
+  - 孤立页 1 个：`wiki/topics/前端工程化.md`（无入链）
+  - frontmatter：仅 INDEX/LOG 缺 sources（结构性页面，可接受）
+  - 连通性健康：Vue(12)/组件化(11)/响应式(11)/React(10)/虚拟DOM(10) 为枢纽
+- 修复动作：
+  - 补建 9 个 seed 页：蒸馏/Agent/Agent安全/Prompt工程/模型水印/隐写术/知识编辑/量化（concept）+ Linter（entity），均挂回 dive-into-llms 来源与交叉链接
+  - 修命名冲突：`越狱攻击.md` 的 [[智能体安全]] → [[Agent安全]]
+  - 补孤立页入链：`Vite.md` 增链 [[前端工程化]]
+- 复检结果：悬空链接 0、孤立页 0、wiki 页面总数 38
+- 备注：首次 Lint 闭环，知识库结构健康。后续建议每轮 Ingest 后跑一次 Lint。

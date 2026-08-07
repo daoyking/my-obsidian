@@ -9,3 +9,9 @@
 .obsidian/plugins/smart-connections/
 
 # 保留其余 .obsidian 配置与插件本体以便多端同步
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env
