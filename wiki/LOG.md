@@ -122,3 +122,14 @@ status: active
   - `依赖收集.md`（enrich）：补 Vue2 Observer/Dep/Watcher 三件套对照 Vue3 targetMap
 - Lint：补建 Reconciliation seed 后 0 悬空 / 0 孤立 / 共 54 页（seed 净减 1：React 升 active，+Fiber active +Reconciliation seed）
 - 影响 6 wiki 页 + 3 raw 源，建立 15+ 交叉链接
+
+### 2026-08-07 15:03 | Ingest | TS/Vite/Node 官方文档（补实 3 个 seed 实体）
+- 先推送上次待提交成果(4314da2，网络恢复)
+- WebFetch 抓 3 篇：TypeScript Handbook、Vite Why Vite、Node.js 官方简介
+- raw 存源 3 篇：`typescript-handbook.md`、`vite-why-fast.md`、`nodejs-intro.md`
+- 实体页升级：
+  - `TypeScript.md` **seed→active**：补类型系统/推导窄化/泛型/高级类型/tsconfig/类型擦除
+  - `Vite.md` **seed→active**：补原生 ESM 按需/依赖预构建/HMR/Rolldown统一工具链/与webpack对比
+  - `Node.js.md` **seed→active**：补单进程非阻塞I/O/事件循环阶段/模块系统/核心模块/适合不适合
+- Lint：0 悬空 / 0 孤立 / 共 57 页；seed 19→16，active 33→36
+- 备注：前端核心实体（React/Vue/TS/Vite/Node）现已全部 active，仅余 Svelte/SolidJS 等仍 seed
