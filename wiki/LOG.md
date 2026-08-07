@@ -84,3 +84,12 @@ status: active
 - Lint 复检：补建 RAG/Agent评估 后悬空 0、孤立 0、共 49 页
 - 影响 15 个 wiki 页面 + 1 个 raw 源，建立 30+ 交叉链接
 - 备注：第三次 Ingest，Agent 工程体系成型。「Agent持续进化四法」与本库自成长理念高度同构（→知识=Ingest、→指令=CLAUDE.md、→程序=Skill、→参数=训练）。
+
+### 2026-08-07 13:06 | Ingest | Chrome 书签全量（1808 条）
+- 来源：本地 Chrome `Bookmarks` JSON，pypdf 同款 venv 用 json 解析；存入 `raw/web/chrome-bookmarks.md`（175KB）
+- 规模：1808 条书签 · 40 文件夹 · 重复仅 2 处（github.com/daoyking、chrome://inspect）
+- 隐私处理：raw dump 含个人浏览数据 → 加入 `.gitignore`，仅本地 Obsidian 可浏览，不入 git
+- 编译产出：`wiki/topics/书签库.md` 索引页（结构+统计+域名分布+文件夹→wiki实体映射，可安全同步）
+- 文件夹映射发现：搬砖人专用(983)含 vue/react/css/git/vim/node family，直接对应 [[Vue]]/[[React]]/[[Vim]]/[[Node.js]] 等实体；chartGPT(65)是 AI 工具集 → [[AI]]/[[Agent]]
+- 影响：1 raw 源(本地) + 1 索引页，建立 7+ 交叉链接
+- 待办：chartGPT/vue family 编译成 wiki 来源页；2 处重复书签建议用户在 Chrome 手动清理
