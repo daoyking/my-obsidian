@@ -66,7 +66,7 @@ status: active
   - 连通性健康：Vue(12)/组件化(11)/响应式(11)/React(10)/虚拟DOM(10) 为枢纽
 - 修复动作：
   - 补建 9 个 seed 页：蒸馏/Agent/Agent安全/Prompt工程/模型水印/隐写术/知识编辑/量化（concept）+ Linter（entity），均挂回 dive-into-llms 来源与交叉链接
-  - 修命名冲突：`越狱攻击.md` 的 [[智能体安全]] → [[Agent安全]]
+  - 修命名冲突：`越狱攻击.md` 的 智能体安全 → Agent安全（统一到 [[Agent安全]] 页，aliases 含「智能体安全」）
   - 补孤立页入链：`Vite.md` 增链 [[前端工程化]]
 - 复检结果：悬空链接 0、孤立页 0、wiki 页面总数 38
 - 备注：首次 Lint 闭环，知识库结构健康。后续建议每轮 Ingest 后跑一次 Lint。
