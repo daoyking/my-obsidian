@@ -13,7 +13,7 @@
   "inlineQueryPrefix": "=",
   "inlineJsQueryPrefix": "$=",
   "enableInlineDataview": true,
-  "enableDataviewJs": false,
-  "enableInlineDataviewJs": false,
+  "enableDataviewJs": true,
+  "enableInlineDataviewJs": true,
   "prettyRenderInlineFields": true
 }

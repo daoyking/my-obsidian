@@ -1,0 +1,142 @@
+/* ============================================================
+   Dashboard HUD — 科技风工作台样式
+   仅作用于带 cssclasses: [dashboard] 的笔记，其他笔记不受影响
+   使用 Obsidian 主题变量，自适应明暗（深色最佳）
+   ============================================================ */
+
+/* ---------- 整体：网格底纹 + 容器 ---------- */
+.dashboard.markdown-preview-view,
+.dashboard {
+  --hud-accent: var(--color-accent);
+  --hud-glow: var(--color-accent-rgb, 80, 200, 255);
+  background-image:
+    linear-gradient(rgba(var(--hud-glow), 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--hud-glow), 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  font-family: var(--font-monospace);
+}
+
+/* ---------- 标题：终端风 ---------- */
+.dashboard .markdown-preview-parsed h1,
+.dashboard h1 {
+  font-family: var(--font-monospace);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hud-accent);
+  text-shadow: 0 0 12px rgba(var(--hud-glow), 0.55);
+  border-bottom: 1px solid rgba(var(--hud-glow), 0.35);
+  padding-bottom: 0.4em;
+}
+.dashboard h1::before {
+  content: "▌ ";
+  color: var(--hud-accent);
+}
+
+.dashboard h2,
+.dashboard h3 {
+  font-family: var(--font-monospace);
+  letter-spacing: 0.08em;
+  color: var(--text-normal);
+}
+.dashboard h2::before { content: "[ "; color: var(--hud-accent); }
+.dashboard h2::after  { content: " ]"; color: var(--hud-accent); }
+.dashboard h3::before { content: "▸ "; color: var(--hud-accent); }
+
+/* ---------- Callout：HUD 卡片 ---------- */
+.dashboard .callout {
+  background: rgba(var(--hud-glow), 0.05);
+  border: 1px solid rgba(var(--hud-glow), 0.35);
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(var(--hud-glow), 0.12), inset 0 0 30px rgba(var(--hud-glow), 0.04);
+  font-family: var(--font-monospace);
+}
+.dashboard .callout .callout-title {
+  font-family: var(--font-monospace);
+  letter-spacing: 0.06em;
+  color: var(--hud-accent);
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+.dashboard .callout .callout-icon { display: none; }
+
+/* 大数字（统计值）—— 用 strong 在 callout 内放大 */
+.dashboard .callout strong {
+  color: var(--hud-accent);
+  text-shadow: 0 0 10px rgba(var(--hud-glow), 0.6);
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+/* ---------- Dataview 表格 ---------- */
+.dashboard table.dataview,
+.dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+}
+.dashboard table th {
+  background: rgba(var(--hud-glow), 0.12);
+  color: var(--hud-accent);
+  border-bottom: 1px solid rgba(var(--hud-glow), 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  padding: 6px 10px;
+  text-align: left;
+}
+.dashboard table td {
+  border-bottom: 1px dashed rgba(var(--hud-glow), 0.15);
+  padding: 5px 10px;
+  color: var(--text-normal);
+}
+.dashboard table tr:hover td {
+  background: rgba(var(--hud-glow), 0.07);
+  color: var(--hud-accent);
+}
+
+/* ---------- 链接：霓虹 ---------- */
+.dashboard .internal-link,
+.dashboard a {
+  color: var(--hud-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+.dashboard .internal-link:hover,
+.dashboard a:hover {
+  text-shadow: 0 0 8px rgba(var(--hud-glow), 0.7);
+  border-bottom-color: var(--hud-accent);
+}
+
+/* ---------- 标签：胶囊 ---------- */
+.dashboard a.tag {
+  border: 1px solid rgba(var(--hud-glow), 0.5);
+  border-radius: 10px;
+  padding: 0 8px;
+  background: rgba(var(--hud-glow), 0.06);
+  font-size: 0.78em;
+}
+
+/* ---------- 列表：终端提示符 ---------- */
+.dashboard ul li::marker { content: "› "; color: var(--hud-accent); }
+
+/* ---------- 水平线：扫描线 ---------- */
+.dashboard hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--hud-accent), transparent);
+  box-shadow: 0 0 6px rgba(var(--hud-glow), 0.5);
+}
+
+/* ---------- 引用块：终端窗口 ---------- */
+.dashboard blockquote {
+  border-left: 2px solid var(--hud-accent);
+  background: rgba(var(--hud-glow), 0.04);
+  font-family: var(--font-monospace);
+  color: var(--text-muted);
+}
+.dashboard blockquote::before {
+  content: "// ";
+  color: var(--hud-accent);
+}
