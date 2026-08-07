@@ -128,3 +128,24 @@ status: seed | active | stale | archived
 - 本 Schema 文件由你和大模型共同进化：发现好用的规则就加上，不好用就改掉。
 - 每次 Lint 后，若有流程改进点，更新本文件并在 LOG.md 记录。
 - 知识库不追求一次完美，追求持续生长：用的越多，它越聪明。
+
+## 10. 自动维护机制（定时自动化）
+
+> 以下定时任务在 WorkBuddy 自动化系统中运行（存 `~/.workbuddy/workbuddy.db`，不在 vault 内），按计划自动驱动知识库生长。人工 Ingest/Query/Lint 仍可随时触发。
+
+| 任务 | 频率 | 内容 |
+|---|---|---|
+| 每日AI资讯Ingest | 每天 08:00 | aihot skill 抓当日 AI HOT 日报 → 存 `raw/articles/ai-hot-YYYY-MM-DD.md` → 编译进 `wiki/topics/AI资讯.md` 及相关实体页 → LOG → commit+push |
+| 每周Lint体检 | 每周一 09:00 | 跑 `scripts/lint_wiki.sh`（obsidian-llm-wiki skill）→ 补悬空/孤立/命名冲突 → 复检归零 → LOG → commit+push |
+| 每周GitHub动态Ingest | 每周一 10:00 | gh CLI 查 daoyking 仓库近 7 天提交/release → 重要变更 Ingest 进 `projects/` → LOG → commit+push |
+
+**自动任务遵循的约定**：
+- 遵循本 Schema 全部规则（raw 不可变、frontmatter 规范、人机分工）。
+- push 用 `git -c http.version=HTTP/1.1 -c http.postBuffer=524288000 push origin main`，失败重试最多 3 次（避开 HTTP2 framing 网络坑）。
+- 无新内容或失败时在 LOG 记一条说明，**绝不编造内容**。
+- LOG 描述性文字里的 `[[链接]]` 用反引号包裹，避免被 Lint 误判为悬空。
+
+**管理**：暂停/改时间/删除→让主人用自然语言指令（如「暂停每周 Lint」），由 AI 调用 automation_update 处理；或在 WorkBuddy 设置界面操作。
+
+这对应 [[Agent持续进化]] 四法中的「经验→知识」自动化落地。
+
