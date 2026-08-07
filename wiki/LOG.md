@@ -93,3 +93,11 @@ status: active
 - 文件夹映射发现：搬砖人专用(983)含 vue/react/css/git/vim/node family，直接对应 [[Vue]]/[[React]]/[[Vim]]/[[Node.js]] 等实体；chartGPT(65)是 AI 工具集 → [[AI]]/[[Agent]]
 - 影响：1 raw 源(本地) + 1 索引页，建立 7+ 交叉链接
 - 待办：chartGPT/vue family 编译成 wiki 来源页；2 处重复书签建议用户在 Chrome 手动清理
+
+### 2026-08-07 13:19 | Ingest | 书签三个子文件夹编译（chartGPT/vue·react family/面试）
+- ① chartGPT(65) → `wiki/topics/AI工具集.md`（分7类：对话模型/编程助手/Agent/搜索/LLMOps/文档工具/学习导航，链 AI/Agent/RAG/MCP/Prompt工程/Coding-Agent）
+- ② vue family(133)+react family(30) → `raw/articles/vue-family-bookmarks.md`、`react-family-bookmarks.md`（生态资源列表），反哺 [[Vue]]/[[React]] 实体页加「学习资源」节
+- ③ 面试(15) → `wiki/topics/前端面试.md`（分5类：综合指南/手写代码/JS基础/Vue专题/大厂面经）
+- 联动：书签库索引页清单 3 项打勾，新增 2 条后续候选（AI工具集 stale 标记、3311 归属）
+- Lint：修 1 处目录式悬空链接([[wiki/snippets]]→纯文本)，复检 0 悬空/0 孤立/共 52 页
+- 备注：书签子集均为公开 dev/学习资源，可入库同步（仅全量 dump 含个人数据保持 gitignore）

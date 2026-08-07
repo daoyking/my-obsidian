@@ -36,6 +36,10 @@ Meta（原 Facebook）开源的声明式、组件化 UI 库，用于构建用户
 - `ecommercestore-supplier-web` — 电商供应商端
 - `awesomereactapp` — React 练习
 
+## 学习资源
+
+- [[raw/articles/react-family-bookmarks]]（Chrome 书签 react family，30 条 React 生态资源）
+
 ## 相关实体
 
 - [[Vue]] · [[Svelte]] · [[SolidJS]] · [[TypeScript]] · [[Vite]]
@@ -46,4 +50,5 @@ Meta（原 Facebook）开源的声明式、组件化 UI 库，用于构建用户
 
 ## 来源
 
+- [[raw/articles/react-family-bookmarks]]（react family 书签）
 - （待 Ingest：官方文档 react.dev）

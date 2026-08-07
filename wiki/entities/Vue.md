@@ -36,6 +36,11 @@ status: active
 - `mini-vue` — 手写 Vue 核心机制（见 [[projects/mini-vue]]）
 - `ccui` / `eladmin-web` — Vue 组件库 / 后台模板
 
+## 学习资源
+
+- [[raw/articles/vue-family-bookmarks]]（Chrome 书签 vue family，133 条 Vue 生态资源：VueUse/Pinia/Vue Router/Vite/Vitest/Element Plus/VuePress/源码解析等）
+- [[前端面试]] Vue 专题
+
 ## 相关实体
 
 - [[React]] · [[Svelte]] · [[SolidJS]] · [[TypeScript]] · [[Vite]]
@@ -47,3 +52,4 @@ status: active
 ## 来源
 
 - [[raw/articles/mini-vue-overview]]（mini-vue 学习项目）
+- [[raw/articles/vue-family-bookmarks]]（vue family 书签）
