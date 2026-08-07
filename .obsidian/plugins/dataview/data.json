@@ -1,0 +1,19 @@
+{
+  "renderNullAs": "\\-",
+  "warnOnEmptyResult": true,
+  "refreshEnabled": true,
+  "refreshInterval": 2500,
+  "defaultDateFormat": "yyyy-MM-dd",
+  "defaultDateTimeFormat": "yyyy-MM-dd HH:mm",
+  "maxRecursiveRenderDepth": 4,
+  "tableIdColumnName": "文件",
+  "tableGroupColumnName": "分组",
+  "showResultCount": true,
+  "allowHtml": true,
+  "inlineQueryPrefix": "=",
+  "inlineJsQueryPrefix": "$=",
+  "enableInlineDataview": true,
+  "enableDataviewJs": false,
+  "enableInlineDataviewJs": false,
+  "prettyRenderInlineFields": true
+}

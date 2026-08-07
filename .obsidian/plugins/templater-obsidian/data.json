@@ -1,0 +1,19 @@
+{
+  "templates_folder": "templates",
+  "templates_pairs": [],
+  "trigger_on_file_creation": true,
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "daily",
+      "template": "templates/tpl-daily.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "user_scripts_folder": "",
+  "enable_system_commands": false,
+  "shell_commands": []
+}

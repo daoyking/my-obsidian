@@ -1,0 +1,8 @@
+{
+  "attachmentFolderPath": "attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest"
+}
