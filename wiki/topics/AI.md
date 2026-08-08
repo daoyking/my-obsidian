@@ -26,6 +26,7 @@ status: active
 - **Agent 与工具调用**：Function Calling、[[MCP]]、Claude Code、WorkBuddy
 - **知识管理**：卡帕西 LLM Wiki 方法（本知识库的奠基理论，见 [[CLAUDE]]）
 - **前端 × AI**：AI 辅助编码、AI 生成 UI、Copilot 集成
+- **AI 通识与战略**：[[AI素养]] · [[AI战略]] · [[AI转型]] · [[负责任AI]]（源自 [[吴恩达]] [[AI-for-Everyone]]）
 
 ## 每日动态
 
@@ -35,6 +36,7 @@ status: active
 
 - [[动手学大模型]]（dive-into-llms，11 章全栈 LLM 实践，偏能力点）
 - [[AI-Agents-in-Depth]]（316 页 Agent 工程专著，偏系统工程，以 Harness 工程为主线）
+- [[AI-for-Everyone]]（吴恩达非技术向 AI 通识课，偏素养 / 战略 / 负责任 AI）
 
 ## 我的观点
 
@@ -55,3 +57,4 @@ status: active
 - [[raw/articles/dive-into-llms-overview]]（《动手学大模型》教程）
 - [[raw/papers/ai-agents-in-depth]]（《AI Agents in Depth》专著）
 - [[raw/articles/ai-hot-2026-08-07]]（AI HOT 日报 2026-08-07）
+- [[raw/articles/ai-for-everyone]]（Coursera: AI for Everyone，吴恩达）

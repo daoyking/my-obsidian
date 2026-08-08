@@ -149,3 +149,21 @@ status: active
   - `wiki/concepts/Agent持续进化.md`（新增「近期动态」节：Prime Agent + SkillOpt，补来源）
 - 影响 8 个 wiki 页面 + 1 个 raw 源，建立 20+ 交叉链接
 - 备注：首次自动化 AI HOT 日报 Ingest。重点追踪 Agent Plugins 标准化、Prime Agent 自我改进、SkillOpt 跨模型技能迁移——均与本库 Agent 持续进化理念高度相关。
+
+### 2026-08-08 14:41 | Ingest | AI for Everyone (Coursera)
+- 来源：Coursera 课程页 https://www.coursera.org/learn/ai-for-everyone（讲师 [[吴恩达]]），存入 `raw/articles/ai-for-everyone.md`（结构快照 + 公开 syllabus 补全；视频正文需登录，已注明）
+- 课程定位：非技术向 AI 通识课，4 模块——什么是 AI / 构建 AI 项目 / 在公司落地 AI / AI 与社会
+- 编译产出（新建 8 页）：
+  - `wiki/topics/AI-for-Everyone.md`（active，课程四模块地图 + 观点 + 待研究问题）
+  - `wiki/concepts/AI素养.md`（active，ML/数据/术语/ML 的能与不能）
+  - `wiki/concepts/AI战略.md`（active，发现机会/避陷阱/规划项目）
+  - `wiki/concepts/AI转型.md`（active，AI transformation playbook）
+  - `wiki/concepts/负责任AI.md`（active，偏差/对抗/滥用，上接模型层安全概念）
+  - `wiki/concepts/机器学习项目工作流.md`（active，训练 vs 部署两阶段 + POC）
+  - `wiki/concepts/AI团队.md`（active，ML工程师/数据科学家/数据工程师/AI PM 分工）
+  - `wiki/entities/吴恩达.md`（active，讲师/AI 教育家实体）
+- 联动更新：
+  - `wiki/topics/AI.md`（增「AI 通识与战略」子主题、学习资源、来源；updated→2026-08-08）
+  - `wiki/concepts/提示注入.md` · `越狱攻击.md` · `Agent安全.md`（均链 [[负责任AI]]，补组织 / 社会层治理视角）
+- 影响 11 个 wiki 页面 + 1 个 raw 源，建立 40+ 交叉链接
+- 备注：本库首次引入「AI 战略 / 素养 / 负责任 AI」业务层视角，与既有技术向 Agent/LLM 内容互补。Lint：0 悬空 / 0 孤立。
