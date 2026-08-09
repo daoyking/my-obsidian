@@ -194,3 +194,9 @@ status: active
 - 联动：链 [[Agent]] / [[RAG]] / [[ReAct]] / [[MCP]] / [[记忆系统]] / [[AI]] / [[AI-Agents-in-Depth]] 等既有页
 - 影响 4 个 wiki 页面 + 建立 15+ 交叉链接
 - 备注：File Back 自一次「前端转 Agent 学习计划」咨询；INDEX 由 Dataview 自动聚合，无需手改。待 Lint 复检悬空 / 孤立。
+
+- 2026-08-09 · File Back（W2 执行卡）
+  - 新增 `wiki/topics/W2-每日任务卡.md`（active），把 [[Agent开发学习计划]] 的 W2 周拆成 D1–D5 每日任务卡（脚手架→流式→工具调用→工具可视化→复盘入库），含验收标准与产出
+  - 关联脚手架：`learning-AI/w2-agent-chat`（已搭好的 Vercel AI SDK 流式聊天+工具调用工程）
+  - 联动：[[Vercel AI SDK]] / [[函数调用]] / [[ReAct]] / [[Mastra]]
+  - 备注：与同日落地的 w2-agent-chat、w4-resume-scorer 工程配套，作为「计划→执行卡→代码」闭环的示例。
