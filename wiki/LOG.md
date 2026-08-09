@@ -200,3 +200,9 @@ status: active
   - 关联脚手架：`learning-AI/w2-agent-chat`（已搭好的 Vercel AI SDK 流式聊天+工具调用工程）
   - 联动：[[Vercel AI SDK]] / [[函数调用]] / [[ReAct]] / [[Mastra]]
   - 备注：与同日落地的 w2-agent-chat、w4-resume-scorer 工程配套，作为「计划→执行卡→代码」闭环的示例。
+
+- 2026-08-09 · File Back（W3 执行卡）
+  - 新增 `wiki/topics/W3-每日任务卡.md`（active），把 [[Agent开发学习计划]] 的 RAG 主题（计划表 W5 行；工程命名 w3-rag-qa）拆成 D1–D5 每日任务卡（概念→Ingest→Retrieve→来源可视化→复盘入库），含验收标准与产出
+  - 关联脚手架：`learning-AI/w3-rag-qa`（已搭好的 Vercel AI SDK 流式 RAG 问答站，纯内存向量库）
+  - 联动：[[RAG]] / [[Vercel AI SDK]] / [[函数调用]] / [[ReAct]] / [[W2-每日任务卡]] / [[Mastra]]
+  - 备注：与 w2-agent-chat、w4-resume-scorer、w3-rag-qa 三工程配套，形成「计划→执行卡→代码」闭环。
