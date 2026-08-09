@@ -206,3 +206,9 @@ status: active
   - 关联脚手架：`learning-AI/w3-rag-qa`（已搭好的 Vercel AI SDK 流式 RAG 问答站，纯内存向量库）
   - 联动：[[RAG]] / [[Vercel AI SDK]] / [[函数调用]] / [[ReAct]] / [[W2-每日任务卡]] / [[Mastra]]
   - 备注：与 w2-agent-chat、w4-resume-scorer、w3-rag-qa 三工程配套，形成「计划→执行卡→代码」闭环。
+
+- 2026-08-09 · File Back（W4 执行卡）
+  - 新增 `wiki/topics/W4-每日任务卡.md`（active），把 [[Agent开发学习计划]] 的 W4（编排与记忆）拆成 D1–D5 每日任务卡（框架认知→工具→Agent 封装→Workflow 编排→复盘入库），含验收标准与产出，并标注 Mastra 1.57 避坑要点
+  - 关联脚手架：`learning-AI/w4-resume-scorer`（已搭好的 Mastra 多步 Agent：Agent 版 + Workflow 版 loadData→score）
+  - 联动：[[Mastra]] / [[函数调用]] / [[记忆系统]] / [[ReAct]] / [[W2-每日任务卡]] / [[W3-每日任务卡]]
+  - 备注：W2/W3/W4 三张执行卡已齐，与 w2-agent-chat / w3-rag-qa / w4-resume-scorer 三工程形成完整「计划→执行卡→代码」闭环。
