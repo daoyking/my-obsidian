@@ -4,8 +4,8 @@ aliases: [Claude Code CLI, Anthropic Claude Code]
 type: entity
 tags: [ai, coding, agent, cli, tool, anthropic]
 created: 2026-08-08
-updated: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-09
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/papers/ai-agents-in-depth]]"]
 status: seed
 ---
 
@@ -21,6 +21,7 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 - 代码库感知：能理解大型项目结构和上下文
 - 安全控制：市场（marketplace）权限管理，支持已知/屏蔽市场仓库
 - v2.1.223（2026-08-07）：新增 `owner/*` 通配符条目，可批量允许或阻止 GitHub 组织下的所有市场仓库；修复多项安全漏洞
+- 会话间互发消息（2026-08-08）：多会话协作新功能——一个会话可将摘要发送给另一个会话（非完整历史/文件），接收方在任务进行中实时获取，避免跨会话重复解释上下文
 - 支持 MCP 连接器扩展能力
 
 ## 适用场景
@@ -47,4 +48,5 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]]（Claude Code v2.1.223 发布）
+- [[raw/articles/ai-hot-2026-08-08]]（Claude Code 会话间互发消息）
 - [[raw/papers/ai-agents-in-depth]]（Coding Agent 章节参考）

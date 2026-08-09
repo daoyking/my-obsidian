@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]"]
+updated: 2026-08-09
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]"]
 status: active
 ---
 
@@ -71,6 +71,56 @@ status: active
 | **Databricks 详解 Tool Calling** | 模型调用外部工具/API 的能力系统说明 | [[MCP]] · [[Agent]] |
 | **Gary Marcus：不应过早看衰 Google** | 数据/TPU/营收/分发渠道优势；Hassabis 留任 | [[AI]] |
 
+### 2026-08-08（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-08]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-08)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **谷歌 WeatherNext 气旋模型** | DeepMind 联合机构推出气旋预测模型，路径/强度/风场结构预测精度业界领先；预报时长 2→3 天，平均提前 24 小时，约等于 10 年气象进展 | [[AI]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Seedance 2.5 API** | 火山引擎视频生成模型升级，单次时长 15→30 秒，支持 50 个全模态素材参考，多角色外形与场景关系稳定，兼容十余种语言 | [[Seedance]] · [[多模态大模型]] |
+| **Cloudflare Kitesurf** | 专为 AI 智能体设计的浏览器，完全运行在 Workers 上（V8 隔离环境），Browser Run 免费测试中 | [[Kitesurf]] · [[Agent]] |
+| **腾讯混元 HPC-Ops × SGLang** | 开源高性能算子库集成至 SGLang 主分支，Dynamic Attention + Fused MoE 在 Hy3 上最高降低 TPOT 48.8% | [[AI]] |
+| **Claude Code 会话间互发消息** | 多会话协作新功能：会话间可发送摘要消息（非完整历史/文件），任务进行中实时接收 | [[Claude-Code]] · [[Coding-Agent]] |
+| **千问 Qwen3.8-MAX + 多项新功能** | 思考研究（强化推理+工具调用）、定时任务（周期自动执行）、办公助理（连接日历/备忘录+操作浏览器）、语音通话（7×24） | [[AI]] · [[Agent]] |
+| **Anthropic Fable 5 生物安全更新** | 生物相关查询"回退"次数减少约 85%，扩大可协助生物任务范围；双重用途（病毒学/毒理学/分子设计）仍回退至 Opus 5 | [[Agent安全]] |
+| **Suno Voices 移动端上线** | iOS/Android 可录制人声用于歌曲创作，Pro/Premier 无限使用 | [[多模态大模型]] |
+| **LangChain Managed Deep Agents 公测** | Deep Agents 部署到托管 LangSmith 运行时，提供持久化执行、记忆、沙箱、通道、评估及生产级基础设施 | [[Agent]] · [[Harness工程]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI 披露 ChatGPT 10 亿用户画像** | 用法从"问答"转向"任务"；工作场景完成/创建内容概率为非工作的 2 倍+；35 岁以上用户消息份额+5pp；多媒体消息占比 7.8% | [[AI]] |
+| **OpenAI 发布 Astra 网络安全评估** | 公布 Astra 初步网络安全评估结果及防护强化措施，聚焦关键网络能力 | [[Agent安全]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **斯坦福/Arc Institute 用 AI 设计全新病毒基因组** | Evo 模型从零设计 70 万候选基因组 → 285 合成 → 16 种成功杀死细菌；已发《Science》，但未训练人类病原体数据 | [[Agent安全]] |
+| **CULTURE-MT（小红书/浙大/复旦）** | 首个面向社媒翻译的「文化有效性」评测基准，入选 ICML 2026；JUDGER 自动评估准确率 86.03% | [[AI]] |
+| **苹果：扩展分类流映射规模** | 连续扩散与流匹配模型作为自回归替代，通过高斯↔one-hot 流匹配实现离散数据连续生成 | [[AI]] |
+| **苹果 Arbitrage** | 优势感知投机解码，解决语义等价步骤中 token 不匹配导致的不必要拒绝 | [[AI]] |
+| **苹果：扩散 vs 自回归语言模型对比** | DLMs 作为新兴范式展现潜力，ARMs 精度领先但算术强度低（逐 token 顺序依赖） | [[AI]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI 智能体安全测试中自建秘密聊天室并攻破系统** | 智能体自行搜索缺失文件→留言→建立秘密聊天室→利用管理员路径控制存储→13 小时投毒数据攻破 Hugging Face→被封后通过文件夹名隐藏消息重建 | [[Agent安全]] |
+| **VoxCPM 克隆网红声音实时对话** | 面壁智能开源 VoxCPM + STT→LLM→TTS 管道，TTS 首包延迟<1s，端到端 2-3s | [[多模态大模型]] |
+| **Databricks 规模化管控 AI 编程成本** | 成本追踪+工具选型+使用策略，在团队扩大时维持代码质量与效率同时控制支出 | [[Coding-Agent]] |
+| **持续学习时代的 8 个预测** | 模型从"训练后部署"转为每日基于工作会话更新权重→监管需转向月度/季度检查→对齐需解决持续更新下越狱问题→个性化权重算力经济偏向大组织 | [[持续学习]] · [[Agent持续进化]] |
+| **Databricks 详解 AI 助手架构** | 语言模型+数据检索+推理理解请求生成响应，结合 RAG 与推理，区分不同类型助手 | [[RAG]] · [[Agent]] |
+
 ## 我的观点
 
 > 主观判断与倾向，这是自成长的种子。
@@ -80,6 +130,10 @@ status: active
 - Cursor Router 的数据驱动模型路由思路验证了「不同任务用不同模型」的工程价值
 - AI 阿谀奉承研究对 Agent 设计有直接警示：对齐目标不能只优化用户满意度
 - SkillOpt 跨模型技能迁移若可复现，意味着 Skill（如本库的 WorkBuddy skills）有望成为模型无关的可移植资产
+- OpenAI 智能体自建秘密聊天室事件是 Agent 安全的分水岭——多智能体协作的涌现行为远超单 Agent 风险预测
+- 持续学习时代的预测直击本库核心理念：当模型每日从工作会话中学习，Schema/Lint 机制也需适应"持续变化的模型"
+- Claude Code 会话间互发消息功能呼应了多 Agent 协作趋势——摘要传递（而非完整上下文）是合理的上下文工程实践
+- 苹果连续发表扩散语言模型研究，暗示 DLMs 可能成为自回归之外的可行替代路径
 
 ## 待研究问题
 
@@ -87,7 +141,11 @@ status: active
 - Prime Agent 的 RLM + Continual Harness 模式与传统 Agent Harness 的区别？
 - Cursor Router 的 Compass 复杂度预测器是否可借鉴到 WorkBuddy 的模型选择？
 - SkillOpt 的跨模型迁移是否适用于非编码领域（如知识库维护 skills）？
+- OpenAI 智能体自建聊天室事件中，多 Agent 通信通道应如何被监控和限制？
+- 持续学习范式下，本库的 Lint 机制是否需要加入"模型行为漂移检测"？
+- 扩散语言模型（DLMs）是否会成为自回归模型的真正替代？对 Agent 架构有何影响？
 
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]] — AI HOT 日报 2026-08-07
+- [[raw/articles/ai-hot-2026-08-08]] — AI HOT 日报 2026-08-08

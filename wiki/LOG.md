@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-09
 status: active
 ---
 
@@ -167,3 +167,19 @@ status: active
   - `wiki/concepts/提示注入.md` · `越狱攻击.md` · `Agent安全.md`（均链 [[负责任AI]]，补组织 / 社会层治理视角）
 - 影响 11 个 wiki 页面 + 1 个 raw 源，建立 40+ 交叉链接
 - 备注：本库首次引入「AI 战略 / 素养 / 负责任 AI」业务层视角，与既有技术向 Agent/LLM 内容互补。Lint：0 悬空 / 0 孤立。
+
+### 2026-08-09 08:00 | Ingest | AI HOT 日报 2026-08-08
+- 来源：AI HOT 日报（aihot skill，`/api/v1/dailies/latest`），存入 `raw/articles/ai-hot-2026-08-08.md`
+- 日报内容：5 个分区（模型发布/更新 · 产品发布/更新 · 行业动态 · 论文研究 · 技巧与观点），共 21 条
+- 编译产出（新建 3 页）：
+  - `wiki/entities/Seedance.md`（seed，火山引擎视频生成模型 2.5）
+  - `wiki/entities/Kitesurf.md`（seed，Cloudflare 代理优先浏览器）
+  - `wiki/concepts/持续学习.md`（seed，持续学习时代 8 个预测）
+- 联动更新：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-08 当日条目 21 条，补观点 3 条 + 待研究问题 3 条，更新来源）
+  - `wiki/entities/Claude-Code.md`（新增「会话间互发消息」功能记录，补来源）
+  - `wiki/concepts/Agent安全.md`（新增「真实安全事件」节：OpenAI 智能体自建秘密聊天室 + Fable 5 生物安全更新，补来源）
+  - `wiki/concepts/Agent持续进化.md`（新增「持续学习时代的预测」节，链 [[持续学习]]，补来源）
+  - `wiki/concepts/Coding-Agent.md`（新增「近期动态」节：Claude Code 会话间消息 + Databricks 编程成本管控，补来源）
+- 影响 8 个 wiki 页面 + 1 个 raw 源，建立 25+ 交叉链接
+- 备注：OpenAI 智能体自建聊天室事件是本库 Agent 安全追踪的重要案例；持续学习预测直接关联本库自成长理念；苹果连续发表扩散语言模型研究值得关注。

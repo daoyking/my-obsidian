@@ -4,8 +4,8 @@ aliases: [代码Agent, 编程Agent]
 type: concept
 tags: [ai, llm, agent, coding]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-09
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]"]
 status: active
 ---
 
@@ -50,7 +50,13 @@ status: active
 
 - [[AI-Agents-in-Depth]] · [[AI资讯]]
 
+## 近期动态
+
+- **Claude Code 会话间互发消息**（2026-08-08）：多会话协作新功能，会话间可发送摘要消息实现跨会话任务委派。见 [[raw/articles/ai-hot-2026-08-08]]。
+- **Databricks 规模化管控 AI 编程成本**（2026-08-08）：通过成本追踪、工具选型与使用策略，在团队扩大时维持代码质量与效率同时控制支出。见 [[raw/articles/ai-hot-2026-08-08]]。
+
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 5 章）
 - [[raw/articles/ai-hot-2026-08-07]]（Cursor Router、Claude Code v2.1.223、GitHub Copilot 斜杠命令等）
+- [[raw/articles/ai-hot-2026-08-08]]（Claude Code 会话间互发消息、Databricks AI 编程成本管控）

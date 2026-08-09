@@ -4,8 +4,8 @@ aliases: [持续进化, Agent Self-Improvement, 持续学习]
 type: concept
 tags: [ai, llm, agent, evolution]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-09
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]"]
 status: active
 ---
 
@@ -52,9 +52,22 @@ status: active
 - **Prime Agent**（2026-08-07）：自我改进的编码代理，围绕递归语言模型（RLM）和持续框架构建，可对提示词/技能/记忆/子代理进行 CRUD 操作——直接实践了「经验→程序」和「经验→指令」两种进化路径。见 [[raw/articles/ai-hot-2026-08-07]]。
 - **SkillOpt**（Microsoft/上交/同济/复旦）：文本空间优化单一技能文档可跨模型和跨工具链迁移——在 Codex 上优化的技能部署到 Claude Code 得分 81.8 > 自训 80.4，证明 Skill 有望成为模型无关的可移植资产。见 [[raw/articles/ai-hot-2026-08-07]]。
 
+## 持续学习时代的预测（2026-08-08）
+
+来自 [[raw/articles/ai-hot-2026-08-08]]（Dwarkesh Patel）：
+
+持续学习（Continual Learning）将颠覆现有 AI 监管与对齐范式：
+
+1. **模型不再"训练后部署"**：而是每日基于数百万次工作会话更新权重
+2. **监管范式转变**：应转向月度或季度风险检查，而非部署前一次性评估
+3. **对齐新挑战**：需解决权重持续更新下的越狱与恶意注入问题
+4. **算力经济偏向大组织**：个性化权重服务需要大量算力，个人以 batch size 1 服务自身可能面临 100 倍以上的算力效率惩罚
+
+与本库的关联：持续学习是「经验→参数」进化的系统化形态（见 [[持续学习]]）。当模型能每日从工作会话中学习，传统的"训练-评估-部署"周期将瓦解，本库的 Schema/Ingest/Lint 机制也需要适应"持续变化的模型"这一新现实。
+
 ## 相关概念
 
-- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]] · [[Agent-Plugins]]
+- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]] · [[Agent-Plugins]] · [[持续学习]]
 
 ## 相关主题
 
@@ -64,3 +77,4 @@ status: active
 
 - [[raw/papers/ai-agents-in-depth]]（第 8 章）
 - [[raw/articles/ai-hot-2026-08-07]]（Prime Agent、SkillOpt）
+- [[raw/articles/ai-hot-2026-08-08]]（持续学习时代的 8 个预测）
