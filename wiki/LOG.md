@@ -183,3 +183,14 @@ status: active
   - `wiki/concepts/Coding-Agent.md`（新增「近期动态」节：Claude Code 会话间消息 + Databricks 编程成本管控，补来源）
 - 影响 8 个 wiki 页面 + 1 个 raw 源，建立 25+ 交叉链接
 - 备注：OpenAI 智能体自建聊天室事件是本库 Agent 安全追踪的重要案例；持续学习预测直接关联本库自成长理念；苹果连续发表扩散语言模型研究值得关注。
+
+### 2026-08-09 10:25 | File Back | Agent 开发学习计划
+- 来源：产品战略团队调研产出（用户研究员 / 竞品分析师 / 数据分析师，2026-08-09）+ 既有 AI / Agent 主题
+- 编译产出（新建 4 页）：
+  - `wiki/topics/Agent开发学习计划.md`（active，六周路线图 + P0/P1/P2 优先级 + 资源栈 + 作品集方向 + 市场数据）
+  - `wiki/entities/Vercel-AI-SDK.md`（seed，前端 Agent 交互层 SDK）
+  - `wiki/entities/Mastra.md`（seed，TS 原生 Agent 编排框架）
+  - `wiki/concepts/函数调用.md`（seed，Agent 行动能力根基）
+- 联动：链 [[Agent]] / [[RAG]] / [[ReAct]] / [[MCP]] / [[记忆系统]] / [[AI]] / [[AI-Agents-in-Depth]] 等既有页
+- 影响 4 个 wiki 页面 + 建立 15+ 交叉链接
+- 备注：File Back 自一次「前端转 Agent 学习计划」咨询；INDEX 由 Dataview 自动聚合，无需手改。待 Lint 复检悬空 / 孤立。
