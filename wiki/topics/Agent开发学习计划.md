@@ -27,9 +27,9 @@ AI Agent / AI 应用工程师是 2025–2026 增速最陡的技术岗位：智�
 |---|---|---|---|---|
 | W1 | 概念奠基 | 概念笔记 + 能口述 Agent 循环 | HF Agents Course Unit1 + 吴恩达 Agentic AI（旁听，不手写 Python） | 8–10h |
 | W2 | 最小可聊 | 流式聊天机器人（网页，GitHub） | [[Vercel AI SDK]] useChat / streamText | 10h |
-| W3 | 工具调用 | 带 2–3 个 function/tool 的助手 + 工具时间线 UI | 先原生 fetch+SSE 手搓，再上 SDK Tools；参考 [[函数调用]] [[ReAct]] | 12h |
-| W4 | 编排与记忆 | 多步 Agent（如「读简历→抓 JD→打分」） | [[Mastra]]（agent loop / memory / workflow）+ 对照 [[Claude-Code]] 学任务拆解 | 12h |
-| W5 | RAG | 流式 RAG 问答站（带引用） | [[RAG]] + 向量库（pgvector / Chroma / Qdrant）+ 嵌入 | 12h |
+| W3 | 工具调用 + RAG | 流式 RAG 问答站（带引用 + 工具时间线 UI，检索即工具） | [[RAG]] + 向量库 + 嵌入；参考 [[函数调用]] [[ReAct]] | 12h |
+| W4 | 编排与记忆 | 多步 Agent（读简历→抓 JD→打分→建议） | [[Mastra]]（agent loop / memory / workflow）+ 对照 [[Claude-Code]] 学任务拆解 | 12h |
+| W5 | 评测与可观测 | eval 工具箱（LLM-as-judge 评测 + 自建 Trace / AI SDK telemetry） | [[Agent评估]] + [[可观测性]] + AI SDK telemetry | 12h |
 | W6 | 作品集交付 | 1 个打磨过的作品 + evals + observability + 录屏 | 任选下方作品方向 | 15h |
 
 ### 二、技能优先级（P0 必学 / P1 重要 / P2 延后）
@@ -67,7 +67,7 @@ AI Agent / AI 应用工程师是 2025–2026 增速最陡的技术岗位：智�
 - **用差异打差异**：别和算法背景拼底层模型，要在「把 AI 做成好用的产品」上建立护城河——流式渲染、工具调用可视化、human-in-the-loop 审批 UI 恰是前端独占优势区。
 - **先 TS 后 Python**：用已有技术栈最快拿到正反馈，再补 Python 仅够「读 / 改 / 跑」即可。
 - **作品集 > 证书**：每个阶段留一个能跑的 demo（网页 + GitHub + 录屏），比完课证管用。
-- **评测与可观测被普遍忽视**：从 W6 起就养成给 Agent 写 eval、接 observability 的习惯，是高级分水岭。
+- **评测与可观测被普遍忽视**：从 W5 起就养成给 Agent 写 eval、接 observability 的习惯，是高级分水岭。
 
 ## 待研究问题
 
