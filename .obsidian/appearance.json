@@ -1,3 +1,5 @@
 {
-  "enabledCssSnippets": ["dashboard"]
+  "enabledCssSnippets": [
+    "dashboard"
+  ]
 }
