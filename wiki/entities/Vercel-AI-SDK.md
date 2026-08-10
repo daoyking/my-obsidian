@@ -1,6 +1,6 @@
 ---
 title: Vercel AI SDK
-aliases: [AI SDK, Vercel AI SDK v6]
+aliases: [Vercel AI SDK, AI SDK, Vercel AI SDK v6]
 type: entity
 tags: [agent, typescript, 前端, sdk]
 created: 2026-08-09

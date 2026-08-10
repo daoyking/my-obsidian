@@ -26,13 +26,13 @@ AI Agent / AI 应用工程师是 2025–2026 增速最陡的技术岗位：智�
 | 周 | 主题 | 关键交付（可演示） | 推荐资源 | 预计耗时 |
 |---|---|---|---|---|
 | W1 | 概念奠基 | 概念笔记 + 能口述 Agent 循环 | HF Agents Course Unit1 + 吴恩达 Agentic AI（旁听，不手写 Python） | 8–10h |
-| W2 | 最小可聊 | 流式聊天机器人（网页，GitHub） | [[Vercel AI SDK]] useChat / streamText | 10h |
+| W2 | 最小可聊 | 流式聊天机器人（网页，GitHub） | [[Vercel-AI-SDK]] useChat / streamText | 10h |
 | W3 | 工具调用 + RAG | 流式 RAG 问答站（带引用 + 工具时间线 UI，检索即工具） | [[RAG]] + 向量库 + 嵌入；参考 [[函数调用]] [[ReAct]] | 12h |
 | W4 | 编排与记忆 | 多步 Agent（读简历→抓 JD→打分→建议） | [[Mastra]]（agent loop / memory / workflow）+ 对照 [[Claude-Code]] 学任务拆解 | 12h |
 | W5 | 评测与可观测 | eval 工具箱（LLM-as-judge 评测 + 自建 Trace / AI SDK telemetry） | [[Agent评估]] + [[可观测性]] + AI SDK telemetry | 12h |
 | W6 | 作品集交付 ✅ | 整合 w2–w5 的统一作品集（`learning-AI/w6-portfolio/` 自包含站点）+ evals + observability + 录屏 | [[W6-每日任务卡]] | 15h |
 
-> **进度跟踪（2026-08-09）**：W1 概念 → W2 流式聊天（`w2-agent-chat`）→ W3 RAG（`w3-rag-qa`）→ W4 编排（`w4-resume-scorer`，Mastra）→ W5 评测可观测（`w5-agent-eval`，LLM-as-judge + 自建 Tracer / telemetry）→ **W6 作品集交付（`w6-portfolio`）已完成主体**。全部工程可运行、配套 README，并沉淀为知识库任务卡（[[W2-每日任务卡]]～[[W6-每日任务卡]]）。
+> **进度跟踪（2026-08-09）**：W1 概念 → W2 流式聊天（`w2-agent-chat`）→ W3 RAG（`w3-rag-qa`）→ W4 编排（`w4-resume-scorer`，Mastra）→ W5 评测可观测（`w5-agent-eval`，LLM-as-judge + 自建 Tracer / telemetry）→ **W6 作品集交付（`w6-portfolio`）已完成主体**。全部工程可运行、配套 README，并沉淀为知识库任务卡（[[W2-每日任务卡]]～[[W6-每日任务卡]]）。配套工程集 [[learning-ai-agent]]。
 
 ### 二、技能优先级（P0 必学 / P1 重要 / P2 延后）
 
@@ -45,7 +45,7 @@ AI Agent / AI 应用工程师是 2025–2026 增速最陡的技术岗位：智�
 ### 三、推荐资源栈（前端向）
 
 1. 概念：Hugging Face Agents Course Unit 1 + 吴恩达 Agentic AI（看懂词汇即可）
-2. 交互层：[[Vercel AI SDK]]（useChat / streamText / Tools / AI Elements）
+2. 交互层：[[Vercel-AI-SDK]]（useChat / streamText / Tools / AI Elements）
 3. 编排层：[[Mastra]]（TS 原生，agent loop / memory / workflow / RAG / [[MCP]]，Studio 调试）
 4. 原理兜底：Datawhale `hello-agents` 第 4 / 8 / 10 章（ReAct / 记忆检索 / MCP），跳过 Agentic-RL
 5. 交付：一个真实项目 + evals + observability

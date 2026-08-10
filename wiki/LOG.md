@@ -198,13 +198,13 @@ status: active
 - 2026-08-09 · File Back（W2 执行卡）
   - 新增 `wiki/topics/W2-每日任务卡.md`（active），把 [[Agent开发学习计划]] 的 W2 周拆成 D1–D5 每日任务卡（脚手架→流式→工具调用→工具可视化→复盘入库），含验收标准与产出
   - 关联脚手架：`learning-AI/w2-agent-chat`（已搭好的 Vercel AI SDK 流式聊天+工具调用工程）
-  - 联动：[[Vercel AI SDK]] / [[函数调用]] / [[ReAct]] / [[Mastra]]
+  - 联动：[[Vercel-AI-SDK]] / [[函数调用]] / [[ReAct]] / [[Mastra]]
   - 备注：与同日落地的 w2-agent-chat、w4-resume-scorer 工程配套，作为「计划→执行卡→代码」闭环的示例。
 
 - 2026-08-09 · File Back（W3 执行卡）
   - 新增 `wiki/topics/W3-每日任务卡.md`（active），把 [[Agent开发学习计划]] 的 RAG 主题（计划表 W5 行；工程命名 w3-rag-qa）拆成 D1–D5 每日任务卡（概念→Ingest→Retrieve→来源可视化→复盘入库），含验收标准与产出
   - 关联脚手架：`learning-AI/w3-rag-qa`（已搭好的 Vercel AI SDK 流式 RAG 问答站，纯内存向量库）
-  - 联动：[[RAG]] / [[Vercel AI SDK]] / [[函数调用]] / [[ReAct]] / [[W2-每日任务卡]] / [[Mastra]]
+  - 联动：[[RAG]] / [[Vercel-AI-SDK]] / [[函数调用]] / [[ReAct]] / [[W2-每日任务卡]] / [[Mastra]]
   - 备注：与 w2-agent-chat、w4-resume-scorer、w3-rag-qa 三工程配套，形成「计划→执行卡→代码」闭环。
 
 - 2026-08-09 · File Back（W4 执行卡）
@@ -225,3 +225,14 @@ status: active
 - 无新 release（3 个仓库均无）
 - 影响 2 个项目页 + 2 个 raw 源，建立 10+ 交叉链接
 - 备注：首次 GitHub 周动态自动 Ingest。hmnmt-web 是新入库项目（企业官网 1:1 复刻），learning-ai-agent 与既有 Agent 学习体系高度关联。
+
+### 2026-08-10 09:14 | Lint | 每周体检
+- 发现问题：悬空 2（`[[Vercel AI SDK]]` 命名冲突、`[[安全对齐]]` 真悬空）；孤立 2（`projects/learning-ai-agent.md`、`projects/hmnmt-web.md`）；frontmatter 缺失 0
+- 修复动作：
+  - 命名冲突统一：9 个文件里的 `[[Vercel AI SDK]]` → `[[Vercel-AI-SDK]]`（规范文件名，CLAUDE.md「文件名避免空格」），并在 `wiki/entities/Vercel-AI-SDK.md` 的 aliases 补 `Vercel AI SDK` 兼容 Obsidian UI
+  - 补建 seed 概念页 `wiki/concepts/安全对齐.md`（status: seed，sources 挂 `[[raw/articles/dive-into-llms-overview]]`，交叉链接 RLHF/越狱攻击/提示注入/Agent安全/负责任AI/微调/蒸馏）
+  - `wiki/concepts/RLHF.md` 去掉 `[[安全对齐]]（待建）` 的"待建"标注
+  - 孤立页补入链：`wiki/topics/Agent开发学习计划.md` 进度跟踪段补 `[[learning-ai-agent]]`；`wiki/entities/Vue.md`「在我项目中的使用」补 `[[hmnmt-web]]`
+- 复检结果：悬空=0、孤立=0、frontmatter 缺失=0 ✅
+- 影响文件：1 新建（安全对齐）+ 12 修改（9 个 Vercel 链接统一 + RLHF + Vercel-AI-SDK aliases + Agent开发学习计划 + Vue）
+- 备注：lint 脚本 set -e 在孤立页段会因 grep -c 返回非零而 exit 1 截断输出，本次用手动循环补检；命名冲突是首次出现的修复类型，已记入经验。

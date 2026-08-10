@@ -53,6 +53,7 @@ status: active
 - `learn-vue-blog` — Vue 学习博客
 - `mini-vue` — 手写 Vue 核心机制（见 [[projects/mini-vue]]）
 - `ccui` / `eladmin-web` — Vue 组件库 / 后台模板
+- [[hmnmt-web]] — Vue3 + Element Plus 企业官网 1:1 复刻（含 node:sqlite 后端）
 
 ## 学习资源
 
