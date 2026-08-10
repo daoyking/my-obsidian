@@ -235,4 +235,18 @@ status: active
   - 孤立页补入链：`wiki/topics/Agent开发学习计划.md` 进度跟踪段补 `[[learning-ai-agent]]`；`wiki/entities/Vue.md`「在我项目中的使用」补 `[[hmnmt-web]]`
 - 复检结果：悬空=0、孤立=0、frontmatter 缺失=0 ✅
 - 影响文件：1 新建（安全对齐）+ 12 修改（9 个 Vercel 链接统一 + RLHF + Vercel-AI-SDK aliases + Agent开发学习计划 + Vue）
+
+### 2026-08-10 10:15 | Ingest | AI HOT 日报 2026-08-10
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-10（覆盖 08-09~08-10 周末窗口），1 个分区「技巧与观点」共 4 条事件
+- raw 源文件：`raw/articles/ai-hot-2026-08-10.md`（新建，frontmatter: type=source, tags=[source,ai,aihot], ingested=2026-08-10）
+- wiki 编译（更新 7 个页 + 新建 1 个 raw 源）：
+  - 更新 `wiki/topics/AI资讯.md`（追加 2026-08-10 当日 4 条 + 观点 5 条 + 待研究 5 条 + sources/updated）
+  - 更新 `wiki/concepts/提示注入.md`（新增「Anthropic 的突破性进展」节，status→active，核心：模型训练+输入探测+意图分类器多层防御，间接注入成功率降至约 0）
+  - 更新 `wiki/concepts/Agent安全.md`（防护方向补多层防御 + 新增「前沿模型攻击与治理失衡」节）
+  - 更新 `wiki/entities/Seedance.md`（status seed→active，补 300 秒时长/片段重拍/智能续写/LibTV 0.4 元/秒/六类创意玩法）
+  - 更新 `wiki/concepts/微调.md`（新增「LoRA 实战教程：DistilBERT + IMDb」节，链 蒸馏/机器学习项目工作流）
+  - 更新 `wiki/concepts/负责任AI.md`（新增「治理失衡：能力增长 vs 治理响应」节，链 Agent持续进化）
+  - 更新 `wiki/entities/Claude-Code.md`（新增 auto 模式下周默认开启，链 提示注入/Agent安全）
+- 影响：7 个 wiki 页面 + 1 个 raw 源，建立 20+ 交叉链接
+- 备注：本日为周一，日报覆盖周末窗口（08-09 周日无独立日报）。今日 08:00 自动任务首次执行失败，本次为 10:13 重试获取成功。Anthropic 解决提示注入是 Agent 安全里程碑，已升级提示注入页为 active 并与 Agent安全/Claude-Code 联动。
 - 备注：lint 脚本 set -e 在孤立页段会因 grep -c 返回非零而 exit 1 截断输出，本次用手动循环补检；命名冲突是首次出现的修复类型，已记入经验。

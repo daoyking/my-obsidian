@@ -18,3 +18,6 @@
 
 # Chrome 书签全量快照（含个人浏览数据，仅本地 Obsidian 可浏览，不入 git）
 raw/web/chrome-bookmarks.md
+
+# WorkBuddy 运行时数据（自动化 memory / daily work log，本地工具产物，不入库）
+.workbuddy/
