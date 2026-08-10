@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-09
+updated: 2026-08-10
 status: active
 ---
 
@@ -212,3 +212,16 @@ status: active
   - 关联脚手架：`learning-AI/w4-resume-scorer`（已搭好的 Mastra 多步 Agent：Agent 版 + Workflow 版 loadData→score）
   - 联动：[[Mastra]] / [[函数调用]] / [[记忆系统]] / [[ReAct]] / [[W2-每日任务卡]] / [[W3-每日任务卡]]
   - 备注：W2/W3/W4 三张执行卡已齐，与 w2-agent-chat / w3-rag-qa / w4-resume-scorer 三工程形成完整「计划→执行卡→代码」闭环。
+
+### 2026-08-10 10:00 | Ingest | GitHub 周动态（daoyking 仓库）
+- 来源：`gh` CLI 查 daoyking 仓库近 7 天提交/release，存入 2 个 raw 快照
+  - `raw/articles/github-hmnmt-web-2026-08-10.md`
+  - `raw/articles/github-learning-ai-agent-2026-08-10.md`
+- 筛选结果：3 个仓库有活动，my-obsidian 为知识库自身维护（跳过），hmnmt-web 和 learning-ai-agent 有重要变更
+- 编译产出（新建 2 个项目页）：
+  - `projects/hmnmt-web.md`（active）：企业官网 1:1 复刻项目，Vue3+ElementPlus+Node.js SQLite 数据驱动架构，本周完成产品目录树复刻/公共组件收口/数据入库/对账脚本
+  - `projects/learning-ai-agent.md`（active）：AI Agent 学习路线工程集（W2-W6），本周首次推送全量源码到 GitHub + W5 评测管线重构（CLI 独立避 TLA）+ W6 作品集简历页
+- 联动：`projects/learning-ai-agent.md` 链回 [[Agent开发学习计划]] / [[W2-每日任务卡]] / [[W3-每日任务卡]] / [[W4-每日任务卡]] / [[Vercel-AI-SDK]] / [[Mastra]] / [[RAG]] / [[Agent评估]]
+- 无新 release（3 个仓库均无）
+- 影响 2 个项目页 + 2 个 raw 源，建立 10+ 交叉链接
+- 备注：首次 GitHub 周动态自动 Ingest。hmnmt-web 是新入库项目（企业官网 1:1 复刻），learning-ai-agent 与既有 Agent 学习体系高度关联。
