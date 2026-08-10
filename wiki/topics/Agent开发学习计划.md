@@ -34,6 +34,8 @@ AI Agent / AI 应用工程师是 2025–2026 增速最陡的技术岗位：智�
 
 > **进度跟踪（2026-08-09）**：W1 概念 → W2 流式聊天（`w2-agent-chat`）→ W3 RAG（`w3-rag-qa`）→ W4 编排（`w4-resume-scorer`，Mastra）→ W5 评测可观测（`w5-agent-eval`，LLM-as-judge + 自建 Tracer / telemetry）→ **W6 作品集交付（`w6-portfolio`）已完成主体**。全部工程可运行、配套 README，并沉淀为知识库任务卡（[[W2-每日任务卡]]～[[W6-每日任务卡]]）。配套工程集 [[learning-ai-agent]]。
 
+> **交付物（2026-08-10）**：作品集与简历已上线 GitHub Pages —— 简历页见 [[简历]]，作品集首页 <https://daoyking.github.io/learning-ai-agent/>，源码 <https://github.com/daoyking/learning-ai-agent>。
+
 ### 二、技能优先级（P0 必学 / P1 重要 / P2 延后）
 
 - **P0**：LLM API 调用、Prompt Engineering、Tool / Function Calling（[[函数调用]]）、流式 UI 与交互可视化、≥1 个可演示作品集。
