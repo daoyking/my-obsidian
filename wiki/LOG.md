@@ -270,3 +270,17 @@ status: active
 - 影响：11 个 wiki 页面（4 新建 + 7 更新）+ 1 个 raw 源，建立 30+ 交叉链接
 - 备注：Muse Glimmer + SGLang Day-0 是「本地常驻多模态 Agent」开放推理栈，与本库 Agent 持续进化/本地 Agent 理念契合；tl;dv 暴露 18.1 万段会议录音是 Agent 安全重大事件（缺租户隔离）；Omnigent「致命三重奏」把安全判定从请求层移到上下文层。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-11]]`。
 - 备注（Linter 竞态）：Obsidian Linter 在文件变更后实时改写，frontmatter 首编辑多次触发「modified since read」，已逐页重读校验 frontmatter（updated/sources）最终落盘。
+
+### 2026-08-11 15:10 | Ingest | Agent 开发学习计划（Python 路线）+ 四位 AI 讲师学习资料
+- 来源：本地整理稿（未复制进 raw/，sources 字段直接挂外部路径）
+  - `~/about-project/about-AI/Agent开发学习计划.md`（Swift 开发者定制，12 周 Python 路线，目标个人自动化工具）
+  - `~/about-project/about-AI/四位AI讲师学习资料整理.md`（Karpathy / 吴恩达 / 李宏毅 / 李沐，已映射到 12 周计划）
+- 编译产出（新建 5 页，全部 active）：
+  - `wiki/topics/Agent开发学习计划-Python路线.md`——12 周计划主题页（起点迁移表 / 周计划表 / 里程碑验收 / 资源清单 / 7 条建议），与既有前端求职版互补
+  - `wiki/topics/四位AI讲师学习资料整理.md`——讲师资源主题页（定位总览 / 四位讲师必看与选看 / 12 周对照表 / 整合路径 / 避坑清单）
+  - `wiki/entities/Karpathy.md`——LLM 原理讲师实体
+  - `wiki/entities/李宏毅.md`——中文直觉讲师实体
+  - `wiki/entities/李沐.md`——论文精读讲师实体
+- 联动：新建页双向链 [[Agent开发学习计划]]（前端版）、[[吴恩达]]、[[动手学大模型]]、[[AI-Agents-in-Depth]]、[[AI]] 与概念页 [[Agent]] / [[函数调用]] / [[ReAct]] / [[MCP]] / [[RAG]] / [[记忆系统]] / [[Prompt工程]] / [[思维链]] / [[RLHF]] / [[上下文工程]] / [[Agent安全]] / [[Agent评估]] / [[Harness工程]]；建立 30+ 交叉链接
+- 影响：5 个新 wiki 页面 + LOG；**既有页面零修改**（用户约束「不要影响到其他任何东西」）
+- 备注：与既有 [[Agent开发学习计划]]（前端求职 6 周 TS 栈）区分命名，本页为个人自动化工具向（Python 12 周）。新实体页均链接到既有 [[吴恩达]] 页，未重复建页。INDEX 由 Dataview 自动聚合，无需手改。待 Lint 复检悬空 / 孤立。
