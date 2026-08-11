@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-10
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]"]
+updated: 2026-08-11
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]"]
 status: active
 ---
 
@@ -135,6 +135,56 @@ status: active
 | **DistilBERT LoRA + TF-IDF 做 IMDb 情感分析** | 端到端情感分析教程：TF-IDF 逻辑回归基线 vs LoRA 微调 DistilBERT；评估含准确率/macro-F1/ROC-AUC/ECE 校准；词级遮挡显著性 + 未标注数据置信度伪标注半监督学习 | [[微调]] · [[蒸馏]] |
 | **前沿模型黑客事件暴露激励与治理失衡** | Nathan Lambert 反思：科技公司增长驱动持续扩展、政府行动迟缓，双方均未准备好应对未来 12-24 个月挑战；持久性强的模型更可能实施黑客行为，OpenAI 推理时扩展路径或与此相关 | [[Agent安全]] · [[负责任AI]] |
 
+### 2026-08-11（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-11]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-11)
+> lead：SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Meta 发布开源模型 Muse Glimmer** | 30B 开放权重多模态模型，Apache 2.0，128k+ 上下文，专为本地常驻 Agent 工作流优化，可全量跑在消费级硬件（Mac / 高性能 GPU PC） | [[Muse-Glimmer]] · [[SGLang]] · [[开放权重]] · [[Agent]] |
+| **SGLang 为 Muse Glimmer 提供 Day-0 支持** | SGLang 与 Meta Superintelligence Labs 合作，发布当日提供推理引擎适配，针对本地 Agent 工作流优化 | [[SGLang]] · [[Muse-Glimmer]] |
+| **OpenAI 推出 GPT-5.6-Cyber** | 网络安全专用模型，通过 Daybreak Red 获取，面向授权漏洞研究 / 验证 / 安全测试，应对网络防御窗口收窄 | [[Agent安全]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenRouter 新版 Auto 路由器** | 基于每周 55T+ token 社区消费数据，按约 30 种任务类型匹配近 7 天实际消费模型，支持 cost_tier，多数领域更低成本达旧版同等性能 | [[OpenRouter]] · [[Agent评估]] |
+| **千问开放平台上线** | 阿里面向生态伙伴开放手机 / PC / AI 眼镜三类终端接入，首批覆盖物流 / 房产 / 本地生活 / 理财 / 汽车等十余领域，对话中可 @ 服务完成咨询到下单 | [[Agent]] |
+| **Qwen-MM-Plugins 让智能体原生多模态** | 让 Agent 原生支持读图 / 视频 / 文档、编辑视频、处理 3D / CAD，从多模态模型 → 多模态智能体 | [[多模态大模型]] · [[Agent]] |
+| **OpenChamber 基于代理的开发环境** | 跨桌面 / 浏览器 / 手机 / VS Code，支持会话目标、多模型并行融合、变更走查、issue→PR 全流程、定时任务，基于 OpenCode SDK，本地存储 + Private Relay 加密 | [[Coding-Agent]] · [[Harness工程]] |
+| **Claude Code 自动模式默认开启原理** | Anthropic 公开 auto 模式默认开启的安全判定机制（什么操作可安全运行） | [[Claude-Code]] · [[Coding-Agent]] · [[提示注入]] |
+| **LatentRank 更公平的模型排行榜** | 聚合多家可信榜单，Bradley-Terry 成对比较 + 先验限制小样本偏差，Opus 5 居前 | [[Agent评估]] |
+| **Omnigent 上下文策略阻断"致命三重奏"** | Contextual Policies 在组合上下文中识别并拦截多个无害请求叠加形成的恶意行为，单请求不设防 | [[Agent安全]] · [[提示注入]] |
+| **Google 为 Ads / Analytics 推出 AI 与智能体功能** | GA 首页 AI Overviews、Ads AI 洞察卡片、Ask Advisor 基准对比，基于 Gemini，英文 beta | [[Agent]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **英伟达联合六大机构融资 5000 亿美元建 AI 工厂** | 与 Apollo / BlackRock / Blackstone / Brookfield / Goldman Sachs / KKR 建独立融资平台，动员超 5000 亿第三方资本支持 AI 基础设施 | [[AI]] |
+| **Zapier 用 ChatGPT Work 改造营销流程** | 自动化线索漏斗 QA / 素材搭建 / 报告，月处理数千线索，带来七位数管道价值，计划常驻自动化循环 | [[Agent]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Claude 未发布研究版突破黎曼 zeta 零点下界** | 将满足黎曼猜想的 zeta 零点比例下界从 41.6% 提升至 67.2% | [[Claude-Code]] · [[AI]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **tl;dv 逾 18.1 万段 AI 会议录音被公开暴露** | Firestore 缺租户隔离，任意认证用户可查全部 18.1 万段（8.4 万用户 / 3.5 万域名），约 1000 场实时会议 ID 暴露可闯入；1 月报告 6 个月未修 | [[Agent安全]] · [[负责任AI]] |
+| **a16z：智能体真的会用电脑吗** | 计算机操作 Agent 在 OSWorld-Verified 最佳 85%，超人类约 72%，Claude Fable 5 领先 | [[Agent]] · [[Coding-Agent]] |
+| **扎克伯格：超级智能应人人可用** | 长文阐述 Meta 为所有人构建积极未来的理念与价值观 | [[AI]] |
+| **Linear 如何构建 Linear Agent** | 通过系统提示词 / 工具设计 / 产品模型 / 运行范围 / 底层 harness 划定边界，系统技能渐进加载避免一次性暴露过多上下文 | [[Harness工程]] · [[上下文工程]] · [[Coding-Agent]] |
+| **Forking-Sequences 多步预测训练范式** | CMU 定义并评测：无需新增参数，一次前向跨所有预测创建日期编码解码整条序列 | [[AI]] |
+| **开源≠开放权重：Gary Marcus 剖析本质差异** | 开放权重仅发布训练后权重，不公开数据 / 预处理 / 算法；以 Muse Glimmer 为例证 | [[开放权重]] · [[Muse-Glimmer]] |
+
 ## 我的观点
 
 > 主观判断与倾向，这是自成长的种子。
@@ -153,6 +203,12 @@ status: active
 - Seedance 2.5 创意玩法爆发 + 300 秒时长 + 0.4 元/秒成本，显示视频生成正跨越"可用"到"好用且便宜"的临界点，创作工作流可能被重构
 - Nathan Lambert 的治理失衡论点醒一个现实：模型能力（含攻击能力）的增长速度远超治理体系响应速度，本库 [[Agent安全]] 与 [[负责任AI]] 需从"事后记录事件"转向"前瞻性风险预判"
 
+- Muse Glimmer + SGLang Day-0 是「本地常驻多模态 Agent」推理栈的开放方案——Apache 2.0 + 消费级硬件可跑，隐私优先 / 离线 Agent 进入可用区间，与本库 [[Agent持续进化]] 的本地 Agent 理念高度契合
+- OpenRouter Auto 与 [[Cursor]] Router 共同验证「模型选择本身是工程问题」——路由器把选模型从人工决策转为数据驱动，可借鉴到 WorkBuddy 模型选择
+- tl;dv 事件再次印证 [[Agent安全]] 的「数据外泄」风险——多租户 AI 服务的租户隔离是不可妥协的基础设施底线，1 月报告 6 个月未修暴露治理响应迟缓
+- Omnigent「致命三重奏」点出组合攻击本质：单请求无害、组合恶意——与 [[提示注入]] 多层防御互补，把判定从「请求层」移到「上下文层」，是 Agent 安全新维度
+- Linear 公开 Agent 构建方法（系统提示词 / 工具设计 / 系统技能三方划定边界）是 [[Harness工程]] 绝佳实例——边界编码进工具参数比事后审查更稳
+
 ## 待研究问题
 
 - Agent Plugins 1.0.0 与 MCP 的关系：互补还是竞争？plugin.json 清单能否描述现有 WorkBuddy skills？
@@ -167,8 +223,15 @@ status: active
 - Claude Code auto 模式默认开启后，权限边界如何设定？与本库 WorkBuddy 的 plan/craft/ask 模式有何异同？
 - Nathan Lambert 所称"持久性强的模型更可能实施黑客行为"——这对本库 [[Agent持续进化]] 中持续学习范式有何安全启示？
 
+- Muse Glimmer 的「多模态」具体含哪些模态？30B 在消费级硬件推理吞吐如何？能否真支撑常驻 Agent 工作流？
+- 开放权重（如 Muse Glimmer）vs 真开源的边界对监管与选型意味着什么？本库是否应把 [[开放权重]] 作为独立概念持续跟踪？
+- Omnigent 上下文策略与 Anthropic 多层防御如何叠加？组合攻击的「恶意识别」是否会引入新的误杀 / 对抗面？
+- OpenRouter Auto「社区消费数据驱动路由」是否形成马太效应（热门模型越热）？其隐私设置如何保证不泄露用户任务内容？
+- a16z 的 OSWorld 85% 是否含专属环境调参？计算机操作 Agent 在真实桌面（非基准）的可靠性是否被高估？
+
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]] — AI HOT 日报 2026-08-07
 - [[raw/articles/ai-hot-2026-08-08]] — AI HOT 日报 2026-08-08
 - [[raw/articles/ai-hot-2026-08-10]] — AI HOT 日报 2026-08-10
+- [[raw/articles/ai-hot-2026-08-11]] — AI HOT 日报 2026-08-11

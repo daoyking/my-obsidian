@@ -4,8 +4,8 @@ aliases: [Agent Evaluation, Agent评估, 评估]
 type: concept
 tags: [ai, llm, agent, evaluation]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-11
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]"]
 status: seed
 ---
 
@@ -35,6 +35,14 @@ status: seed
 
 读懂 Benchmark 报告 → 发现问题 → 构建改进假设 → 数据驱动决策 → 持续迭代。
 
+## 社区驱动的模型排行榜（2026-08-11）
+
+来自 [[raw/articles/ai-hot-2026-08-11]]：
+
+LatentRank 聚合多家可信榜单，采用 Bradley-Terry 成对比较算法，并加入先验限制小样本结果，以解决不同榜单规模、领先幅度和模型缺失带来的评分偏差。当前榜单 Opus 5 超过 Fable 5 居前。
+
+**定位**：模型排名的本质是"用可比较的信号聚合主观评测"——与本页 LLM-as-a-Judge 的配对比较、模型排名一脉相承；社区消费数据驱动的 [[OpenRouter]] Auto 路由器则是"评估 → 选型"的自动化闭环。
+
 ## 相关概念
 
 - [[Agent]] · [[Harness工程]] · [[RLHF]]（评估信号用于训练）
@@ -46,3 +54,4 @@ status: seed
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 6 章）
+- [[raw/articles/ai-hot-2026-08-11]]（LatentRank 聚合排行榜：Bradley-Terry 成对比较）

@@ -4,8 +4,8 @@ aliases: [Harness Engineering, Harness, 框架工程]
 type: concept
 tags: [ai, llm, agent, engineering, harness]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-11
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]"]
 status: active
 ---
 
@@ -40,6 +40,11 @@ status: active
 
 bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越手工技巧。Harness 不否定它，而是承认「长期对，但当下模型还不够」，用工程补足当下的缺口，并随模型进步持续退让。
 
+## 近期动态
+
+- **Linear Agent 的边界设计（2026-08-11）**：Linear 未为 Agent 编写固定路径，而是通过系统提示词（沟通风格 / 硬性边界 / 概念解释）、工具设计（把约束编码进参数，使无效操作难以执行）、产品模型、运行范围及底层自定义 harness 划定边界；并引入"系统技能"作为组合单元按需渐进加载，避免一次性暴露过多上下文。见 [[raw/articles/ai-hot-2026-08-11]]。
+- **OpenChamber 代理开发环境（2026-08-11）**：跨桌面 / 浏览器 / 手机 / VS Code 的代理优先 IDE，支持会话目标、多模型并行融合、变更走查、issue→PR 全流程、定时任务，基于 OpenCode SDK，本地存储 + Private Relay 端到端加密。见 [[raw/articles/ai-hot-2026-08-11]] · [[Coding-Agent]]。
+
 ## 相关概念
 
 - [[Agent]] · [[上下文工程]] · [[ReAct]] · [[Agent安全]]
@@ -51,3 +56,4 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 1 章 1.2）
+- [[raw/articles/ai-hot-2026-08-11]]（Linear Agent 构建方法、OpenChamber 代理开发环境）

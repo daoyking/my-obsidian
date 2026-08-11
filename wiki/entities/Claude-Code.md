@@ -4,8 +4,8 @@ aliases: [Claude Code CLI, Anthropic Claude Code]
 type: entity
 tags: [ai, coding, agent, cli, tool, anthropic]
 created: 2026-08-08
-updated: 2026-08-10
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-11
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/papers/ai-agents-in-depth]]"]
 status: seed
 ---
 
@@ -23,6 +23,8 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 - v2.1.223（2026-08-07）：新增 `owner/*` 通配符条目，可批量允许或阻止 GitHub 组织下的所有市场仓库；修复多项安全漏洞
 - 会话间互发消息（2026-08-08）：多会话协作新功能——一个会话可将摘要发送给另一个会话（非完整历史/文件），接收方在任务进行中实时获取，避免跨会话重复解释上下文
 - **auto 模式默认开启（2026-08-10 公告，下周生效）**：在 Anthropic 宣布通过模型训练基本解决提示注入威胁后（见 [[提示注入]]），Claude Code 的 auto 模式将于下周默认开启——安全护城河筑牢后才放开自主执行权限，是"安全先行、自主后至"的工程范例
+- **auto 模式默认开启原理（2026-08-11）**：Anthropic 公开 auto 模式的判定机制——哪些操作可"安全运行"而无需逐次审批；这是 2026-08-10 提示注入基本解决后的产品化落地，安全护城河筑牢才放开自主执行（见 [[提示注入]] · [[Agent安全]]）
+- **未发布研究版 Claude 突破黎曼 zeta 零点下界（2026-08-11）**：Anthropic 员工让 Claude 挑战黎曼猜想虽未成功，但一个未发布研究版在相关问题上将满足黎曼猜想的 zeta 零点比例下界从 41.6% 提升至 67.2%，展示前沿模型在纯数学推理上的潜力
 - 支持 MCP 连接器扩展能力
 
 ## 适用场景
@@ -51,4 +53,5 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 - [[raw/articles/ai-hot-2026-08-07]]（Claude Code v2.1.223 发布）
 - [[raw/articles/ai-hot-2026-08-08]]（Claude Code 会话间互发消息）
 - [[raw/articles/ai-hot-2026-08-10]]（auto 模式下周默认开启）
+- [[raw/articles/ai-hot-2026-08-11]]（auto 模式默认开启原理、Claude 研究版突破黎曼 zeta 零点下界）
 - [[raw/papers/ai-agents-in-depth]]（Coding Agent 章节参考）

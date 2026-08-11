@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-10
+updated: 2026-08-11
 status: active
 ---
 
@@ -250,3 +250,23 @@ status: active
 - 影响：7 个 wiki 页面 + 1 个 raw 源，建立 20+ 交叉链接
 - 备注：本日为周一，日报覆盖周末窗口（08-09 周日无独立日报）。今日 08:00 自动任务首次执行失败，本次为 10:13 重试获取成功。Anthropic 解决提示注入是 Agent 安全里程碑，已升级提示注入页为 active 并与 Agent安全/Claude-Code 联动。
 - 备注：lint 脚本 set -e 在孤立页段会因 grep -c 返回非零而 exit 1 截断输出，本次用手动循环补检；命名冲突是首次出现的修复类型，已记入经验。
+
+### 2026-08-11 13:24 | Ingest | AI HOT 日报 2026-08-11
+- 来源：aihot skill 调用 `/api/v1/dailies/2026-08-11`（08:00 首次获取时日报尚未生成，13:24 重试拉到全文），存入 `raw/articles/ai-hot-2026-08-11.md`
+- 日报内容：5 个分区（模型发布/更新 · 产品发布/更新 · 行业动态 · 论文研究 · 技巧与观点），共 20 条
+- 新建 4 页：
+  - `wiki/entities/Muse-Glimmer.md`（seed，Meta 30B 开放权重多模态模型，Apache 2.0，本地常驻 Agent）
+  - `wiki/entities/SGLang.md`（seed，推理引擎，为 Muse Glimmer 提供 Day-0 支持）
+  - `wiki/entities/OpenRouter.md`（seed，新版 Auto 路由器，社区消费数据驱动）
+  - `wiki/concepts/开放权重.md`（seed，Gary Marcus 开源≠开放权重；直指 Muse Glimmer）
+- 联动更新 7 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-11 当日 20 条 + 观点 5 + 待研究 5 + sources/updated）
+  - `wiki/entities/Claude-Code.md`（auto 模式默认开启原理 + Claude 研究版突破黎曼 zeta 下界，updated→2026-08-11）
+  - `wiki/concepts/Agent安全.md`（tl;dv 录音泄露 + GPT-5.6-Cyber + Omnigent 致命三重奏，updated→2026-08-11）
+  - `wiki/concepts/提示注入.md`（Omnigent 上下文策略组合攻击防御，status 保持 active，updated→2026-08-11）
+  - `wiki/concepts/Coding-Agent.md`（OpenChamber + Claude Code auto 原理 + Linear Agent，updated→2026-08-11）
+  - `wiki/concepts/Harness工程.md`（Linear Agent 边界设计 + OpenChamber，updated→2026-08-11）
+  - `wiki/concepts/Agent评估.md`（LatentRank 聚合排行榜，updated→2026-08-11）
+- 影响：11 个 wiki 页面（4 新建 + 7 更新）+ 1 个 raw 源，建立 30+ 交叉链接
+- 备注：Muse Glimmer + SGLang Day-0 是「本地常驻多模态 Agent」开放推理栈，与本库 Agent 持续进化/本地 Agent 理念契合；tl;dv 暴露 18.1 万段会议录音是 Agent 安全重大事件（缺租户隔离）；Omnigent「致命三重奏」把安全判定从请求层移到上下文层。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-11]]`。
+- 备注（Linter 竞态）：Obsidian Linter 在文件变更后实时改写，frontmatter 首编辑多次触发「modified since read」，已逐页重读校验 frontmatter（updated/sources）最终落盘。
