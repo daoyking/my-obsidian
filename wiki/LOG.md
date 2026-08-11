@@ -284,3 +284,16 @@ status: active
 - 联动：新建页双向链 [[Agent开发学习计划]]（前端版）、[[吴恩达]]、[[动手学大模型]]、[[AI-Agents-in-Depth]]、[[AI]] 与概念页 [[Agent]] / [[函数调用]] / [[ReAct]] / [[MCP]] / [[RAG]] / [[记忆系统]] / [[Prompt工程]] / [[思维链]] / [[RLHF]] / [[上下文工程]] / [[Agent安全]] / [[Agent评估]] / [[Harness工程]]；建立 30+ 交叉链接
 - 影响：5 个新 wiki 页面 + LOG；**既有页面零修改**（用户约束「不要影响到其他任何东西」）
 - 备注：与既有 [[Agent开发学习计划]]（前端求职 6 周 TS 栈）区分命名，本页为个人自动化工具向（Python 12 周）。新实体页均链接到既有 [[吴恩达]] 页，未重复建页。INDEX 由 Dataview 自动聚合，无需手改。待 Lint 复检悬空 / 孤立。
+
+### 2026-08-11 15:20 | Ingest | GitHub 资源库三连（awesome-agi-agents / public-apis / awesome-agentic-ai-zh）
+- 来源：`gh api` 获取三个仓库元数据 + README，存入 raw/articles/（各含 frontmatter：type=source, tags, ingested, repo, stars）
+  - `raw/articles/awesome-agi-agents.md`（19KB，yzfly，554★，AGI Agents 精选合集，CC BY-NC 4.0）
+  - `raw/articles/public-apis.md`（230KB，455k★，免费公共 API 大全，MIT）
+  - `raw/articles/awesome-agentic-ai-zh.md`（22KB，WenyuChiou，5159★，三语 Agentic AI 学习地图，MIT）
+- 编译产出（新建 3 个实体页，全部 active）：
+  - `wiki/entities/awesome-agi-agents.md`——Agent 生态全景（论文 / 2024-2026 重要项目 / 前沿项目 / 开发平台 / curated list）
+  - `wiki/entities/public-apis.md`——1400+ 免费 API 宝库（40+ 领域分类），Agent 数据源弹药库
+  - `wiki/entities/awesome-agentic-ai-zh.md`——8 阶段 + 双 Track 学习地图（CLI Power User 8-10 周 / Agent Builder 16-22 周），240+ 资源 + 23 练习 + 中文 MCP/Skill catalog
+- 联动：新建页双向链 [[Agent开发学习计划-Python路线]] / [[Agent开发学习计划]] / [[AI工具集]] / [[动手学大模型]] / [[AI-Agents-in-Depth]] / [[四位AI讲师学习资料整理]] / [[Mastra]] / [[Claude-Code]] / [[Coding-Agent]] 与概念页 [[Agent]] / [[MCP]] / [[函数调用]] / [[ReAct]] / [[RAG]] / [[记忆系统]] / [[上下文工程]] / [[Harness工程]] / [[Prompt工程]] / [[Agent评估]] / [[多模态大模型]]；建立 25+ 交叉链接
+- 影响：3 个 raw 源 + 3 个新 wiki 页面 + LOG；**既有页面零修改**（沿用上次 Ingest 约束）
+- 备注：awesome-agentic-ai-zh 与本库 [[Agent开发学习计划-Python路线]]（12 周）逐周互补、与 [[Harness工程]] 的「三層概念進化」（prompt→context→harness）直接对应；public-apis 是仓库 star 数 45.5 万的巨型公共资源。INDEX 由 Dataview 自动聚合。待 Lint 复检悬空 / 孤立。
