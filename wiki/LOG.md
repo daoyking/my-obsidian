@@ -297,3 +297,31 @@ status: active
 - 联动：新建页双向链 [[Agent开发学习计划-Python路线]] / [[Agent开发学习计划]] / [[AI工具集]] / [[动手学大模型]] / [[AI-Agents-in-Depth]] / [[四位AI讲师学习资料整理]] / [[Mastra]] / [[Claude-Code]] / [[Coding-Agent]] 与概念页 [[Agent]] / [[MCP]] / [[函数调用]] / [[ReAct]] / [[RAG]] / [[记忆系统]] / [[上下文工程]] / [[Harness工程]] / [[Prompt工程]] / [[Agent评估]] / [[多模态大模型]]；建立 25+ 交叉链接
 - 影响：3 个 raw 源 + 3 个新 wiki 页面 + LOG；**既有页面零修改**（沿用上次 Ingest 约束）
 - 备注：awesome-agentic-ai-zh 与本库 [[Agent开发学习计划-Python路线]]（12 周）逐周互补、与 [[Harness工程]] 的「三層概念進化」（prompt→context→harness）直接对应；public-apis 是仓库 star 数 45.5 万的巨型公共资源。INDEX 由 Dataview 自动聚合。待 Lint 复检悬空 / 孤立。
+
+### 2026-08-11 19:50 | File Back | Agent 开发工程师面试宝典（转型候选人版）
+- 来源：2026 年 Agent 面试高频题调研（kamacoder / JavaGuide / 知乎横评）+ 用户转型背景（10 年前端 / 武汉 AI-Agent 方向 / 12 周计划 Week 0-1）
+- 编译产出（新建 1 个主题页，active）：
+  - `wiki/topics/Agent开发工程师面试宝典.md`——转型候选人版面试宝典（0 战场叙事 / LLM 基础 / Prompt 工程 / Agent 核心机制 / MCP / 框架与工程化 / RAG / 前端加分题 / 系统设计 / 行为面 / 自测清单 / 考前速记卡），每题含「考察点 + 参考回答 + 参考话术」，并映射 12 周计划周次
+- 联动：新建页双向链 [[Agent开发学习计划-Python路线]] / [[Agent开发学习计划]] / [[前端面试]] 与概念页 [[Agent]] / [[ReAct]] / [[函数调用]] / [[MCP]] / [[Prompt工程]] / [[RAG]] / [[记忆系统]] / [[上下文工程]] / [[Agent安全]] / [[提示注入]] / [[Harness工程]] / [[Coding-Agent]] / [[思维链]] / [[Agent评估]]；建立 30+ 交叉链接
+- 影响：1 个新 wiki 页面 + LOG；**既有页面零修改**（沿用 Ingest 约束「不要影响到其他任何东西」）
+- 备注：内容按用户水平定制——LLM 基础章节可立即用（W0-W1），MCP/ReAct 章节对应 W2-W6 里程碑，标注「现在必须掌握 / 计划中会学到」分层。INDEX 由 Dataview 自动聚合，无需手改。待 Lint 复检悬空 / 孤立。
+
+### 2026-08-12 08:08 | Ingest | AI HOT 日报 2026-08-12
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-12（覆盖 08-11 00:00 ~ 08-12 00:00 UTC），存入 `raw/articles/ai-hot-2026-08-12.md`
+- 日报内容：5 个分区（模型发布/更新 3 · 产品发布/更新 5 · 行业动态 7 · 论文研究 3 · 技巧与观点 8），共 26 条
+- 新建 5 页：
+  - `wiki/entities/Nemotron.md`（seed，NVIDIA Nemotron 3.5 Lightning 30B MoE + Nemotron 4 万亿参数规划，真开源动向）
+  - `wiki/entities/Ling.md`（seed，蚂蚁百灵 Ling-3.0-tiny，7.9B 总 / 1.3B 激活原生混合推理）
+  - `wiki/entities/ZCode.md`（seed，智谱 ZCode 四大功能，GLM-5.2+ZCode 较 +Claude Code 高 2.39%）
+  - `wiki/entities/AMIE.md`（seed，Google 医疗 AI 实时临床视频问诊，基于 Gemini + Project Astra）
+  - `wiki/concepts/递归自我改进.md`（seed，Ryan Greenblatt 论 RSI：2031 自动化 AI 研发、2032 前失控超级智能风险）
+- 联动更新 6 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-12 当日 26 条 + 观点 8 + 待研究 8 + sources/updated）
+  - `wiki/entities/SGLang.md`（**seed→active**：Day-0 支持 Nemotron 3.5 Lightning + LMSYS Unified Radix Cache，updated→2026-08-12）
+  - `wiki/entities/Seedance.md`（Runway 平台上线，50 角色参考 + 30 秒音乐同步，updated→2026-08-12）
+  - `wiki/concepts/Agent安全.md`（新增「推理模型加密思考过程可被读取」节：Haiku 4.5 转写 Opus 4.8 推理 / 7000 会话泄露 62 密钥，updated→2026-08-12）
+  - `wiki/concepts/Agent持续进化.md`（新增「RSI 风险预判」节，链 递归自我改进，updated→2026-08-12）
+  - `wiki/concepts/开放权重.md`（新增「开放权重生态扩展」节：Nemotron + Ling + 真开源动向，链 Nemotron/Ling，updated→2026-08-12）
+- 影响：11 个 wiki 页面（5 新建 + 6 更新）+ 1 个 raw 源，建立 35+ 交叉链接
+- 备注：本日核心暗线是 NVIDIA——Nemotron 3.5 Lightning 开源 + Nemotron 4 万亿参数研发 + Gary Marcus 透露真开源动向，三者共同把 [[开放权重]] 边界推向新阶段；推理模型加密思考过程可被读取是 [[Agent安全]] 的新维度（输出侧泄漏）；ZCode + GLM 略胜 Claude Code 验证"模型×工具协同"价值；RSI 预判把本库 [[Agent持续进化]] 推到"人机协作 vs 失控"分水岭。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-12]]`。
+- 备注（Linter 竞态）：Obsidian Linter 在文件变更后实时改写 frontmatter，多次触发「modified since read」，已逐页重读校验 updated/sources 最终落盘。

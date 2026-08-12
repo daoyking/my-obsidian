@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-11
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]"]
+updated: 2026-08-12
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]"]
 status: active
 ---
 
@@ -185,6 +185,61 @@ status: active
 | **Forking-Sequences 多步预测训练范式** | CMU 定义并评测：无需新增参数，一次前向跨所有预测创建日期编码解码整条序列 | [[AI]] |
 | **开源≠开放权重：Gary Marcus 剖析本质差异** | 开放权重仅发布训练后权重，不公开数据 / 预处理 / 算法；以 Muse Glimmer 为例证 | [[开放权重]] · [[Muse-Glimmer]] |
 
+### 2026-08-12（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-12]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-12)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **NVIDIA Nemotron 3.5 Lightning** | 30B MoE 开源模型（3B 激活），为常驻智能体设计；token 生成速度最高提升 4 倍，任务完成时间缩短 30%；可在 RTX PC / DGX Spark / Jetson 运行；1M 上下文，支持 MTP/DFlash/DSpark 投机解码 | [[Nemotron]] · [[开放权重]] · [[Agent]] |
+| **SGLang Day-0 支持 Nemotron 3.5 Lightning** | 当日提供推理引擎适配，BF16 + NVFP4 权重，OpenAI 兼容 API 接入智能体工作流 | [[SGLang]] · [[Nemotron]] |
+| **蚂蚁百灵 Ling-3.0-tiny 开源** | 总参数 7.9B、推理时仅激活 1.3B 的原生混合推理模型；BF16 / FP8 / INT4 三版本 | [[Ling]] · [[开放权重]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Runway Seedance 2.5 上线** | 支持 50 个独特角色参考，最长 30 秒、与音乐同步的片段 | [[Seedance]] · [[多模态大模型]] |
+| **Gemini 助力 Database Migration Service** | Gemini 驱动的 AI 辅助代码转换，将 Oracle/SQL Server 存储过程、触发器、自定义函数转为 PostgreSQL PL/pgSQL | [[AI]] |
+| **ZCode 四大功能上线** | Goal / Subagents / Remote Control / 闲时任务；针对 GLM 优化；GLM-5.2+ZCode 较 +Claude Code 通过率高 2.39%，缓存命中率超 98% | [[ZCode]] · [[Coding-Agent]] · [[Claude-Code]] |
+| **ChatGPT 桌面端导入其他智能体工作数据** | 可将其他智能体的项目 / 聊天记录 / 技能 / 插件导入 ChatGPT Work 和 Codex 同步，支持自动更新 | [[Coding-Agent]] · [[Agent-Plugins]] |
+| **Databricks 开源 Metals v2** | 面向数百万行代码库的 Java/Scala 语言服务器，专为智能体驱动开发场景设计；Databricks 大部分代码已由智能体编写 | [[Coding-Agent]] · [[Harness工程]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **推理模型加密思考过程可被读取** | Alexander Panfilov 团队发现 OpenAI/Anthropic/Google API 漏洞可还原加密推理；扫 7000 会话获 62 API 密钥/33 邮箱/33 密码；Haiku 4.5 可逐字转写 Opus 4.8 推理；解码 1 万条成本约 720 美元 | [[Agent安全]] · [[提示注入]] |
+| **Anthropic 最快 9 月上市** | 估值 9650 亿美元，年化收入超 470 亿；淡化中国 AI 竞争；计划拓展医疗与生物学应用 | [[AI]] |
+| **Gemini 月活破 10 亿** | 谷歌增长最快产品，第 14 个达 10 亿用户里程碑的产品 | [[AI]] |
+| **英伟达研发万亿参数 Nemotron 4** | 目标挑战全球顶级开源模型；最终训练未完成，最早 2026 秋末就绪 | [[Nemotron]] · [[开放权重]] |
+| **NVIDIA 800VDC 供电架构** | 主张 800VDC 直流配电替代传统交流多次转换；与 Google/Microsoft 通过 OCP 制定，超 80 家设备商跟进 | — |
+| **英伟达循环融资引担忧** | Jim Chanos 等担忧循环融资；将发布真开源（非仅开放权重）Nemotron，或削弱 OpenAI/Anthropic 地位 | [[Nemotron]] · [[开放权重]] |
+| **Electric 加入 Databricks** | 将 WASM Postgres 引入 AI 智能体沙箱；智能体在隔离环境运行本地数据库，支持实时同步与离线操作 | [[Agent]] · [[Harness工程]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Apple Silicon macOS VM LLM 推理加速 11-16 倍** | 为 macOS 虚拟机 Metal 能力查询构建进程级兼容层；M1 Ultra 上 TinyLlama 1.1B 提示处理 11.08x、token 生成 16.36x，接近裸机 98% | [[AI]] |
+| **Unified Radix Cache（LMSYS）** | 单一 token 键控 radix 拓扑统一管理混合模型 FULL/SWA/MAMBA 组件缓存，各组件独立路径/滑动窗口/检查点复用 | [[SGLang]] |
+| **AMIE 实时临床视频问诊** | Google Research/DeepMind 基于 Gemini + Project Astra 构建医疗 AI；可解读视听线索、引导虚拟体格检查、实时诊断推理；临床评估者好评 | [[AMIE]] · [[多模态大模型]] · [[Agent]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI Astra 攻克 10 道数学难题** | 未发布的 Astra 模型解决球体堆积/纠错码/非 sofic 群等长期悬而未决难题；超 250 页论文 + Lean 验证 | [[AI]] |
+| **ComfyUI API 实现 MiniMax-H3 多模态流水线** | 以 ComfyUI 为无头推理后端，Python 直接构建执行图，支持文生视频/首尾帧/参考图像条件生成 | [[多模态大模型]] |
+| **GitHub Copilot MitM 代理逆向** | mitmproxy 拦截 VS Code Copilot 流量；Electron 应用共享网络栈，探测可迁移至同类应用 | [[Coding-Agent]] · [[Agent安全]] |
+| **编写智能体用哪种编程语言** | GPT-5.6 Sol 实测 zstd 解码器：medium 努力动态语言优，ultra 静态语言优；琐碎任务性能不可推广 | [[Coding-Agent]] |
+| **微信小微 AI 帮写与 AI 点评内测** | 朋友圈 AI 文案生成 + AI 点评；公众号端小微常驻首位自动总结；担忧破坏社交基调与创作者生产 | [[AI]] |
+| **Ryan Greenblatt：RSI 或于 2032 前催生失控超级智能** | AI 达人类顶级专家后一年内可抵 4-5 年进展；中位预期 2031 自动化 AI 研发；超级智能对齐与奖励黑客风险 | [[递归自我改进]] · [[Agent持续进化]] · [[Agent安全]] |
+| **AI 时代 SaaS 龙头估值溢价** | 每个细分赛道跑出 AI 龙头：CrowdStrike 34.4x（安全中位 3.9x）、Cloudflare 32.6x、Shopify 11.3x | — |
+| **Claude YouTube：Can you trust what AI tells you?** | Anthropic 官方探讨 AI 可信度 | [[AI]] |
+
 ## 我的观点
 
 > 主观判断与倾向，这是自成长的种子。
@@ -209,6 +264,14 @@ status: active
 - Omnigent「致命三重奏」点出组合攻击本质：单请求无害、组合恶意——与 [[提示注入]] 多层防御互补，把判定从「请求层」移到「上下文层」，是 Agent 安全新维度
 - Linear 公开 Agent 构建方法（系统提示词 / 工具设计 / 系统技能三方划定边界）是 [[Harness工程]] 绝佳实例——边界编码进工具参数比事后审查更稳
 
+- NVIDIA Nemotron 3.5 Lightning + Ling-3.0-tiny 同日开源，标志「开放权重 MoE」进入激活参数竞赛阶段——从 30B 全量（Muse Glimmer）到 3B 激活（Nemotron）到 1.3B 激活（Ling），本地常驻 Agent 的算力门槛持续下探
+- Gary Marcus 透露英伟达将发布"真开源（非仅开放权重）"Nemotron 是本日最值得关注的暗线——若属实，是从 [[开放权重]] 向真开源的罕见跨越，可能重新定义开源 AI 边界
+- 推理模型加密思考过程可被读取（Haiku 4.5 转写 Opus 4.8 推理）是 [[Agent安全]] 的新维度——加密 ≠ 不可逆向，"思维链保密"在工程上脆弱；这与 [[提示注入]] 多层防御形成输入/输出两侧对照
+- ZCode + GLM-5.2 在 Code Bench 上略胜 Claude Code 组合（高 2.39%）值得追踪——模型 × 工具的协同优化可能比单独比模型更重要，[[Coding-Agent]] 的护城河或在工具而非模型
+- ChatGPT 桌面端导入其他智能体工作数据是 Agent 可移植性的信号——项目/聊天/技能/插件跨平台迁移，呼应 [[Agent-Plugins]] 标准化方向，但也带来"工作数据被单一平台收编"的锁定风险
+- Ryan Greenblatt 的 RSI 预判（2031 自动化 AI 研发）把本库 [[Agent持续进化]] 推到了"人机协作版 vs 失控版"的分水岭——四法仍是温和路径，但需前瞻人类移出回路后的对齐窗口
+- AMIE 实时临床视频问诊展示 [[Agent]] 在垂直领域（医疗）的专家级能力，但"患者演员偏好视频体验"的评估方法需谨慎——真实患者反应可能不同
+
 ## 待研究问题
 
 - Agent Plugins 1.0.0 与 MCP 的关系：互补还是竞争？plugin.json 清单能否描述现有 WorkBuddy skills？
@@ -229,9 +292,18 @@ status: active
 - OpenRouter Auto「社区消费数据驱动路由」是否形成马太效应（热门模型越热）？其隐私设置如何保证不泄露用户任务内容？
 - a16z 的 OSWorld 85% 是否含专属环境调参？计算机操作 Agent 在真实桌面（非基准）的可靠性是否被高估？
 
+- Nemotron 3.5 Lightning 的"3B 激活"在 RTX PC 实际推理吞吐与延迟如何？与 [[Muse-Glimmer]] 30B 全量相比，常驻 Agent 工作流的体验差距多大？
+- Gary Marcus 透露的"真开源 Nemotron"具体公开哪些内容（数据？算法？）？若真开源，对 [[开放权重]] 监管与选型意味着什么？
+- 推理模型加密思考过程被还原的漏洞是否可根治？Haiku 转写 Opus 推理是否意味着同家族模型间存在"思维链泄漏"通道？
+- ZCode + GLM-5.2 在 Code Bench 上高 Claude Code 2.39% 的测试是否可复现？测试集是否偏向 GLM 生态？
+- ChatGPT 桌面端导入其他智能体工作数据后，"自动更新"是否会反向把 OpenAI 内容同步回原平台？数据流向是否对称？
+- Ryan Greenblatt 的"2031 自动化 AI 研发"中位预期基于哪些假设？RSI 触发后人类的干预窗口有多长？
+- AMIE 临床视频问诊的"患者演员偏好"评估能否推广到真实患者？医疗 [[Agent]] 的责任归属如何界定？
+
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]] — AI HOT 日报 2026-08-07
 - [[raw/articles/ai-hot-2026-08-08]] — AI HOT 日报 2026-08-08
 - [[raw/articles/ai-hot-2026-08-10]] — AI HOT 日报 2026-08-10
 - [[raw/articles/ai-hot-2026-08-11]] — AI HOT 日报 2026-08-11
+- [[raw/articles/ai-hot-2026-08-12]] — AI HOT 日报 2026-08-12

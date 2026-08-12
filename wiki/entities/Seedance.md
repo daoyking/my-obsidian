@@ -1,11 +1,11 @@
 ---
 title: Seedance
-aliases: [Seedance 2.5, 火山引擎视频生成]
+aliases: [Seedance 2.5, 火山引擎视频生成, Runway Seedance]
 type: entity
-tags: [ai, video-generation, model, bytedance]
+tags: [ai, video-generation, model, bytedance, runway]
 created: 2026-08-09
-updated: 2026-08-10
-sources: ["[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]"]
+updated: 2026-08-12
+sources: ["[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-12]]"]
 status: active
 ---
 
@@ -13,7 +13,7 @@ status: active
 
 ## 是什么
 
-火山引擎（字节跳动）推出的视频生成模型，支持文生视频、图生视频及多素材参考生成。2.5 版本于 2026-08-08 正式上线 API，2026-08-10 社区涌现大量创意玩法验证其可用性。
+火山引擎（字节跳动）推出的视频生成模型，支持文生视频、图生视频及多素材参考生成。2.5 版本于 2026-08-08 正式上线 API，2026-08-10 社区涌现大量创意玩法验证其可用性，2026-08-12 在 Runway 平台上线。
 
 ## 核心特性
 
@@ -36,6 +36,18 @@ status: active
 - K-pop MV
 - 电商广告
 - 拉片复刻
+
+## Runway 平台上线（2026-08-12）
+
+来自 [[raw/articles/ai-hot-2026-08-12]]：
+
+Seedance 2.5 在 Runway 平台正式上线，关键能力：
+
+- 支持 **50 个独特角色参考**（角色一致性进一步强化）
+- 最长 **30 秒、与音乐同步**的片段生成
+- 一次生成即可产出完整阵容与完整曲目
+
+**定位**：从火山引擎自有 API 到 Runway 平台的跨平台落地，标志 Seedance 进入国际创作工具生态。
 
 ## 适用场景
 
@@ -66,3 +78,4 @@ status: active
 
 - [[raw/articles/ai-hot-2026-08-08]]（Seedance 2.5 API 上线）
 - [[raw/articles/ai-hot-2026-08-10]]（Seedance 2.5 创意玩法、300 秒时长、LibTV 成本）
+- [[raw/articles/ai-hot-2026-08-12]]（Seedance 2.5 在 Runway 平台上线，50 角色参考 + 30 秒音乐同步）

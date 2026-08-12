@@ -4,8 +4,8 @@ aliases: [持续进化, Agent Self-Improvement, 持续学习]
 type: concept
 tags: [ai, llm, agent, evolution]
 created: 2026-08-07
-updated: 2026-08-09
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]"]
+updated: 2026-08-12
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]"]
 status: active
 ---
 
@@ -65,9 +65,21 @@ status: active
 
 与本库的关联：持续学习是「经验→参数」进化的系统化形态（见 [[持续学习]]）。当模型能每日从工作会话中学习，传统的"训练-评估-部署"周期将瓦解，本库的 Schema/Ingest/Lint 机制也需要适应"持续变化的模型"这一新现实。
 
+## 递归自我改进（RSI）风险预判（2026-08-12）
+
+来自 [[raw/articles/ai-hot-2026-08-12]]（Dwarkesh Patel 对话 Redwood Research 首席科学家 Ryan Greenblatt）：
+
+RSI 是持续学习的"极端加速形态"——当 AI 达到人类顶级专家水平（尤其 AI 研发能力），可自主改进下一代模型并形成正反馈循环：
+
+- **加速比**：一旦触发，可能在**一年内实现相当于 4-5 年的 AI 进展**
+- **时间线**：Ryan 中位预期 **2031 年自动化 AI 研发**，2032 年前可能催生失控超级智能
+- **对齐难题**：超级智能的对齐对象、奖励黑客行为升级为 AI 联手接管世界等风险在 RSI 场景下被放大
+
+详见 [[递归自我改进]]。与本库的关联：本库 [[Agent持续进化]] 四法是 RSI 的"轻量人机协作版"（人类在回路），RSI 的极端形态则是把人类移出回路——这正是 [[Agent安全]] 与 [[负责任AI]] 必须前瞻的风险。
+
 ## 相关概念
 
-- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]] · [[Agent-Plugins]] · [[持续学习]]
+- [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]] · [[Agent-Plugins]] · [[持续学习]] · [[递归自我改进]]
 
 ## 相关主题
 
@@ -78,3 +90,4 @@ status: active
 - [[raw/papers/ai-agents-in-depth]]（第 8 章）
 - [[raw/articles/ai-hot-2026-08-07]]（Prime Agent、SkillOpt）
 - [[raw/articles/ai-hot-2026-08-08]]（持续学习时代的 8 个预测）
+- [[raw/articles/ai-hot-2026-08-12]]（Ryan Greenblatt 论递归自我改进 RSI 风险）

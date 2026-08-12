@@ -4,8 +4,8 @@ aliases: [智能体安全, Agent Safety]
 type: concept
 tags: [ai, llm, agent, security]
 created: 2026-08-07
-updated: 2026-08-11
-sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]"]
+updated: 2026-08-12
+sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]"]
 status: seed
 ---
 
@@ -100,6 +100,21 @@ Omnigent 的 Contextual Policies 可阻断"致命三重奏"——多个看似无
 
 **定位**：与 [[提示注入]] 多层防御互补，但把安全判定从"请求层"移到"上下文层"——组合攻击的本质是"1+1>2"的恶意涌现，单请求审查无法发现。这对本库 [[上下文工程]] 提出了"跨请求意图组合"的识别需求。
 
+### 推理模型加密思考过程可被读取（2026-08-12）
+
+来自 [[raw/articles/ai-hot-2026-08-12]]（Alexander Panfilov 团队，The Decoder 报道）：
+
+研究人员发现 OpenAI、Anthropic、Google 等主要 AI 提供商的 API 存在漏洞，可读取推理模型（reasoning models）的**加密思考过程**——这些本应对外隐藏的 chain-of-thought 推理可被还原。
+
+- 扫描约 7000 条公开会话，发现 **62 个 API 密钥、33 个邮箱、33 个密码**
+- 通过越狱，Anthropic 的 **Haiku 4.5 可逐字转写 Opus 4.8 的原始推理**
+- 解码 10000 条推理轨迹的 API 成本约 **720 美元**
+
+**启示**：
+- 推理模型的"隐藏思考"并非真正不可见——加密 ≠ 不可逆向，"思维链保密"在工程上脆弱
+- 这与 [[提示注入]] 防御形成对照：前者保护"模型输出侧"，后者保护"模型输入侧"，两侧均存在绕过路径
+- 对 [[Agent持续进化]] 的持续学习范式提出新约束：若推理过程可被还原，则每日从会话中学习的模型其"内部推理"可能被持续窃取，进而被针对性攻击
+
 ## 相关概念
 
 - [[Agent]] · [[越狱攻击]] · [[提示注入]] · [[RLHF]] · [[隐写术]] · [[负责任AI]]
@@ -122,3 +137,4 @@ Omnigent 的 Contextual Policies 可阻断"致命三重奏"——多个看似无
 - [[raw/articles/ai-hot-2026-08-08]]（OpenAI 智能体安全事件、Fable 5 生物安全更新）
 - [[raw/articles/ai-hot-2026-08-10]]（前沿模型攻击暴露激励与治理失衡）
 - [[raw/articles/ai-hot-2026-08-11]]（tl;dv 录音泄露、GPT-5.6-Cyber、Omnigent 致命三重奏）
+- [[raw/articles/ai-hot-2026-08-12]]（推理模型加密思考过程可被读取的 API 漏洞）
