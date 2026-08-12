@@ -325,3 +325,12 @@ status: active
 - 影响：11 个 wiki 页面（5 新建 + 6 更新）+ 1 个 raw 源，建立 35+ 交叉链接
 - 备注：本日核心暗线是 NVIDIA——Nemotron 3.5 Lightning 开源 + Nemotron 4 万亿参数研发 + Gary Marcus 透露真开源动向，三者共同把 [[开放权重]] 边界推向新阶段；推理模型加密思考过程可被读取是 [[Agent安全]] 的新维度（输出侧泄漏）；ZCode + GLM 略胜 Claude Code 验证"模型×工具协同"价值；RSI 预判把本库 [[Agent持续进化]] 推到"人机协作 vs 失控"分水岭。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-12]]`。
 - 备注（Linter 竞态）：Obsidian Linter 在文件变更后实时改写 frontmatter，多次触发「modified since read」，已逐页重读校验 updated/sources 最终落盘。
+
+### 2026-08-12 15:30 | Ingest | ChromeAppHeroes（谷粒-Chrome插件英雄榜）
+- 来源：`gh api` 获取仓库元数据 + README 全文，存入 `raw/articles/chrome-app-heroes.md`（92KB，含 133 条插件目录；仓库 docs/ 另有 119+ 篇逐插件正文未全量拉取，按需再取）
+  - 元数据：zhaoolee/ChromeAppHeroes，25.8k★ / 2.6k fork，Docsify + GitHub Pages（zhaoolee.com/ChromeAppHeroes），backup/ 附插件离线包，公众号「0加1」同步
+- 编译产出（新建 1 个实体页，active）：
+  - `wiki/entities/ChromeAppHeroes.md`——133 篇中文 Chrome 插件说明书入口（开发工具 / 效率 / 阅读翻译 / 下载媒体 / 隐私去广告 / 专注健康 / 趣味实用分类），含 backup 离线包说明
+- 联动：双向链 [[Chrome]] / [[书签库]] / [[AI工具集]] / [[Vim]]（Vimium）/ [[Node.js]]（Console Importer）/ [[Coding-Agent]]；建立 10+ 交叉链接
+- 影响：1 个 raw 源 + 1 个新 wiki 页面 + LOG；**既有页面零修改**（沿用 Ingest 约束）
+- 备注：⚠️ 本次发现 vault 路径变更——此前 Ingest 曾写入 `~/about-project/obsidian/my-obsidian`（该目录已被重置为空壳），活跃知识库实际位于 iCloud `~/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/my-obsidian`（git 历史含既有全部提交）。本次已全部在正确 vault 操作。待 Lint 复检悬空 / 孤立。
