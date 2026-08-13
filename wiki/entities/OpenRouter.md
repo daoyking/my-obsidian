@@ -4,8 +4,8 @@ aliases: [OpenRouter, openrouter/auto, OpenRouter Auto Router]
 type: entity
 tags: [ai, platform, model-routing, llm]
 created: 2026-08-11
-updated: 2026-08-11
-sources: ["[[raw/articles/ai-hot-2026-08-11]]"]
+updated: 2026-08-13
+sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: seed
 ---
 
@@ -22,6 +22,11 @@ LLM 模型路由平台，聚合多家模型供应商，提供统一 API 入口�
 - **cost_tier 参数**：支持 low / mid / high / max 等成本档位，遵循账户隐私设置
 - **性能与成本双优**：在 MMLU Pro 等基准上，新默认档位在多数领域以更低成本达到旧版同等性能
 - 统一 API 聚合多供应商模型（具体供应商列表待原文补充）
+- **实时网页搜索基准（2026-08-13）**：发布实时排行榜，系统评测模型 / 搜索引擎 / 搜索方法 / 预算四类配置组合
+  - 数据：搜索预算 1→25 轮可使 BrowseComp 得分近乎翻倍，成本仅增 2.5-7 倍
+  - 关键发现：**模型选择比引擎更重要**（平均分差 15 分 vs 引擎 10 分）
+  - 成本策略：失败率高的任务应降低搜索深度以控制成本
+- **工具调用跨模型指南（2026-08-13）**：发布 tool calling 教程，一次编写循环即可在 Claude / GPT / 开源权重模型间切换，仅需改模型字符串；支持 OpenAI 兼容 JSON schema，提供 cURL / Python / JS-TS 示例
 
 ## 与 Cursor Router 的对照
 
@@ -53,7 +58,7 @@ LLM 模型路由平台，聚合多家模型供应商，提供统一 API 入口�
 
 ## 相关概念
 
-- [[Agent]] · [[Agent评估]]（路由器本质是模型选型评估的自动化）
+- [[Agent]] · [[Agent评估]]（路由器本质是模型选型评估的自动化）· [[函数调用]]（2026-08-13 工具调用跨模型指南）
 
 ## 相关主题
 
@@ -62,3 +67,4 @@ LLM 模型路由平台，聚合多家模型供应商，提供统一 API 入口�
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-11]]（OpenRouter 新版 Auto 路由器）
+- [[raw/articles/ai-hot-2026-08-13]]（实时网页搜索基准 + 工具调用跨模型指南）

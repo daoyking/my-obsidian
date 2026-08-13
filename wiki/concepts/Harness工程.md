@@ -4,8 +4,8 @@ aliases: [Harness Engineering, Harness, 框架工程]
 type: concept
 tags: [ai, llm, agent, engineering, harness]
 created: 2026-08-07
-updated: 2026-08-11
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]"]
+updated: 2026-08-13
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 
@@ -44,6 +44,7 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 
 - **Linear Agent 的边界设计（2026-08-11）**：Linear 未为 Agent 编写固定路径，而是通过系统提示词（沟通风格 / 硬性边界 / 概念解释）、工具设计（把约束编码进参数，使无效操作难以执行）、产品模型、运行范围及底层自定义 harness 划定边界；并引入"系统技能"作为组合单元按需渐进加载，避免一次性暴露过多上下文。见 [[raw/articles/ai-hot-2026-08-11]]。
 - **OpenChamber 代理开发环境（2026-08-11）**：跨桌面 / 浏览器 / 手机 / VS Code 的代理优先 IDE，支持会话目标、多模型并行融合、变更走查、issue→PR 全流程、定时任务，基于 OpenCode SDK，本地存储 + Private Relay 端到端加密。见 [[raw/articles/ai-hot-2026-08-11]] · [[Coding-Agent]]。
+- **AutoGPT 用门控机制管理 AI 生成的 PR（2026-08-13）**：AutoGPT 维护者发现 AI 智能体不会主动阅读文档，因此把指令放进 `AGENTS.md` 和技能文件并置于代码目录旁；通过强制 PR 模板、测试计划、CI 覆盖率门槛、CLA 签名等门控机制把 AI 提交的 PR 从"不可用"转变为"可用但不符合路线图"。**CLA 签名因需浏览器和 OAuth 流程，被用作区分人类与智能体的"人类探测器"**——这是把"人在回路"约束编码进工程流程（而非依赖 AI 自觉）的 Harness 实践。见 [[raw/articles/ai-hot-2026-08-13]] · [[Agent持续进化]] · [[Coding-Agent]]。
 
 ## 相关概念
 
@@ -57,3 +58,4 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 
 - [[raw/papers/ai-agents-in-depth]]（第 1 章 1.2）
 - [[raw/articles/ai-hot-2026-08-11]]（Linear Agent 构建方法、OpenChamber 代理开发环境）
+- [[raw/articles/ai-hot-2026-08-13]]（AutoGPT 用 AGENTS.md 和技能门控管理 AI 生成的 PR）

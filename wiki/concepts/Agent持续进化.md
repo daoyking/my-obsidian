@@ -4,8 +4,8 @@ aliases: [持续进化, Agent Self-Improvement, 持续学习]
 type: concept
 tags: [ai, llm, agent, evolution]
 created: 2026-08-07
-updated: 2026-08-12
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]"]
+updated: 2026-08-13
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 
@@ -77,6 +77,21 @@ RSI 是持续学习的"极端加速形态"——当 AI 达到人类顶级专家�
 
 详见 [[递归自我改进]]。与本库的关联：本库 [[Agent持续进化]] 四法是 RSI 的"轻量人机协作版"（人类在回路），RSI 的极端形态则是把人类移出回路——这正是 [[Agent安全]] 与 [[负责任AI]] 必须前瞻的风险。
 
+## AI 生成 PR 的工程化治理（2026-08-13）
+
+来自 [[raw/articles/ai-hot-2026-08-13]]（GitHub Blog，AutoGPT 维护者经验）：
+
+AutoGPT 维护者发现 **AI 智能体不会主动阅读文档**，因此把指令放进 `AGENTS.md` 和技能文件并置于代码目录旁——这是「经验→指令」进化路径在开源协作场景的落地。通过门控机制把 AI 提交的 PR 从"不可用"转变为"可用但不符合路线图"：
+
+- **强制 PR 模板 + 测试计划 + CI 覆盖率门槛 + CLA 签名**
+- **CLA 作为"人类探测器"**：因需浏览器和 OAuth 流程，被用作区分人类与智能体的门控
+- **AGENTS.md 模式**：把"给 AI 看的指令"作为代码资产纳入仓库，而非依赖外部文档
+
+**定位**：这是 [[Harness工程]] 在开源协作场景的延伸——把"约束编码进工程流程"而非依赖 AI 自觉。与本库的关联：
+- 本库 [[CLAUDE.md]] 即"AGENTS.md 模式"的实例（Schema 层指导 AI 如何操作 vault）
+- 本库 [[obsidian-llm-wiki]] Skill 即"技能文件"的实例（可执行程序记忆）
+- CLA 作为"人类探测器"启示：在 [[Agent持续进化]] 中，"人类在回路"的判定可借鉴此类工程门控——不是问"AI 能不能做"，而是用流程强制人类参与关键节点
+
 ## 相关概念
 
 - [[Agent]] · [[记忆系统]] · [[RLHF]] · [[微调]] · [[蒸馏]] · [[Agent-Plugins]] · [[持续学习]] · [[递归自我改进]]
@@ -91,3 +106,4 @@ RSI 是持续学习的"极端加速形态"——当 AI 达到人类顶级专家�
 - [[raw/articles/ai-hot-2026-08-07]]（Prime Agent、SkillOpt）
 - [[raw/articles/ai-hot-2026-08-08]]（持续学习时代的 8 个预测）
 - [[raw/articles/ai-hot-2026-08-12]]（Ryan Greenblatt 论递归自我改进 RSI 风险）
+- [[raw/articles/ai-hot-2026-08-13]]（AutoGPT 用 AGENTS.md 和技能门控管理 AI 生成的 PR）

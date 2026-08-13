@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-12
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]"]
+updated: 2026-08-13
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 
@@ -240,6 +240,55 @@ status: active
 | **AI 时代 SaaS 龙头估值溢价** | 每个细分赛道跑出 AI 龙头：CrowdStrike 34.4x（安全中位 3.9x）、Cloudflare 32.6x、Shopify 11.3x | — |
 | **Claude YouTube：Can you trust what AI tells you?** | Anthropic 官方探讨 AI 可信度 | [[AI]] |
 
+### 2026-08-13（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-13]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-13)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **xAI Grok 4.6** | 强化长时运行智能体与复杂交互式/视觉工作；Artificial Analysis Intelligence Index 追平 GPT-5.6 Sol | [[Grok]] · [[Agent]] |
+| **阿里 Qwen3.8-2.4T-A95B 开放权重** | Qwen-Max 级别首次开源；2.4T MoE、激活 95B、原生 256K 可扩展至 1.01M 上下文 | [[Qwen]] · [[开放权重]] · [[SGLang]] |
+| **LTX-2.5 视频生成模型** | 10 秒 720P 视频仅需 6.8 秒（超实时）；原生集成 ComfyUI；0.09 美元/秒，年营收<1000 万美元免费 | [[LTX]] · [[多模态大模型]] |
+| **微软 MAI-Thinking-1** | 微软首个自研推理模型，从零构建；Microsoft Foundry 上线；微软摆脱 OpenAI 单一依赖信号 | [[MAI-Thinking-1]] · [[AI]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenRouter 实时网页搜索基准** | 评测模型/引擎/方法/预算四类组合；搜索预算 1→25 轮 BrowseComp 翻倍（成本仅增 2.5-7 倍）；模型选择比引擎更重要（15 vs 10 分差） | [[OpenRouter]] · [[Agent评估]] |
+| **Claude in Chrome 升级为 Claude Cowork** | 侧边栏升级为 Cowork 会话；技能和连接器可在浏览器中工作；任务跨桌面/网页/移动端无缝切换 | [[Claude-Cowork]] · [[Claude-Code]] |
+| **SGLang + Miles 为 Qwen3.8 提供 Day-0 支持** | 发布首日适配 2.4T MoE 混合注意力架构——迄今 Day-0 适配的最大参数规模 | [[SGLang]] · [[Qwen]] |
+| **WhatsApp Scam Alert** | 端到端加密下设备端 ML 识别诈骗；消息不离开设备/无自动上报/用户控制；模型权重公开验证；差分隐私遥测 | [[Agent安全]] |
+| **Claude Code v2.1.229** | 远程会话恢复 + 自托管 runner 服务器端 hook + 插件市场命令源；/commit-push-pr 危险命令不再自动批准 | [[Claude-Code]] · [[Coding-Agent]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Research Gold "100%人类撰写"实为 AI 驱动欺诈** | 审稿人系 AI 生成不存在；真实方法学家身份照片被挪用；AI 客服"Sarah"坚称是真人 | [[Agent安全]] · [[负责任AI]] |
+| **RingCentral 全员 AI 原生工作流** | 全员发放 ChatGPT Work + Codex；AI-Native Challenge 让数千员工（含非技术）交付可运行项目 | [[Coding-Agent]] · [[Agent]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Google：Recall 是参数化事实性的瓶颈** | 知识画像框架；前沿 LLM 事实编码接近饱和，多数错误源于"丢钥匙"非"空货架"；WikiProfile 基准含 2150 条事实×10 问题 | [[AI]] |
+| **Anthropic 工人再培训项目证据综述** | 联合 David Roodman，基于 56 项美国随机研究 + 欧洲实验，评估再培训应对 AI 劳动力冲击 | [[负责任AI]] · [[AI转型]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **零基础半天上手 AI 的 12 步流程** | 16G 内存 + ChatGPT/Codex/WorkBuddy + 语音输入【背景痛点需求】+ 苏格拉底提问 + 投喂文件 + 沉淀 Skill | [[Agent持续进化]] |
+| **DeepSeek V4 Pro 与 Grok 4.6 同日发布** | 2 小时内先后发布，1.6T/1.5T 参数，双双逼近 Claude Fable 5 体验 | [[Grok]] · [[AI]] |
+| **AutoGPT 用 AGENTS.md 和技能门控管理 AI PR** | AI 不读文档→指令放 AGENTS.md；PR 模板+测试计划+CI+CLA 门控；CLA 作"人类探测器" | [[Agent持续进化]] · [[Harness工程]] · [[Coding-Agent]] |
+| **我写了一本 AI 教科书（Nathan Lambert）** | LLM 长文非虚构写作进展停滞；编码/数学接近超人；组织整章内容仍混乱——阻碍自主解决开放科学问题 | [[AI]] |
+| **OpenRouter 工具调用跨模型指南** | 一次编写循环，改模型字符串即可在 Claude/GPT/开源权重模型间切换；OpenAI 兼容 JSON schema | [[OpenRouter]] · [[函数调用]] |
+| **LangChain 详解：什么是 AI 智能体** | Agent = LLM 循环中自主运行；Workflow = 固定步骤预编排；两者互补（确定性 vs 灵活性） | [[Agent]] · [[Harness工程]] |
+| **OpenAI：企业如何落地智能体 AI** | 企业通过 ChatGPT 和 Codex 把 AI 从辅助转向执行；头部公司率先投入业务流程 | [[Agent]] · [[Coding-Agent]] |
+
 ## 我的观点
 
 > 主观判断与倾向，这是自成长的种子。
@@ -272,6 +321,16 @@ status: active
 - Ryan Greenblatt 的 RSI 预判（2031 自动化 AI 研发）把本库 [[Agent持续进化]] 推到了"人机协作版 vs 失控版"的分水岭——四法仍是温和路径，但需前瞻人类移出回路后的对齐窗口
 - AMIE 实时临床视频问诊展示 [[Agent]] 在垂直领域（医疗）的专家级能力，但"患者演员偏好视频体验"的评估方法需谨慎——真实患者反应可能不同
 
+- 阿里 Qwen3.8-2.4T-A95B 是 [[开放权重]] 的里程碑——Qwen-Max 级别首次开源，把旗舰级能力（2.4T MoE / 95B 激活 / 256K~1M 上下文）推向开放权重生态。MoE 架构让旗舰模型以"95B 激活"的可承受算力开放，这是 MoE 对开放权重生态的关键贡献
+- Grok 4.6 与 DeepSeek V4 Pro 同日（2 小时间隔）发布，双双逼近 Claude Fable 5——前沿模型密集发布竞争白热化，"模型选择比引擎更重要"（OpenRouter 基准数据）的判断在此背景下更有意义
+- LTX-2.5 的"10 秒视频 6.8 秒生成"是视频生成的速度临界点——生成快于播放意味着交互范式从"生成后看"到"边生成边看"，可能重构创作工作流（与 [[Seedance]] 的"创意玩法 + 长片"路线形成对照）
+- 微软 MAI-Thinking-1 是其自研模型线起点——此前微软 AI 能力深度绑定 OpenAI（贡献七成 AI 收入），自研推理模型标志其建立自有前沿能力；与 [[Grok]] / [[Qwen]] 同日发布，体现"前沿模型多极化"
+- WhatsApp Scam Alert 是"隐私优先的设备端 AI 安全"范式实例——把 ML 检测下沉到设备端 + 差分隐私 + 可验证权重，避免"为安全牺牲端到端加密"的权衡，对本库 [[Agent安全]] 的架构思路有借鉴
+- Research Gold 事件揭示 AI 时代的新欺诈形态：AI 系统性冒充人类承诺与人类身份（伪造审稿人 + AI 客服坚称是真人），对"人类撰写"承诺的可验证性构成根本挑战——AutoGPT 用 CLA 作"人类探测器"的思路在此类场景有借鉴价值
+- AutoGPT 的 AGENTS.md + 技能门控是 [[Harness工程]] 在开源协作场景的延伸——把"给 AI 看的指令"作为代码资产纳入仓库（与本库 [[CLAUDE.md]] 同构），用工程门控强制人类参与关键节点（而非依赖 AI 自觉）
+- Nathan Lambert 的"长文非虚构写作进展停滞"反思与编码/数学的"接近超人"形成对照——Agent 能力在不同任务类型上分化严重，[[Agent评估]] 需按任务类型分维度评估而非单一排行榜
+- Google 的"Recall 是事实性瓶颈"研究把事实错误归因为"丢钥匙"而非"空货架"——这对 RAG 与参数化知识的对照有启示：RAG 本质是"外挂钥匙架"，参数化知识需提升 recall 而非 encoding
+
 ## 待研究问题
 
 - Agent Plugins 1.0.0 与 MCP 的关系：互补还是竞争？plugin.json 清单能否描述现有 WorkBuddy skills？
@@ -300,6 +359,16 @@ status: active
 - Ryan Greenblatt 的"2031 自动化 AI 研发"中位预期基于哪些假设？RSI 触发后人类的干预窗口有多长？
 - AMIE 临床视频问诊的"患者演员偏好"评估能否推广到真实患者？医疗 [[Agent]] 的责任归属如何界定？
 
+- Qwen3.8-2.4T-A95B 的"95B 激活"在主流推理硬件（A100/H100/GB200）上的实际吞吐与延迟如何？与 [[Nemotron]] 3.5 的 3B 激活相比，常驻 Agent 工作流的体验差距多大？
+- MoE 架构对 [[开放权重]] 生态的贡献是否被低估？"总参数大 / 激活小"让旗舰模型以可承受算力开放，但 MoE 路由的透明度与可审计性是否比密集模型更差？
+- Grok 4.6 的"长时运行智能体能力"具体指什么？与 [[Claude-Code]] auto 模式 / [[Agent持续进化]] 的持续学习有何异同？是否有独立基准验证"长时运行"优势？
+- LTX-2.5 的"超实时生成"（6.8 秒生成 10 秒视频）在交互式创作场景的实际体验如何？是否支持流式生成（边生成边播放）？
+- 微软 MAI-Thinking-1 是否会开放 API？与 OpenAI o 系列 / Claude 思考模式 / DeepSeek-R1 的推理能力差距多大？微软自研模型线是否会替代部分 OpenAI 依赖？
+- WhatsApp Scam Alert 的"设备端 ML + 差分隐私 + 可验证权重"架构能否推广到其他隐私敏感的 Agent 场景（如个人助理 / 健康监测）？
+- Research Gold 事件中，"人类撰写"承诺的可验证性如何建立？是否有技术手段（如水印 / 签名 / 区块链溯源）可独立于 AI 验证"人类身份"？
+- AutoGPT 的 CLA"人类探测器"思路在非开源协作场景（如企业内部 Agent 工作流）如何落地？是否会让"人在回路"退化为"签名门控"而失去实质审查？
+- Google 的"知识画像"框架（编码失败 / 回忆失败等五类）能否用于评估本库 wiki 的事实性？WikiProfile 基准是否可借鉴到知识库 Lint？
+
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]] — AI HOT 日报 2026-08-07
@@ -307,3 +376,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-10]] — AI HOT 日报 2026-08-10
 - [[raw/articles/ai-hot-2026-08-11]] — AI HOT 日报 2026-08-11
 - [[raw/articles/ai-hot-2026-08-12]] — AI HOT 日报 2026-08-12
+- [[raw/articles/ai-hot-2026-08-13]] — AI HOT 日报 2026-08-13

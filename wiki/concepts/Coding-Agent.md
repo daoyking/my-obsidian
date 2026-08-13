@@ -4,8 +4,8 @@ aliases: [代码Agent, 编程Agent]
 type: concept
 tags: [ai, llm, agent, coding]
 created: 2026-08-07
-updated: 2026-08-11
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-11]]"]
+updated: 2026-08-13
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 
@@ -57,6 +57,9 @@ status: active
 - **OpenChamber 基于代理的开发环境（2026-08-11）**：跨桌面 / 浏览器 / 手机 / VS Code，支持会话目标、多模型并行融合、变更走查、issue→PR 全流程、定时任务，基于 OpenCode SDK，本地存储 + Private Relay 加密。见 [[raw/articles/ai-hot-2026-08-11]]。
 - **Claude Code 自动模式默认开启原理（2026-08-11）**：Anthropic 公开 auto 模式的安全判定机制（什么操作可安全运行），是提示注入基本解决后的产品化落地。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-11]]。
 - **Linear 如何构建 Linear Agent（2026-08-11）**：通过系统提示词 / 工具设计 / 产品模型 / 运行范围 / 底层 harness 划定边界，系统技能渐进加载避免一次性暴露过多上下文——是 Harness 边界设计的实例。见 [[Harness工程]] · [[raw/articles/ai-hot-2026-08-11]]。
+- **Claude Code v2.1.229（2026-08-13）**：新增远程控制会话恢复、自托管 runner 服务器端 hook、插件市场命令源；改进工作流扇出复用缓存提示前缀；`/commit-push-pr` 对危险 git/gh 命令不再自动批准（安全收紧）。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-13]]。
+- **AutoGPT 用 AGENTS.md 和技能门控管理 AI 生成的 PR（2026-08-13）**：维护者发现 AI 智能体不会主动阅读文档，把指令放进 AGENTS.md 和技能文件置于代码目录旁；通过 PR 模板、测试计划、CI 覆盖率、CLA 签名等门控将 AI 提交的 PR 从"不可用"变为"可用但不符合路线图"。CLA 因需浏览器 OAuth 被用作"人类探测器"。见 [[Harness工程]] · [[Agent持续进化]] · [[raw/articles/ai-hot-2026-08-13]]。
+- **RingCentral 全员 AI 原生工作流（2026-08-13）**：通过全员发放 ChatGPT Work 和 Codex，推动从工程到运营的 AI 原生开发，AI-Native Challenge 让数千名员工（含非技术人员）交付可运行项目。见 [[raw/articles/ai-hot-2026-08-13]]。
 
 ## 来源
 
@@ -64,3 +67,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-07]]（Cursor Router、Claude Code v2.1.223、GitHub Copilot 斜杠命令等）
 - [[raw/articles/ai-hot-2026-08-08]]（Claude Code 会话间互发消息、Databricks AI 编程成本管控）
 - [[raw/articles/ai-hot-2026-08-11]]（OpenChamber、Claude Code auto 原理、Linear Agent 构建方法）
+- [[raw/articles/ai-hot-2026-08-13]]（Claude Code v2.1.229、AutoGPT AI PR 门控、RingCentral AI 原生工作流）

@@ -4,8 +4,8 @@ aliases: [Responsible AI, 负责任人工智能, AI伦理, AI治理]
 type: concept
 tags: [ai, ethics, safety, governance]
 created: 2026-08-08
-updated: 2026-08-10
-sources: ["[[raw/articles/ai-for-everyone]]", "[[raw/articles/ai-hot-2026-08-10]]"]
+updated: 2026-08-13
+sources: ["[[raw/articles/ai-for-everyone]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 
@@ -41,6 +41,22 @@ status: active
 
 **对本库的启示**：[[Agent持续进化]] 中的持续学习范式（模型每日从工作会话更新权重）会进一步压缩治理响应窗口，[[Agent安全]] 与本页需从"事后记录"转向"前瞻性风险预判"。
 
+## AI 驱动的身份欺诈与劳动力转型应对（2026-08-13）
+
+来自 [[raw/articles/ai-hot-2026-08-13]]：
+
+### Research Gold：AI 冒充人类的学术诚信事件
+
+面向医学研究者的网站 Research Gold 宣称"100% 人类撰写、绝不使用 AI"，并展示多名博士审稿人。调查发现审稿人系 AI 生成、并不存在，部分真实方法学家的身份和照片未经许可被挪用；自称"Sarah"的 AI 助手坚称自己是真人，邮件与聊天回复也均为 AI 生成。
+
+**定位**：这是 [[负责任AI]] "滥用"风险的新形态——**AI 驱动的身份欺诈**。与传统 deepfake 不同，这里是 AI 系统性地冒充人类承诺与人类身份，对学术诚信与"人类撰写"承诺的可验证性构成根本挑战。治理启示：在 AI 时代，"人类"身份本身需要独立于 AI 的验证机制（如 [[Agent持续进化]] 中 AutoGPT 用 CLA 签名作为"人类探测器"的思路）。
+
+### Anthropic 工人再培训项目证据综述
+
+Anthropic 与独立研究者 David Roodman 合作发布报告，基于 56 项美国随机研究和欧洲实验证据，评估工人再培训项目应对 AI 劳动力市场冲击的效果。
+
+**定位**：这是前沿 AI 公司主动承担"劳动力转型"社会责任的实例——与 [[AI转型]] 的企业内部转型互补，此处是面向社会层的劳动力冲击应对。Anthropic 作为前沿模型公司直接投入再培训证据研究，呼应了"治理失衡"反思中"科技公司需更多承担社会影响责任"的诉求。
+
 ## 与本库安全概念的关系
 
 - 模型 / 提示层：[[越狱攻击]]（用户侧绕过护栏）· [[提示注入]]（数据侧注入指令）· [[Agent安全]]
@@ -58,3 +74,4 @@ status: active
 
 - [[raw/articles/ai-for-everyone]]（模块 3/4）
 - [[raw/articles/ai-hot-2026-08-10]]（前沿模型攻击暴露激励与治理失衡）
+- [[raw/articles/ai-hot-2026-08-13]]（Research Gold AI 身份欺诈、Anthropic 工人再培训综述）

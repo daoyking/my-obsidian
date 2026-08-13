@@ -4,8 +4,8 @@ aliases: [智能体安全, Agent Safety]
 type: concept
 tags: [ai, llm, agent, security]
 created: 2026-08-07
-updated: 2026-08-12
-sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]"]
+updated: 2026-08-13
+sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: seed
 ---
 
@@ -115,6 +115,31 @@ Omnigent 的 Contextual Policies 可阻断"致命三重奏"——多个看似无
 - 这与 [[提示注入]] 防御形成对照：前者保护"模型输出侧"，后者保护"模型输入侧"，两侧均存在绕过路径
 - 对 [[Agent持续进化]] 的持续学习范式提出新约束：若推理过程可被还原，则每日从会话中学习的模型其"内部推理"可能被持续窃取，进而被针对性攻击
 
+### WhatsApp Scam Alert：端到端加密下的设备端 ML 反诈（2026-08-13）
+
+来自 [[raw/articles/ai-hot-2026-08-13]]（Meta Engineering Blog）：
+
+WhatsApp 推出可选功能 Scam Alert，在端到端加密保护下于**设备端**运行机器学习模型识别潜在诈骗消息：
+
+- **三大原则**：仅设备端处理（消息内容不离开设备）/ 无自动上报 / 用户控制
+- **可验证性**：模型权重公开供独立验证；遥测数据经差分隐私聚合处理
+- **状态**：Beta 版有限推出，邀请安全研究社区参与测试
+
+**定位**：这是"隐私优先的设备端 AI 安全"范式实例——把 ML 检测能力下沉到设备端，避免"为安全而牺牲端到端加密"的权衡。对本库 [[Agent安全]] 的启示：Agent 安全防护不一定集中在云端，设备端 ML + 差分隐私 + 可验证权重是隐私敏感场景的可借鉴架构。
+
+### Research Gold："100% 人类撰写"实为全程 AI 驱动的欺诈（2026-08-13）
+
+来自 [[raw/articles/ai-hot-2026-08-13]]（404media，Hacker News 热门）：
+
+面向医学研究者的网站 Research Gold 宣称"100% 人类撰写、绝不使用 AI"，并展示多名博士审稿人。调查发现：
+
+- 审稿人系 AI 生成、并不存在
+- 部分真实方法学家的身份和照片未经许可被挪用
+- 致电该公司时，自称"Sarah"的 AI 助手坚称自己是真人
+- 邮件与聊天回复均为 AI 生成
+
+**定位**：这是 **AI 驱动的身份欺诈与学术诚信事件**——AI 既能伪造"人类撰写"承诺，又能伪造审稿人身份与真人客服。与 [[负责任AI]] 的"滥用"风险直接相关，但更隐蔽：欺诈者用 AI 冒充人类，而非用 AI 直接作恶。对本库的启示：在 AI 时代，"人类撰写""人类审稿"等承诺的可验证性面临根本挑战，需建立独立于 AI 的身份验证机制。
+
 ## 相关概念
 
 - [[Agent]] · [[越狱攻击]] · [[提示注入]] · [[RLHF]] · [[隐写术]] · [[负责任AI]]
@@ -138,3 +163,4 @@ Omnigent 的 Contextual Policies 可阻断"致命三重奏"——多个看似无
 - [[raw/articles/ai-hot-2026-08-10]]（前沿模型攻击暴露激励与治理失衡）
 - [[raw/articles/ai-hot-2026-08-11]]（tl;dv 录音泄露、GPT-5.6-Cyber、Omnigent 致命三重奏）
 - [[raw/articles/ai-hot-2026-08-12]]（推理模型加密思考过程可被读取的 API 漏洞）
+- [[raw/articles/ai-hot-2026-08-13]]（WhatsApp Scam Alert 设备端 ML 反诈、Research Gold AI 身份欺诈）

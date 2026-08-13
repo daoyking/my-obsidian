@@ -348,3 +348,27 @@ status: active
 - 联动：项目页双向链 `raw/articles/github-*` 与既有 `[[Agent开发学习计划]]` / `[[Vue]]` / `[[Vite]]` / `[[Node.js]]` / `[[Vercel-AI-SDK]]` / `[[Mastra]]` / `[[Agent评估]]` / `[[函数调用]]` / `[[RAG]]` / `[[ReAct]]`
 - 影响：2 个 raw 源 + 2 个项目页更新 + LOG；既有 wiki 概念/实体页零修改
 - 备注：本周窗口与上周（08-03 ~ 08-10）有 08-06 ~ 08-10 重叠，raw 快照显式声明重叠部分仅引用上周报告不重复展开，避免信息冗余。learning-ai-agent 本周核心里程碑是「真实评测全部跑通」——W2-W5 用 DeepSeek 跑出 100% 通过率，作品集从离线示例升级为实跑证据，可演示性质的提升。hmnmt-web 本周核心是品牌资产 + 明暗主题 + 联系区块一次性落地。
+
+### 2026-08-13 10:19 | Ingest | AI HOT 日报 2026-08-13
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-13（覆盖 08-12 00:00 ~ 08-13 00:00 UTC），存入 `raw/articles/ai-hot-2026-08-13.md`
+- 日报内容：5 个分区（模型发布/更新 4 · 产品发布/更新 5 · 行业动态 2 · 论文研究 2 · 技巧与观点 7），共 17 条（含两条同日前沿模型对照：Grok 4.6 + DeepSeek V4 Pro）
+- 新建 5 页：
+  - `wiki/entities/Grok.md`（seed，xAI Grok 4.6，长时运行智能体能力，追平 GPT-5.6 Sol）
+  - `wiki/entities/Qwen.md`（active，Qwen3.8-2.4T-A95B，Qwen-Max 级别首次开源，2.4T MoE / 95B 激活 / 256K~1M 上下文）
+  - `wiki/entities/LTX.md`（seed，LTX-2.5 视频生成，10 秒 720P 仅需 6.8 秒超实时，ComfyUI 集成）
+  - `wiki/entities/MAI-Thinking-1.md`（seed，微软首个自研推理模型，从零构建，标志摆脱 OpenAI 单一依赖）
+  - `wiki/entities/Claude-Cowork.md`（seed，Claude in Chrome 侧边栏升级，浏览器/终端场景互补）
+- 联动更新 9 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-13 当日 17 条 + 观点 9 + 待研究 9 + sources/updated）
+  - `wiki/entities/OpenRouter.md`（实时网页搜索基准 + 工具调用跨模型指南，updated→2026-08-13）
+  - `wiki/entities/SGLang.md`（Day-0 支持 Qwen3.8-2.4T-A95B，迄今 Day-0 适配最大参数规模，updated→2026-08-13）
+  - `wiki/entities/Claude-Code.md`（v2.1.229 远程会话恢复 + 插件市场命令源 + 安全收紧 + Claude Cowork 产品线扩展，updated→2026-08-13）
+  - `wiki/concepts/开放权重.md`（旗舰级开放权重里程碑节：Qwen3.8-2.4T Qwen-Max 级首次开源，updated→2026-08-13）
+  - `wiki/concepts/Agent安全.md`（WhatsApp Scam Alert 设备端 ML 反诈 + Research Gold AI 身份欺诈，updated→2026-08-13）
+  - `wiki/concepts/Agent持续进化.md`（AI 生成 PR 的工程化治理节：AutoGPT AGENTS.md + 技能门控 + CLA 人类探测器，updated→2026-08-13）
+  - `wiki/concepts/Harness工程.md`（AutoGPT 门控机制管理 AI PR，updated→2026-08-13）
+  - `wiki/concepts/Coding-Agent.md`（Claude Code v2.1.229 + AutoGPT AI PR 门控 + RingCentral AI 原生工作流，updated→2026-08-13）
+  - `wiki/concepts/负责任AI.md`（Research Gold AI 身份欺诈 + Anthropic 工人再培训综述，updated→2026-08-13）
+- 影响：14 个 wiki 页面（5 新建 + 9 更新）+ 1 个 raw 源，建立 40+ 交叉链接
+- 备注：本日核心暗线是「开放权重旗舰化 + 前沿模型多极化」——Qwen3.8-2.4T 把 Qwen-Max 级首次开源（MoE 让旗舰以 95B 激活可承受），与同日 Grok 4.6 / MAI-Thinking-1 / LTX-2.5 共同体现前沿模型多极化；WhatsApp Scam Alert 是"隐私优先设备端 AI 安全"范式实例；Research Gold 揭示 AI 冒充人类的新欺诈形态；AutoGPT AGENTS.md + CLA 门控是 Harness工程在开源协作场景的延伸，与本库 CLAUDE.md/obsidian-llm-wiki Skill 同构。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-13]]`。
+- 备注（Linter 竞态）：Obsidian Linter 在文件变更后实时改写 frontmatter，开放权重.md 与 AI资讯.md 的首次 frontmatter 编辑均触发「modified since read」，已重读后补校落盘（与 08-11/08-12 同一现象）。

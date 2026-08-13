@@ -4,8 +4,8 @@ aliases: [SGLang, sglang, SGLang 推理引擎]
 type: entity
 tags: [ai, inference, framework, llm, open-source]
 created: 2026-08-11
-updated: 2026-08-12
-sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]"]
+updated: 2026-08-13
+sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 
@@ -13,13 +13,14 @@ status: active
 
 ## 是什么
 
-开源的 LLM 推理引擎/框架，提供高性能推理服务，支持结构化生成、RadixAttention 等优化。由 LMSYS（Chatbot Arena 团队）发起。SGLang 已连续为多款新发布模型提供 Day-0 推理支持（[[Muse-Glimmer]]、[[Nemotron]] 3.5 Lightning），并主导 Unified Radix Cache 等推理系统研究。
+开源的 LLM 推理引擎/框架，提供高性能推理服务，支持结构化生成、RadixAttention 等优化。由 LMSYS（Chatbot Arena 团队）发起。SGLang 已连续为多款新发布模型提供 Day-0 推理支持（[[Muse-Glimmer]]、[[Nemotron]] 3.5 Lightning、[[Qwen]]3.8-2.4T-A95B），并主导 Unified Radix Cache 等推理系统研究。
 
 ## 核心特性
 
 - **Day-0 支持**：对新发布模型在当日提供推理引擎适配
   - 2026-08-11 对 [[Muse-Glimmer]] 30B 多模态模型 + 128k 上下文的支持
   - 2026-08-12 对 [[Nemotron]] 3.5 Lightning（30B 总 / 3B 激活 MoE，1M 上下文）的支持，提供 BF16 和 NVFP4 权重推理，支持 MTP/DFlash/DSpark 三种投机解码，OpenAI 兼容 API 接入
+  - 2026-08-13 与 Miles 联合为 [[Qwen]]3.8-2.4T-A95B（2.4T 总 / 95B 激活，混合注意力架构）提供 Day-0 支持——迄今 Day-0 适配的最大参数规模开源模型
 - **针对本地智能体工作流优化**：SGLang × Muse Glimmer / Nemotron 均明确面向本地、常驻运行的 Agent 推理场景
 - **高性能算子集成**：2026-08-08 腾讯混元 HPC-Ops 开源算子库（Dynamic Attention + Fused MoE）集成至 SGLang 主分支，在 Hy3 上最高降低 TPOT 48.8%
 - **Unified Radix Cache（2026-08-12，LMSYS 团队）**：用单一 token 键控 radix 拓扑统一管理混合模型的 FULL、SWA 和 MAMBA 组件缓存，各组件独立执行路径、滑动窗口和检查点复用语义——为混合架构模型的前缀缓存提供单一树结构方案
@@ -41,7 +42,7 @@ status: active
 
 ## 相关实体
 
-- [[Muse-Glimmer]]（Day-0 支持对象）· [[Nemotron]]（Day-0 支持对象）· [[AI]]
+- [[Muse-Glimmer]]（Day-0 支持对象）· [[Nemotron]]（Day-0 支持对象）· [[Qwen]]（Day-0 支持对象，2.4T MoE）· [[AI]]
 
 ## 相关概念
 
@@ -56,3 +57,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-11]]（SGLang 为 Muse Glimmer 提供 Day-0 支持）
 - [[raw/articles/ai-hot-2026-08-08]]（腾讯混元 HPC-Ops × SGLang 集成）
 - [[raw/articles/ai-hot-2026-08-12]]（SGLang Day-0 支持 Nemotron 3.5 Lightning + LMSYS 提出 Unified Radix Cache）
+- [[raw/articles/ai-hot-2026-08-13]]（SGLang 与 Miles 为 Qwen3.8-2.4T-A95B 提供 Day-0 支持）
