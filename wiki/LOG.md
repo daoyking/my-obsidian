@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-11
+updated: 2026-08-13
 status: active
 ---
 
@@ -334,3 +334,17 @@ status: active
 - 联动：双向链 [[Chrome]] / [[书签库]] / [[AI工具集]] / [[Vim]]（Vimium）/ [[Node.js]]（Console Importer）/ [[Coding-Agent]]；建立 10+ 交叉链接
 - 影响：1 个 raw 源 + 1 个新 wiki 页面 + LOG；**既有页面零修改**（沿用 Ingest 约束）
 - 备注：⚠️ 本次发现 vault 路径变更——此前 Ingest 曾写入 `~/about-project/obsidian/my-obsidian`（该目录已被重置为空壳），活跃知识库实际位于 iCloud `~/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/my-obsidian`（git 历史含既有全部提交）。本次已全部在正确 vault 操作。待 Lint 复检悬空 / 孤立。
+
+### 2026-08-13 10:15 | Ingest | GitHub 周动态 2026-08-13（daoyking）
+- 来源：`gh CLI` 查 daoyking 仓库近 7 天（since 2026-08-06）提交与 release；扫描 46 个仓库，3 个有活动（my-obsidian / hmnmt-web / learning-ai-agent），无新 release
+- 筛选：my-obsidian 为知识库自身维护（跳过 Ingest，仅记 LOG）；hmnmt-web 与 learning-ai-agent 有重要变更
+- 新增 2 个 raw 源：
+  - `raw/articles/github-hmnmt-web-2026-08-13.md`——本周新增聚焦 08-10 及之后（与上周 `github-hmnmt-web-2026-08-10` 重叠部分仅引用不重复）：品牌矢量 Logo + 前后台明暗主题 + 联系我们区块（e071a59 ⭐）、首页 4 项视觉优化 + 页脚产品中心补全（27f4c92）、截图取消跟踪（d2b7b31/6ff540d）、USER.md 路径更新（f3865e8）
+  - `raw/articles/github-learning-ai-agent-2026-08-13.md`——本周新增聚焦 08-10：W5 真实评测跑通 DeepSeek（100% / 9.8 分）+ 作品集替换为实跑证据（f96990c ⭐）、W2-W4 真实评测跑通（100% / 10、9.7、8.98）+ 作品集跨周回归区块（c228647 ⭐）、移除私有 .workbuddy 记忆（e1463c7）；附真实评测结果汇总表
+- 更新 2 个项目页（`projects/hmnmt-web.md` / `projects/learning-ai-agent.md`）：
+  - sources 追加本周 raw 源，updated→2026-08-13
+  - 「本周变更」节滚动到 2026-08-06 ~ 2026-08-13 窗口
+  - 关键设计 / 踩坑记录 / 复盘结论 三节按本周新经验补充（hmnmt：品牌双主题 Logo / 页脚数据保真 / 截图膨胀 / 显式 UX 偏离标注；learning-ai-agent：DeepSeek 适配方法论 / 真实评测 > 离线示例 / 模型能力差异前置适配 / 公开仓库泄露私有记忆）
+- 联动：项目页双向链 `raw/articles/github-*` 与既有 `[[Agent开发学习计划]]` / `[[Vue]]` / `[[Vite]]` / `[[Node.js]]` / `[[Vercel-AI-SDK]]` / `[[Mastra]]` / `[[Agent评估]]` / `[[函数调用]]` / `[[RAG]]` / `[[ReAct]]`
+- 影响：2 个 raw 源 + 2 个项目页更新 + LOG；既有 wiki 概念/实体页零修改
+- 备注：本周窗口与上周（08-03 ~ 08-10）有 08-06 ~ 08-10 重叠，raw 快照显式声明重叠部分仅引用上周报告不重复展开，避免信息冗余。learning-ai-agent 本周核心里程碑是「真实评测全部跑通」——W2-W5 用 DeepSeek 跑出 100% 通过率，作品集从离线示例升级为实跑证据，可演示性质的提升。hmnmt-web 本周核心是品牌资产 + 明暗主题 + 联系区块一次性落地。
