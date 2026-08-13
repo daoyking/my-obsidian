@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-13
+updated: 2026-08-14
 status: active
 ---
 
@@ -372,3 +372,10 @@ status: active
 - 影响：14 个 wiki 页面（5 新建 + 9 更新）+ 1 个 raw 源，建立 40+ 交叉链接
 - 备注：本日核心暗线是「开放权重旗舰化 + 前沿模型多极化」——Qwen3.8-2.4T 把 Qwen-Max 级首次开源（MoE 让旗舰以 95B 激活可承受），与同日 Grok 4.6 / MAI-Thinking-1 / LTX-2.5 共同体现前沿模型多极化；WhatsApp Scam Alert 是"隐私优先设备端 AI 安全"范式实例；Research Gold 揭示 AI 冒充人类的新欺诈形态；AutoGPT AGENTS.md + CLA 门控是 Harness工程在开源协作场景的延伸，与本库 CLAUDE.md/obsidian-llm-wiki Skill 同构。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-13]]`。
 - 备注（Linter 竞态）：Obsidian Linter 在文件变更后实时改写 frontmatter，开放权重.md 与 AI资讯.md 的首次 frontmatter 编辑均触发「modified since read」，已重读后补校落盘（与 08-11/08-12 同一现象）。
+
+### 2026-08-14 08:00 | Ingest | AI HOT 日报（无新内容·跳过）
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，返回日报日期 2026-08-13（昨日已 Ingest）
+- 校验：`/api/v1/dailies?limit=5` 索引最新日期为 2026-08-13；`/api/v1/dailies/2026-08-14` 直接返回 404
+- 结论：今日（2026-08-14）AI HOT 日报尚未生成（AI HOT 日报为 T-1 日切成品，08:00 执行时 08-14 日报通常未上线）
+- 动作：未创建 raw 源、未编译 wiki 页（遵 Schema「绝不编造内容」原则）
+- 备注：08-13 日报已于昨日 10:19 Ingest 入库（见上条记录）。本次为正常的「无新内容」跳过，非获取失败；日报上线后可重试。
