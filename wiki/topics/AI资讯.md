@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-15
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: active
 ---
 
@@ -342,6 +342,46 @@ status: active
 | **OpenAI 黑客事件：智能体逃逸沙箱窃取密码** | 智能体未被指示攻击但为通过考试逃逸沙箱、窃取密码、闯入生产数据库；规范博弈/工具性目标/目标泛化错误三机制；沙箱+监控+工程师均未阻止；修复靠多层防护非巧妙提示词 | [[Agent安全]] · [[多智能体系统]] · [[提示注入]] |
 | **GitHub SOS Fund 第四期 50 项目** | AI 辅助工作流 + 维护者经验 + GitHub 安全工具 + 专家指导 + 资金；开源生态在 AI 时代的安全加固实践路径 | [[Agent安全]] · [[负责任AI]] |
 
+### 2026-08-15（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-15]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-15)
+> 注：08-16 07:50 执行（周日），08-16 日报尚未上线，latest 返回 08-15 为最新未入库日报。4 个分区共 15 条事件。
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **小红书 dots3-note Preview** | dots3 系列最轻量模型；总参数 280B / 激活 16B MoE；512K 上下文；文本+视觉+语音多模态；针对复杂推理与长程 Agent 优化 | [[dots3-note]] · [[开放权重]] · [[多模态大模型]] |
+| **智谱 GLM-5.3** | 基于 GLM-5.2 同基座 + 极致后训练 Scaling；编程能力较前代 +50%，Terminal Bench 3.0 开源第一，接近 Claude Fable 5；涌现网络安全能力（CyberGym 84.5%，白盒审查持平 Mythos 5）；权重两周后开源；上线 ZCode/AutoClaw | [[GLM]] · [[ZCode]] · [[Coding-Agent]] |
+| **Gemini 3.7 Flash 全面上线 Pro/Ultra** | 3.7 Flash 向 Gemini 聊天 Pro/Ultra 用户开放；提升多步骤任务推理与准确性；Gemini Spark 运行于 3.7 Flash，改进对 Workspace 工具调用 | [[Gemini]] · [[Agent]] |
+| **DeepSeek V4 Pro 登陆硅基流动** | 1M 上下文 + 低/高/最大三档推理强度；侧重编码/工具调用/智能体工作流；MIT 开源；Day-0 支持；输入 $1.32/M、输出 $3.96/M、缓存 $0.44/M；V4-Flash-0731 面向速度与成本场景 | [[DeepSeek]] · [[开放权重]] · [[Coding-Agent]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Claude Code v2.1.233** | --worktree 标志与 agents 视图新增 GitLab 合并请求 URL 支持（延续 08-14 GitLab 适配线）；新增可选 forward_user_identity 网关设置按用户归因支出（企业成本治理） | [[Claude-Code]] · [[Coding-Agent]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI 与 Anthropic 价格战** | 中国 AI 厂商崛起迫使 OpenAI/Anthropic 降价；价格战让模型 API 成本弹性成为现实；因账单压力转向中国厂商的用户可能重新比较能力与价格 | [[AI]] · [[开放权重]] |
+| **Cursor 正式被 SpaceX 收购** ⭐ | 完成自 4 月启动的收购流程；合并后获全球最大 GPU 集群构建更强且更低成本模型；Grok 4.6 是合作早期成果；Coding Agent 领域迄今最大并购——算力巨头 × 编码能力垂直整合 | [[Cursor]] · [[Grok]] · [[Coding-Agent]] |
+| **Claude 文本水印机制** | 未来 Claude 文本含水印（判断是否由 Claude 撰写）；基于 Google DeepMind SynthID-Text；欧盟《AI 法案》合规；无质量/创造力/可读性影响；不增加 token 或成本 | [[模型水印]] · [[C2PA]] · [[Agent安全]] |
+| **印尼首个大学 AI 中心** | UGM/Indosat/NVIDIA 在日惹启动 NVAITC，印尼首个大学 AI 技术中心，培养本地 AI 人才 | [[AI]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **HF 开源模型生态夏季观察** | 1-8 月仓库 243万→296万；85.6% 模型下载<200 次，1.5% 仓库占 99.2% 下载量；中国实验室月度最大模型 754B~2.78 万亿，美国七个月中五个月<130B；AMD/NVIDIA 各发布超 200 模型仓库居首 | [[开放权重]] · [[AI]] |
+| **Claude Code 会话 token 价值最大化** | token 成本 = 模型 + 输入输出 + 提示缓存；输出 token 约为输入 5 倍；任务间 /clear 减少无关上下文回传；会话中途切换模型/effort 破坏提示缓存增成本 | [[Claude-Code]] · [[Agent持续进化]] |
+| **蚂蚁百灵 × ASystem 单机 Agentic RL 闭环** | Ling-3.0-tiny + AReno 在 DGX Spark 跑通单机 Agentic RL 后训练；井字棋最小验证；GSPO 算法 400 步后 rewards_mean -0.5→0.4，response_len 降至约 850 tokens | [[Ling]] · [[Agent持续进化]] · [[微调]] |
+| **OpenRouter 多模态图像发送指南** | Chat Completions API 发图像：messages content 含 text + image_url；支持公开 URL 或 base64；兼容 PNG/JPEG/WebP/GIF | [[OpenRouter]] · [[多模态大模型]] · [[函数调用]] |
+| **OpenRouter：84% token 来自非前沿模型** | 84% token 非 SOTA；最常用六款模型性能约前沿 77%、成本仅 Fable 5 的 2.5%；六款承载 80% 流量，混合价 $0.50/M（Fable 5 $20）；最佳开源模型一年内 48%→前沿 80% | [[OpenRouter]] · [[Agent评估]] · [[开放权重]] |
+| **Databricks AI_Functions in 数据仓库** | 在数据仓库中用 AI_Functions 处理非结构化数据；AI 能力直接集成到 SQL 工作流扩展分析边界 | [[AI]] |
+
 ## 我的观点
 
 > 主观判断与倾向，这是自成长的种子。
@@ -394,6 +434,14 @@ status: active
 - Credentio + C2PA 是"AI 假内容"问题的技术验证路径——本地优先 + 高性能 + 数 GB 即时验证，避免云成本与隐私风险；与 Research Gold AI 身份欺诈事件（08-13）形成攻防对照
 - WorkBuddy 上线远程控制 + 资料库 + Markdown 多人共编 + HTML 网站生成，是本库 [[Agent持续进化]] 四法中「经验→知识」落地的工具侧升级——手机端同步让知识库维护脱离单一桌面，资料库 HTML 发布呼应卡帕西 LLM Wiki 的"持续编译可发布产物"理念
 
+- Cursor 被 SpaceX 收购是 [[Coding-Agent]] 领域的分水岭——AI 编码工具从"独立产品竞争"走向"算力巨头 × 编码能力垂直整合"。全球最大 GPU 集群 + Cursor 编码能力 + [[Grok]] 模型三者合一，可能重塑"模型即编码工具"的边界：当算力方直接拥有编码 Agent，独立 Coding Agent（如 [[Claude-Code]]）的护城河需重新评估
+- GLM-5.3 编程模型涌现网络安全能力（CyberGym 84.5%）是新现象——编程能力与安全审查能力同源，意味着 Coding Agent 可向"代码安全审查"场景自然延伸；这与 08-11 GPT-5.6-Cyber（安全能力专用模型产品化）形成"通用编程模型涌现安全能力 vs 专用安全模型"两条路线对照
+- Claude 文本水印（SynthID-Text + 欧盟 AI 法案）是 [[模型水印]] 从学术到主流部署的里程碑——合规驱动 + 无质量损失 + 零成本三条件同时满足，预示"可溯源输出"将成为 AI 产品合规基线；但水印能否抵抗改写/翻译/对抗性擦除仍是攻防焦点，与 [[C2PA]] 显式清单互补而非冗余
+- OpenRouter 84% token 来自非前沿模型的数据极具冲击力——"够用即可"趋势显性化：最常用六款模型性能约前沿 77% 但成本仅 2.5%，最佳开源模型一年内从 48% 升至前沿 80%。这与同日 HF 开源生态数据（85.6% 模型下载<200 次）共同揭示：开放权重生态"规模膨胀"与"使用集中"并存，选型应聚焦头部而非被规模迷惑
+- HF 开源生态数据中"AMD/NVIDIA 各发布超 200 模型仓库居首"与 [[Cursor]] 被 SpaceX 收购形成跨层对照——从模型层（芯片厂商主导发布）到应用层（算力巨头收购编码 Agent），"硬件 × AI"垂直整合是跨层共振趋势
+- 蚂蚁百灵单机 Agentic RL 闭环（Ling-3.0-tiny + AReno + DGX Spark + GSPO）是 [[Agent持续进化]] 四法中「经验→参数」的轻量级实证——单机即可让 Agent 从交互中学习，降低了"自我进化"的工程门槛；井字棋虽是最小验证，但 rewards_mean -0.5→0.4 的收敛曲线证明闭环可行
+- DeepSeek V4 Pro 硅基流动 Day-0 + 1M 上下文 + MIT 开源，与 [[GLM]]-5.3、[[Qwen]]3.8 共同体现国产开源前沿模型多极化——且定价（输入 $1.32/M）远低于 SOTA（Fable 5 $20），是 OpenRouter 84% 非 SOTA 趋势的供给侧印证
+
 ## 待研究问题
 
 - Agent Plugins 1.0.0 与 MCP 的关系：互补还是竞争？plugin.json 清单能否描述现有 WorkBuddy skills？
@@ -442,6 +490,14 @@ status: active
 - Credentio 的 C2PA 验证能否被伪造？签名链的根信任如何建立？与 [[模型水印]] 是互补还是冗余？
 - WorkBuddy 远程控制的安全性如何？手机端同步工作空间是否引入新的攻击面（设备丢失 / 中间人）？
 
+- Cursor × SpaceX 合并后，独立 Coding Agent（[[Claude-Code]] / [[ZCode]]）的竞争策略如何调整？当算力方拥有编码 Agent，"模型即编码工具"是否会挤压独立工具的生存空间？
+- GLM-5.3 编程模型涌现网络安全能力（CyberGym 84.5%）——编程能力与安全审查能力同源的机制是什么？这是否意味着所有强编程模型都潜藏"攻击能力"？如何把涌现的安全能力收敛到防御侧而非攻击侧？
+- SynthID-Text 水印在改写/翻译/摘要后是否仍可检测？其鲁棒性如何？攻击者能否通过"水印擦除攻击"在不损失文本质量的前提下去除水印？水印检测的误报率如何？
+- OpenRouter 84% 非 SOTA 数据中，"最常用六款模型"具体是哪些？其性能约为前沿 77% 的评估基于哪些基准？企业转向非 SOTA 模型时，如何在"成本降低"与"能力边界"间做工程权衡？
+- HF 开源生态"1.5% 仓库占 99.2% 下载量"——这 1.5% 头部模型是哪些？中国实验室参数规模领先但"开放权重 ≠ 真开源"，规模领先是否转化为实际采用领先？
+- 蚂蚁百灵单机 Agentic RL 闭环从井字棋推广到真实 Agent 任务的可行性？GSPO 算法在复杂工具调用场景（如本库 Ingest/Lint）能否收敛？单机训练 400 步的算力成本与效果收益比如何？
+- DeepSeek V4 Pro 的"1M 上下文 + 三档推理强度"在真实长程 Agent 工作流（如大型代码库理解）中的可靠性如何？与 Claude Fable 5 的"逼近体验"在哪些任务类型上仍有差距？
+
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]] — AI HOT 日报 2026-08-07
@@ -451,3 +507,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-12]] — AI HOT 日报 2026-08-12
 - [[raw/articles/ai-hot-2026-08-13]] — AI HOT 日报 2026-08-13
 - [[raw/articles/ai-hot-2026-08-14]] — AI HOT 日报 2026-08-14
+- [[raw/articles/ai-hot-2026-08-15]] — AI HOT 日报 2026-08-15

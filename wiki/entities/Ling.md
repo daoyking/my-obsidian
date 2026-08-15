@@ -4,8 +4,8 @@ aliases: [Ling-3.0-tiny, 蚂蚁百灵 Ling, Ling 3.0]
 type: entity
 tags: [ai, llm, model, ant-group, open-weights, moe]
 created: 2026-08-12
-updated: 2026-08-12
-sources: ["[[raw/articles/ai-hot-2026-08-12]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: seed
 ---
 
@@ -22,6 +22,20 @@ status: seed
 - **架构**：总参数 7.9B，推理时仅激活 **1.3B 参数**的原生混合推理模型
 - **三档精度**：同步提供 BF16、FP8 和 INT4 三个版本，适配不同部署场景
 - **定位**：面向真实任务的轻量级推理，激活参数极低意味着推理成本与延迟可控
+
+## 单机 Agentic RL 后训练闭环（2026-08-15）
+
+来自 [[raw/articles/ai-hot-2026-08-15]]：
+
+蚂蚁百灵与 ASystem 团队合作，用 **Ling-3.0-tiny + AReno** 在 **DGX Spark** 上跑通单机 Agentic RL 后训练闭环：
+
+- **最小验证任务**：井字棋（tic-tac-toe）
+- **算法**：GSPO（Group Sequence Policy Optimization）
+- **训练 400 步后结果**：
+  - rollout/rewards_mean 从约 **-0.5 升至 0.4**
+  - response_len 降至约 **850 tokens**
+  - 工具调用与动作选择趋于稳定
+- **意义**：单机即可完成 Agentic RL 后训练闭环，降低了"让 Agent 从交互中学习"的工程门槛——与本库 [[Agent持续进化]] 四法中「经验→参数」直接对应，是轻量级模型自我进化的实证
 
 ## 适用场景
 
@@ -41,7 +55,7 @@ status: seed
 
 ## 相关概念
 
-- [[开放权重]] · [[Agent]] · [[微调]]
+- [[开放权重]] · [[Agent]] · [[微调]] · [[Agent持续进化]]（单机 Agentic RL 后训练闭环）
 
 ## 相关主题
 
@@ -50,3 +64,4 @@ status: seed
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-12]]（Ling-3.0-tiny 正式开源）
+- [[raw/articles/ai-hot-2026-08-15]]（蚂蚁百灵 × ASystem 单机 Agentic RL 后训练闭环：Ling-3.0-tiny + AReno + DGX Spark + GSPO）

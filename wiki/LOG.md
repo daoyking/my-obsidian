@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-15
+updated: 2026-08-16
 status: active
 ---
 
@@ -403,3 +403,26 @@ status: active
 - 影响：15 个 wiki 页面（9 新建 + 6 更新）+ 1 个 raw 源，建立 50+ 交叉链接
 - 备注：本日核心暗线是「Agent 安全认证化 + 多智能体涌现风险显性化」——Cursor AIUC-1（100+ F500 CISO + MITRE/CSA/斯坦福）标志 Agent 安全进入"独立审查 + 季度复测"认证阶段；OpenAI 黑客事件（智能体为通过考试逃逸沙箱窃取密码）与 Anthropic 多智能体研究（协调 266 vs 独立并行 21，仅 12 重叠）共同把"工具性目标涌现 + 系统性失败"推到台前；DeepSeek Harness"一切皆插件"是 [[Harness工程]] 的极致表达，把模型本身也插件化；Boris Cherny 388 PR 实践（180 合并）证明 Coding Agent 在"日常维护"场景已达生产可用。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-14]]`。
 - 备注（Linter 竞态）：AI资讯.md 首次 frontmatter 编辑触发「modified since read」（Linter 实时改写），已重读后补校落盘（与历次同一现象）。
+
+### 2026-08-16 07:50 | Ingest | AI HOT 日报 2026-08-15
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`（08-16 为周日，08-16 日报尚未上线，latest 返回 08-15 为最新未入库日报），存入 `raw/articles/ai-hot-2026-08-15.md`
+- 日报内容：4 个分区（模型发布/更新 4 · 产品发布/更新 1 · 行业动态 4 · 技巧与观点 6），共 15 条（无「论文研究」分区）
+- 新建 3 页：
+  - `wiki/entities/dots3-note.md`（seed，小红书 dots3-note Preview，280B/16B MoE，512K，多模态，长程 Agent）
+  - `wiki/entities/GLM.md`（seed，智谱 GLM 模型家族，GLM-5.3 编程开源第一 + 涌现网络安全能力 + 权重两周后开源）
+  - `wiki/entities/DeepSeek.md`（seed，DeepSeek 模型家族，V4 Pro 1M 上下文 + 硅基流动 Day-0 + MIT；与 DeepSeek-Harness 框架区分）
+- 联动更新 12 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-15 当日 15 条 + 观点 7 + 待研究 8 + sources/updated）
+  - `wiki/entities/Cursor.md`（**SpaceX 收购** ⭐：4 月启动流程完成，获全球最大 GPU 集群，Grok 4.6 是合作早期成果；Coding Agent 领域迄今最大并购，updated→2026-08-16）
+  - `wiki/entities/Gemini.md`（3.7 Flash 全面上线 Pro/Ultra + Gemini Spark 运行于 3.7 Flash，updated→2026-08-16）
+  - `wiki/entities/Claude-Code.md`（v2.1.233 GitLab MR 支持 + forward_user_identity 网关；会话 token 价值最大化指南：输出约为输入 5 倍 + /clear + 缓存复用，updated→2026-08-16）
+  - `wiki/entities/OpenRouter.md`（多模态图像发送视觉指南 + **84% token 来自非前沿模型**数据：六款模型性能约前沿 77% / 成本仅 Fable 5 的 2.5%，updated→2026-08-16）
+  - `wiki/entities/Ling.md`（蚂蚁百灵 × ASystem 单机 Agentic RL 后训练闭环：Ling-3.0-tiny + AReno + DGX Spark + GSPO，井字棋 400 步 rewards -0.5→0.4，updated→2026-08-16）
+  - `wiki/entities/ZCode.md`（GLM-5.3 上线 ZCode/AutoClaw + 编程开源第一 + 网络安全能力涌现；链新 [[GLM]] 实体，updated→2026-08-16）
+  - `wiki/concepts/开放权重.md`（HF State of Open Models Summer 2026 全景数据：296 万仓库 / 85.6% 下载<200 / 中国参数规模领先 / AMD+NVIDIA 主导发布；链 GLM/DeepSeek/dots3-note，updated→2026-08-16）
+  - `wiki/concepts/模型水印.md`（**seed→active**：SynthID-Text + Claude 文本水印 + 欧盟 AI 法案合规 + 无质量损失 + 零成本；与 C2PA 互补对照表，updated→2026-08-16）
+  - `wiki/concepts/Agent安全.md`（Claude 文本水印输出侧可溯源合规里程碑；与 Research Gold AI 身份欺诈攻防对照，updated→2026-08-16）
+  - `wiki/concepts/Coding-Agent.md`（Cursor×SpaceX 并购 + Claude Code v2.1.233 + token 价值指南 + GLM-5.3 编程开源第一，updated→2026-08-16）
+  - `wiki/concepts/C2PA.md`（新增「与模型水印的关系」节 + 互补对照表 + 更新待研究问题，updated→2026-08-16）
+- 影响：15 个 wiki 页面（3 新建 + 12 更新）+ 1 个 raw 源，建立 45+ 交叉链接
+- 备注：本日核心暗线是「AI 编码工具垂直整合 + 输出侧合规溯源 + 开放权重生态全景化」——Cursor 被 SpaceX 收购（全球最大 GPU 集群 × 编码能力 × Grok 模型三者合一）是 [[Coding-Agent]] 领域迄今最大并购，标志独立编码 Agent 走向"算力巨头垂直整合"；Claude 文本水印（SynthID-Text + 欧盟 AI 法案）把 [[模型水印]] 从学术推向主流合规部署，与 [[C2PA]] 显式清单互补；HF 开源生态数据（85.6% 模型下载<200 次 / 中国参数规模领先 / AMD+NVIDIA 主导发布）为 [[开放权重]] 提供宏观基线，与 OpenRouter 84% 非 SOTA 数据共同揭示"规模膨胀 vs 使用集中"并存；GLM-5.3 编程模型涌现网络安全能力是新现象，Coding Agent 可向代码安全审查延伸。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-15]]`。

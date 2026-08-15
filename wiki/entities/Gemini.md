@@ -4,8 +4,8 @@ aliases: [Google Gemini, Gemini 模型]
 type: entity
 tags: [ai, llm, google, multimodal, agent]
 created: 2026-08-15
-updated: 2026-08-15
-sources: ["[[raw/articles/ai-hot-2026-08-14]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: active
 ---
 
@@ -26,6 +26,7 @@ Google DeepMind 推出的多模态大模型家族，是 Google AI 战略的核�
 ## 版本演进（追踪）
 
 - **Gemini 3.7 Flash（2026-08-14）**：距 3.6 Flash 仅三周，主打编程与智能体任务；输入 $0.75 / 百万 token，输出 $3.75 / 百万 token（3.6 Flash 一半价格）
+- **Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户（2026-08-15）**：3.7 Flash 向 Gemini 聊天中的 Pro 和 Ultra 用户开放，提升多步骤任务推理与准确性（如智能整合数十个文件和邮件为一份主文档）。同时 **Gemini Spark 运行于 3.7 Flash**，通过改进对 Google Workspace 应用的工具调用让个人 AI 智能体更精准。见 [[raw/articles/ai-hot-2026-08-15]]。
 - **Gemini 月活破 10 亿（2026-08-12）**：见 [[raw/articles/ai-hot-2026-08-12]]
 - **Gemini 助力 Database Migration Service（2026-08-12）**：将 Oracle/SQL Server 存储过程转 PostgreSQL PL/pgSQL，见 [[raw/articles/ai-hot-2026-08-12]]
 - **AMIE 实时临床视频问诊（2026-08-12）**：基于 Gemini + Project Astra 构建医疗 AI，见 [[AMIE]] · [[raw/articles/ai-hot-2026-08-12]]
@@ -54,4 +55,5 @@ Google DeepMind 推出的多模态大模型家族，是 Google AI 战略的核�
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-14]]（Gemini 3.7 Flash 发布）
+- [[raw/articles/ai-hot-2026-08-15]]（Gemini 3.7 Flash 全面上线 Pro/Ultra 用户 + Gemini Spark 运行于 3.7 Flash）
 - [[raw/articles/ai-hot-2026-08-12]]（Gemini 月活破 10 亿 · Database Migration Service · AMIE）

@@ -4,8 +4,8 @@ aliases: [Claude Code CLI, Anthropic Claude Code]
 type: entity
 tags: [ai, coding, agent, cli, tool, anthropic]
 created: 2026-08-08
-updated: 2026-08-15
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/papers/ai-agents-in-depth]]"]
 status: seed
 ---
 
@@ -38,6 +38,13 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
   - 新增 **GitLab token 密钥脱敏**
   - 新增**插件市场 GitLab 仓库克隆支持**
   - 修复：PowerShell 与 Windows 权限绕过、嵌套 git 仓库信任继承等多项安全漏洞
+- **v2.1.233（2026-08-15）**：
+  - 为 `--worktree` 标志和 agents 视图新增 **GitLab 合并请求 URL 支持**（延续 08-14 的 GitLab 适配线）
+  - 新增可选的 **forward_user_identity 网关设置**，可按用户归因支出（企业成本治理）
+- **会话 token 价值最大化（2026-08-15 官方指南）**：token 成本由模型 / 输入输出 token / 提示缓存三因素决定，**输出 token 价格约为输入的 5 倍**
+  - 任务间运行 `/clear` 减少无关上下文回传，降低 token 用量
+  - 会话中途切换模型或 effort 级别会**破坏提示缓存**，增加成本
+  - 这是本库 [[Agent持续进化]] 四法中「经验→参数」的成本侧实践——缓存复用是 Agent 经济性的关键
 
 ## 适用场景
 
@@ -68,4 +75,5 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 - [[raw/articles/ai-hot-2026-08-11]]（auto 模式默认开启原理、Claude 研究版突破黎曼 zeta 零点下界）
 - [[raw/articles/ai-hot-2026-08-13]]（Claude Code v2.1.229 发布 + Claude Cowork 产品线扩展）
 - [[raw/articles/ai-hot-2026-08-14]]（Claude Code v2.1.232：默认启用 Subagent forking + GitLab 支持与多项安全修复）
+- [[raw/articles/ai-hot-2026-08-15]]（Claude Code v2.1.233：GitLab MR 支持 + forward_user_identity 网关；会话 token 价值最大化指南）
 - [[raw/papers/ai-agents-in-depth]]（Coding Agent 章节参考）

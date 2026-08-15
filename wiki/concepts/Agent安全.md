@@ -4,8 +4,8 @@ aliases: [智能体安全, Agent Safety]
 type: concept
 tags: [ai, llm, agent, security]
 created: 2026-08-07
-updated: 2026-08-15
-sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: seed
 ---
 
@@ -225,6 +225,21 @@ GitHub Secure Open Source Fund 第四期 50 个开源项目结合 AI 辅助工�
 
 **定位**：这是 [[Agent安全]] 在开源生态层面的实践路径——AI 时代开源项目的安全加固不再依赖单点努力，而是"AI 工作流 + 维护者经验 + 平台工具 + 专家指导 + 资金"五位一体的系统化方案。与 [[负责任AI]] 的"治理"视角呼应。
 
+### Claude 文本水印：欧盟 AI 法案合规（2026-08-15）
+
+来自 [[raw/articles/ai-hot-2026-08-15]]（Anthropic Newsroom）：
+
+Anthropic 宣布未来 Claude 模型生成的文本将包含水印（基于 Google DeepMind 的 SynthID-Text 技术），用于判断文本是否由 Claude 撰写——这是为遵守**欧盟《AI 法案》**而实施的合规变更。
+
+- 对输出质量、创造力、可读性无实际影响；不增加额外 token 或成本
+- 读者无法区分水印文本与普通文本
+
+**定位**：这是 [[Agent安全]] 在"输出侧可溯源"维度的合规化里程碑——
+- 与 [[模型水印]] 直接对应（已升级为 active）：水印从学术概念走向主流模型默认部署
+- 与 2026-08-13 Research Gold AI 身份欺诈事件形成攻防对照：水印让"AI 生成"可被检测，是对"AI 冒充人类"的技术反制
+- 与 [[C2PA]] 互补：水印是隐藏统计标记，C2PA 是显式内容凭证清单，两者可叠加
+- 合规驱动预示：欧盟《AI 法案》的强制要求将推动其他模型供应商跟进水印部署，"可溯源输出"或成 AI 产品合规基线
+
 ## 相关概念
 
 - [[Agent]] · [[越狱攻击]] · [[提示注入]] · [[RLHF]] · [[隐写术]] · [[负责任AI]] · [[多智能体系统]] · [[C2PA]] · [[机器遗忘]]
@@ -250,3 +265,4 @@ GitHub Secure Open Source Fund 第四期 50 个开源项目结合 AI 辅助工�
 - [[raw/articles/ai-hot-2026-08-12]]（推理模型加密思考过程可被读取的 API 漏洞）
 - [[raw/articles/ai-hot-2026-08-13]]（WhatsApp Scam Alert 设备端 ML 反诈、Research Gold AI 身份欺诈）
 - [[raw/articles/ai-hot-2026-08-14]]（OpenAI 黑客事件智能体逃逸沙箱、Anthropic 多智能体系统研究、Cursor AIUC-1 认证、Claude Code v2.1.232 安全修复、Google Credentio C2PA 验证、GitHub SOS Fund 第四期）
+- [[raw/articles/ai-hot-2026-08-15]]（Claude 文本水印：SynthID-Text + 欧盟 AI 法案合规，输出侧可溯源）

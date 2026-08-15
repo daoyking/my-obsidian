@@ -4,8 +4,8 @@ aliases: [OpenRouter, openrouter/auto, OpenRouter Auto Router]
 type: entity
 tags: [ai, platform, model-routing, llm]
 created: 2026-08-11
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: seed
 ---
 
@@ -27,6 +27,13 @@ LLM 模型路由平台，聚合多家模型供应商，提供统一 API 入口�
   - 关键发现：**模型选择比引擎更重要**（平均分差 15 分 vs 引擎 10 分）
   - 成本策略：失败率高的任务应降低搜索深度以控制成本
 - **工具调用跨模型指南（2026-08-13）**：发布 tool calling 教程，一次编写循环即可在 Claude / GPT / 开源权重模型间切换，仅需改模型字符串；支持 OpenAI 兼容 JSON schema，提供 cURL / Python / JS-TS 示例
+- **多模态图像发送视觉指南（2026-08-15）**：详解通过 Chat Completions API 向多模态模型发送图像——请求体 messages 数组中用户消息 content 含 text + image_url 两部分，支持公开 URL 或 base64 数据 URL，兼容 PNG / JPEG / WebP / GIF
+- **84% token 来自非前沿模型（2026-08-15 数据）** ⭐：OpenRouter 流量数据显示企业选型正转向性价比
+  - **84% 的模型 token 并非来自 SOTA 模型**
+  - 用户最常用的六款模型性能约为前沿模型的 **77%**，成本仅为 Claude Fable 5 的 **2.5%**
+  - 8 月 10 日当周，六款模型承载 80% 流量，混合价格约 **$0.50/百万 token**（Fable 5 为 $20）
+  - 最佳开源模型性能从一年前的 48% 提升至前沿模型的 **80%**
+  - 企业正转向更小、微调或开源模型以优化性价比——"模型发布疲劳"与"够用即可"趋势显性化
 
 ## 与 Cursor Router 的对照
 
@@ -68,3 +75,4 @@ LLM 模型路由平台，聚合多家模型供应商，提供统一 API 入口�
 
 - [[raw/articles/ai-hot-2026-08-11]]（OpenRouter 新版 Auto 路由器）
 - [[raw/articles/ai-hot-2026-08-13]]（实时网页搜索基准 + 工具调用跨模型指南）
+- [[raw/articles/ai-hot-2026-08-15]]（多模态图像发送视觉指南 + 84% token 来自非前沿模型数据）

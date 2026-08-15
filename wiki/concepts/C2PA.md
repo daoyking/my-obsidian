@@ -4,8 +4,8 @@ aliases: [Content Credentials, 内容凭证, Coalition for Content Provenance an
 type: concept
 tags: [ai, security, content-credentials, provenance, authenticity]
 created: 2026-08-15
-updated: 2026-08-15
-sources: ["[[raw/articles/ai-hot-2026-08-14]]"]
+updated: 2026-08-16
+sources: ["[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: seed
 ---
 
@@ -48,12 +48,30 @@ C2PA（Coalition for Content Provenance and Authenticity）是由 Adobe / Micros
 
 - [[Agent安全]] · [[负责任AI]] · [[模型水印]] · [[隐写术]]
 
+## 与模型水印的关系（2026-08-15 更新）
+
+来自 [[raw/articles/ai-hot-2026-08-15]]：
+
+Anthropic 部署 Claude 文本水印（基于 Google DeepMind 的 SynthID-Text）后，C2PA 与 [[模型水印]] 的关系更加清晰——两者**互补而非冗余**：
+
+| 维度 | [[模型水印]]（如 SynthID-Text） | C2PA（Content Credentials） |
+|---|---|---|
+| 标记形态 | 隐藏统计标记（人类不可察觉） | 显式内容凭证清单（机器可读元数据） |
+| 嵌入方式 | 生成时在采样层嵌入 | 生成后作为清单附在文件上 |
+| 检测方 | 持检测算法的方（需模型方配合） | 任何持 C2PA 验证工具的方（如 [[Credentio]]） |
+| 追溯能力 | 仅判断"是否由某模型生成" | 可追溯完整编辑链与来源 |
+| 合规驱动 | 欧盟《AI 法案》（Claude 水印） | 内容真实性标准（Adobe/Microsoft 等联合制定） |
+
+**定位**：水印解决"是不是 AI 生成"，C2PA 解决"从哪来、经手了什么"。叠加使用可同时回答"AI 生成性"与"内容来源链"两个问题。
+
 ## 待研究问题
 
 - C2PA 清单能否被伪造？签名链的根信任如何建立？
 - AI 模型生成内容时是否会自动嵌入 C2PA 清单？目前哪些模型支持？
-- C2PA 与 [[模型水印]] 的关系——水印是"隐藏标记"，C2PA 是"显式清单"，两者互补还是冗余？
+- SynthID-Text 水印在改写/翻译后是否仍可检测？其鲁棒性与 C2PA 签名链的完整性保障哪个更可靠？
+- 水印与 C2PA 叠加部署时，是否存在"水印擦除但 C2PA 清单保留"或反之的攻击窗口？
 
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-14]]（Google 发布开源 C++ 库 Credentio 用于 C2PA 验证）
+- [[raw/articles/ai-hot-2026-08-15]]（Claude 文本水印 SynthID-Text 部署，明确 C2PA 与水印互补关系）
