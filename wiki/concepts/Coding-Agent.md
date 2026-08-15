@@ -4,8 +4,8 @@ aliases: [代码Agent, 编程Agent]
 type: concept
 tags: [ai, llm, agent, coding]
 created: 2026-08-07
-updated: 2026-08-13
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-15
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]"]
 status: active
 ---
 
@@ -60,6 +60,12 @@ status: active
 - **Claude Code v2.1.229（2026-08-13）**：新增远程控制会话恢复、自托管 runner 服务器端 hook、插件市场命令源；改进工作流扇出复用缓存提示前缀；`/commit-push-pr` 对危险 git/gh 命令不再自动批准（安全收紧）。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-13]]。
 - **AutoGPT 用 AGENTS.md 和技能门控管理 AI 生成的 PR（2026-08-13）**：维护者发现 AI 智能体不会主动阅读文档，把指令放进 AGENTS.md 和技能文件置于代码目录旁；通过 PR 模板、测试计划、CI 覆盖率、CLA 签名等门控将 AI 提交的 PR 从"不可用"变为"可用但不符合路线图"。CLA 因需浏览器 OAuth 被用作"人类探测器"。见 [[Harness工程]] · [[Agent持续进化]] · [[raw/articles/ai-hot-2026-08-13]]。
 - **RingCentral 全员 AI 原生工作流（2026-08-13）**：通过全员发放 ChatGPT Work 和 Codex，推动从工程到运营的 AI 原生开发，AI-Native Challenge 让数千名员工（含非技术人员）交付可运行项目。见 [[raw/articles/ai-hot-2026-08-13]]。
+- **DeepSeek Harness v0.1"一切皆插件"（2026-08-14）**：MIT 开源智能体框架，基于 Cordis 元框架；模型 / 工具 / 技能 / 会话 / 沙箱 / 文件系统 / 循环 / 编排 / UI 九大要素全部插件化。是把 [[Harness工程]] 推到极致的 Agent 框架，Coding Agent 可作为其"宿主"。见 [[DeepSeek-Harness]] · [[raw/articles/ai-hot-2026-08-14]]。
+- **Cursor builds 云智能体加速（2026-08-14）**：后台持续准备就绪的开发环境副本，云智能体启动速度最高提升 3 倍；内部环境启动快 10 倍，首 token 快 3 倍；8 月 17 日默认启用。见 [[Cursor]] · [[raw/articles/ai-hot-2026-08-14]]。
+- **Cursor 获 AIUC-1 安全认证（2026-08-14）**：通过智能体安全与可靠性独立审查；100+ 财富 500 强 CISO 参与制定；MITRE / 云安全联盟 / 斯坦福支持；千个场景全通过；每季度复测 + 年度审计。**Agent 安全进入认证化阶段**。见 [[Cursor]] · [[Agent安全]] · [[raw/articles/ai-hot-2026-08-14]]。
+- **Claude Code v2.1.232（2026-08-14）**：默认启用 subagent forking（子代理继承完整对话+提示缓存，非队友代理后台运行）；新增 GitLab token 脱敏 + 插件市场 GitLab 克隆；修复 PowerShell / Windows 权限绕过、嵌套 git 仓库信任继承等安全漏洞。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-14]]。
+- **Boris Cherny 让 Claude 接管应用日常维护（2026-08-14）**：Slack 频道运行崩溃模糊测试 / 重复代码统一 / 死代码移除；数周开 388 PR，180 个经 Claude Code Review + 人工审核合并（46% 合并率）；Claude 通常一次改对，出错时调整例程次日改进。**Coding Agent 在"日常维护"场景达生产可用**。见 [[Harness工程]] · [[raw/articles/ai-hot-2026-08-14]]。
+- **JetBrains CTO 详谈 Claude Fable 5 部署（2026-08-14）**：用私有仓库评测前沿模型；Claude Fable 5 Python 通过率 44.3% vs Opus 4.8 28.2%（+16pp），解题步骤减 22%；偏好零数据保留，接受有限审查调查最严重问题。是 Coding Agent 工具选型的企业级评测范例。见 [[raw/articles/ai-hot-2026-08-14]]。
 
 ## 来源
 
@@ -68,3 +74,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-08]]（Claude Code 会话间互发消息、Databricks AI 编程成本管控）
 - [[raw/articles/ai-hot-2026-08-11]]（OpenChamber、Claude Code auto 原理、Linear Agent 构建方法）
 - [[raw/articles/ai-hot-2026-08-13]]（Claude Code v2.1.229、AutoGPT AI PR 门控、RingCentral AI 原生工作流）
+- [[raw/articles/ai-hot-2026-08-14]]（DeepSeek Harness v0.1、Cursor builds + AIUC-1、Claude Code v2.1.232、Boris Cherny 388 PR、JetBrains Claude Fable 5 部署）

@@ -4,8 +4,8 @@ aliases: [Harness Engineering, Harness, 框架工程]
 type: concept
 tags: [ai, llm, agent, engineering, harness]
 created: 2026-08-07
-updated: 2026-08-13
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-15
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]"]
 status: active
 ---
 
@@ -45,6 +45,8 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 - **Linear Agent 的边界设计（2026-08-11）**：Linear 未为 Agent 编写固定路径，而是通过系统提示词（沟通风格 / 硬性边界 / 概念解释）、工具设计（把约束编码进参数，使无效操作难以执行）、产品模型、运行范围及底层自定义 harness 划定边界；并引入"系统技能"作为组合单元按需渐进加载，避免一次性暴露过多上下文。见 [[raw/articles/ai-hot-2026-08-11]]。
 - **OpenChamber 代理开发环境（2026-08-11）**：跨桌面 / 浏览器 / 手机 / VS Code 的代理优先 IDE，支持会话目标、多模型并行融合、变更走查、issue→PR 全流程、定时任务，基于 OpenCode SDK，本地存储 + Private Relay 端到端加密。见 [[raw/articles/ai-hot-2026-08-11]] · [[Coding-Agent]]。
 - **AutoGPT 用门控机制管理 AI 生成的 PR（2026-08-13）**：AutoGPT 维护者发现 AI 智能体不会主动阅读文档，因此把指令放进 `AGENTS.md` 和技能文件并置于代码目录旁；通过强制 PR 模板、测试计划、CI 覆盖率门槛、CLA 签名等门控机制把 AI 提交的 PR 从"不可用"转变为"可用但不符合路线图"。**CLA 签名因需浏览器和 OAuth 流程，被用作区分人类与智能体的"人类探测器"**——这是把"人在回路"约束编码进工程流程（而非依赖 AI 自觉）的 Harness 实践。见 [[raw/articles/ai-hot-2026-08-13]] · [[Agent持续进化]] · [[Coding-Agent]]。
+- **DeepSeek Harness v0.1"一切皆插件"（2026-08-14）**：DeepSeek 以 MIT 许可证开源的智能体框架，基于 Cordis 元框架构建。核心设计"一切皆插件"——模型、工具、技能、会话、沙箱、文件系统、循环、编排及 UI **九大要素全部插件化**，无任何"硬编码"特例。这是 Harness 五功能（上下文 / 工具 / 记忆 / 编排 / 护栏）的极致插件化表达——把"模型本身"也插件化（而不仅是工具/记忆），是对"模型 × Harness 协同"的激进推演。见 [[DeepSeek-Harness]] · [[raw/articles/ai-hot-2026-08-14]] · [[Agent持续进化]]。
+- **Boris Cherny 让 Claude 接管应用日常维护（2026-08-14）**：通过 Slack 频道运行崩溃模糊测试、重复代码统一、死代码移除等日常任务，数周内自动开出 388 个 PR，其中 180 个经 Claude Code Review 和人工审核后合并。Claude 通常一次就能改对，出错时通过调整例程次日改进。这是 Harness 在"日常维护"场景的实证——**Agent 在"重复性 / 边界明确"任务上已达生产可用**（180/388 ≈ 46% 合并率），但 Harness 仍需提供"例程可调整"的反馈通道。见 [[raw/articles/ai-hot-2026-08-14]] · [[Coding-Agent]] · [[Agent持续进化]]。
 
 ## 相关概念
 
@@ -59,3 +61,4 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 - [[raw/papers/ai-agents-in-depth]]（第 1 章 1.2）
 - [[raw/articles/ai-hot-2026-08-11]]（Linear Agent 构建方法、OpenChamber 代理开发环境）
 - [[raw/articles/ai-hot-2026-08-13]]（AutoGPT 用 AGENTS.md 和技能门控管理 AI 生成的 PR）
+- [[raw/articles/ai-hot-2026-08-14]]（DeepSeek Harness v0.1"一切皆插件"、Boris Cherny 388 PR 实践）

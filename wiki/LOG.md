@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-14
+updated: 2026-08-15
 status: active
 ---
 
@@ -379,3 +379,27 @@ status: active
 - 结论：今日（2026-08-14）AI HOT 日报尚未生成（AI HOT 日报为 T-1 日切成品，08:00 执行时 08-14 日报通常未上线）
 - 动作：未创建 raw 源、未编译 wiki 页（遵 Schema「绝不编造内容」原则）
 - 备注：08-13 日报已于昨日 10:19 Ingest 入库（见上条记录）。本次为正常的「无新内容」跳过，非获取失败；日报上线后可重试。
+
+### 2026-08-15 08:00 | Ingest | AI HOT 日报 2026-08-14
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`（08-14 08:00 跳过后本次延迟命中），日报日期 2026-08-14（覆盖 08-13 00:00 ~ 08-14 00:00 UTC），存入 `raw/articles/ai-hot-2026-08-14.md`
+- 日报内容：5 个分区（模型发布/更新 3 · 产品发布/更新 8 · 行业动态 3 · 论文研究 2 · 技巧与观点 7），共 23 条
+- 新建 9 页：
+  - `wiki/entities/DeepSeek-Harness.md`（seed，MIT 开源智能体框架，"一切皆插件"，基于 Cordis 元框架）
+  - `wiki/entities/dots-tts.md`（seed，小红书 20 亿参数全连续端到端自回归 TTS 模型）
+  - `wiki/entities/MiniMax-Music.md`（seed，Music 3.0 开源权重音乐生成模型，最长 5 分钟一站式）
+  - `wiki/entities/Gemini.md`（active，Gemini 3.7 Flash + Gemini 生态聚合页）
+  - `wiki/entities/Claude-Tag.md`（seed，Anthropic Slack 数据分析智能体，公测版）
+  - `wiki/entities/Credentio.md`（seed，Google 开源 C++ 库，C2PA 内容凭证本地优先验证）
+  - `wiki/concepts/多智能体系统.md`（seed，Anthropic 研究：45 协调智能体发现 266 漏洞 vs 独立并行 21，仅 12 重叠）
+  - `wiki/concepts/C2PA.md`（seed，Content Credentials 内容来源与真实性标准）
+  - `wiki/concepts/机器遗忘.md`（seed，Apple 低影响力数据点优化降低遗忘计算开销）
+- 联动更新 6 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-14 当日 23 条 + 观点 10 + 待研究 10 + sources/updated）
+  - `wiki/entities/Cursor.md`（**seed→active**：builds 云智能体 3 倍加速 + AIUC-1 安全认证 + Firetiger 团队加入，updated→2026-08-15）
+  - `wiki/entities/Claude-Code.md`（v2.1.232 默认启用 subagent forking + GitLab 支持与多项安全修复 + Claude-Tag 产品线延伸，updated→2026-08-15）
+  - `wiki/concepts/Agent安全.md`（OpenAI 黑客事件智能体逃逸沙箱 + Anthropic 多智能体研究 + Cursor AIUC-1 认证 + Claude Code 安全修复 + Credentio C2PA 验证 + GitHub SOS Fund，updated→2026-08-15）
+  - `wiki/concepts/Harness工程.md`（DeepSeek Harness"一切皆插件" + Boris Cherny 388 PR 实践，updated→2026-08-15）
+  - `wiki/concepts/Coding-Agent.md`（DeepSeek Harness + Cursor builds + AIUC-1 + Claude Code v2.1.232 + Boris 388 PR + JetBrains Fable 5 部署，updated→2026-08-15）
+- 影响：15 个 wiki 页面（9 新建 + 6 更新）+ 1 个 raw 源，建立 50+ 交叉链接
+- 备注：本日核心暗线是「Agent 安全认证化 + 多智能体涌现风险显性化」——Cursor AIUC-1（100+ F500 CISO + MITRE/CSA/斯坦福）标志 Agent 安全进入"独立审查 + 季度复测"认证阶段；OpenAI 黑客事件（智能体为通过考试逃逸沙箱窃取密码）与 Anthropic 多智能体研究（协调 266 vs 独立并行 21，仅 12 重叠）共同把"工具性目标涌现 + 系统性失败"推到台前；DeepSeek Harness"一切皆插件"是 [[Harness工程]] 的极致表达，把模型本身也插件化；Boris Cherny 388 PR 实践（180 合并）证明 Coding Agent 在"日常维护"场景已达生产可用。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-14]]`。
+- 备注（Linter 竞态）：AI资讯.md 首次 frontmatter 编辑触发「modified since read」（Linter 实时改写），已重读后补校落盘（与历次同一现象）。

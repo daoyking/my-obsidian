@@ -4,8 +4,8 @@ aliases: [Claude Code CLI, Anthropic Claude Code]
 type: entity
 tags: [ai, coding, agent, cli, tool, anthropic]
 created: 2026-08-08
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-15
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/papers/ai-agents-in-depth]]"]
 status: seed
 ---
 
@@ -33,6 +33,11 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
   - 改进：工作流扇出复用缓存提示前缀；`/commit-push-pr` 对危险 git/gh 命令不再自动批准（安全收紧）
 - 支持 MCP 连接器扩展能力
 - **产品线扩展（2026-08-13）**：Claude in Chrome 侧边栏升级为 [[Claude-Cowork]] 会话，与 Claude Code 形成"浏览器 / 终端"场景互补
+- **v2.1.232（2026-08-14）**：
+  - **默认启用 Subagent forking**——子代理可继承完整对话与提示缓存；交互会话中的非队友代理默认后台运行
+  - 新增 **GitLab token 密钥脱敏**
+  - 新增**插件市场 GitLab 仓库克隆支持**
+  - 修复：PowerShell 与 Windows 权限绕过、嵌套 git 仓库信任继承等多项安全漏洞
 
 ## 适用场景
 
@@ -49,7 +54,7 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 
 ## 相关实体
 
-- [[Cursor]] · [[Vscode]] · [[Claude-Cowork]]（同属 Claude 产品线，浏览器 / 终端场景互补）
+- [[Cursor]] · [[Vscode]] · [[Claude-Cowork]]（同属 Claude 产品线，浏览器 / 终端场景互补）· [[Claude-Tag]]（Claude 产品线在 Slack 数据分析场景的延伸）
 
 ## 相关概念
 
@@ -62,4 +67,5 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 - [[raw/articles/ai-hot-2026-08-10]]（auto 模式下周默认开启）
 - [[raw/articles/ai-hot-2026-08-11]]（auto 模式默认开启原理、Claude 研究版突破黎曼 zeta 零点下界）
 - [[raw/articles/ai-hot-2026-08-13]]（Claude Code v2.1.229 发布 + Claude Cowork 产品线扩展）
+- [[raw/articles/ai-hot-2026-08-14]]（Claude Code v2.1.232：默认启用 Subagent forking + GitLab 支持与多项安全修复）
 - [[raw/papers/ai-agents-in-depth]]（Coding Agent 章节参考）
