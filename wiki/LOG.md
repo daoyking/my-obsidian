@@ -3,7 +3,7 @@ title: 操作日志
 type: topic
 tags: [log]
 created: 2026-08-07
-updated: 2026-08-16
+updated: 2026-08-17
 status: active
 ---
 
@@ -426,3 +426,14 @@ status: active
   - `wiki/concepts/C2PA.md`（新增「与模型水印的关系」节 + 互补对照表 + 更新待研究问题，updated→2026-08-16）
 - 影响：15 个 wiki 页面（3 新建 + 12 更新）+ 1 个 raw 源，建立 45+ 交叉链接
 - 备注：本日核心暗线是「AI 编码工具垂直整合 + 输出侧合规溯源 + 开放权重生态全景化」——Cursor 被 SpaceX 收购（全球最大 GPU 集群 × 编码能力 × Grok 模型三者合一）是 [[Coding-Agent]] 领域迄今最大并购，标志独立编码 Agent 走向"算力巨头垂直整合"；Claude 文本水印（SynthID-Text + 欧盟 AI 法案）把 [[模型水印]] 从学术推向主流合规部署，与 [[C2PA]] 显式清单互补；HF 开源生态数据（85.6% 模型下载<200 次 / 中国参数规模领先 / AMD+NVIDIA 主导发布）为 [[开放权重]] 提供宏观基线，与 OpenRouter 84% 非 SOTA 数据共同揭示"规模膨胀 vs 使用集中"并存；GLM-5.3 编程模型涌现网络安全能力是新现象，Coding Agent 可向代码安全审查延伸。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-15]]`。
+
+### 2026-08-17 07:50 | Ingest | AI HOT 日报 2026-08-16
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`（08-17 为周一，08-17 日报尚未上线，latest 返回 08-16 为最新未入库日报），存入 `raw/articles/ai-hot-2026-08-16.md`
+- 日报内容：1 个分区（论文研究 1），共 1 条事件（周末后首个工作日内容偏少属正常）
+- 新建 1 页：
+  - `wiki/concepts/内容洪水.md`（seed，AIGC 以数量挤占人类创作者市场；亚马逊 14,419 本电子书分析：书目总量增 38.3 倍 vs 收入增 8.9 倍）
+- 联动更新 2 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-16 当日 1 条 + 观点 1 + 待研究 1 + sources/updated→2026-08-17）
+  - `wiki/concepts/负责任AI.md`（新增「AIGC 经济外部性：内容洪水与人类创作者挤压」节，链 `[[内容洪水]]`；sources/updated→2026-08-17）
+- 影响：3 个 wiki 页面（1 新建 + 2 更新）+ 1 个 raw 源，建立 5+ 交叉链接
+- 备注：本日内容虽少（1 条），但 `[[内容洪水]]` 是值得长期跟踪的 AIGC 经济外部性主题——"数量增长 38.3 倍 vs 收入增长 8.9 倍"是 AIGC 滥用经济层影响的首次量化实证。外溢效应（无 AI 文本书籍收入也下滑）说明挤压通过"市场拥挤"间接发生，传统"标识 AI 内容"治理可能不足。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-16]]`。

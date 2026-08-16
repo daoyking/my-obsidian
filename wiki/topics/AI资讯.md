@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-16
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+updated: 2026-08-17
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]"]
 status: active
 ---
 
@@ -382,6 +382,17 @@ status: active
 | **OpenRouter：84% token 来自非前沿模型** | 84% token 非 SOTA；最常用六款模型性能约前沿 77%、成本仅 Fable 5 的 2.5%；六款承载 80% 流量，混合价 $0.50/M（Fable 5 $20）；最佳开源模型一年内 48%→前沿 80% | [[OpenRouter]] · [[Agent评估]] · [[开放权重]] |
 | **Databricks AI_Functions in 数据仓库** | 在数据仓库中用 AI_Functions 处理非结构化数据；AI 能力直接集成到 SQL 工作流扩展分析边界 | [[AI]] |
 
+### 2026-08-16（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-16]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-16)
+> 注：08-17 07:50 执行（周一），08-17 日报尚未上线，latest 返回 08-16 为最新未入库日报。仅 1 个分区「论文研究」共 1 条事件（周末后首个工作日内容偏少属正常）。
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **AI 生成书籍正淹没亚马逊** | 14,419 本自出版电子书分析：AI 生成书籍以数量而非质量挤占人类作者市场；2023 Q1→2026 Q1 书目总量增长 38.3 倍、季度收入仅增 8.9 倍；八个类型中七个类型的无 AI 文本书籍单书收入下降 | [[内容洪水]] · [[负责任AI]] · [[多模态大模型]] |
+
 ## 我的观点
 
 > 主观判断与倾向，这是自成长的种子。
@@ -441,6 +452,7 @@ status: active
 - HF 开源生态数据中"AMD/NVIDIA 各发布超 200 模型仓库居首"与 [[Cursor]] 被 SpaceX 收购形成跨层对照——从模型层（芯片厂商主导发布）到应用层（算力巨头收购编码 Agent），"硬件 × AI"垂直整合是跨层共振趋势
 - 蚂蚁百灵单机 Agentic RL 闭环（Ling-3.0-tiny + AReno + DGX Spark + GSPO）是 [[Agent持续进化]] 四法中「经验→参数」的轻量级实证——单机即可让 Agent 从交互中学习，降低了"自我进化"的工程门槛；井字棋虽是最小验证，但 rewards_mean -0.5→0.4 的收敛曲线证明闭环可行
 - DeepSeek V4 Pro 硅基流动 Day-0 + 1M 上下文 + MIT 开源，与 [[GLM]]-5.3、[[Qwen]]3.8 共同体现国产开源前沿模型多极化——且定价（输入 $1.32/M）远低于 SOTA（Fable 5 $20），是 OpenRouter 84% 非 SOTA 趋势的供给侧印证
+- 亚马逊 AI 生成书籍研究是 [[内容洪水]] 的首个量化实证——"数量增长 38.3 倍 vs 收入增长 8.9 倍"揭示 AIGC 经济外部性的核心机制：AI 内容无需更优秀，只需足够多即可稀释市场。更值得警惕的是"外溢效应"——即便未检测到 AI 文本的书籍收入也在下滑，说明挤压是通过"市场拥挤"间接发生而非直接替代，传统"标识 AI 内容"治理可能不足以保护人类创作者
 
 ## 待研究问题
 
@@ -498,6 +510,8 @@ status: active
 - 蚂蚁百灵单机 Agentic RL 闭环从井字棋推广到真实 Agent 任务的可行性？GSPO 算法在复杂工具调用场景（如本库 Ingest/Lint）能否收敛？单机训练 400 步的算力成本与效果收益比如何？
 - DeepSeek V4 Pro 的"1M 上下文 + 三档推理强度"在真实长程 Agent 工作流（如大型代码库理解）中的可靠性如何？与 Claude Fable 5 的"逼近体验"在哪些任务类型上仍有差距？
 
+- "内容洪水"现象是否会在视频生成（[[Seedance]] / [[LTX]]）与代码生成领域重演？平台治理应采用配额制、AI 标识强制、还是人类创作者优先排序？[[模型水印]] 与 [[C2PA]] 能否成为技术基础？
+
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]] — AI HOT 日报 2026-08-07
@@ -508,3 +522,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-13]] — AI HOT 日报 2026-08-13
 - [[raw/articles/ai-hot-2026-08-14]] — AI HOT 日报 2026-08-14
 - [[raw/articles/ai-hot-2026-08-15]] — AI HOT 日报 2026-08-15
+- [[raw/articles/ai-hot-2026-08-16]] — AI HOT 日报 2026-08-16

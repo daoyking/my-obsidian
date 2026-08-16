@@ -4,8 +4,8 @@ aliases: [Responsible AI, 负责任人工智能, AI伦理, AI治理]
 type: concept
 tags: [ai, ethics, safety, governance]
 created: 2026-08-08
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-for-everyone]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-17
+sources: ["[[raw/articles/ai-for-everyone]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-16]]"]
 status: active
 ---
 
@@ -57,6 +57,16 @@ Anthropic 与独立研究者 David Roodman 合作发布报告，基于 56 项美
 
 **定位**：这是前沿 AI 公司主动承担"劳动力转型"社会责任的实例——与 [[AI转型]] 的企业内部转型互补，此处是面向社会层的劳动力冲击应对。Anthropic 作为前沿模型公司直接投入再培训证据研究，呼应了"治理失衡"反思中"科技公司需更多承担社会影响责任"的诉求。
 
+## AIGC 经济外部性：内容洪水与人类创作者挤压（2026-08-16）
+
+来自 [[raw/articles/ai-hot-2026-08-16]]（The Decoder，基于 14,419 本自出版电子书）：
+
+亚马逊自出版电子书市场出现"AIGC 数量挤压人类收入"的量化证据：2023 Q1→2026 Q1 书目总量增长 38.3 倍，而季度收入仅增长 8.9 倍；八个类型中七个类型的无 AI 文本书籍单书收入下降——即便未检测到 AI 文本的作品也被挤压。
+
+**定位**：这是 [[负责任AI]] "滥用"风险在**经济层**的体现——AI 内容以数量优势稀释市场，对人类创作者造成未补偿的收入挤压。与 deepfake（身份滥用）、自动化武器（物理滥用）并列，构成 AIGC 滥用的三种典型形态。已新建 [[内容洪水]] 概念页捕捉此现象，长期跟踪。
+
+**治理启示**：传统版权与平台治理针对"单篇质量"，而 AIGC 让"数量"本身成为风险源——治理需从"内容质量审核"扩展到"内容数量治理"（配额、AI 标识强制、人类优先排序）。[[模型水印]] 与 [[C2PA]] 作为输出侧可溯源技术，是"AI 内容标识"的潜在技术基础。
+
 ## 与本库安全概念的关系
 
 - 模型 / 提示层：[[越狱攻击]]（用户侧绕过护栏）· [[提示注入]]（数据侧注入指令）· [[Agent安全]]
@@ -64,7 +74,7 @@ Anthropic 与独立研究者 David Roodman 合作发布报告，基于 56 项美
 
 ## 相关概念
 
-- [[越狱攻击]] · [[提示注入]] · [[Agent安全]] · [[AI战略]] · [[AI转型]] · [[Agent持续进化]]
+- [[越狱攻击]] · [[提示注入]] · [[Agent安全]] · [[AI战略]] · [[AI转型]] · [[Agent持续进化]] · [[内容洪水]]
 
 ## 相关主题
 
@@ -75,3 +85,4 @@ Anthropic 与独立研究者 David Roodman 合作发布报告，基于 56 项美
 - [[raw/articles/ai-for-everyone]]（模块 3/4）
 - [[raw/articles/ai-hot-2026-08-10]]（前沿模型攻击暴露激励与治理失衡）
 - [[raw/articles/ai-hot-2026-08-13]]（Research Gold AI 身份欺诈、Anthropic 工人再培训综述）
+- [[raw/articles/ai-hot-2026-08-16]]（亚马逊 AI 生成书籍市场分析：AIGC 经济外部性实证）
