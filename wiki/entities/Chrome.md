@@ -4,7 +4,7 @@ aliases: [Google Chrome]
 type: entity
 tags: [browser, tool, chrome, debug]
 created: 2022-09-19
-updated: 2026-08-07
+updated: 2026-08-17
 sources: []
 status: active
 ---
@@ -33,7 +33,7 @@ status: active
 
 ## 相关实体
 
-- [[Vscode]] · [[Mac]]
+- [[Vscode]] · [[Mac]] · [[ChromeAppHeroes]]（Chrome 插件中文说明书项目，133 篇条目 + 离线包）
 
 ## 来源
 

@@ -4,6 +4,7 @@ type: topic
 tags: [log]
 created: 2026-08-07
 updated: 2026-08-17
+sources: []
 status: active
 ---
 
@@ -437,3 +438,18 @@ status: active
   - `wiki/concepts/负责任AI.md`（新增「AIGC 经济外部性：内容洪水与人类创作者挤压」节，链 `[[内容洪水]]`；sources/updated→2026-08-17）
 - 影响：3 个 wiki 页面（1 新建 + 2 更新）+ 1 个 raw 源，建立 5+ 交叉链接
 - 备注：本日内容虽少（1 条），但 `[[内容洪水]]` 是值得长期跟踪的 AIGC 经济外部性主题——"数量增长 38.3 倍 vs 收入增长 8.9 倍"是 AIGC 滥用经济层影响的首次量化实证。外溢效应（无 AI 文本书籍收入也下滑）说明挤压通过"市场拥挤"间接发生，传统"标识 AI 内容"治理可能不足。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-16]]`。
+
+### 2026-08-17 08:50 | Lint | 每周体检
+- 发现问题：悬空 3（`[[CLAUDE.md]]` 链接含 `.md` 扩展名被脚本误判、`[[Qwen-MM-Plugins]]` 真悬空、`[[obsidian-llm-wiki]]` 真悬空）；孤立 2（`wiki/entities/ChromeAppHeroes.md`、`wiki/topics/Agent开发工程师面试宝典.md`）；frontmatter 缺失 3（`wiki/工作台.md` / `wiki/LOG.md` / `wiki/INDEX.md` 缺 `sources`）
+- 修复动作：
+  - 链接规范化：2 个文件里的 `[[CLAUDE.md]]` → `[[CLAUDE]]`（去掉扩展名，Obsidian 规范形式，文件实际存在于 vault 根）——触及 `wiki/concepts/Agent持续进化.md`、`wiki/topics/AI资讯.md`
+  - 补建 4 个 seed 实体页（均 status: seed，挂 sources 与交叉链接）：
+    - `wiki/entities/Qwen-MM-Plugins.md`（Qwen 多模态智能体插件，sources 挂 `[[raw/articles/ai-hot-2026-08-11]]`，链 Qwen / 多模态大模型 / Agent-Plugins / Agent）
+    - `wiki/entities/obsidian-llm-wiki.md`（本 vault 维护引擎 skill，卡帕西 LLM Wiki 方法实例，链 CLAUDE / Obsidian / WorkBuddy / Agent持续进化 / 记忆系统 / 持续学习）
+    - `wiki/entities/Obsidian.md`（vault 运行平台，链 obsidian-llm-wiki / WorkBuddy / CLAUDE）
+    - `wiki/entities/WorkBuddy.md`（自动化宿主与 Agent 平台，链 obsidian-llm-wiki / Obsidian / Agent持续进化 / CLAUDE）
+  - 孤立页补入链：`wiki/entities/Chrome.md` 相关实体补 `[[ChromeAppHeroes]]`；`wiki/topics/Agent开发学习计划-Python路线.md` 引言补 `[[Agent开发工程师面试宝典]]` 周次映射说明
+  - frontmatter 补全：`wiki/工作台.md` / `wiki/INDEX.md` / `wiki/LOG.md` 各补 `sources: []`（结构性元页，无 raw 来源），同步 updated→2026-08-17
+- 复检结果：悬空=0、孤立=0、frontmatter 缺失=0 ✅（lint 脚本完整跑完无早退）
+- 影响文件：4 新建 + 7 修改（Agent持续进化 / AI资讯 / Chrome / Agent开发学习计划-Python路线 / 工作台 / INDEX / LOG）
+- 经验：lint 脚本 `set -euo pipefail` 在孤立页段遇 `grep` 无匹配返回 1 时会提前退出——首跑孤立=2 触发早退，frontmatter 段未执行；手动补检补全画像，修复孤立后复跑脚本即跑完整。另：`[[X.md]]` 形式（带扩展名）会被脚本误判为悬空（脚本对链接文本再追加 `.md` 匹配），规范化为 `[[X]]` 即可。
