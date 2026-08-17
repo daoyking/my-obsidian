@@ -3,10 +3,10 @@ title: learning-ai-agent
 type: project
 tags: [ai-agent, learning, vercel-ai-sdk, mastra, rag, eval, observability]
 created: 2026-08-10
-updated: 2026-08-13
-sources: ["[[raw/articles/github-learning-ai-agent-2026-08-10]]", "[[raw/articles/github-learning-ai-agent-2026-08-13]]"]
+updated: 2026-08-17
+sources: ["[[raw/articles/github-learning-ai-agent-2026-08-10]]", "[[raw/articles/github-learning-ai-agent-2026-08-13]]", "[[raw/articles/github-learning-ai-agent-2026-08-17]]"]
 status: active
-tech_stack: [TypeScript, Vercel AI SDK, Mastra, Vite, Node.js, DeepSeek]
+tech_stack: [TypeScript, Vercel AI SDK, Mastra, Vite, Node.js, DeepSeek, agentmemory]
 repo: "https://github.com/daoyking/learning-ai-agent"
 ---
 
@@ -43,28 +43,24 @@ AI Agent 开发学习路线工程集，按六周计划组织，每周一个独�
 - **CLI 独立避免 TLA**: W5 评测管线抽离 `src/cli.ts`，`runEval` 导出 `renderEvalReport`，避免 Top-Level Await 问题
 - **真实评测（DeepSeek）+ 作品集实跑证据**: W2-W5 全部用 DeepSeek 跑通真实评测（通过率均 100%，加权均分 9.8 / 9.7 / 8.98 / 9.8），作品集从「离线示例」替换为「真实报告 + 6-span trace 瀑布」，可演示性大幅提升
 - **DeepSeek 适配方法论**: judge 改用 `generateText` 抽 JSON + zod 校验（绕开不支持 `json_schema`）；W3 embedding 改为零依赖本地字符哈希向量（绕开无 embedding 接口）；agent 加 `maxSteps` + 工具结果兜底（绕开调工具后不续写）
+- **W2 长期记忆（agentmemory）**: 对话前用最后一条用户消息召回相关历史记忆注入 system prompt，对话后 `onFinish` 把本轮内容写入记忆；本地向量化免费无需 key；`isMemoryAvailable()` 健康检查 + 服务不可用时静默降级（聊天功能不受影响）——生产级 Agent 记忆模块的标准范式
 
-## 本周变更（2026-08-06 ~ 2026-08-13）
+## 本周变更（2026-08-10 ~ 2026-08-17）
 
-> 详见 `[[raw/articles/github-learning-ai-agent-2026-08-13]]`（本周新增聚焦 08-10；08-09 初始工程集见上周 `[[raw/articles/github-learning-ai-agent-2026-08-10]]`）
+> 详见 `[[raw/articles/github-learning-ai-agent-2026-08-17]]`（本周新增聚焦 08-13 的 0938a7e；08-10 的三条提交详见上周 `[[raw/articles/github-learning-ai-agent-2026-08-13]]`，本周窗口与之在 08-10~08-13 重叠，仅引用不重复展开）
 
-### W5 真实评测跑通 + 作品集替换为实跑证据（f96990c，08-10）⭐ 重大里程碑
-- W5 judge 改用 `generateText` 抽 JSON + zod 校验（DeepSeek 不支持 `json_schema`）
-- W5 agent 加 `toolChoice: 'required'` + 工具结果兜底合成
-- W5 runEval 把 Agent 真实 toolCalls 喂给 judge（评测方法论修正）
-- **W5 真实 eval 跑通：通过率 100%、加权均分 9.8/10**
-- W6 作品集 `eval-report.md` 换为真实报告 + 真实 6-span trace 瀑布
+### W2 接入 agentmemory 长期记忆 + 修复 baseURL 空值崩溃（0938a7e，08-13）⭐ 重大
 
-### W2-W4 真实评测跑通并补进作品集（c228647，08-10）⭐ 重大
-- 修复 `runEval` 未导出 `llmJudge` 的阻断（W2/W3/W4 `run.ts` 复用）
-- 修复 judge 对 DeepSeek 越界 score 健壮性（夹取 `[0, 10]`）
-- W3 embedding 改为零依赖本地字符哈希向量（DeepSeek 无 embedding）
-- W2/W3 agent 加 `maxSteps` + 工具结果兜底；W4 修正 Mastra `toolCalls` 提取（`payload.toolName`）
-- **三份真实评测报告**（100% / 10、100% / 9.7、100% / 8.98）补进 w6-portfolio
-- `index.html` 新增 W2-W4 跨周回归区块
+- **长期记忆双闭环**：对话前召回（`/smart-search`）+ 对话后存入（`/remember`，`onFinish` 回调）；本地向量化免费无 key
+- **静默降级**：`server/memory.ts` 新增记忆客户端（82 行），`isMemoryAvailable()` 健康检查；服务未启动时聊天不受影响
+- **一键启动**：`package.json` 加 `memory:start` 脚本；`.agentmemory/` + `data/` 加入 gitignore
+- **baseURL 空值崩溃修复**：W2/W3 `server/model.ts` 的 `baseURL: process.env.OPENAI_BASE_URL` → `|| undefined`，避免 `@ai-sdk/openai` 在 `undefined` 值（而非未传）时模块加载即崩
 
-### 移除私有 .workbuddy 记忆（e1463c7，08-10）
-- `.gitignore` 忽略 `.workbuddy/`，`git rm --cached` 取消跟踪（磁盘保留，历史留痕）
+### 上周已记录（08-10，详见 `[[raw/articles/github-learning-ai-agent-2026-08-13]]`）
+
+- f96990c: W5 真实评测跑通 + 作品集替换为实跑证据（100% / 9.8）
+- c228647: W2-W4 真实评测跑通并补进作品集（100% / 10、9.7、8.98）
+- e1463c7: 移除私有 .workbuddy 记忆
 
 ### 真实评测结果汇总
 
@@ -86,6 +82,7 @@ AI Agent 开发学习路线工程集，按六周计划组织，每周一个独�
 - **Mastra toolCalls 提取路径**: W4 需从 `payload.toolName` 取，非顶层字段
 - **评测方法论修正**: 评测的不是「能不能调工具」而是「调了工具后回答质量」——runEval 应把真实 toolCalls 喂给 judge
 - **公开仓库泄露私有记忆**: `.workbuddy/memory/*.md` 含 Agent 工程私有数据，需加入 `.gitignore` + `git rm --cached`（不强制改写历史）
+- **OPENAI_BASE_URL 空值崩溃**: `@ai-sdk/openai` 的 `createOpenAI` 在 `baseURL` 为 `undefined` 字面量（而非「未传」）时模块加载即崩；修复用 `process.env.OPENAI_BASE_URL || undefined`——`||` 在左侧 falsy 时返回右侧 `undefined`，语义等价「不传字段」。JS 中 `undefined` 作为属性值与「属性不存在」在严格类型库里有差异，`||` 是惯用「真值才传」模式
 
 ## 复盘结论
 
@@ -94,6 +91,8 @@ AI Agent 开发学习路线工程集，按六周计划组织，每周一个独�
 - 自包含部署（无相对依赖）是作品集的最佳实践，降低部署摩擦
 - **真实评测 > 离线示例**：用真实模型跑通评测后，作品集从「示例数据」升级为「实跑证据」，可演示性与可信度质的提升
 - **模型能力差异要前置适配**：DeepSeek 与 Vercel AI SDK 默认假设（json_schema / embedding / 工具后续写）有多处偏差，每个偏差都需显式兜底，应在选型阶段就列清模型能力清单
+- **长期记忆要可降级**：记忆服务是「增强」而非「必需」，`isMemoryAvailable()` 健康检查 + 静默降级（服务挂了主功能不受影响）是生产级 Agent 记忆模块的标准范式——记忆召回/存入失败只告警不阻断主流程
+- **环境变量空值要显式处理**：`process.env.X` 在未设置时是 `undefined`，但直接赋给严格类型库的字段会触发「undefined 值 vs 未传」歧义，`|| undefined` 是安全惯用法
 
 ## 相关概念
 

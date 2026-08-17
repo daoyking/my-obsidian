@@ -453,3 +453,16 @@ status: active
 - 复检结果：悬空=0、孤立=0、frontmatter 缺失=0 ✅（lint 脚本完整跑完无早退）
 - 影响文件：4 新建 + 7 修改（Agent持续进化 / AI资讯 / Chrome / Agent开发学习计划-Python路线 / 工作台 / INDEX / LOG）
 - 经验：lint 脚本 `set -euo pipefail` 在孤立页段遇 `grep` 无匹配返回 1 时会提前退出——首跑孤立=2 触发早退，frontmatter 段未执行；手动补检补全画像，修复孤立后复跑脚本即跑完整。另：`[[X.md]]` 形式（带扩展名）会被脚本误判为悬空（脚本对链接文本再追加 `.md` 匹配），规范化为 `[[X]]` 即可。
+
+### 2026-08-17 09:55 | Ingest | GitHub 周动态 2026-08-17（daoyking）
+- 来源：gh CLI 扫描 daoyking 全部仓库近 7 天（2026-08-10 ~ 2026-08-17）活动
+- 扫描结果：46 个仓库，3 个有近 7 天 push（my-obsidian / learning-ai-agent / hmnmt-web），无新 release
+- **my-obsidian**：知识库自身维护，跳过 Ingest（仅记 LOG）
+- **hmnmt-web**：本周无新提交（5 条全在 08-10~08-12，已被 08-13 10:15 执行完整覆盖于 `[[raw/articles/github-hmnmt-web-2026-08-13]]`），跳过 Ingest（仅记 LOG）
+- **learning-ai-agent**：本周唯一新增提交 0938a7e（08-13 06:09）⭐ 重大——feat(W2): 接入 agentmemory 长期记忆 + 修复 W2/W3 的 OpenAI baseURL 空值崩溃。该提交时间早于上次自动化执行时刻（08-13 10:15）但未被上次 raw 快照收录，本周补录
+- 新建 1 个 raw 源：
+  - `raw/articles/github-learning-ai-agent-2026-08-17.md`（补录 0938a7e，声明与上周 08-13 报告的窗口重叠边界）
+- 更新 1 个项目页：
+  - `projects/learning-ai-agent.md`（frontmatter updated→2026-08-17 / sources 追加新 raw / tech_stack 加 agentmemory；本周变更节改标题为 08-10~08-17 并新增 0938a7e 条目；关键设计节加「W2 长期记忆（agentmemory）」；踩坑记录加「OPENAI_BASE_URL 空值崩溃」；复盘结论加「长期记忆要可降级」+「环境变量空值要显式处理」两条）
+- 影响：1 个 raw 源 + 1 个项目页更新，建立 3+ 交叉链接（[[记忆系统]] / [[Vercel-AI-SDK]] / [[raw/articles/github-learning-ai-agent-2026-08-13]]）
+- 备注：本周核心是「W2 长期记忆首次落地 + baseURL 空值崩溃修复」——agentmemory 的「召回 + 存入」双闭环 + 静默降级是生产级 Agent 记忆模块标准范式，与 [[记忆系统]] 概念形成实例对照；baseURL 修复归入 DeepSeek/国产模型适配方法论第四类易踩坑点（json_schema / embedding / 工具后续写 / 环境变量空值）。本次执行发现上次（08-13 10:15）raw 快照遗漏了 08-13 06:09 的 0938a7e，已在本周补录并显式声明窗口重叠边界。
