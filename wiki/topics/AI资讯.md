@@ -593,4 +593,6 @@ status: active
 - [[raw/articles/ai-hot-2026-08-14]] — AI HOT 日报 2026-08-14
 - [[raw/articles/ai-hot-2026-08-15]] — AI HOT 日报 2026-08-15
 - [[raw/articles/ai-hot-2026-08-16]] — AI HOT 日报 2026-08-16
+- [[raw/articles/ai-hot-2026-08-17]] — AI HOT 日报 2026-08-17
+- [[raw/articles/ai-hot-2026-08-18]] — AI HOT 日报 2026-08-18
 - [[raw/articles/ai-hot-2026-08-19]] — AI HOT 日报 2026-08-19

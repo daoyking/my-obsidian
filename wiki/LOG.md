@@ -467,6 +467,17 @@ status: active
 - 影响：1 个 raw 源 + 1 个项目页更新，建立 3+ 交叉链接（[[记忆系统]] / [[Vercel-AI-SDK]] / [[raw/articles/github-learning-ai-agent-2026-08-13]]）
 - 备注：本周核心是「W2 长期记忆首次落地 + baseURL 空值崩溃修复」——agentmemory 的「召回 + 存入」双闭环 + 静默降级是生产级 Agent 记忆模块标准范式，与 [[记忆系统]] 概念形成实例对照；baseURL 修复归入 DeepSeek/国产模型适配方法论第四类易踩坑点（json_schema / embedding / 工具后续写 / 环境变量空值）。本次执行发现上次（08-13 10:15）raw 快照遗漏了 08-13 06:09 的 0938a7e，已在本周补录并显式声明窗口重叠边界。
 
+
+### 2026-08-19 10:57 | Ingest | 补录 AI HOT 日报 2026-08-17 和 2026-08-18
+- 来源：aihot skill 调用 `/api/v1/dailies/2026-08-17` 和 `/api/v1/dailies/2026-08-18`
+- 发现缺失：08-17（2 条技巧与观点）和 08-18（14 条多分区事件）日报未入库
+- 新建 2 个 raw 源：
+  - `raw/articles/ai-hot-2026-08-17.md`
+  - `raw/articles/ai-hot-2026-08-18.md`
+- 更新 1 个 wiki 页：
+  - `wiki/topics/AI资讯.md`（sources 追加 08-17/08-18，updated→2026-08-19）
+- 备注：08-17 日报核心是「Qwen 3.8 27B 发布 + Anthropic IPO 传闻分析」，08-18 日报核心是「Cursor Origin 代码托管 + NVIDIA 算力布局 + OpenAI 安全防御升级」。这两日内容已被 08-19 的 Ingest 间接覆盖部分，但 raw 源缺失需补录以保证来源可追溯。
+
 ### 2026-08-19 08:10 | Ingest | AI HOT 日报 2026-08-19
 - 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-19（覆盖 08-18 00:00 ~ 08-19 00:00 UTC），存入 `raw/articles/ai-hot-2026-08-19.md`
 - 日报内容：4 个分区（产品发布/更新 6 · 行业动态 1 · 论文研究 4 · 技巧与观点 5），共 16 条（模型 0）
