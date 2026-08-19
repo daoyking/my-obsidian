@@ -466,3 +466,21 @@ status: active
   - `projects/learning-ai-agent.md`（frontmatter updated→2026-08-17 / sources 追加新 raw / tech_stack 加 agentmemory；本周变更节改标题为 08-10~08-17 并新增 0938a7e 条目；关键设计节加「W2 长期记忆（agentmemory）」；踩坑记录加「OPENAI_BASE_URL 空值崩溃」；复盘结论加「长期记忆要可降级」+「环境变量空值要显式处理」两条）
 - 影响：1 个 raw 源 + 1 个项目页更新，建立 3+ 交叉链接（[[记忆系统]] / [[Vercel-AI-SDK]] / [[raw/articles/github-learning-ai-agent-2026-08-13]]）
 - 备注：本周核心是「W2 长期记忆首次落地 + baseURL 空值崩溃修复」——agentmemory 的「召回 + 存入」双闭环 + 静默降级是生产级 Agent 记忆模块标准范式，与 [[记忆系统]] 概念形成实例对照；baseURL 修复归入 DeepSeek/国产模型适配方法论第四类易踩坑点（json_schema / embedding / 工具后续写 / 环境变量空值）。本次执行发现上次（08-13 10:15）raw 快照遗漏了 08-13 06:09 的 0938a7e，已在本周补录并显式声明窗口重叠边界。
+
+### 2026-08-19 08:10 | Ingest | AI HOT 日报 2026-08-19
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-19（覆盖 08-18 00:00 ~ 08-19 00:00 UTC），存入 `raw/articles/ai-hot-2026-08-19.md`
+- 日报内容：4 个分区（产品发布/更新 6 · 行业动态 1 · 论文研究 4 · 技巧与观点 5），共 16 条（模型 0）
+- 新建 4 页：
+  - `wiki/entities/Mojo.md`（seed，Mojo 语言正式开源，Apache 2.0 + LLVM 例外，Python 兼容 + 系统编程）
+  - `wiki/concepts/句子变换器-v6.0.md`（seed，MultiVectorEncoder 支持 ColBERT 晚期交互检索）
+  - `wiki/concepts/GRPO-多语言推理.md`（seed，母语推理≈英语推理，RLVR 非英语场景有效）
+  - `wiki/concepts/蛋白质设计-AI.md`（seed，Claude Mythos/Opus 设计蛋白质结合剂，命中率 22.6%-35.1%）
+- 联动更新 4 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-19 当日 16 条 + 观点 10 + 待研究 10 + sources/updated→2026-08-19）
+  - `wiki/entities/Claude-Code.md`（Gmail/Google Drive 连接器 + Claude Tag CI/CD 一线响应者实践，updated→2026-08-19）
+  - `wiki/concepts/Agent评估.md`（新增「AI 评测设计方法论」节：Inspect AI + Harbor + Google Sheets/Data Studio，updated→2026-08-19）
+  - `wiki/concepts/记忆系统.md`（新增「记忆剂量校准」节：IBM 研究——强模型用全量、弱模型用精选检索，updated→2026-08-19）
+  - `wiki/concepts/负责任AI.md`（新增「国家安全 AI 民主监督」+「OpenAI 放缓开发节奏应对关键网络能力」两节，updated→2026-08-19）
+- 影响：8 个 wiki 页面（4 新建 + 4 更新）+ 1 个 raw 源，建立 30+ 交叉链接
+- 备注：本日核心暗线是「AI 能力增长 vs 治理响应的重新平衡」——OpenAI 启动国家安全 AI 民主监督计划（500 万美元赋能监督机构）+ 放缓模型开发节奏（暂停 RL 训练两周、搁置最大规模前沿 RL），是"安全先行"从口号到实践的标志性事件；与 08-10 Nathan Lambert 的"治理失衡"反思形成正面呼应。Mojo 开源是"AI 原生语言栈"里程碑，Sentence Transformers v6.0 MultiVectorEncoder 是 RAG 检索精度升级路径，Claude Gmail/Drive 连接器标志 Claude 产品线向"全栈生产力 AI"扩张。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-19]]`。
+- 备注（Linter 竞态）：Claude-Code.md 首次 Edit 触发「modified since read」（Linter 实时改写 frontmatter），已重读后补校落盘（与历次同一现象）。
