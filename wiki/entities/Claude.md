@@ -5,8 +5,8 @@ type: entity
 tags: [ai, llm, model, anthropic, agent]
 created: 2026-08-19
 updated: 2026-08-19
-sources: ["[[raw/articles/ai-hot-2026-08-19]]"]
-status: seed
+sources: ["[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]"]
+status: active
 ---
 
 # Claude
@@ -20,6 +20,8 @@ Anthropic 开发的 Claude 大模型系列，覆盖从轻量到旗舰的全谱�
 - **Claude Code**：命令行编码 Agent，支持 plan/craft/ask 三模式
 - **Claude Enterprise**：企业级部署，支持 Managed Agents
 - **Claude 文本水印**：SynthID-Text + 欧盟 AI 法案合规
+- **Computer Use / Skills API / Files API（2026-08-21）**：Claude Platform 正式上线，支持浏览器操作、团队技能调用、成品文件返回
+- **Claude Academy（2026-08-21）**：面向全球用户的 AI 教学资源，借鉴内部 4D AI Fluency Framework 及"ever-boarding"持续学习项目
 
 ## 适用场景
 
@@ -37,4 +39,5 @@ Anthropic 开发的 Claude 大模型系列，覆盖从轻量到旗舰的全谱�
 
 ## 来源
 
-- （seed 页面，待后续 Ingest 补充）
+- [[raw/articles/ai-hot-2026-08-19]]（Claude Gmail/Drive 连接器 + Claude Tag CI/CD 实践）
+- [[raw/articles/ai-hot-2026-08-21]]（Computer Use/Skills API/Files API 上线 + Claude Academy 发布）

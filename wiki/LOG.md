@@ -495,3 +495,16 @@ status: active
 - 影响：8 个 wiki 页面（4 新建 + 4 更新）+ 1 个 raw 源，建立 30+ 交叉链接
 - 备注：本日核心暗线是「AI 能力增长 vs 治理响应的重新平衡」——OpenAI 启动国家安全 AI 民主监督计划（500 万美元赋能监督机构）+ 放缓模型开发节奏（暂停 RL 训练两周、搁置最大规模前沿 RL），是"安全先行"从口号到实践的标志性事件；与 08-10 Nathan Lambert 的"治理失衡"反思形成正面呼应。Mojo 开源是"AI 原生语言栈"里程碑，Sentence Transformers v6.0 MultiVectorEncoder 是 RAG 检索精度升级路径，Claude Gmail/Drive 连接器标志 Claude 产品线向"全栈生产力 AI"扩张。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-19]]`。
 - 备注（Linter 竞态）：Claude-Code.md 首次 Edit 触发「modified since read」（Linter 实时改写 frontmatter），已重读后补校落盘（与历次同一现象）。
+
+### 2026-08-21 08:45 | Ingest | AI HOT 日报 2026-08-21
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-21（覆盖 2026-08-20 00:00 ~ 2026-08-21 00:00 UTC），存入 `raw/articles/ai-hot-2026-08-21.md`
+- 日报内容：4 个分区（模型 2 · 产品 8 · 行业 1 · 论文 2 · 观点 4），共 14 条事件
+- 新建 2 页：
+  - `wiki/entities/Qwen-UI-Agent.md`（seed，阿里 GUI 智能体基座模型，覆盖移动端/电脑端/网页端/DeepSearch）
+  - `wiki/concepts/投机解码.md`（seed，Speculative Decoding，DSpark 草稿模型技术，GPU 吞吐提升 3.18 倍）
+- 联动更新 2 个页：
+  - `wiki/topics/AI资讯.md`（追加 2026-08-21 当日 14 条 + 观点 10 + 待研究 10 + sources/updated→2026-08-21）
+  - `wiki/entities/Claude.md`（Computer Use/Skills API/Files API 上线 + Claude Academy 发布，updated→2026-08-21）
+  - `wiki/entities/Claude-Code.md`（v2.1.237/v2.1.238 发布：简洁输出风格 + readline 键位 + 提示词缓存修复，updated→2026-08-21）
+- 影响：4 个 wiki 页面（2 新建 + 2 更新）+ 1 个 raw 源，建立 15+ 交叉链接
+- 备注：本日核心暗线是"Claude 产品线全栈化"——Computer Use/Skills API/Files API 上线标志 Claude 从终端编码 → 浏览器办公 → 跨平台技能调用的完整闭环；投机解码验证"小模型辅助大模型"的工程可行性。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-21]]`。
