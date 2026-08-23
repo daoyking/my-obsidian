@@ -508,3 +508,21 @@ status: active
   - `wiki/entities/Claude-Code.md`（v2.1.237/v2.1.238 发布：简洁输出风格 + readline 键位 + 提示词缓存修复，updated→2026-08-21）
 - 影响：4 个 wiki 页面（2 新建 + 2 更新）+ 1 个 raw 源，建立 15+ 交叉链接
 - 备注：本日核心暗线是"Claude 产品线全栈化"——Computer Use/Skills API/Files API 上线标志 Claude 从终端编码 → 浏览器办公 → 跨平台技能调用的完整闭环；投机解码验证"小模型辅助大模型"的工程可行性。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-21]]`。
+
+### 2026-08-23 08:30 | Ingest | AI HOT 日报 2026-08-22 和 2026-08-23
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`，日报日期 2026-08-23（覆盖 08-22 00:00 ~ 08-23 00:00 UTC），仅含「行业动态」1 条事件；另补录 08-22 日报（最新未入库日报）
+- 新建 2 个 raw 源：
+  - `raw/articles/ai-hot-2026-08-22.md`（4 分区 17 条：模型 2 / 产品 4 / 论文 6 / 观点 3）
+  - `raw/articles/ai-hot-2026-08-23.md`（1 分区 1 条：行业动态）
+- 更新 6 个 wiki 页：
+  - `wiki/topics/AI资讯.md`（追加 08-22 / 08-23 当日条目 + 观点 8 + 待研究 4 + sources/updated→2026-08-23）
+  - `wiki/entities/SGLang.md`（Weight Cache Daemon 亚秒级引擎重启，785 倍加速，updated→2026-08-22）
+  - `wiki/entities/Claude.md`（Claude Mythos 5 网络安全能力扩展 + 3500 万 0xDAF 基金，updated→2026-08-22）
+  - `wiki/entities/Claude-Code.md`（v2.1.239 发布：成本估算升级 + Bedrock/Vertex/Foundry 渲染器，updated→2026-08-22）
+  - `wiki/entities/Grok.md`（Grok Bot 扩展至 SuperGrok Plus/Cursor Pro+/Cursor Teams，updated→2026-08-22）
+  - `wiki/entities/DeepSeek.md`（DeepSeek-V4-Flash-Vision-Exp 实验性多模态模型，updated→2026-08-22）
+  - `wiki/concepts/Agent安全.md`（新增"每个模型都会作弊"审计研究，updated→2026-08-22）
+  - `wiki/concepts/Harness工程.md`（新增 Anthropic AI 原生 SDLC 手册实践，updated→2026-08-22）
+  - `wiki/concepts/Coding-Agent.md`（新增 Claude Code v2.1.239 更新，updated→2026-08-22）
+- 影响：10 个 wiki 页面（0 新建 + 6 更新 + 4 联动）+ 2 个 raw 源，建立 40+ 交叉链接
+- 备注：本次为延迟补录（08-22 日报本应在 08-22 08:00 执行时入库，因执行失败/网络问题未入库，本次补录）。核心暗线是"Agent 安全认证化 + AI 安全能力产品化"——Claude Mythos 5 进入 Claude Security、"每个模型都会作弊"研究、Anthropic AI 原生 SDLC 手册，共同指向 Agent 安全从"事后记录"转向"工程化防护"的趋势。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-22]]` / `[[raw/articles/ai-hot-2026-08-23]]`。

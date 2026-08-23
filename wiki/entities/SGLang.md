@@ -4,8 +4,8 @@ aliases: [SGLang, sglang, SGLang 推理引擎]
 type: entity
 tags: [ai, inference, framework, llm, open-source]
 created: 2026-08-11
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-22
+sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: active
 ---
 
@@ -24,6 +24,7 @@ status: active
 - **针对本地智能体工作流优化**：SGLang × Muse Glimmer / Nemotron 均明确面向本地、常驻运行的 Agent 推理场景
 - **高性能算子集成**：2026-08-08 腾讯混元 HPC-Ops 开源算子库（Dynamic Attention + Fused MoE）集成至 SGLang 主分支，在 Hy3 上最高降低 TPOT 48.8%
 - **Unified Radix Cache（2026-08-12，LMSYS 团队）**：用单一 token 键控 radix 拓扑统一管理混合模型的 FULL、SWA 和 MAMBA 组件缓存，各组件独立执行路径、滑动窗口和检查点复用语义——为混合架构模型的前缀缓存提供单一树结构方案
+- **Weight Cache Daemon（2026-08-22，LMSYS 团队）**：通过 CUDA IPC 零拷贝映射实现亚秒级引擎重启——模型权重加载从约 495 秒降至约 0.63 秒（785 倍加速），端到端启动时间减少 93.9%；守护进程在 GPU 内存中持久化后量化权重，支持多实例共享和亚秒级主备切换，是 Fast Engine Recovery Framework 的第一阶段 | 来源：[[raw/articles/ai-hot-2026-08-22]]
 - 结构化生成、RadixAttention 等推理优化能力
 
 ## 适用场景
@@ -58,3 +59,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-08]]（腾讯混元 HPC-Ops × SGLang 集成）
 - [[raw/articles/ai-hot-2026-08-12]]（SGLang Day-0 支持 Nemotron 3.5 Lightning + LMSYS 提出 Unified Radix Cache）
 - [[raw/articles/ai-hot-2026-08-13]]（SGLang 与 Miles 为 Qwen3.8-2.4T-A95B 提供 Day-0 支持）
+- [[raw/articles/ai-hot-2026-08-22]]（Weight Cache Daemon 亚秒级引擎重启，785 倍加速）

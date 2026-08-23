@@ -4,8 +4,8 @@ aliases: [代码Agent, 编程Agent]
 type: concept
 tags: [ai, llm, agent, coding]
 created: 2026-08-07
-updated: 2026-08-16
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+updated: 2026-08-22
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: active
 ---
 
@@ -70,6 +70,7 @@ status: active
 - **Claude Code v2.1.233（2026-08-15）**：为 --worktree 标志和 agents 视图新增 GitLab 合并请求 URL 支持（延续 08-14 GitLab 适配线）；新增可选 forward_user_identity 网关设置按用户归因支出（企业成本治理）。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-15]]。
 - **Claude Code 会话 token 价值最大化指南（2026-08-15）**：输出 token 价格约为输入 5 倍；任务间 /clear 减少无关上下文回传；会话中途切换模型/effort 级别会破坏提示缓存增加成本。是 Coding Agent 经济性（缓存复用）的官方实践。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-15]]。
 - **GLM-5.3 编程能力开源第一（2026-08-15）**：智谱 [[GLM]]-5.3 编程能力较前代提升 50%，Terminal Bench 3.0 开源第一，接近 Claude Fable 5；涌现网络安全能力（CyberGym 84.5%）；上线 [[ZCode]]/AutoClaw；权重两周后开源。见 [[GLM]] · [[ZCode]] · [[raw/articles/ai-hot-2026-08-15]]。
+- **Claude Code v2.1.239（2026-08-22）**：成本估算（/cost、状态栏、--max-budget-usd）现包含数据驻留工作区 1.1 倍美国专属推理溢价，并为 Bedrock/Vertex/Foundry 等新增全屏渲染器。见 [[Claude-Code]] · [[raw/articles/ai-hot-2026-08-22]]。
 
 ## 来源
 
@@ -80,3 +81,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-13]]（Claude Code v2.1.229、AutoGPT AI PR 门控、RingCentral AI 原生工作流）
 - [[raw/articles/ai-hot-2026-08-14]]（DeepSeek Harness v0.1、Cursor builds + AIUC-1、Claude Code v2.1.232、Boris Cherny 388 PR、JetBrains Claude Fable 5 部署）
 - [[raw/articles/ai-hot-2026-08-15]]（Cursor 被 SpaceX 收购、Claude Code v2.1.233 + token 价值指南、GLM-5.3 编程开源第一）
+- [[raw/articles/ai-hot-2026-08-22]]（Claude Code v2.1.239 成本估算升级 + Bedrock/Vertex/Foundry 渲染器）

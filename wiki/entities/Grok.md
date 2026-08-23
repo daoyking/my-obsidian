@@ -4,8 +4,8 @@ aliases: [Grok, Grok 4.6, xAI Grok]
 type: entity
 tags: [ai, llm, model, xai, agent]
 created: 2026-08-13
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-22
+sources: ["[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: seed
 ---
 
@@ -20,7 +20,7 @@ xAI 旗下的大语言模型系列，定位为前沿通用推理与智能体模�
 - **长时运行智能体能力**：Grok 4.6 的核心差异化方向——为需要持续运行、多步交互的 Agent 场景优化（区别于一次性问答模型）
 - **复杂交互式与视觉工作**：强化多模态交互与视觉理解，支撑 GUI 操作 / 文档理解等 Agent 任务
 - **前沿基准表现**：在多项智能体编码与知识工作基准上达到前沿水平；Artificial Analysis Intelligence Index 追平 GPT-5.6 Sol
-- 与 DeepSeek V4 Pro 同日（2 小时内先后）发布，双双逼近 Claude Fable 5 体验——前沿模型密集发布竞争白热化
+- **Grok Bot 扩展（2026-08-22）**：Grok Bot 现包含于所有 SuperGrok Plus、Cursor Pro+ 及 Cursor Teams 计划；Grok Bot 是可在云端独立运行的 AI 智能体，支持文本线程交互、并行运行多个 Bot，处理销售/建站/客服等具体工作。这是 "AI 编码工具 × 智能体" 的深度融合——Cursor 作为编码 Agent 的主战场，现在可直接运行云端 Grok Bot 处理跨领域任务。来源：[[raw/articles/ai-hot-2026-08-22]]
 
 ## 适用场景
 
@@ -49,3 +49,4 @@ xAI 旗下的大语言模型系列，定位为前沿通用推理与智能体模�
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-13]]（Grok 4.6 发布 + DeepSeek V4 Pro 同日发布对照）
+- [[raw/articles/ai-hot-2026-08-22]]（Grok Bot 扩展至 SuperGrok Plus / Cursor Pro+ / Cursor Teams 订阅计划）
