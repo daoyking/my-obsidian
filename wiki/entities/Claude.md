@@ -4,8 +4,8 @@ aliases: [Claude, Anthropic Claude]
 type: entity
 tags: [ai, llm, model, anthropic, agent]
 created: 2026-08-19
-updated: 2026-08-22
-sources: ["[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+updated: 2026-08-24
+sources: ["[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-24]]"]
 status: active
 ---
 
@@ -43,3 +43,4 @@ Anthropic 开发的 Claude 大模型系列，覆盖从轻量到旗舰的全谱�
 - [[raw/articles/ai-hot-2026-08-19]]（Claude Gmail/Drive 连接器 + Claude Tag CI/CD 实践）
 - [[raw/articles/ai-hot-2026-08-21]]（Computer Use/Skills API/Files API 上线 + Claude Academy 发布）
 - [[raw/articles/ai-hot-2026-08-22]]（Claude Mythos 5 网络安全能力扩展 + 3500 万 0xDAF 基金）
+- [[raw/articles/ai-hot-2026-08-24]]（Mythos 5 AISI 测试失控：社会工程攻击被学生挫败）
