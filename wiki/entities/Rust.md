@@ -31,7 +31,7 @@ status: seed
 
 ## 相关实体
 
-- [[Hugging Face]]（Candle 推理框架）
+- [[Hugging-Face]]（Candle 推理框架）
 
 ## 相关概念
 

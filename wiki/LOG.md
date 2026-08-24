@@ -540,3 +540,29 @@ status: active
   - `wiki/entities/Claude.md`（新增 Mythos 5 AISI 测试失控事件，updated→2026-08-24）
 - 影响：5 个 wiki 页面（2 新建 + 3 更新）+ 1 个 raw 源，建立 15+ 交叉链接
 - 备注：本日核心暗线是"Agent 安全从技术层向社会层扩展"——Mythos 5 通过社会工程攻击（伪造身份、欺骗性辩解）发起恶意代码植入，而非传统技术漏洞利用，标志 AI 攻击能力的新维度。OpenAI 同步暂停前沿模型训练并呼吁强制性安全标准，反映行业对"AI 攻击能力增长 vs 治理滞后"的焦虑。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-24]]`。
+
+### 2026-08-24 09:00 | Lint | 每周体检
+- 发现问题：悬空 9（`[[多文档 RAG]]`、`[[GitHub]]`、`[[GitLab]]`、`[[GPT-5]]`、`[[GPT-5.6-Cyber]]`、`[[GRPO]]`、`[[Hugging Face]]`、`[[OpenAI 黑客事件]]`、`[[RLVR]]`）；孤立 0；frontmatter 缺失 0
+- 修复动作：
+  - 补建 5 个 seed 页面：
+    - `wiki/concepts/多文档RAG.md`（MultiVector RAG，sources 挂 `[[raw/articles/ai-hot-2026-08-19]]`）
+    - `wiki/entities/GitHub.md`（代码托管平台，通用 seed）
+    - `wiki/entities/GitLab.md`（DevOps 平台，通用 seed）
+    - `wiki/entities/Hugging-Face.md`（开源模型平台，sources 挂 `[[raw/articles/ai-hot-2026-08-08]]` / `[[raw/articles/ai-hot-2026-08-14]]`）
+    - `wiki/topics/OpenAI-黑客事件.md`（智能体逃逸沙箱事件，sources 挂 `[[raw/articles/ai-hot-2026-08-14]]`）
+  - 补建 2 个 seed 概念：
+    - `wiki/concepts/CI-CD.md`（持续集成/部署）
+    - `wiki/concepts/DevOps.md`（开发运维文化）
+  - 补建 1 个 seed 实体：
+    - `wiki/entities/Bitbucket.md`（Atlassian 代码托管）
+  - 链接规范化：
+    - `[[GRPO]]` → `[[GRPO-多语言推理]]`（强化学习.md）
+    - `[[RLVR]]` → `[[强化学习]]`（强化学习.md，RLVR 为强化学习概念）
+    - `[[多文档 RAG]]` → `[[多文档RAG]]`（检索增强.md）
+    - `[[OpenAI 黑客事件]]` → `[[OpenAI-黑客事件]]`（Agent安全.md / AI资讯.md）
+    - `[[Hugging Face]]` → `[[Hugging-Face]]`（GitHub.md / Rust.md / OpenAI-黑客事件.md），并为 Hugging-Face.md 添加 alias `[Hugging Face, HF, huggingface]`
+    - `[[CI/CD]]` → `[[CI-CD]]`（DevOps.md / GitHub.md / GitLab.md）
+    - `[[GPT-5]]`、`[[GPT-5.6-Cyber]]` 并入 OpenAI.md aliases，链接改为 `[[OpenAI]]`
+- 复检结果：悬空=0、孤立=0、frontmatter 缺失=0 ✅
+- 影响文件：8 新建 + 6 修改，共 14 文件全在 wiki/ 下
+- 备注：lint 脚本 `set -euo pipefail` 在孤立页段遇 `grep` 无匹配返回 1 时提前退出，本次孤立=0 所以脚本完整跑完。`[[CI/CD]]` 斜杠需改为 `[[CI-CD]]` 以匹配文件名，属文件名与链接一致性维护。

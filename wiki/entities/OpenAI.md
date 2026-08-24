@@ -1,6 +1,6 @@
 ---
 title: OpenAI
-aliases: []
+aliases: [GPT-5, GPT-5.6-Cyber]
 type: entity
 tags: [ai, llm, company, openai, agent, security]
 created: 2026-08-24
@@ -39,7 +39,7 @@ status: seed
 
 ## 相关实体
 
-- [[Claude]] · [[GPT-5]] · [[GPT-5.6-Cyber]] · [[Claude-Code]]
+- [[Claude]] · [[OpenAI]] · [[Claude-Code]]
 
 ## 相关概念
 
