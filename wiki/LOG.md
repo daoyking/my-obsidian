@@ -566,3 +566,14 @@ status: active
 - 复检结果：悬空=0、孤立=0、frontmatter 缺失=0 ✅
 - 影响文件：8 新建 + 6 修改，共 14 文件全在 wiki/ 下
 - 备注：lint 脚本 `set -euo pipefail` 在孤立页段遇 `grep` 无匹配返回 1 时提前退出，本次孤立=0 所以脚本完整跑完。`[[CI/CD]]` 斜杠需改为 `[[CI-CD]]` 以匹配文件名，属文件名与链接一致性维护。
+
+### 2026-08-24 10:45 | GitHub 周动态 Ingest | 每周自动化
+- 扫描仓库：46 个，3 个有近 7 天活动（my-obsidian / dsh-multiplatform / learning-ai-agent），hmnmt-web 本周无新提交
+- 筛选结果：my-obsidian 为知识库自身维护（跳过 Ingest，仅记 LOG）；hmnmt-web 本周无新提交（最后更新 08-12，已被 08-13 报告覆盖，跳过）；dsh-multiplatform 与 learning-ai-agent 有重要变更
+- **dsh-multiplatform 本周**（18 个提交，3 个 release）：
+  - v0.1.0 → v0.1.2 密集迭代，核心里程碑：多端应用桌面端首发（23d69ed2）、DeepSeek 账户面板（0bdb8b7c）、应用打不开自愈修复（50c7f120）、自动更新面板 + 内置 pnpm（d20d2440）、社区插件一键安装（50b99305）
+  - 关键踩坑：ELECTRON_RUN_AS_NODE 泄漏、pnpm github 源 ECONNRESET、dsh-skins 符号链接悬空、打包膨胀 3.5GB+
+- **learning-ai-agent 本周**（4 个提交，无 release）：
+  - W6 作品集纵深打磨：技术栈标签流 + 移动端汉堡导航 + 录屏自检清单（fd041c1d）、返回顶部按钮 + 简历联动（51661c64）、记忆方案/RAG 效率双图（f3684150 / 95494f22）
+- **产出**：2 个 raw 快照（`raw/articles/github-dsh-multiplatform-2026-08-24.md` + `raw/articles/github-learning-ai-agent-2026-08-24.md`）+ 1 个新项目页（`projects/dsh-multiplatform.md`）+ 1 个项目页更新（`projects/learning-ai-agent.md`）+ LOG 记录
+- 备注：dsh-multiplatform 是本周最大亮点——DeepSeek Harness 从 Web 扩展到桌面/移动/鸿蒙多端，v0.1.0→v0.1.2 一周内密集迭代，自愈机制（环境变量泄漏防护、符号链接自愈、prefer-offline 策略）体现生产级 Electron 应用的关键工程实践。learning-ai-agent W6 作品集完成可视化叙事闭环（技术栈标签 + 记忆方案对比图 + RAG 效率图）。

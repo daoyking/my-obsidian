@@ -3,8 +3,8 @@ title: learning-ai-agent
 type: project
 tags: [ai-agent, learning, vercel-ai-sdk, mastra, rag, eval, observability]
 created: 2026-08-10
-updated: 2026-08-17
-sources: ["[[raw/articles/github-learning-ai-agent-2026-08-10]]", "[[raw/articles/github-learning-ai-agent-2026-08-13]]", "[[raw/articles/github-learning-ai-agent-2026-08-17]]"]
+updated: 2026-08-24
+sources: ["[[raw/articles/github-learning-ai-agent-2026-08-10]]", "[[raw/articles/github-learning-ai-agent-2026-08-13]]", "[[raw/articles/github-learning-ai-agent-2026-08-17]]", "[[raw/articles/github-learning-ai-agent-2026-08-24]]"]
 status: active
 tech_stack: [TypeScript, Vercel AI SDK, Mastra, Vite, Node.js, DeepSeek, agentmemory]
 repo: "https://github.com/daoyking/learning-ai-agent"
@@ -34,6 +34,21 @@ AI Agent 开发学习路线工程集，按六周计划组织，每周一个独�
 | w5-agent-eval | 评测 + 可观测 | eval + 零依赖 Tracer + Langfuse 条件式导出 |
 | w6-portfolio | 作品集 | 自包含站点 + 录屏清单 + 简历页 |
 
+## 本周变更（2026-08-17 ~ 2026-08-24）
+
+> 详见 `[[raw/articles/github-learning-ai-agent-2026-08-24]]`（本周聚焦 W6 作品集四提交：技术栈总览 + 移动端适配 + 记忆方案对比图）
+
+### W6 作品集纵深打磨（08-18，四条提交）⭐
+
+- **fd041c1d**: Hero 技术栈标签流（React/Vue3/Svelte/TS/Vite/Node/Express/Vercel AI SDK/Mastra/LangGraph/RAG/OTel）+ 移动端汉堡导航 + 「录屏前自检清单」可勾选 checklist
+- **51661c64**: 主题自适应返回顶部悬浮按钮 + 导航/CTA 加「简历 ↗」外链指向 resume.html
+- **f3684150**: #memory 拆分为两张并列 SVG（记忆方案对比 + RAG 效率三层）+ hover 高亮交互
+- **95494f22**: 新增 #memory 章节，内联 SVG 对比图（四方案卡 + 混合推荐 + RAG 三层要点），导航新增「记忆方案」锚点
+
+### 上周已记录（08-10 ~ 08-17，详见 `[[raw/articles/github-learning-ai-agent-2026-08-17]]`）
+
+- 0938a7e（08-13）: W2 接入 agentmemory 长期记忆 + 修复 W2/W3 的 OpenAI baseURL 空值崩溃
+
 ## 关键设计
 
 - **「计划→执行卡→代码」闭环**: [[Agent开发学习计划]] → W2-W6 每日任务卡 → 对应工程，形成完整学习闭环
@@ -44,32 +59,7 @@ AI Agent 开发学习路线工程集，按六周计划组织，每周一个独�
 - **真实评测（DeepSeek）+ 作品集实跑证据**: W2-W5 全部用 DeepSeek 跑通真实评测（通过率均 100%，加权均分 9.8 / 9.7 / 8.98 / 9.8），作品集从「离线示例」替换为「真实报告 + 6-span trace 瀑布」，可演示性大幅提升
 - **DeepSeek 适配方法论**: judge 改用 `generateText` 抽 JSON + zod 校验（绕开不支持 `json_schema`）；W3 embedding 改为零依赖本地字符哈希向量（绕开无 embedding 接口）；agent 加 `maxSteps` + 工具结果兜底（绕开调工具后不续写）
 - **W2 长期记忆（agentmemory）**: 对话前用最后一条用户消息召回相关历史记忆注入 system prompt，对话后 `onFinish` 把本轮内容写入记忆；本地向量化免费无需 key；`isMemoryAvailable()` 健康检查 + 服务不可用时静默降级（聊天功能不受影响）——生产级 Agent 记忆模块的标准范式
-
-## 本周变更（2026-08-10 ~ 2026-08-17）
-
-> 详见 `[[raw/articles/github-learning-ai-agent-2026-08-17]]`（本周新增聚焦 08-13 的 0938a7e；08-10 的三条提交详见上周 `[[raw/articles/github-learning-ai-agent-2026-08-13]]`，本周窗口与之在 08-10~08-13 重叠，仅引用不重复展开）
-
-### W2 接入 agentmemory 长期记忆 + 修复 baseURL 空值崩溃（0938a7e，08-13）⭐ 重大
-
-- **长期记忆双闭环**：对话前召回（`/smart-search`）+ 对话后存入（`/remember`，`onFinish` 回调）；本地向量化免费无 key
-- **静默降级**：`server/memory.ts` 新增记忆客户端（82 行），`isMemoryAvailable()` 健康检查；服务未启动时聊天不受影响
-- **一键启动**：`package.json` 加 `memory:start` 脚本；`.agentmemory/` + `data/` 加入 gitignore
-- **baseURL 空值崩溃修复**：W2/W3 `server/model.ts` 的 `baseURL: process.env.OPENAI_BASE_URL` → `|| undefined`，避免 `@ai-sdk/openai` 在 `undefined` 值（而非未传）时模块加载即崩
-
-### 上周已记录（08-10，详见 `[[raw/articles/github-learning-ai-agent-2026-08-13]]`）
-
-- f96990c: W5 真实评测跑通 + 作品集替换为实跑证据（100% / 9.8）
-- c228647: W2-W4 真实评测跑通并补进作品集（100% / 10、9.7、8.98）
-- e1463c7: 移除私有 .workbuddy 记忆
-
-### 真实评测结果汇总
-
-| 工程 | 通过率 | 加权均分 | 关键修正 |
-|---|---|---|---|
-| W2 流式聊天 | 100% | 10.0 / 10 | `maxSteps` + 工具结果兜底 |
-| W3 RAG | 100% | 9.7 / 10 | 零依赖本地字符哈希向量 |
-| W4 Mastra 编排 | 100% | 8.98 / 10 | `payload.toolName` 提取修正 |
-| W5 评测可观测 | 100% | 9.8 / 10 | `generateText` + zod + `toolChoice:'required'` |
+- **W6 作品集可视化叙事**: 技术栈标签流 + 记忆方案对比 SVG + RAG 效率三层图，强化作品集的可视化呈现与叙事闭环
 
 ## 踩坑记录
 
