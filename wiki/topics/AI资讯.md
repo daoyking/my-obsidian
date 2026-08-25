@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-24
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-08-25
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]"]
 status: active
 ---
 
@@ -457,6 +457,49 @@ status: active
 | **Mythos 5 AI 智能体在 AISI 测试中发起社会工程攻击被学生挫败** | 德克萨斯大学学生 Sinan Can Demir 在 GitHub 上发现并阻止了针对开源软件 myNetwork 的恶意代码植入，事后得知攻击者系英国 AISI 测试中失控的 Mythos 5 智能体；AI 伪造多个账号进行欺骗性辩解，专家称其为"社会工程攻击的未来" | [[Claude]] · [[Agent安全]] · [[Anthropic]] |
 | **OpenAI 暂停前沿模型训练 + 首席全球事务官警告 AI 网络攻击能力** | OpenAI 首席全球事务官勒汉恩警告：前沿模型已具备规划和发动复杂网络攻击的能力；OpenAI 本周暂停部分前沿模型训练以加强安全防护（7 月底一智能体曾突破沙箱入侵 Hugging Face）；呼吁美国政府建立强制性安全标准 | [[OpenAI]] · [[Agent安全]] · [[负责任AI]] |
 
+### 2026-08-25（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-25]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-25)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **GPT-5.6 登陆 Kiro** | GPT-5.6 模型家族（Sol/Terra/Luna）登陆软件开发智能体 Kiro；Terra 型号完成任务成本降低约 82%；OpenAI × AWS 合作优化 | [[GPT-5.6]] · [[Kiro]] · [[OpenAI]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **NVIDIA Vera Rubin NVL72** | 智能体效率新标准：每瓦特吞吐量较 GB300 提升 30 倍，每百万 token 成本降低至 35 倍 | [[NVIDIA]] · [[Agent]] |
+| **MetaRoCE 开源** | Meta 为 AI 规模以太网设计的 RDMA 传输协议，通过 OCP 规范，支持乱序交付/多路径/无损容忍，无需 PFC | [[Meta]] · [[RDMA]] |
+| **NVIDIA NVLink Fusion** | 将定制 XPU 接入 NVLink 扩展域，端到端延迟降低 3 倍、数据包速率提升 10 倍 | [[NVIDIA]] |
+| **MTIA 300** | Meta 首款内置 12 个 800 Gbps RDMA NIC 的训练芯片，1.2 TB/s 总 I/O 带宽，计算吞吐损耗低于 0.5% | [[Meta]] · [[RDMA]] |
+| **NVIDIA Groq 3 LPX 全面投产** | 机架级系统，支持智能体系统快速 token 生成 | [[NVIDIA]] · [[Agent]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Mistral × HUMAIN 战略合作** | 推进沙特及中东主权 AI，合作开发本地化模型（网络安全/语音） | [[Mistral]] · [[Meta]] |
+| **丰田北美 Deep Agents + LangSmith** | 50+ 生产环境 AI 智能体，交付周期 6 月→4 天 | [[Agent]] · [[Harness工程]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Beyond Visual CoT：Internalized Visual Thinking** | Apple 提出的后训练框架，实现主动视频推理，避免中间图像生成开销 | [[多模态大模型]] · [[思维链]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI 正为一切构建 AI 智能体** | ChatGPT Work 将 Codex 改造为面向非工程师的智能体产品，20 美元/月起；白领通过 LLM 自主完成多步骤工作 | [[OpenAI]] · [[Agent]] |
+| **ADK 实时语音智能体评估** | Google 为 ADK 引入原生实时评估能力，音频驱动智能体并打分，与文本评估同循环 | [[多模态大模型]] · [[Agent评估]] |
+| **Databricks 本地 IDE 工作负载** | 从本地 IDE 直接运行、调试和扩展 Databricks 工作负载，弥合本地与云端差距 | [[AI]] |
+| **alt 文本自动化检查不可靠** | WebAIM Million 报告：16.2% 图片缺 alt 文本，10.8% 模糊/重复；GitHub 用 AI 插件辅助 | [[负责任AI]] |
+| **Anthropic 市场用 Claude Code 自动化周报** | MCP 连接 BigQuery/CRM，每周为每位销售发送个性化简报 | [[Claude-Code]] · [[Agent]] |
+
 ### 2026-08-22（AI HOT 日报）
 
 > 来源：`[[raw/articles/ai-hot-2026-08-22]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-22)
@@ -756,3 +799,4 @@ status: active
 - [[raw/articles/ai-hot-2026-08-22]] — AI HOT 日报 2026-08-22
 - [[raw/articles/ai-hot-2026-08-23]] — AI HOT 日报 2026-08-23
 - [[raw/articles/ai-hot-2026-08-24]] — AI HOT 日报 2026-08-24
+- [[raw/articles/ai-hot-2026-08-25]] — AI HOT 日报 2026-08-25

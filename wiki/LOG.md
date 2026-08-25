@@ -439,6 +439,24 @@ status: active
 - 影响：3 个 wiki 页面（1 新建 + 2 更新）+ 1 个 raw 源，建立 5+ 交叉链接
 - 备注：本日内容虽少（1 条），但 `[[内容洪水]]` 是值得长期跟踪的 AIGC 经济外部性主题——"数量增长 38.3 倍 vs 收入增长 8.9 倍"是 AIGC 滥用经济层影响的首次量化实证。外溢效应（无 AI 文本书籍收入也下滑）说明挤压通过"市场拥挤"间接发生，传统"标识 AI 内容"治理可能不足。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-16]]`。
 
+### 2026-08-25 08:03 | Ingest | AI HOT 日报 2026-08-25
+- 来源：aihot skill 调用 `/api/v1/dailies/latest`（2026-08-25 日报已上线，date=2026-08-25，window 08-24~08-25），存入 `raw/articles/ai-hot-2026-08-25.md`
+- 日报内容：5 个分区（模型 1 / 产品 5 / 行业 2 / 论文 1 / 观点 5），共 14 条事件
+- 新建 7 个 wiki 页：
+  - `wiki/entities/Kiro.md`（seed，OpenAI × AWS 合作的软件开发智能体，GPT-5.6 登陆后成本降低 82%，链 OpenAI/AWS/GPT-5.6/Coding-Agent）
+  - `wiki/entities/NVIDIA.md`（seed，AI 基础设施巨头；Vera Rubin NVL72 每瓦特吞吐量提升 30 倍 + NVLink Fusion + Groq 3 LPX 全面投产；链 Meta/Mistral）
+  - `wiki/entities/Meta.md`（seed，开源 AI 基础设施；MTIA 300 内置 RDMA NIC + MetaRoCE 开源 + Mistral 合作推进沙特主权 AI；链 NVIDIA/Mistral/HUMAIN）
+  - `wiki/entities/Mistral.md`（seed，法国开源模型公司；与 HUMAIN 战略合作推进中东主权 AI；链 Meta/HUMAIN）
+  - `wiki/concepts/GPT-5.6.md`（seed，OpenAI 新一代模型家族 Sol/Terra/Luna，Terra 型号在 Kiro 成本降 82%；链 OpenAI/Kiro）
+  - `wiki/concepts/RDMA.md`（seed，Remote Direct Memory Access，低延迟高吞吐网络技术；MTIA 300 集成 12×800Gbps RDMA NIC + MetaRoCE 开源；链 Meta/NVIDIA）
+  - `wiki/concepts/视觉思维链.md`（seed，Visual CoT + Apple IVT 后训练框架实现主动视频推理；链 多模态大模型/思维链）
+  - `wiki/concepts/实时语音智能体评估.md`（seed，Google ADK 实时音频驱动智能体评估能力；链 Agent评估/多模态大模型）
+- 联动更新 2 个页：
+  - `wiki/entities/OpenAI.md`（frontmatter updated→2026-08-25 / sources 追加 `[[raw/articles/ai-hot-2026-08-25]]` / 核心产品新增 GPT-5.6 家族 + ChatGPT Work / 相关实体新增 Kiro/AWS / 来源节追加当日 raw；alias 新增 GPT-5.6）
+  - `wiki/topics/AI资讯.md`（frontmatter updated→2026-08-25 / sources 追加 `[[raw/articles/ai-hot-2026-08-25]]` / 当日条目追加 2026-08-25 全 5 分区 14 条事件 + 来源节追加 raw 链接）
+- 影响：9 个 wiki 页面（8 新建 + 2 更新，OpenAI 与 AI资讯 同时被更新，去重计 9 个独立文件）+ 1 个 raw 源，建立 25+ 交叉链接
+- 备注：本日核心是「AI 基础设施效率竞赛 + 智能体产品化加速」——NVIDIA Vera Rubin NVL72（30 倍能效提升）+ Meta MTIA 300（RDMA 内置）是"AI 工厂硬件层"的典型对决，RDMA 作为核心网络技术值得单独建概念页；GPT-5.6 登陆 Kiro（成本降 82%）是「模型 × 智能体 × 成本优化」三要素合一的典型案例；OpenAI ChatGPT Work 面向白领的智能体产品化（20 美元/月起）验证了「AI 即基础设施」从开发者工具向大众生产力工具的延伸。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-25]]`。
+
 ### 2026-08-17 08:50 | Lint | 每周体检
 - 发现问题：悬空 3（`[[CLAUDE.md]]` 链接含 `.md` 扩展名被脚本误判、`[[Qwen-MM-Plugins]]` 真悬空、`[[obsidian-llm-wiki]]` 真悬空）；孤立 2（`wiki/entities/ChromeAppHeroes.md`、`wiki/topics/Agent开发工程师面试宝典.md`）；frontmatter 缺失 3（`wiki/工作台.md` / `wiki/LOG.md` / `wiki/INDEX.md` 缺 `sources`）
 - 修复动作：
