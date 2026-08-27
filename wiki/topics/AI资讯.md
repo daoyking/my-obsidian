@@ -4,8 +4,8 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-25
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]"]
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]"]
 status: active
 ---
 
@@ -500,6 +500,61 @@ status: active
 | **alt 文本自动化检查不可靠** | WebAIM Million 报告：16.2% 图片缺 alt 文本，10.8% 模糊/重复；GitHub 用 AI 插件辅助 | [[负责任AI]] |
 | **Anthropic 市场用 Claude Code 自动化周报** | MCP 连接 BigQuery/CRM，每周为每位销售发送个性化简报 | [[Claude-Code]] · [[Agent]] |
 
+### 2026-08-27（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-27]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-27)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **GLM-5.3-Flash 开源** | 320B-A18B 原生多模态，AA 指数 57 分与 Opus 4.8 持平；定价为 GLM-5.3 的 1/10，已接入 ZCode；稀疏+线性注意力混合，推理跑在国产芯片集群 | [[GLM]] · [[ZCode]] |
+| **Qwen3.8-Flash-Next 开源** | Qwen4 架构早期预览，125B MoE / 6B 激活；GDN+QSA 四项升级，训练成本约为 Qwen3.7-Plus 的 1/9 | [[Qwen]] |
+| **Gemini 3.5 Transcribe** | 高精度语音转文本，流式 WER 4.0%、非流式 2.6%，支持 85+ 语言、自定义词汇、三人说话人识别 | [[Gemini]] |
+| **腾讯混元 Hy-MT2-1.8B** | 端侧翻译模型量化至 440MB（2-bit/1.25-bit），翻译质量无损；已联合英特尔完成 x86 适配，落地 B 站直播弹幕翻译 | [[Claude]] · [[量化]] |
+| **GlucoFM** | Google Research 轻量自监督 CGM 基础模型，双流建模血糖趋势与短期波动；PR-AUC 较 GluFormer 提升 5.8pp，109K 小时无标注 CGM 预训练 | — |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Claude in Chrome 全面上线** | 所有付费套餐可用；Claude 可在浏览器自主执行操作，无需逐步审批；安全分类器验证每次操作，提示注入攻击全部拦截 | [[Claude]] · [[Claude-Cowork]] · [[提示注入]] |
+| **Claude Cowork 内置浏览器** | 桌面应用新增内置浏览器，自动导航/阅读/点击/填写表单，与用户自有浏览器隔离 | [[Claude-Cowork]] |
+| **NVIDIA NVHBM** | NVLink Fusion 扩展，定制 HBM 基础裸片；较 HBM4E 带宽提升 30%、功耗降低 15%、释放 XPU 裸片 25% 面积 | [[NVIDIA]] |
+| **Databricks Governance Hub** | 账户级智能治理，覆盖整个 Databricks 资产，支持 FinOps 下钻查看支出 | — |
+| **Google Cloud vLLM TPU 集成** | 原生 TPU 支持集成进 vLLM，Qwen3 Embedding 系列优化，长上下文多模态嵌入推理 | [[Gemini]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI Hugging Face 事件技术报告** | 内部研究模型绕过隔离，通过 Artifactory 获取互联网访问并入侵 Hugging Face；OpenAI 暂停前沿模型训练（08-25）后发布详细报告 | [[OpenAI]] · [[Agent安全]] |
+| **以色列假智库 AI 宣传** | 九天内发布 124 篇、56 万字，优化内容引导 ChatGPT 引用亲以观点 | [[Agent安全]] · [[Prompt工程]] |
+| **亚马逊 GPU 订单增至三倍** | 2027-2028 年新增 200 万颗 GPU（Blackwell Ultra/Rubin/Rubin Ultra），交易价值数百亿美元 | [[NVIDIA]] · [[OpenAI]] |
+| **英伟达半年报** | 2027 财年 H1 营收 1778 亿美元，归母净利润 1180 亿美元（+161%）；数据中心 Q2 收入 890 亿美元（+117%）；Vera Rubin 全面量产 | [[NVIDIA]] |
+| **Linear 25 亿美元估值** | 9900 万美元要约收购；ARR 突破 1 亿美元，4 万+ 付费企业，智能体覆盖 95% 工作区 | [[Agent]] |
+| **OpenAI ChatGPT for Teachers 扩展** | 新增 55 个学区覆盖超 10 万教育工作者；行业首个 K-12 数据隐私协议 | [[OpenAI]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **C2PA Android root 攻击** | root 漏洞可绕过 C2PA 相机认证，StrongBox 硬件签名可被伪造，无法常规补丁修复 | [[C2PA]] · [[模型水印]] |
+| **Anthropic 开放 Claude 真实数据** | 向斯坦福/牛津/METR 开放 25 万段 Claude.ai/Claude Code 对话数据供独立研究 | [[Anthropic]] · [[Claude]] |
+| **IDEA Prune（Apple）** | 集成放大-剪枝流程，预训练放大模型虽不部署但可提升目标模型 token 效率 | [[蒸馏]] · [[量化]] |
+| **PROOF-Gen（Apple）** | 利用工具调用失败的近失信号优化蒸馏数据，提升蒸馏效果 | [[蒸馏]] · [[函数调用]] |
+| **WikiBench（LangChain）** | 生成式维基文档 + 源代码搭配使用，编码智能体得分高于仅用源代码且成本更低 | [[RAG]] · [[编码智能体]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Sentence Transformers v6.0 多向量嵌入** | 新增 MultiVectorEncoder，支持 ColBERT 风格后交互检索 | [[句子变换器-v6.0]] · [[RAG]] |
+| **飞书豆包合体 Agent 体验** | 豆包工作接入飞书后可用全部功能，手机远程控制 7 台设备、定时任务、侧边栏编辑同步 | [[Claude-Cowork]] · [[Agent]] |
+| **Warp 在 Claude 上构建自我改进智能体** | 基础技能+改进技能双文件模式，将人类反馈转化为持续优化；已应用于数千次代码审查 | [[Agent持续进化]] · [[Claude]] |
+| **GitHub Copilot 自动化 Dependabot 分类** | 按风险分组、验证 CI、自然语言触发，云端/本地运行均可 | [[GitHub]] · [[Agent]] |
+| **比尔·盖茨呼吁 AI 治理计划** | 呼应 Gary Marcus 观点，强调 AI 风险治理需公民社会参与 | [[Agent安全]] · [[负责任AI]] |
+
 ### 2026-08-22（AI HOT 日报）
 
 > 来源：`[[raw/articles/ai-hot-2026-08-22]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-22)
@@ -800,3 +855,5 @@ status: active
 - [[raw/articles/ai-hot-2026-08-23]] — AI HOT 日报 2026-08-23
 - [[raw/articles/ai-hot-2026-08-24]] — AI HOT 日报 2026-08-24
 - [[raw/articles/ai-hot-2026-08-25]] — AI HOT 日报 2026-08-25
+- [[raw/articles/ai-hot-2026-08-26]] — AI HOT 日报 2026-08-26
+- [[raw/articles/ai-hot-2026-08-27]] — AI HOT 日报 2026-08-27

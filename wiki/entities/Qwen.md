@@ -4,8 +4,8 @@ aliases: [Qwen, 通义千问, Qwen3.8, Qwen3.8-2.4T-A95B, Qwen-Max]
 type: entity
 tags: [ai, llm, model, alibaba, open-weights, moe]
 created: 2026-08-13
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-08]]"]
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-08]]"]
 status: active
 ---
 
@@ -16,6 +16,7 @@ status: active
 阿里巴巴通义千问大模型系列，覆盖从轻量到旗舰的全谱系。2026-08-13 开放的 **Qwen3.8-2.4T-A95B** 是 Qwen-Max 级别模型**首次开源**——总参数 2.4T（MoE 架构）、每 Token 激活 95B、原生 262,144 Token 上下文并可扩展至 1,010,000 Token，标志着阿里把旗舰级模型推向开放权重生态。Qwen 系列还包含 [[Qwen-MM-Plugins]]（多模态智能体插件）与 Qwen3.8-MAX（思考研究 + 定时任务 + 办公助理 + 语音通话等 Agent 化产品形态）。
 
 ## 核心特性
+- **Qwen3.8-Flash-Next（2026-08-27 开源）：** Qwen4 架构早期预览，125B MoE / 6B 激活；GDN+QSA 四项升级，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。见 [[raw/articles/ai-hot-2026-08-27]]。
 
 - **Qwen3.8-2.4T-A95B（2026-08-13 开源）**
   - 总参数 2.4T MoE，每 Token 激活 95B——目前 Qwen 最大的开源模型

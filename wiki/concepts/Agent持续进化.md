@@ -4,8 +4,8 @@ aliases: [持续进化, Agent Self-Improvement, 持续学习]
 type: concept
 tags: [ai, llm, agent, evolution]
 created: 2026-08-07
-updated: 2026-08-13
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-27 2026-08-13
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]"]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]"]
 status: active
 ---
 

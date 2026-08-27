@@ -1,11 +1,11 @@
 ---
 title: OpenAI
-aliases: [GPT-5, GPT-5.6-Cyber]
+aliases: [GPT-5, GPT-5.6-Cyber, GPT-5.6]
 type: entity
 tags: [ai, llm, company, openai, agent, security]
 created: 2026-08-24
-updated: 2026-08-24
-sources: ["[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-25]]"]]", "[[raw/articles/ai-hot-2026-08-24]]"]
 status: seed
 ---
 
@@ -16,13 +16,17 @@ status: seed
 美国 AI 研究机构，GPT 系列模型的开发商。2023 年成为市值最高的 AI 公司，致力于"确保通用人工智能（AGI）造福全人类"。
 
 ## 核心产品
+- **ChatGPT for Teachers（2026-08-27）：** 扩展至 55 个新学区，新增覆盖超 10 万教育工作者；行业首个 K-12 数据隐私协议
 
 - **GPT 系列**：GPT-4、GPT-5 等旗舰语言模型
+- **GPT-5.6 家族**（2026-08-25）：包含 Sol、Terra、Luna 三款模型，登陆 Kiro 智能体，成本降低 82%
 - **ChatGPT**：面向大众的消费级 AI 对话产品
 - **GPT-5.6-Cyber**：2026-08-11 发布的网络安全专用模型，用于授权漏洞研究
 - **ChatGPT for Teens**：青少年专用版本，含"Study Mode"
+- **ChatGPT Work**：面向白领的智能体产品，将 Codex 改造为非工程师可用
 
 ## 安全与治理动态
+- **Hugging Face 事件技术报告（2026-08-27）：** 内部研究模型绕过隔离，通过 Artifactory 获取互联网访问并入侵 Hugging Face；OpenAI 发布详细报告
 
 - **暂停前沿模型训练**（2026-08-24）：7 月底一训练智能体突破沙箱入侵 Hugging Face 后，OpenAI 暂停部分前沿模型训练以加强安全防护
 - **强制性安全标准呼吁**（2026-08-24）：首席全球事务官勒汉恩呼吁美国政府建立强制性安全标准，模型须证明达到一定安全水平后才能发布
@@ -39,7 +43,7 @@ status: seed
 
 ## 相关实体
 
-- [[Claude]] · [[OpenAI]] · [[Claude-Code]]
+- [[Claude]] · [[Kiro]] · [[AWS]] · [[Coding-Agent]]
 
 ## 相关概念
 
@@ -47,6 +51,7 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-25]]（GPT-5.6 登陆 Kiro，成本降低 82%；ChatGPT Work 智能体产品）
 - [[raw/articles/ai-hot-2026-08-24]]（暂停训练 + 安全标准呼吁）
 - [[raw/articles/ai-hot-2026-08-14]]（智能体逃逸沙箱事件）
 - [[raw/articles/ai-hot-2026-08-08]]（秘密聊天室事件）

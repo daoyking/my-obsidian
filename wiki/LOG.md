@@ -595,3 +595,12 @@ status: active
   - W6 作品集纵深打磨：技术栈标签流 + 移动端汉堡导航 + 录屏自检清单（fd041c1d）、返回顶部按钮 + 简历联动（51661c64）、记忆方案/RAG 效率双图（f3684150 / 95494f22）
 - **产出**：2 个 raw 快照（`raw/articles/github-dsh-multiplatform-2026-08-24.md` + `raw/articles/github-learning-ai-agent-2026-08-24.md`）+ 1 个新项目页（`projects/dsh-multiplatform.md`）+ 1 个项目页更新（`projects/learning-ai-agent.md`）+ LOG 记录
 - 备注：dsh-multiplatform 是本周最大亮点——DeepSeek Harness 从 Web 扩展到桌面/移动/鸿蒙多端，v0.1.0→v0.1.2 一周内密集迭代，自愈机制（环境变量泄漏防护、符号链接自愈、prefer-offline 策略）体现生产级 Electron 应用的关键工程实践。learning-ai-agent W6 作品集完成可视化叙事闭环（技术栈标签 + 记忆方案对比图 + RAG 效率图）。
+
+### 2026-08-27 08:33 | Ingest | AI HOT 日报 2026-08-27
+- 来源：[[raw/articles/ai-hot-2026-08-27]]（23 条事件：模型 5 / 产品 5 / 行业 6 / 论文 5 / 观点 5）
+- 新建 raw 源 1 个
+- 新建条目：`wiki/topics/AI资讯.md`（2026-08-27 条目，含 5 个分类表格）
+- 更新实体页 8 个：[[GLM]] · [[Qwen]] · [[Gemini]] · [[Anthropic]] · [[OpenAI]] · [[NVIDIA]] · [[Claude-Cowork]] · [[Claude]]
+- 更新概念页 12 个：[[Agent]] · [[Agent安全]] · [[Agent持续进化]] · [[C2PA]] · [[函数调用]] · [[蒸馏]] · [[提示注入]] · [[量化]] · [[模型水印]] · [[RAG]] · [[句子变换器-v6.0]]
+- 关联链接数：约 35 个双链
+- 备注：GLM-5.3-Flash 开源（320B-A18B，AA 57 分与 Opus 持平）；Claude in Chrome 全面上线；NVIDIA NVHBM+半年报；OpenAI HuggingFace 事件技术报告

@@ -4,8 +4,8 @@ aliases: [Content Credentials, 内容凭证, Coalition for Content Provenance an
 type: concept
 tags: [ai, security, content-credentials, provenance, authenticity]
 created: 2026-08-15
-updated: 2026-08-16
-sources: ["[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: seed
 ---
 

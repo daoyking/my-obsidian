@@ -4,8 +4,8 @@ aliases: [检索增强生成, Retrieval-Augmented Generation]
 type: concept
 tags: [ai, llm, rag, retrieval]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-27 2026-08-07
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]"]]"]
 status: seed
 ---
 

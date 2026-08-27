@@ -4,8 +4,8 @@ aliases: [智能体, AI Agent, LLM Agent]
 type: concept
 tags: [ai, llm, agent]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/articles/dive-into-llms-overview]]", "[[raw/papers/ai-agents-in-depth]]"]
+updated: 2026-08-27 2026-08-07
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]"]]", "[[raw/papers/ai-agents-in-depth]]"]
 status: active
 ---
 

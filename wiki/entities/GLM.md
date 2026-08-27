@@ -4,9 +4,9 @@ aliases: [智谱 GLM, GLM 模型, Z.ai GLM, ChatGLM]
 type: entity
 tags: [ai, llm, model, zhipu, glm, open-weights, coding]
 created: 2026-08-16
-updated: 2026-08-16
-sources: ["[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-15]]"]
-status: seed
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+status: active
 ---
 
 # GLM（智谱）
@@ -24,6 +24,7 @@ status: seed
 - **工具生态**：GLM-5.3 即日上线 [[ZCode]]、AutoClaw 等工具
 
 ## 版本演进（追踪）
+- **GLM-5.3-Flash（2026-08-27）：** 320B-A18B 原生多模态，AA 指数 57 分与 Claude Opus 4.8 持平；定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40；稀疏+线性注意力混合架构，推理跑在国产芯片集群。见 [[raw/articles/ai-hot-2026-08-27]]。
 
 - **GLM-5.2（2026-08-12 前后）**：ZCode 四大功能（Goal / Subagents / Remote Control / 闲时任务）针对 GLM 优化；Z.ai Code Bench 测试中 GLM-5.2 + ZCode 较 GLM-5.2 + Claude Code 通过率高 2.39%，缓存命中率超 98%。见 [[raw/articles/ai-hot-2026-08-12]]。
 - **GLM-5.3（2026-08-15）**：编程能力开源第一（Terminal Bench 3.0），接近 Claude Fable 5；涌现网络安全能力（CyberGym 84.5%）；权重两周后开源；上线 ZCode / AutoClaw。见 [[raw/articles/ai-hot-2026-08-15]]。

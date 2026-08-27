@@ -4,8 +4,8 @@ aliases: [Claude, Anthropic Claude]
 type: entity
 tags: [ai, llm, model, anthropic, agent]
 created: 2026-08-19
-updated: 2026-08-24
-sources: ["[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-08-27 2026-08-24
+sources: ["[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-27]]"]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-24]]"]
 status: active
 ---
 

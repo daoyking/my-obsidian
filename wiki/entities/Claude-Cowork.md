@@ -4,8 +4,8 @@ aliases: [Claude Cowork, Claude in Chrome 侧边栏, Claude Cowork 会话]
 type: entity
 tags: [ai, product, anthropic, claude, browser, agent]
 created: 2026-08-13
-updated: 2026-08-13
-sources: ["[[raw/articles/ai-hot-2026-08-13]]"]
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-13]]"]]"]
 status: seed
 ---
 
@@ -16,6 +16,8 @@ status: seed
 Anthropic 推出的浏览器侧 Claude 会话产品，由原 Claude in Chrome 扩展的侧边栏升级而来。2026-08-13 升级为 Claude Cowork 会话后，对话保存至历史记录，**技能和连接器可在浏览器中工作**，且任务可在桌面、网页和移动端应用间无缝切换。定位为"浏览器内常驻 Claude 工作伙伴"，与 [[Claude-Code]]（终端 / IDE 内 Claude）形成场景互补。
 
 ## 核心特性
+- **内置浏览器（2026-08-27）：** Claude 可在桌面应用中自主浏览网页、阅读、点击并填写表单，与用户自有浏览器隔离
+- **Claude in Chrome 全面上线（2026-08-27）：** 所有付费套餐可用；安全分类器验证每次操作，提示注入攻击全部拦截
 
 - **浏览器侧边栏常驻**：在 Chrome 内任意页面侧边栏唤起 Claude
 - **会话持久化**：对话保存至历史记录，跨会话可追溯

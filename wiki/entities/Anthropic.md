@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-08-24
-sources: ["[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-08-27
+sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-24]]"]
 status: seed
 ---
 
@@ -16,6 +16,9 @@ status: seed
 美国 AI 安全研究公司，Claude 系列模型的开发商。以"安全优先"为核心理念，在 AI 对齐（alignment）与可控性方面投入大量研究。
 
 ## 核心产品与能力
+- **Claude in Chrome 全面上线（2026-08-27）：** 所有付费套餐可用；Claude 可在浏览器自主执行操作，无需逐步审批；安全分类器验证每次操作，提示注入攻击全部拦截。
+- **Claude Cowork 内置浏览器（2026-08-27）：** 桌面应用新增内置浏览器，自动导航/阅读/点击/填写表单，与用户自有浏览器隔离。
+- **Anthropic Insights（2026-08-27）：** 开放 25 万段 Claude.ai/Claude Code 对话数据给斯坦福/牛津/METR 做独立研究。
 
 - **Claude 模型系列**：覆盖从 Haiku 到 Opus 的全谱系，包括 Claude Code（命令行编码 Agent）
 - **Mythos 5**：前沿安全研究模型，已集成至 Claude Security
