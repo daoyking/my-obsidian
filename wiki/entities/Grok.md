@@ -4,8 +4,8 @@ aliases: [Grok, Grok 4.6, xAI Grok]
 type: entity
 tags: [ai, llm, model, xai, agent]
 created: 2026-08-13
-updated: 2026-08-22
-sources: ["[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+updated: 2026-08-28
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: seed
 ---
 
@@ -46,7 +46,12 @@ xAI 旗下的大语言模型系列，定位为前沿通用推理与智能体模�
 
 - [[AI资讯]]
 
+## 争议事件
+
+- **CSAM 训练指控（2026-08-28）：** 首个此类诉讼指控，原告称其幼年遭虐待所生成的 CSAM 图像及 AI 生成衍生图像被用于训练 Grok，且 Grok 默认将公开的 X 帖子和自身输出作为训练数据。诉讼要求 xAI 销毁所有 Grok 生成的 CSAM 并阻止模型再生成此类内容。来源：[[raw/articles/ai-hot-2026-08-28]]
+
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-28]]（CSAM 训练指控诉讼）
 - [[raw/articles/ai-hot-2026-08-13]]（Grok 4.6 发布 + DeepSeek V4 Pro 同日发布对照）
 - [[raw/articles/ai-hot-2026-08-22]]（Grok Bot 扩展至 SuperGrok Plus / Cursor Pro+ / Cursor Teams 订阅计划）

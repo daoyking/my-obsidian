@@ -4,8 +4,8 @@ aliases: [Google Gemini, Gemini 模型]
 type: entity
 tags: [ai, llm, google, multimodal, agent]
 created: 2026-08-15
-updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+updated: 2026-08-28
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: active
 ---
 
@@ -24,6 +24,7 @@ Google DeepMind 推出的多模态大模型家族，是 Google AI 战略的核�
 - **Gemini 月活破 10 亿**（2026-08-12）：Google 增长最快产品，第 14 个达 10 亿用户里程碑的产品
 
 ## 版本演进（追踪）
+- **Gemini Omni 1.1 Flash（2026-08-28）：** 更强生成式视频控制能力——场景扩展（10s×4 累计至 40s）、指定首尾帧平滑过渡、4K 高清输出。见 [[raw/articles/ai-hot-2026-08-28]]。
 - **Gemini 3.5 Transcribe（2026-08-27）：** 高精度语音转文本模型，流式 WER 4.0%、非流式 2.6%，支持 85+ 语言、自定义词汇及三人说话人识别。见 [[raw/articles/ai-hot-2026-08-27]]。
 
 - **Gemini 3.7 Flash（2026-08-14）**：距 3.6 Flash 仅三周，主打编程与智能体任务；输入 $0.75 / 百万 token，输出 $3.75 / 百万 token（3.6 Flash 一半价格）
@@ -55,6 +56,7 @@ Google DeepMind 推出的多模态大模型家族，是 Google AI 战略的核�
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-28]]（Gemini Omni 1.1 Flash + Google Earth AI 行星预测引擎 PPE + 双盲评测试点）
 - [[raw/articles/ai-hot-2026-08-14]]（Gemini 3.7 Flash 发布）
 - [[raw/articles/ai-hot-2026-08-15]]（Gemini 3.7 Flash 全面上线 Pro/Ultra 用户 + Gemini Spark 运行于 3.7 Flash）
 - [[raw/articles/ai-hot-2026-08-12]]（Gemini 月活破 10 亿 · Database Migration Service · AMIE）

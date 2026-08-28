@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, hardware, gpu, agent, inference, training]
 created: 2026-08-25
-updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-25]]"]]"]
+updated: 2026-08-28
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-25]]"]]"]
 status: seed
 ---
 
@@ -15,7 +15,11 @@ status: seed
 
 全球领先的 AI 芯片与计算平台公司，在 AI 智能体基础设施领域持续推出新一代硬件与软件解决方案。
 
-## 核心特性（2026-08-25 动态）
+## 核心特性（2026-08-28 动态）
+- **Vera CPU 正式出货（2026-08-28）：** 首款为 AI 智能体打造的处理器大规模出货，标志智能体专用计算硬件进入商用阶段。见 [[raw/articles/ai-hot-2026-08-28]]。
+- **2028 财年销售预测（2026-08-28）：** 预计营收增长 70%，销售额约 6730 亿美元，将超过苹果/Alphabet 仅次于亚马逊；供应而非需求成为近期上限。见 [[raw/articles/ai-hot-2026-08-28]]。
+
+## 核心特性（2026-08-27 动态）
 - **NVHBM（2026-08-27）：** NVLink Fusion 扩展，定制 HBM 基础裸片；较 HBM4E 带宽提升 30%、功耗降低 15%、释放 XPU 裸片 25% 面积
 - **2027 财年半年报（2026-08-27）：** H1 营收 1778 亿美元，归母净利润 1180 亿美元（+161%）；数据中心 Q2 收入 890 亿美元（+117%）
 - **亚马逊 GPU 订单增至三倍（2026-08-27）：** 2027-2028 年新增 200 万颗 GPU，交易价值数百亿美元
@@ -41,4 +45,5 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-28]]（Vera CPU 出货 + 2028 财年销售预测 6730 亿美元）
 - [[raw/articles/ai-hot-2026-08-25]]（Vera Rubin NVL72 + NVLink Fusion + Groq 3 LPX）

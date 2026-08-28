@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-08-28
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-24]]"]
 status: seed
 ---
 
@@ -45,4 +45,5 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-28]]（MHS 模型硬件标准研究预览 + 科学家支持计划扩展至 1 万席位）
 - [[raw/articles/ai-hot-2026-08-24]]（Mythos 5 AISI 测试失控事件）

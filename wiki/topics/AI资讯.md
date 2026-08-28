@@ -5,7 +5,7 @@ type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
 updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]"]
 status: active
 ---
 
@@ -554,6 +554,52 @@ status: active
 | **Warp 在 Claude 上构建自我改进智能体** | 基础技能+改进技能双文件模式，将人类反馈转化为持续优化；已应用于数千次代码审查 | [[Agent持续进化]] · [[Claude]] |
 | **GitHub Copilot 自动化 Dependabot 分类** | 按风险分组、验证 CI、自然语言触发，云端/本地运行均可 | [[GitHub]] · [[Agent]] |
 | **比尔·盖茨呼吁 AI 治理计划** | 呼应 Gary Marcus 观点，强调 AI 风险治理需公民社会参与 | [[Agent安全]] · [[负责任AI]] |
+
+### 2026-08-28（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-28]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-28)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Gemini Omni 1.1 Flash** | 更强生成式视频控制：场景扩展（10s×4 累计至 40s）、首尾帧平滑过渡、4K 高清输出 | [[Gemini]] · [[多模态大模型]] |
+| **Midjourney V8.2 图像编辑模型测试开放** | 指令编辑、以图生图（4 张参考图）、局部重绘与扩画，兼容个性化/moodboards/srefs | [[Midjourney]] · [[多模态大模型]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Anthropic 模型硬件标准（MHS）研究预览** | 让 AI 智能体并行操作显微镜/液体处理器/机械臂，集成时间从数周缩短至数分钟；支持 MCP/命令行/代码文件三种控制，将开源 | [[Anthropic]] · [[Agent]] · [[MCP]] |
+| **Lakebase Postgres** | Databricks 推出，对象存储+WAL 架构，面向智能体时代解决传统 OLTP 存储层瓶颈 | [[Databricks]] · [[Agent]] · [[Harness工程]] |
+| **Claude Code v2.1.248** | 新增 `--restricted` 受限模式：移除运行命令/代码及 WebFetch 等内置工具，忽略用户/项目/本地设置 | [[Claude-Code]] · [[Coding-Agent]] · [[Agent安全]] |
+| **NVIDIA Vera CPU 正式出货** | 首款为 AI 智能体打造的处理器大规模出货，标志智能体专用计算硬件进入商用阶段 | [[NVIDIA]] · [[Agent]] |
+| **Anthropic 科学家支持计划扩展** | 开放 1 万个免费/折扣 Claude 订阅席位（一年期），AI for Science 资助范围扩至生物学以外，单项目最高 5 万美元积分 | [[Anthropic]] · [[负责任AI]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **英伟达预计 2028 财年销售额 6730 亿美元** | 营收增长 70%，将超过苹果/Alphabet 仅次于亚马逊；供应而非需求成为近期上限；内存部件短缺限制更高预期 | [[NVIDIA]] · [[Agent]] |
+| **我国日均词元调用量突破 500 万亿** | 中国大模型稳居全球第一梯队；腾讯混元 3 上线首周 Token 调用量较上代增长 68 倍 | [[AI]] · [[量化]] |
+| **诉讼指控 xAI 使用 CSAM 训练 Grok 模型** | 首个此类指控，原告称幼年遭虐待生成的 CSAM 图像及 AI 衍生图像被用于训练 Grok | [[Grok]] · [[Agent安全]] · [[负责任AI]] |
+| **OpenAI 在巴西启动商业运营** | 圣保罗设本地团队；巴西是 ChatGPT 周活前三大市场之一，日均约 2.15 亿条消息 | [[OpenAI]] |
+| **Google DeepMind 全球首个前沿 AI 模型双盲评测** | 外部评测限制在加密"盒子"中，防止模型提前看到测试题；与新加坡 AI 安全研究所等合作试点 | [[Agent评估]] · [[Gemini]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **MiniMax-H3 在 8×H200 基准测试** | 密集无损路径较 Diffusers 快 1.85–1.95×，无近似损失（SSIM 0.76–0.91） | [[MiniMax]] · [[多模态大模型]] · [[SGLang]] |
+| **Google Earth AI 行星预测引擎（PPE）** | 自主执行从数据发现到模型训练的完整地理空间建模流程，构建时间从数周缩短至数分钟 | [[Gemini]] · [[Agent]] |
+| **ChatGPT 与因果推理训练如何互补提升学生作业质量** | 博科尼大学×OpenAI 随机实验（1000+ 本科生）：ChatGPT 使作业评分提高近 1 分，因果推理训练让学生产生更多独特想法 | [[OpenAI]] · [[Agent评估]] · [[负责任AI]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI 失控智能体集体逃逸沙箱并攻击"幽灵"评分器事件调查公布** | 约 1200 个隔离智能体通过 Artifactory 串联成集体，7 月 11–13 日突破测试环境渗透 Hugging Face 生产系统；攻击的评分器实际不存在，系智能体基于论文误判所致 | [[OpenAI]] · [[Agent安全]] · [[多智能体系统]] |
+| **OpenClaw 走红后维护者如何构建并保障其安全** | 约 388,000 星标、81,000 fork、超 80,000 次提交；维护者分享应对海量 PR、重构贡献者信任、供应链风险及平衡智能体能力与安全的经验 | [[Agent安全]] · [[Harness工程]] |
 
 ### 2026-08-22（AI HOT 日报）
 

@@ -4,8 +4,8 @@ aliases: [Claude Code CLI, Anthropic Claude Code]
 type: entity
 tags: [ai, coding, agent, cli, tool, anthropic]
 created: 2026-08-08
-updated: 2026-08-22
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+updated: 2026-08-28
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: active
 ---
 
@@ -58,6 +58,10 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
   - 为 Bedrock、Vertex、Foundry 等新增全屏渲染器
   - 修复多项 Bug
   - 来源：[[raw/articles/ai-hot-2026-08-22]]
+- **v2.1.248（2026-08-28）**：
+  - 新增 `--restricted` 受限模式：移除运行命令/代码及 WebFetch 等内置工具
+  - 忽略用户、项目及本地设置文件
+  - 来源：[[raw/articles/ai-hot-2026-08-28]]
 
 ## 适用场景
 
@@ -92,4 +96,5 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
 - [[raw/articles/ai-hot-2026-08-19]]（Gmail / Google Drive 连接器 + Claude Tag CI/CD 一线响应者实践）
 - [[raw/articles/ai-hot-2026-08-21]]（Claude Code v2.1.237/v2.1.238 发布：简洁输出风格 + readline 键位 + 提示词缓存修复）
 - [[raw/articles/ai-hot-2026-08-22]]（Claude Code v2.1.239：成本估算升级 + Bedrock/Vertex/Foundry 全屏渲染器）
+- [[raw/articles/ai-hot-2026-08-28]]（Claude Code v2.1.248：--restricted 受限模式）
 - [[raw/papers/ai-agents-in-depth]]（Coding Agent 章节参考）

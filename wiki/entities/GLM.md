@@ -4,8 +4,8 @@ aliases: [智谱 GLM, GLM 模型, Z.ai GLM, ChatGLM]
 type: entity
 tags: [ai, llm, model, zhipu, glm, open-weights, coding]
 created: 2026-08-16
-updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+updated: 2026-08-28
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: active
 ---
 
@@ -55,5 +55,6 @@ status: active
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-28]]（无新动态，保留 08-27 内容）
 - [[raw/articles/ai-hot-2026-08-12]]（GLM-5.2 + ZCode 四大功能与协同性能数据）
 - [[raw/articles/ai-hot-2026-08-15]]（GLM-5.3 发布：编程开源第一 + 网络安全能力涌现 + 权重两周后开源）

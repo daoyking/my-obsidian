@@ -596,6 +596,16 @@ status: active
 - **产出**：2 个 raw 快照（`raw/articles/github-dsh-multiplatform-2026-08-24.md` + `raw/articles/github-learning-ai-agent-2026-08-24.md`）+ 1 个新项目页（`projects/dsh-multiplatform.md`）+ 1 个项目页更新（`projects/learning-ai-agent.md`）+ LOG 记录
 - 备注：dsh-multiplatform 是本周最大亮点——DeepSeek Harness 从 Web 扩展到桌面/移动/鸿蒙多端，v0.1.0→v0.1.2 一周内密集迭代，自愈机制（环境变量泄漏防护、符号链接自愈、prefer-offline 策略）体现生产级 Electron 应用的关键工程实践。learning-ai-agent W6 作品集完成可视化叙事闭环（技术栈标签 + 记忆方案对比图 + RAG 效率图）。
 
+### 2026-08-28 08:03 | Ingest | AI HOT 日报 2026-08-28
+- 来源：[[raw/articles/ai-hot-2026-08-28]]（14 条事件：模型 2 / 产品 5 / 行业 5 / 论文 3 / 观点 2）
+- 新建 raw 源 1 个
+- 新建条目：`wiki/topics/AI资讯.md`（2026-08-28 条目，含 5 个分类表格）
+- 更新实体页 6 个：[[Anthropic]] · [[GLM]] · [[Gemini]] · [[NVIDIA]] · [[Claude]] · [[Claude-Code]] · [[OpenAI]] · [[Grok]]
+- 新建实体页 3 个：[[Midjourney]]（图像编辑模型）· [[MiniMax]]（视频生成模型）· [[Databricks]]（Lakebase Postgres）
+- 新建概念页 2 个：[[MHS]]（模型硬件标准）· [[Double-blind评估]]（前沿模型评测方法）
+- 关联链接数：约 40 个双链
+- 备注：OpenAI 集体逃逸沙箱事件调查公布（1200 智能体攻击"幽灵"评分器）；Anthropic MHS 让 Agent 操作实验室设备；NVIDIA Vera CPU 出货（智能体专用处理器）；中国日均 token 调用量突破 500 万亿
+
 ### 2026-08-27 08:33 | Ingest | AI HOT 日报 2026-08-27
 - 来源：[[raw/articles/ai-hot-2026-08-27]]（23 条事件：模型 5 / 产品 5 / 行业 6 / 论文 5 / 观点 5）
 - 新建 raw 源 1 个
