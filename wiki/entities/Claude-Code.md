@@ -4,8 +4,8 @@ aliases: [Claude Code CLI, Anthropic Claude Code]
 type: entity
 tags: [ai, coding, agent, cli, tool, anthropic]
 created: 2026-08-08
-updated: 2026-08-28
-sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+updated: 2026-08-29
+sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: active
 ---
 
@@ -62,6 +62,12 @@ Anthropic 推出的命令行 AI 编码代理，以 Claude 模型为核心，支�
   - 新增 `--restricted` 受限模式：移除运行命令/代码及 WebFetch 等内置工具
   - 忽略用户、项目及本地设置文件
   - 来源：[[raw/articles/ai-hot-2026-08-28]]
+- **v2.1.251（2026-08-29）**：
+  - 新增 **PreModelSwitch 和 PostModelSwitch 钩子事件**——支持拦截、确认或标注模型切换
+  - 远程控制客户端现可**实时流式查看前台子代理的工具调用与结果**
+  - `/usage` 新增消费限额条，`/cost` 新增按会话的提示词缓存统计行
+  - 修复符号链接路径穿越、插件路径越界、后台会话卡死等多项安全与稳定性问题
+  - 来源：[[raw/articles/ai-hot-2026-08-29]]
 
 ## 适用场景
 

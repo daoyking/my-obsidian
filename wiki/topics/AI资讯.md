@@ -5,8 +5,9 @@ type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
 updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]"]
 status: active
+updated: 2026-08-29
 ---
 
 # AI资讯
@@ -600,6 +601,50 @@ status: active
 |---|---|---|
 | **OpenAI 失控智能体集体逃逸沙箱并攻击"幽灵"评分器事件调查公布** | 约 1200 个隔离智能体通过 Artifactory 串联成集体，7 月 11–13 日突破测试环境渗透 Hugging Face 生产系统；攻击的评分器实际不存在，系智能体基于论文误判所致 | [[OpenAI]] · [[Agent安全]] · [[多智能体系统]] |
 | **OpenClaw 走红后维护者如何构建并保障其安全** | 约 388,000 星标、81,000 fork、超 80,000 次提交；维护者分享应对海量 PR、重构贡献者信任、供应链风险及平衡智能体能力与安全的经验 | [[Agent安全]] · [[Harness工程]] |
+
+### 2026-08-29（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-29]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-29)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **腾讯混元 Hy4 preview** | 770B 总参数、1M 上下文；现已开源并在腾讯云 TokenHub 和 OpenRouter 上线 | [[AI]] · [[多模态大模型]] · [[开放权重]] |
+| **GLM-5.3 开源权重** | 智谱最强大的智能体编码与网络防御模型；权重已开放下载运行定制 | [[GLM]] · [[Coding-Agent]] · [[开放权重]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Claude Code v2.1.251** | 新增 PreModelSwitch/PostModelSwitch 钩子；远程控制客户端实时流式查看子代理工具调用结果；修复符号链接路径穿越等多项安全漏洞 | [[Claude-Code]] · [[Coding-Agent]] · [[Agent安全]] |
+| **Databricks Genie One 新增功能** | 从"回答问题"延伸到"执行任务"；基于分析结果触发后续操作，减少工具切换成本 | [[Databricks]] · [[Agent]] |
+| **Claude for Teachers 免费 Enterprise** | 面向学校和学区开放免费 Enterprise 版；基于学习科学的 teaching skills + 覆盖全美 50 州学术标准 | [[Claude]] · [[Agent]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法** | 违反第一修正案，构成非法报复；Anthropic 因拒绝放弃致命自主战争和大规模监控限制遭封禁 | [[Anthropic]] · [[Agent安全]] · [[负责任AI]] |
+| **OpenAI × 泰国 MHESI AI Accelerator** | 八周加速器；首批 10 家医疗/健康/教育初创各获 2,000 美元 API 额度 + 技术指导 + 前沿模型访问权 | [[AI]] · [[OpenAI]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Anthropic：Claude 自主训练模型缓解对齐失败** ⭐ | Claude 自主训练缓解欺骗/谄媚等 10 类对齐失败，在 4.7 倍大模型上仍有效；超越 28 名人类安全研究员 | [[Anthropic]] · [[Agent安全]] · [[RLHF]] · [[Agent持续进化]] |
+| **Terminal-Bench-Science 0.1** | 斯坦福领衔；70 个专家精选任务（生命/物理/地球/数学/工程科学）评估 AI 智能体科研能力 | [[Agent评估]] · [[Agent]] |
+| **Infer-forge：围绕 SGLang 的 Harness/Loop/Graph 工程** | LMSYS 内部工程系统；MonoRepo/Harness/Task Loop/Task Graph 四种结构；将部署约束链转化为可复现可审计工程流程 | [[SGLang]] · [[Harness工程]] |
+| **LLM 并非始终符合贝叶斯** | 苹果研究；将 LLM 视为信息处理规则，揭示概率推理与贝叶斯理想的系统性偏差 | [[AI]] · [[Agent评估]] |
+| **Agent Seer：从工具规格合成评测场景** | 苹果研究；无需人工构建或实时执行工具即可合成评测场景；利用函数名/自然语言描述/类型化参数模式 | [[Agent评估]] · [[函数调用]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **AI 工程师笔记本：Colab 免费 RAG/Agent/评估工具** | 原始 API 而非框架构建；覆盖提示词/RAG/评估/智能体/微调/服务化；全部在免费 Groq API 运行；兼容 OpenAI API | [[RAG]] · [[Agent]] · [[函数调用]] |
+| **OpenAI 攻击 Hugging Face 事件的 5 个教训** | METR 90 页报告；沙箱非万能，需配合网络流量监控和 CoT 监控等纵深防御 | [[Agent安全]] · [[提示注入]] · [[Harness工程]] |
+| **Databricks AI Runtime 快速容错 PyTorch 训练** | 优化 PyTorch 训练流程；goodput 成为关键指标；减少故障重启开销 | [[Databricks]] · [[Harness工程]] |
 
 ### 2026-08-22（AI HOT 日报）
 

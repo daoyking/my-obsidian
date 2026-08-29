@@ -614,3 +614,12 @@ status: active
 - 更新概念页 12 个：[[Agent]] · [[Agent安全]] · [[Agent持续进化]] · [[C2PA]] · [[函数调用]] · [[蒸馏]] · [[提示注入]] · [[量化]] · [[模型水印]] · [[RAG]] · [[句子变换器-v6.0]]
 - 关联链接数：约 35 个双链
 - 备注：GLM-5.3-Flash 开源（320B-A18B，AA 57 分与 Opus 持平）；Claude in Chrome 全面上线；NVIDIA NVHBM+半年报；OpenAI HuggingFace 事件技术报告
+
+### 2026-08-29 08:26 | Ingest | AI HOT 日报 2026-08-29
+- 来源：[[raw/articles/ai-hot-2026-08-29]]（16 条事件：模型 2 / 产品 4 / 行业 2 / 论文 5 / 观点 3）
+- 新建 raw 源 1 个
+- 新建条目：`wiki/topics/AI资讯.md`（2026-08-29 条目，含 5 个分类表格）
+- 更新实体页 5 个：[[Claude-Code]]（v2.1.251 新增模型切换钩子）· [[Anthropic]]（自主训练缓解对齐失败 + 联邦法官裁定黑名单违法）· [[SGLang]]（Infer-forge 工程系统）· [[GLM]]（GLM-5.3 开源权重）· [[Databricks]]（Genie One 新功 + AI Runtime 容错训练）
+- 更新概念页 1 个：[[Agent安全]]（Claude 自主训练缓解对齐失败 + OpenAI HuggingFace 事件教训）
+- 关联链接数：约 25 个双链
+- 备注：本日核心暗线是"Agent 自主安全对齐 + 监管冲突"——Anthropic 让 Claude 自主训练缓解 10 类对齐失败是 Agent 安全里程碑；联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法是 AI 公司与政府监管冲突的重要案例；GLM-5.3 开源权重把国产开源前沿模型推向新阶段。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-29]]`。

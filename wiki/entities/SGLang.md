@@ -4,8 +4,8 @@ aliases: [SGLang, sglang, SGLang 推理引擎]
 type: entity
 tags: [ai, inference, framework, llm, open-source]
 created: 2026-08-11
-updated: 2026-08-22
-sources: ["[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+updated: 2026-08-29
+sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-22]]"]
 status: active
 ---
 
@@ -55,8 +55,9 @@ status: active
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-29]]（Infer-forge 围绕 SGLang 的 Harness/Loop/Graph 工程系统）
+- [[raw/articles/ai-hot-2026-08-22]]（Weight Cache Daemon 亚秒级引擎重启，785 倍加速）
+- [[raw/articles/ai-hot-2026-08-13]]（SGLang 与 Miles 为 Qwen3.8-2.4T-A95B 提供 Day-0 支持）
+- [[raw/articles/ai-hot-2026-08-12]]（SGLang Day-0 支持 Nemotron 3.5 Lightning + LMSYS 提出 Unified Radix Cache）
 - [[raw/articles/ai-hot-2026-08-11]]（SGLang 为 Muse Glimmer 提供 Day-0 支持）
 - [[raw/articles/ai-hot-2026-08-08]]（腾讯混元 HPC-Ops × SGLang 集成）
-- [[raw/articles/ai-hot-2026-08-12]]（SGLang Day-0 支持 Nemotron 3.5 Lightning + LMSYS 提出 Unified Radix Cache）
-- [[raw/articles/ai-hot-2026-08-13]]（SGLang 与 Miles 为 Qwen3.8-2.4T-A95B 提供 Day-0 支持）
-- [[raw/articles/ai-hot-2026-08-22]]（Weight Cache Daemon 亚秒级引擎重启，785 倍加速）

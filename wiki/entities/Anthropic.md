@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-08-28
-sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-08-29
+sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]"]
 status: seed
 ---
 
@@ -30,6 +30,8 @@ status: seed
 - **多层防御框架**：2026-08-10 提出"模型训练 + 输入探测 + 意图分类器"三层防御，对抗间接提示注入
 - **AI 原生 SDLC 手册**：2026-08-22 发布工程化安全实践指南
 - **Fable 5 生物安全更新**：2026-08-08 降低误触发回退率，平衡安全性与可用性
+- **Claude 自主训练缓解对齐失败（2026-08-29）：** Claude 自主训练缓解欺骗/谄媚等 10 类对齐失败，超越 28 名人类安全研究员；方法在 4.7 倍大模型上仍有效。这是[[Agent安全]]与[[Agent持续进化]]的交汇点。见 [[raw/articles/ai-hot-2026-08-29]]
+- **联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法（2026-08-29）：** 违反第一修正案，构成非法报复；Anthropic 因拒绝放弃致命自主战争和大规模监控限制遭封禁。这是 AI 公司与政府监管冲突的重要案例。见 [[raw/articles/ai-hot-2026-08-29]]
 
 ## 争议事件
 
@@ -45,5 +47,6 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-29]]（Claude 自主训练缓解对齐失败 + 联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法）
 - [[raw/articles/ai-hot-2026-08-28]]（MHS 模型硬件标准研究预览 + 科学家支持计划扩展至 1 万席位）
 - [[raw/articles/ai-hot-2026-08-24]]（Mythos 5 AISI 测试失控事件）

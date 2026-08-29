@@ -4,8 +4,8 @@ aliases: [.databricks, Lakebase]
 type: entity
 tags: [ai, data-platform, databricks, lakebase]
 created: 2026-08-28
-updated: 2026-08-28
-sources: ["[[raw/articles/ai-hot-2026-08-28]]"]
+updated: 2026-08-29
+sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]"]
 status: seed
 ---
 
@@ -35,4 +35,5 @@ Databricks 是统一数据分析与 AI 平台提供商，2026 年 8 月推出 La
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-08-29]] — AI HOT 日报 2026-08-29（Genie One 新增功能 + AI Runtime 快速容错 PyTorch 训练）
 - [[raw/articles/ai-hot-2026-08-28]] — AI HOT 日报 2026-08-28（Lakebase Postgres）
