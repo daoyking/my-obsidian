@@ -49,7 +49,7 @@ Meta（原 Facebook）开源的声明式、组件化 UI 库。以虚拟 DOM、JS
 ## 在我项目中的使用
 
 - `my-react-app` — React 基础实践
-- `mini-react` — 手写 React 核心机制（见 [[projects/mini-react]]）
+- `mini-react` — 手写 React 核心机制（见 [[mini-react]]）
 - `ecommercestore-supplier-web` — 电商供应商端
 - `awesomereactapp` — React 练习
 

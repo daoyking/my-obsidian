@@ -69,4 +69,4 @@ function createReactiveObject(target, map, handlers) {
 ## 相关
 
 - [[响应式]] · [[依赖收集]]
-- [[projects/mini-vue]]
+- [[mini-vue]]

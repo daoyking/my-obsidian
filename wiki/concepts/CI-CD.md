@@ -1,6 +1,6 @@
 ---
 title: CI/CD
-aliases: [持续集成, 持续部署, 持续交付]
+aliases: [持续集成, 持续部署, 持续交付, CI/CD]]
 type: concept
 tags: [devops, ci-cd, automation, development]
 created: 2026-08-24

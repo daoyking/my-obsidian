@@ -631,3 +631,13 @@ status: active
 - 关联链接数：约 8 个双链
 - 备注：本日资讯量较少；核心事件为索尼与华纳音乐联合起诉 Anthropic 版权侵权（数万首音乐作品/歌词），每件索赔 15 万美元；Uber 70% PR 由 Agent 接管且 AI 账单零增长是工程实践标杆案例
 - 备注：本日核心暗线是"Agent 自主安全对齐 + 监管冲突"——Anthropic 让 Claude 自主训练缓解 10 类对齐失败是 Agent 安全里程碑；联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法是 AI 公司与政府监管冲突的重要案例；GLM-5.3 开源权重把国产开源前沿模型推向新阶段。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-08-29]]`。
+
+### 2026-08-31 09:29 | Lint | 每周体检
+- 发现问题：悬空 31（AMD/AWS/Apple/Google/HUMAIN/Capacitor/Electron/pnpm/vol-rs/IPC/内存安全/分布式系统/动态类型/基准测试/嵌入/开源/数据集/模型加载/版本控制/版权与AI/系统编程/编码智能体/自动更新/解释型语言/语义搜索/Agent开发学习计划.md/Agent持续进化.md/learning-ai-agent.md/wiki/concepts/Agent.md/wiki/topics/AI素养.md/raw/articles/前端转AI全栈顺序图-2026-08-27/CI/CD/X/pnp/Vi/wikilink/链接/页面/projects/mini-react/projects/mini-vue/wiki/INDEX/wiki/LOG/raw/articles/react-technology-reveale/raw/articles/vue-technology-reveale/raw/articles/xxx）；孤立 0；frontmatter 缺失 0
+- 修复动作：
+  - 新建实体页 9 个：`wiki/entities/AMD.md` · `AWS.md` · `Apple.md` · `Google.md` · `HUMAIN.md` · `Capacitor.md` · `Electron.md` · `pnpm.md` · `vol-rs.md` · `Intel.md` · `LLM.md` · `Stability-AI.md` · `DALL-E.md` · `npm.md` · `yarn.md` · `Kubernetes.md`
+  - 新建概念页 15 个：`wiki/concepts/IPC.md` · `内存安全.md` · `分布式系统.md` · `动态类型.md` · `基准测试.md` · `嵌入.md` · `开源.md` · `数据集.md` · `模型加载.md` · `版本控制.md` · `版权与AI.md` · `系统编程.md` · `编码智能体.md` · `自动更新.md` · `解释型语言.md` · `语义搜索.md` · `云原生.md` · `工具调用.md` · `模型评估.md` · `容器.md` · `微服务.md`
+  - 命名冲突修复：`CI-CD.md` 补 alias `CI/CD`；`projects/前端转AI全栈学习计划.md` 中 `.md` 扩展名链接规范化（5 处）；`[[projects/mini-react/mini-vue]]` → `[[mini-react/mini-vue]]`（4 文件）；`[[wiki/INDEX/LOG]]` → `[[INDEX/LOG]]`（20 daily 文件 + 模板）；`raw/articles/react-technology-reveale` → `revealed`、`vue-technology-reveale` → `revealed`（4 概念页）
+  - `CLAUDE.md` 描述性 `[[raw/articles/xxx]]` 加反引号防误判
+- 复检结果：悬空=0、孤立=0、frontmatter=0 ✅
+- 影响文件：16 新建 + 33 修改，共 49 文件

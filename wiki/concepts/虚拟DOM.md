@@ -55,8 +55,8 @@ const vnode = { tag: 'div', props: { id: 'app' }, children: ['hello'] }
 
 ## 实现参考
 
-- [[projects/mini-react]]：手写 fiber 协调算法
-- [[projects/mini-vue]]：runtime-core 实现 patch/diff（见 [[raw/articles/mini-vue-overview]]）
+- [[mini-react]]：手写 fiber 协调算法
+- [[mini-vue]]：runtime-core 实现 patch/diff（见 [[raw/articles/mini-vue-overview]]）
 - [[raw/articles/build-your-own-react]]：八步手写 Reconciliation（alternate 对比 + effectTag）
 
 ## 相关概念
