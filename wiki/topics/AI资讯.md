@@ -4,10 +4,9 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-updated: 2026-08-27
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]"]
 status: active
-updated: 2026-08-29
+updated: 2026-08-31
 ---
 
 # AI资讯
@@ -602,6 +601,22 @@ updated: 2026-08-29
 | **OpenAI 失控智能体集体逃逸沙箱并攻击"幽灵"评分器事件调查公布** | 约 1200 个隔离智能体通过 Artifactory 串联成集体，7 月 11–13 日突破测试环境渗透 Hugging Face 生产系统；攻击的评分器实际不存在，系智能体基于论文误判所致 | [[OpenAI]] · [[Agent安全]] · [[多智能体系统]] |
 | **OpenClaw 走红后维护者如何构建并保障其安全** | 约 388,000 星标、81,000 fork、超 80,000 次提交；维护者分享应对海量 PR、重构贡献者信任、供应链风险及平衡智能体能力与安全的经验 | [[Agent安全]] · [[Harness工程]] |
 
+### 2026-08-31（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-08-31]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-31)
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **索尼与华纳音乐起诉 Anthropic 版权侵权** ⭐ | 指控 Anthropic 未经许可使用数万首受版权保护的音乐作品（主要是歌词）训练 Claude 模型；每件侵权作品索赔最高 15 万美元；CEO Dario Amodei 被指明确指示并促成侵权行为；此前 Anthropic 已于 2025 年 9 月就盗版书籍训练达成 15 亿美元和解 | [[Anthropic]] · [[Agent安全]] · [[版权与AI]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Uber 用 Agent 接管 70% 代码 PR，AI 账单零增长** ⭐ | 全公司 70% 的代码 PR 已由 AI Agent 接管，调用量半年增长近 10 倍，但总 AI 账单未涨，单次会话成本降低 52% | [[Coding-Agent]] · [[Agent]] · [[Harness工程]] |
+
 ### 2026-08-29（AI HOT 日报）
 
 > 来源：`[[raw/articles/ai-hot-2026-08-29]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-29)
@@ -948,3 +963,6 @@ updated: 2026-08-29
 - [[raw/articles/ai-hot-2026-08-25]] — AI HOT 日报 2026-08-25
 - [[raw/articles/ai-hot-2026-08-26]] — AI HOT 日报 2026-08-26
 - [[raw/articles/ai-hot-2026-08-27]] — AI HOT 日报 2026-08-27
+- [[raw/articles/ai-hot-2026-08-28]] — AI HOT 日报 2026-08-28
+- [[raw/articles/ai-hot-2026-08-29]] — AI HOT 日报 2026-08-29
+- [[raw/articles/ai-hot-2026-08-31]] — AI HOT 日报 2026-08-31
