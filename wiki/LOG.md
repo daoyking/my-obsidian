@@ -641,3 +641,15 @@ status: active
   - `CLAUDE.md` 描述性 `[[raw/articles/xxx]]` 加反引号防误判
 - 复检结果：悬空=0、孤立=0、frontmatter=0 ✅
 - 影响文件：16 新建 + 33 修改，共 49 文件
+
+### 2026-08-31 10:08 | Ingest | GitHub 周动态 2026-08-24 ~ 2026-08-31
+- 扫描范围：daoyking 46 个仓库（最近更新 7 天内）
+- 有动态仓库：仅 `daoyking/my-obsidian`（本周 Lint/AI HOT 自动化推送）
+- 重要项目扫描：
+  - `dsh-multiplatform`：最近提交 2026-08-19（v0.1.2），无 7 天内新 commit
+  - `learning-ai-agent`：最近提交 2026-08-18（W6 打磨），无 7 天内新 commit
+  - `hmnmt-web`：最近提交 2026-08-12，无 7 天内新 commit
+  - `dsh-harness-fork`：无新动态
+- 结论：本周无重要变更，上周（8/18–8/24）Ingest 已完整覆盖 dsh-multiplatform v0.1.0–v0.1.2 迭代与 learning-ai-agent W6 打磨
+- 产出：无新 raw 文件，无项目页更新
+- 备注：用户本周专注于 AI HOT 日报 + Lint 自动化，个人项目进入稳定维护期
