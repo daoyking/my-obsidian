@@ -4,9 +4,9 @@ aliases: [github]
 type: entity
 tags: [tool, platform, version-control, open-source]
 created: 2026-08-24
-updated: 2026-08-24
-sources: []
-status: seed
+updated: 2026-08-31
+sources: [raw/articles/github-trending-2026-08-31.md]
+status: active
 ---
 
 # GitHub
@@ -38,7 +38,7 @@ status: seed
 
 ## 相关实体
 
-- [[Git]] · [[GitLab]] · [[Hugging-Face]] · [[Claude-Code]] · [[Cursor]]
+- [[Git]] · [[GitLab]] · [[Hugging-Face]] · [[Claude-Code]] · [[Cursor]] · [[vol-rs]]
 
 ## 相关概念
 
@@ -46,4 +46,4 @@ status: seed
 
 ## 来源
 
-- （seed 页面，通用平台）
+- [raw/articles/github-trending-2026-08-31.md](../../raw/articles/github-trending-2026-08-31.md)：2026-08-31 热门项目快照

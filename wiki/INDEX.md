@@ -49,6 +49,8 @@ FROM "wiki/qa"
 SORT updated DESC
 ```
 
+- [[前端转AI全栈学习计划]] — 180天19阶段学习路线（Python/FastAPI/MySQL/Vue3/Agent/RAG/Agent/运维/企业级）
+
 ### 项目 Projects
 ```dataview
 TABLE tags, updated
