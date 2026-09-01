@@ -4,7 +4,7 @@ aliases: [github]
 type: entity
 tags: [tool, platform, version-control, open-source]
 created: 2026-08-24
-updated: 2026-08-31
+updated: 2026-09-01
 sources: [raw/articles/github-trending-2026-08-31.md]
 status: active
 ---
@@ -47,3 +47,4 @@ status: active
 ## 来源
 
 - [raw/articles/github-trending-2026-08-31.md](../../raw/articles/github-trending-2026-08-31.md)：2026-08-31 热门项目快照
+- [raw/articles/github-trending-2026-09-01.md](../../raw/articles/github-trending-2026-09-01.md)：2026-09-01 热门项目快照（DLSS5-Feeder ⭐417 / open-seo-mcp-skills ⭐190 / useagent ⭐151）
