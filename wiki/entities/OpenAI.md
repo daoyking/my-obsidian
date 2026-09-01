@@ -4,8 +4,8 @@ aliases: [GPT-5, GPT-5.6-Cyber, GPT-5.6]
 type: entity
 tags: [ai, llm, company, openai, agent, security]
 created: 2026-08-24
-updated: 2026-08-28
-sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-25]]"]]", "[[raw/articles/ai-hot-2026-08-24]]"]
+updated: 2026-09-01
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-09-01]]"]
 status: seed
 ---
 
@@ -46,6 +46,8 @@ status: seed
 ## 商业进展
 
 - **2027 年上市时间表**（2026-08-21）：企业级业务年化营收增长 50%，AI 编程与办公产品周活跃用户突破 2000 万
+
+- **ChatGPT Ads 全球扩展（2026-09-01）：** 年化收入运行率突破 10 亿美元并扩展至全球市场，通过免费和低价选项支持更多人使用 AI 服务。来源：[[raw/articles/ai-hot-2026-09-01]]
 
 ## 相关实体
 

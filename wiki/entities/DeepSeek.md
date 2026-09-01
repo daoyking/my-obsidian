@@ -4,8 +4,8 @@ aliases: [深度求索, DeepSeek 模型, DeepSeek-V4]
 type: entity
 tags: [ai, llm, model, deepseek, open-weights, moe]
 created: 2026-08-16
-updated: 2026-08-22
-sources: ["[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+updated: 2026-09-01
+sources: ["[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-09-01]]"]
 status: seed
 ---
 
@@ -33,7 +33,7 @@ DeepSeek（深度求索）推出的大语言模型家族，以 MIT 开源协议�
   - 与 [[Grok]] 4.6 同日（2 小时间隔）发布，双双逼近 Claude Fable 5 体验。见 [[raw/articles/ai-hot-2026-08-13]]。
   - 硅基流动 Day-0 上线详情见 [[raw/articles/ai-hot-2026-08-15]]。
 - **DeepSeek V4 Flash-0731**：面向追求速度与成本效益的日常生产场景。见 [[raw/articles/ai-hot-2026-08-15]]。
-- **DeepSeek-V4-Flash-Vision-Exp（2026-08-22）**：实验性多模态视觉理解模型，可通过 API 平台访问（`model='deepseek-v4-flash-vision-exp'`）。实验性定位暗示 DeepSeek 正在测试多模态能力，是否推出正式多模态版本待观察。来源：[[raw/articles/ai-hot-2026-08-22]]
+- **DeepSeek-V4-Flash-Vision-Exp（2026-08-31 开源，09-01 日报收录）**：首个多模态模型正式开源，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。多模态 Agent 能力接近 Opus-4.8。来源：[[raw/articles/ai-hot-2026-09-01]]
 
 ## 适用场景
 

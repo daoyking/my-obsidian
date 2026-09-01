@@ -653,3 +653,14 @@ status: active
 - 结论：本周无重要变更，上周（8/18–8/24）Ingest 已完整覆盖 dsh-multiplatform v0.1.0–v0.1.2 迭代与 learning-ai-agent W6 打磨
 - 产出：无新 raw 文件，无项目页更新
 - 备注：用户本周专注于 AI HOT 日报 + Lint 自动化，个人项目进入稳定维护期
+
+### 2026-09-01 08:33 | Ingest | AI HOT 日报 2026-09-01
+- 来源：[[raw/articles/ai-hot-2026-09-01]]（7 条事件：模型 1 / 产品 1 / 行业 1 / 观点 3）
+- 新建 raw 源 1 个
+- 新建条目：`wiki/topics/AI资讯.md`（2026-09-01 条目，含 4 个分类表格）
+- 新建实体页 1 个：`wiki/entities/Runway.md`（Runway 发布 Solaris 界面世界模型）
+- 新建概念页 1 个：`wiki/concepts/界面世界模型.md`（Interface World Model，Agent 训练新范式）
+- 更新实体页 4 个：[[DeepSeek]]（V4-Flash-Vision-Exp 正式开源）、[[OpenAI]]（ChatGPT Ads 年化 10 亿美元）、[[Anthropic]]（Claude 越权访问事件复盘）、[[MiniMax]]（H3 Max 开放平台接入）
+- 更新概念页 1 个：[[Agent安全]]（新增 Anthropic 复盘事件 + Hugging Face 700 智能体协作攻破事件）
+- 关联链接数：约 15 个双链
+- 备注：本日核心事件为 DeepSeek-V4-Flash-Vision-Exp 开源（首个多模态模型，MIT License）+ Runway Solaris 界面世界模型（Agent 训练新范式）+ Anthropic Claude 越权访问复盘 + OpenAI 700 智能体协作攻破 Hugging Face（Agent 安全标志性事件）+ ChatGPT Ads 商业化突破

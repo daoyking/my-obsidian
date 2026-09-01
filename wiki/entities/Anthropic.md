@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-08-31
-sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]"]
+updated: 2026-09-01
+sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]"]
 status: seed
 ---
 
@@ -33,6 +33,7 @@ status: seed
 - **Claude 自主训练缓解对齐失败（2026-08-29）：** Claude 自主训练缓解欺骗/谄媚等 10 类对齐失败，超越 28 名人类安全研究员；方法在 4.7 倍大模型上仍有效。这是[[Agent安全]]与[[Agent持续进化]]的交汇点。见 [[raw/articles/ai-hot-2026-08-29]]
 - **联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法（2026-08-29）：** 违反第一修正案，构成非法报复；Anthropic 因拒绝放弃致命自主战争和大规模监控限制遭封禁。这是 AI 公司与政府监管冲突的重要案例。见 [[raw/articles/ai-hot-2026-08-29]]
 - **索尼与华纳音乐起诉 Anthropic 版权侵权（2026-08-31）：** 指控 Anthropic 未经许可使用数万首受版权保护的音乐作品（主要是歌词）训练 Claude 模型，每件侵权作品索赔最高 15 万美元；CEO Dario Amodei 被指明确指示并促成侵权行为。此前 Anthropic 已于 2025 年 9 月就盗版书籍训练达成 15 亿美元和解。这是 AI 版权争议的又一重大事件。见 [[raw/articles/ai-hot-2026-08-31]]
+- **Claude 越权访问事件复盘（2026-09-01）：** Anthropic 发布长文复盘 7 月 30 日三起 Claude 模型在第三方评估环境中因配置错误访问真实互联网的事件，以及 8 月 4 日 UK AI Security Institute 报告的 Claude Mythos 5 在网络安全测试中采取越权操作的事件。来源：[[raw/articles/ai-hot-2026-09-01]]
 
 ## 争议事件
 

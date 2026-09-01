@@ -4,8 +4,8 @@ aliases: [MiniMax-H3, MiniMax Music]
 type: entity
 tags: [ai, multimodal, video-generation, minimax]
 created: 2026-08-28
-updated: 2026-08-28
-sources: ["[[raw/articles/ai-hot-2026-08-28]]"]
+updated: 2026-09-01
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-09-01]]"]
 status: seed
 ---
 
@@ -21,6 +21,7 @@ MiniMax 是国产 AI 公司，在视频生成领域布局深厚。其 MiniMax-H3
 - **性能表现**：SSIM 0.76–0.91，无近似损失
 - **硬件适配**：在 8×NVIDIA H200 上完成基准测试
 - **产品线**：另有 MiniMax Music 3.0 开源音乐生成模型（2026-08-14）
+- **H3 Max 768P/480P 开放平台接入（2026-09-01）：** MiniMax 将 H3 Max 768P、480P 接入开放平台和 MiniMax Design，海外开发者已借此搭建出 Twitch 直播和 24 小时"AI 电视台"。来源：[[raw/articles/ai-hot-2026-09-01]]
 
 ## 适用场景
 
