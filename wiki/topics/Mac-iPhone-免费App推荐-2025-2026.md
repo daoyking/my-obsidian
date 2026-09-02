@@ -1,5 +1,5 @@
 ---
-title: Mac-iPhone 免费 App 推荐 2025-2026
+title: Mac-iPhone-免费App推荐-2025-2026
 aliases: [Mac/iPhone 免费 App 推荐, 免费App推荐]
 type: topic
 tags: [mac, iphone, app, 效率工具, 推荐]
@@ -72,5 +72,5 @@ status: active
 ## 存储说明
 
 - 本记录由 **automation-1786437213877**（推荐 Mac/iPhone 免费 App）每日 09:00 自动生成
-- 存储位置：`wiki/topics/Mac-iPhone 免费 App 推荐 2025-2026.md`
+- 存储位置：`wiki/topics/Mac-iPhone-免费App推荐-2025-2026.md`
 - 推送渠道：飞书 P2P（金道洋）+ 微信（push_to_wechat）

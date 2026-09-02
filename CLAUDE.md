@@ -47,7 +47,7 @@ type: concept | entity | topic | snippet | qa | project | daily
 tags: []                 # 小写标签，如 [react, hooks]
 created: 2026-08-07      # 创建日期
 updated: 2026-08-07      # 最后更新日期
-sources: []              # 关联的 raw 来源路径，如 [[raw/articles/xxx]]
+sources: []              # 关联的 raw 来源路径，如 `[[raw/articles/xxx]]`
 status: seed | active | stale | archived
 ---
 ```

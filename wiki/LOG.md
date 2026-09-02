@@ -665,19 +665,13 @@ status: active
 - 关联链接数：约 15 个双链
 - 备注：本日核心事件为 DeepSeek-V4-Flash-Vision-Exp 开源（首个多模态模型，MIT License）+ Runway Solaris 界面世界模型（Agent 训练新范式）+ Anthropic Claude 越权访问复盘 + OpenAI 700 智能体协作攻破 Hugging Face（Agent 安全标志性事件）+ ChatGPT Ads 商业化突破
 
-### 2026-09-02 09:01 | 手动 Ingest | Mac 免费效率工具 & AI Agent 推荐
-- 来源：GitHub + 全网搜索（Automation 任务 automation-1786437213877）
-- 新建 raw 源 1 个：`raw/articles/github-mac-apps-search-2026-09-02.md`
-- 新建实体页 1 个：`wiki/entities/Mac-免费效率工具推荐-2026-09.md`（收录 23 款工具，分窗口管理/AI Agent/系统工具等类别）
-- 推送渠道：飞书（已发送）；微信需配置 IMA/qclaw 渠道（当前未配置）
-- 备注：筛选标准=免费开源+长期维护+效率/趣味，GitHub Stars 作为维护活跃度参考
-
-### 2026-09-02 09:24 | Ingest | Mac 免费效率工具 & AI Agent 推荐
+### 2026-09-02 09:01 | Ingest | Mac 免费效率工具 & AI Agent 推荐
 - 来源：GitHub + 全网搜索（Automation 任务 automation-1786437213877）
 - 新建 raw 源 1 个：`raw/articles/github-mac-apps-search-2026-09-02.md`
 - 新建实体页 1 个：`wiki/entities/Mac-免费效率工具推荐-2026-09.md`（23 款工具，分窗口管理/AI Agent/系统工具等类别）
 - 推送渠道：飞书群聊「Mac-iPhone工具推荐」✅ 已发送；微信需配置 IMA/qclaw 渠道（当前未配置）
 - 备注：筛选标准=免费开源+长期维护+效率/趣味，GitHub Stars 作为维护活跃度参考
+- 补记（2026-09-02 15:20）：本条此前被重复记录了两次（09:01 与 09:24 内容雷同，同一次 Automation 任务），现合并为一条
 
 ### 2026-09-02 13:40 | Ingest | awesome-llm-apps（GitHub 135k stars 样例库）
 - 来源：`raw/articles/awesome-llm-apps.md`（2026-09-01 用 `gh api` 抓取 README 全文 24.8KB，已剥离 banner/赞助 HTML；另实测 16 个目录的条目数）
@@ -696,12 +690,31 @@ status: active
 - 初检：悬空 4 / 孤立 6 / frontmatter 缺失 2（均为历史遗留，非本次 Ingest 引入）
 - 修复动作：
   - 悬空 4 → 新建页面 4 个：`wiki/entities/Pika.md`、`wiki/concepts/Computer-Use.md`、`wiki/entities/IKONA-Security.md`、`wiki/entities/skillhub-daily.md`；并把 `[[Computer Use]]` 改为 `[[Computer-Use|Computer Use]]` 消除空格命名不匹配
-  - 孤立 6 → 逐页补入链（`Agent评估`→实时语音智能体评估、`GitHub`→`GitHub热门项目速览2026-09`、`DeepSeek-Harness`→`dsh-multiplatform`、`前端转AI全栈学习计划`→`前端转AI全栈顺序图`、`Mac-免费效率工具推荐-2026-09`→`Mac-iPhone 免费 App 推荐 2025-2026`）
-  - frontmatter 2 → 补全 `前端转AI全栈顺序图.md` 与 `Mac-iPhone 免费 App 推荐 2025-2026.md`（后者此前完全无 frontmatter）
+  - 孤立 6 → 逐页补入链（`Agent评估`→实时语音智能体评估、`GitHub`→`GitHub热门项目速览2026-09`、`DeepSeek-Harness`→`dsh-multiplatform`、`前端转AI全栈学习计划`→`前端转AI全栈顺序图`、`Mac-免费效率工具推荐-2026-09`→`Mac-iPhone-免费App推荐-2025-2026`）
+  - frontmatter 2 → 补全 `前端转AI全栈顺序图.md` 与 `Mac-iPhone-免费App推荐-2025-2026.md`（后者此前完全无 frontmatter）
 - 复检结果：悬空=0、孤立=0、frontmatter=0 ✅（页面总数 216，唯一链接目标 273）
 - 🔧 **脚本 Bug 修复（重要）**：`lint_wiki.sh` 此前有两个致命 bug，导致 Lint 长期不可信：
   1. 孤立页检查为每页跑一次全库 `grep -rl`，250 页 ≈ O(N²) 全文扫描；且在 `set -euo pipefail` 下 grep 无匹配返回 1 会**静默终止整个脚本**——frontmatter 检查与统计段从未执行过
-  2. `for f in $(find ...)` 未处理文件名空格，含空格的页面被拆成多个假路径（本库 `Mac-iPhone 免费 App 推荐 2025-2026.md` 即受害者，产生 5 条假孤立记录 + grep 报错）
+  2. `for f in $(find ...)` 未处理文件名空格，含空格的页面被拆成多个假路径（本库 `Mac-iPhone-免费App推荐-2025-2026.md` 即受害者，产生 5 条假孤立记录 + grep 报错）
   - 修复：一次性扫描建引用索引 + awk 内存聚合（秒级）、`find -print0` + `read -d ''` 处理空格
 - 待主人决策 1：`wiki/topics/Mac-iPhone 免费 App 推荐 2025-2026.md` 文件名含空格，违反 `CLAUDE.md` 第 5 节约定——是否重命名？需同步 daily/ 中 9 处引用，本次未擅自改动
 - 待主人决策 2：LOG 中 09:01 与 09:24 两条 Mac 工具推荐记录内容重复（同一次任务被记录两次），是否合并？
+
+### 2026-09-02 15:20 | 清理 | 待办决策办结（重命名 + LOG 合并）
+- 决策 1 ✅ 已办结：将 `wiki/topics/Mac-iPhone 免费 App 推荐 2025-2026.md` 重命名为 `Mac-iPhone-免费App推荐-2025-2026.md`（`git mv` 保历史），`title` 同步改为无空格形式，中文可读名保留在 `aliases`（`Mac/iPhone 免费 App 推荐`、`免费App推荐`），旧双链仍可解析
+  - 同步引用 8 个文件：`wiki/LOG.md`、`wiki/entities/Mac-免费效率工具推荐-2026-09.md`（双链）、`wiki/topics/Mac-iPhone-免费App推荐-2025-2026.md`（自身 `title` 与「存储位置」段）、`daily/2026-08-14.md`、`daily/2026-08-16.md`、`daily/2026-08-17.md`、`daily/2026-08-22.md`、`daily/2026-08-23.md`
+  - 全库复检：`find wiki projects raw daily -name "* *.md"` 返回空，CLAUDE.md 第 5 节禁空格约定已全面满足
+  - ⚠️ 踩坑：zsh 下 `sed -i '' 's/.../'` 会把 `s/...` 误当文件名（空参数被吞）；`perl -CSD -pi -e` 因双层 UTF-8 编码导致中文模式匹配不到。最终用 `perl -pi -e` + 显式 `\xNN` 字节转义解决
+- 决策 2 ✅ 已办结：09:01 与 09:24 两条 Mac 工具推荐记录合并为一条（保留 09:01 时间戳，取信息更全的那份，补记合并说明）
+
+### 2026-09-02 15:45 | Lint | 链接规范统一 + raw 入库 + 复检归零
+- 起因：daily/ 与 templates/ 中 20 处 `[[wiki/INDEX]]` → `[[INDEX]]` 被 Obsidian Linter 插件自动改写（最短路径策略），与 `CLAUDE.md` 第 5 节「引用格式 `[[wiki/concepts/xxx]]`」的带前缀约定冲突
+- 修复：统一为 `[[wiki/INDEX]]` / `[[wiki/LOG]]`，扫描 daily/ 19 个文件 + `templates/tpl-daily.md`
+  - 其中 14 个文件改回后与 git HEAD 逐字节一致（说明它们只被 Linter 改了这一处，其余内容未动）
+  - `daily/2026-08-31.md` 方向相反：HEAD 里原本就是短链 `[[INDEX]]`，本次是**规范统一**而非回滚
+  - 其余 5 个（08-14/16/17/22/23）本身还带有当日的其他内容改动，一并提交
+  - 说明：两种写法 Lint 都判不出悬空（脚本按 `(^|/)名字.md$` 匹配），但混用会让「引用格式」规范失去意义，且与 CLAUDE.md 示例不一致
+- 入库：`raw/articles/github-mac-apps-search-2026-09-02.md`（2593B）此前未跟踪，frontmatter 齐全，被 `[[wiki/entities/Mac-免费效率工具推荐-2026-09]]` 引用，本次补入 git
+- CLAUDE.md：sources 字段示例 `[[raw/articles/xxx]]` 加反引号——符合第 150 行「LOG 描述性文字里的双链用反引号包裹，避免被 Lint 误判为悬空」
+- 复检结果：悬空=0、孤立=0、frontmatter=0 ✅（页面总数 216，唯一链接目标 272）
+  - 较上轮 273 少 1，正是 INDEX/LOG 两种写法归一后合并为一个链接目标所致，属预期
