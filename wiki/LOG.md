@@ -664,3 +664,44 @@ status: active
 - 更新概念页 1 个：[[Agent安全]]（新增 Anthropic 复盘事件 + Hugging Face 700 智能体协作攻破事件）
 - 关联链接数：约 15 个双链
 - 备注：本日核心事件为 DeepSeek-V4-Flash-Vision-Exp 开源（首个多模态模型，MIT License）+ Runway Solaris 界面世界模型（Agent 训练新范式）+ Anthropic Claude 越权访问复盘 + OpenAI 700 智能体协作攻破 Hugging Face（Agent 安全标志性事件）+ ChatGPT Ads 商业化突破
+
+### 2026-09-02 09:01 | 手动 Ingest | Mac 免费效率工具 & AI Agent 推荐
+- 来源：GitHub + 全网搜索（Automation 任务 automation-1786437213877）
+- 新建 raw 源 1 个：`raw/articles/github-mac-apps-search-2026-09-02.md`
+- 新建实体页 1 个：`wiki/entities/Mac-免费效率工具推荐-2026-09.md`（收录 23 款工具，分窗口管理/AI Agent/系统工具等类别）
+- 推送渠道：飞书（已发送）；微信需配置 IMA/qclaw 渠道（当前未配置）
+- 备注：筛选标准=免费开源+长期维护+效率/趣味，GitHub Stars 作为维护活跃度参考
+
+### 2026-09-02 09:24 | Ingest | Mac 免费效率工具 & AI Agent 推荐
+- 来源：GitHub + 全网搜索（Automation 任务 automation-1786437213877）
+- 新建 raw 源 1 个：`raw/articles/github-mac-apps-search-2026-09-02.md`
+- 新建实体页 1 个：`wiki/entities/Mac-免费效率工具推荐-2026-09.md`（23 款工具，分窗口管理/AI Agent/系统工具等类别）
+- 推送渠道：飞书群聊「Mac-iPhone工具推荐」✅ 已发送；微信需配置 IMA/qclaw 渠道（当前未配置）
+- 备注：筛选标准=免费开源+长期维护+效率/趣味，GitHub Stars 作为维护活跃度参考
+
+### 2026-09-02 13:40 | Ingest | awesome-llm-apps（GitHub 135k stars 样例库）
+- 来源：`raw/articles/awesome-llm-apps.md`（2026-09-01 用 `gh api` 抓取 README 全文 24.8KB，已剥离 banner/赞助 HTML；另实测 16 个目录的条目数）
+- 仓库快照：Shubhamsaboo/awesome-llm-apps · 135,538 stars · 19,926 forks · Python · Apache-2.0 · 创建 2024-04-29
+- 新建 raw 源 1 个、新建 wiki 页 3 个：
+  - `wiki/entities/awesome-llm-apps.md`（主实体页：16 类目录规模表 + 三大趋势 + 我的观点 + 待研究问题）
+  - `wiki/concepts/生成式UI.md`（Generative UI / Agentic Frontend —— 前端工程师在 Agent 时代的主战场）
+  - `wiki/concepts/常驻Agent.md`（Always-on Agent —— 与本库自动化体系对照，指出「还未做到自主判断值不值得打扰」）
+- 更新页面 15 个：`wiki/concepts/Agent`（新增「Agent 应用形态谱系」表）、`RAG`（新增 21 个样例构成的十级进阶阶梯 + 修复损坏的 frontmatter）、`MCP`（6 个实践样例，Multi-MCP Router 与「上下文隔离」原则互证）、`记忆系统`（6 个样例的认知类型映射）、`多智能体系统`（18 个 Agent Team 的编排模式分类）、`上下文工程`（成本优化工具 + 提醒数字缺第三方验证）、`Agent-Plugins`（Agent Skills 生态落地验证）、`Agent评估`（补语音评估链接）、`微调`（2 个 QLoRA 可跑配方）、`界面世界模型`（修正 Computer Use 链接）、`wiki/topics/AI工具集`（新增「代码样例库」节）、`wiki/topics/Agent开发学习计划-Python路线`（样例库与 W2-W12 逐周对应表）、`wiki/entities/awesome-agi-agents`（新增两者分工对比表）、`wiki/entities/GitHub`、`wiki/entities/DeepSeek-Harness`、`projects/前端转AI全栈学习计划`
+- 更新 `wiki/INDEX.md`：「待研究问题」新增 5 条（生成式 UI 协议选型 / 哈希链审计 / Skill CI 门禁 / 常驻 Agent 打扰阈值 / 上下文优化工具实测）
+- 关联链接数：约 60 个双链
+- 备注：该仓库的价值是「每个样例端到端可跑」——awesome 类仓库里极稀缺；缺口是样例多为 Streamlit 原型，缺鉴权/限流/成本控制/评测/可观测
+
+### 2026-09-02 13:55 | Lint | 全库体检（Ingest 后复检）
+- 工具：`scripts/lint_wiki.sh`（obsidian-llm-wiki skill）
+- 初检：悬空 4 / 孤立 6 / frontmatter 缺失 2（均为历史遗留，非本次 Ingest 引入）
+- 修复动作：
+  - 悬空 4 → 新建页面 4 个：`wiki/entities/Pika.md`、`wiki/concepts/Computer-Use.md`、`wiki/entities/IKONA-Security.md`、`wiki/entities/skillhub-daily.md`；并把 `[[Computer Use]]` 改为 `[[Computer-Use|Computer Use]]` 消除空格命名不匹配
+  - 孤立 6 → 逐页补入链（`Agent评估`→实时语音智能体评估、`GitHub`→`GitHub热门项目速览2026-09`、`DeepSeek-Harness`→`dsh-multiplatform`、`前端转AI全栈学习计划`→`前端转AI全栈顺序图`、`Mac-免费效率工具推荐-2026-09`→`Mac-iPhone 免费 App 推荐 2025-2026`）
+  - frontmatter 2 → 补全 `前端转AI全栈顺序图.md` 与 `Mac-iPhone 免费 App 推荐 2025-2026.md`（后者此前完全无 frontmatter）
+- 复检结果：悬空=0、孤立=0、frontmatter=0 ✅（页面总数 216，唯一链接目标 273）
+- 🔧 **脚本 Bug 修复（重要）**：`lint_wiki.sh` 此前有两个致命 bug，导致 Lint 长期不可信：
+  1. 孤立页检查为每页跑一次全库 `grep -rl`，250 页 ≈ O(N²) 全文扫描；且在 `set -euo pipefail` 下 grep 无匹配返回 1 会**静默终止整个脚本**——frontmatter 检查与统计段从未执行过
+  2. `for f in $(find ...)` 未处理文件名空格，含空格的页面被拆成多个假路径（本库 `Mac-iPhone 免费 App 推荐 2025-2026.md` 即受害者，产生 5 条假孤立记录 + grep 报错）
+  - 修复：一次性扫描建引用索引 + awk 内存聚合（秒级）、`find -print0` + `read -d ''` 处理空格
+- 待主人决策 1：`wiki/topics/Mac-iPhone 免费 App 推荐 2025-2026.md` 文件名含空格，违反 `CLAUDE.md` 第 5 节约定——是否重命名？需同步 daily/ 中 9 处引用，本次未擅自改动
+- 待主人决策 2：LOG 中 09:01 与 09:24 两条 Mac 工具推荐记录内容重复（同一次任务被记录两次），是否合并？

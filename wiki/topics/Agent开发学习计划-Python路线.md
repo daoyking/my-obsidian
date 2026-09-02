@@ -4,8 +4,8 @@ aliases: [12周Agent学习计划, Swift开发者Agent学习计划, 个人自动�
 type: topic
 tags: [agent, 学习计划, python, swift, 个人自动化]
 created: 2026-08-11
-updated: 2026-08-11
-sources: ["~/about-project/about-AI/Agent开发学习计划.md", "~/about-project/about-AI/四位AI讲师学习资料整理.md"]
+updated: 2026-09-01
+sources: ["~/about-project/about-AI/Agent开发学习计划.md", "~/about-project/about-AI/四位AI讲师学习资料整理.md", "[[raw/articles/awesome-llm-apps]]"]
 status: active
 ---
 
@@ -86,6 +86,24 @@ Week 12  扩展方向与复盘
 | 仓库 | modelcontextprotocol/servers、awesome-mcp-servers、python-sdk、datawhalechina/so-large-lm | W5-6 |
 | 书 | 《Hands-On Large Language Models》（Jay Alammar）·《AI Engineering》（Chip Huyen） | W12 后进阶 |
 | 资讯 | 知乎 2026 框架横评 · State of AI Agent Tooling 2026 · MCP 协议详解（博客园） | W4 / W12 |
+| **样例库** | **[[awesome-llm-apps]]**（100+ 端到端可跑的 Agent/RAG 样例，Apache-2.0） | **全程对照，见下** |
+
+#### 样例库与每周的对应（2026-09-01 新增）
+
+[[awesome-llm-apps]] 的 16 个分类几乎可以逐周对上本计划，动手环节不必从零写，找一个最接近的样例跑通再改即可：
+
+| 周 | 主题 | 对应目录 |
+|---|---|---|
+| W2 | Tool Calling | `starter_ai_agents`（13 个单文件 agent） |
+| W3 | 手写 Agent 循环 | `advanced_ai_agents/single_agent_apps`（对照自己写的循环） |
+| W4 | 引入框架 | `ai_agent_framework_crash_course`（Google ADK / OpenAI Agents SDK 二选一都覆盖） |
+| W5-6 | MCP | `mcp_ai_agents`（6 个，含 Multi-MCP Router 与 Remote MCP Bridge） |
+| W8 | 记忆与上下文工程 | `llm_apps_with_memory_tutorials`（6 个）+ `llm_optimization_tools`（成本优化） |
+| W9 | 可靠性与成本 | `llm_optimization_tools`（TOON / Headroom） |
+| W10-11 | 验收项目 | `always_on_agents`（常驻形态参考，见 [[常驻Agent]]） |
+| W12 | 扩展方向 | `multi_agent_apps` + `agent_teams`（18 个多 Agent 样例）+ `llm_finetuning_tutorials` |
+
+**提醒**：样例多是 Streamlit 原型，缺鉴权/限流/成本控制/评测/可观测——W9 要求补的东西样例里没有，正好是练习空间。
 
 ### 四、7 条学习建议
 

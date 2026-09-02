@@ -4,9 +4,9 @@ aliases: [Agent插件, 智能体插件规范]
 type: concept
 tags: [ai, agent, plugin, standard, mcp]
 created: 2026-08-08
-updated: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]"]
-status: seed
+updated: 2026-09-01
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/awesome-llm-apps]]"]
+status: active
 ---
 
 # Agent Plugins
@@ -33,10 +33,32 @@ Agent Plugins 是一项由谷歌、亚马逊、微软等公司共同支持的中
 - 本库的 [[Agent持续进化]] 四法中「经验→程序」对应 Skill 沉淀，Agent Plugins 可能是 Skill 跨平台分发的标准化载体
 - 与 [[MCP]] 的关系待深入研究：是互补层还是包含关系？
 
+## 生态验证：Agent Skills 已经落地（2026-09-01）
+
+来自 [[raw/articles/awesome-llm-apps]] 的 `agent_skills` 目录，可以看到「技能」从规范走向实际分发：
+
+- **安装方式**：`npx skills add <github-url>` —— 一条命令给 Claude Code / Codex / Cursor 装能力
+- **质量要求**：每个 skill 都含真实代码，并通过「**安全 + eval 的 CI 门禁**」——技能不再是提示词片段，而是带测试的可分发单元
+- **样例**：Project Graveyard（副项目复盘）、Scope Creep Detector（diff 意图一致性检查）、Commit Archaeologist（代码考古）、Dependency Doctor（依赖体检）、Advisor-Orchestrator-Worker（异构模型三元结构）、Self-Improving Agent Skills（用 Gemini + ADK 自动优化技能）
+
+**对本页的意义**：说明「技能化」已是行业共识的落地形态，Agent Plugins 要解决的是**跨平台的打包分发标准**——上面「与本知识库的关联」一节的判断得到印证。
+
+**Self-Improving Agent Skills 值得单独注意**：技能可以反过来用 eval 驱动自动优化自己，这正是 [[Agent持续进化]] 中「经验→程序」环节的自动化闭环。
+
+## 待研究问题
+
+- [ ] 安全 + eval 的 CI 门禁具体检查哪些项？能否套用到我自己的 `~/.workbuddy/skills/`？
+- [ ] `npx skills add` 安装后的目录结构与 plugin.json 是否一致？
+
 ## 相关概念
 
-- [[MCP]] · [[Agent]] · [[Coding-Agent]] · [[Agent持续进化]]
+- [[MCP]] · [[Agent]] · [[Coding-Agent]] · [[Agent持续进化]] · [[Agent评估]] · [[上下文工程]]
+
+## 相关实体
+
+- [[awesome-llm-apps]] · [[Claude-Code]] · [[WorkBuddy]] · [[obsidian-llm-wiki]]
 
 ## 来源
 
 - [[raw/articles/ai-hot-2026-08-07]]（Agent Plugins 1.0.0 发布条目）
+- [[raw/articles/awesome-llm-apps]]（Agent Skills 分类，6 个项目）

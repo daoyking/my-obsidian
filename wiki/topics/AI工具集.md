@@ -4,8 +4,8 @@ aliases: [AI工具, chartGPT书签, AI产品集]
 type: topic
 tags: [ai, tools, bookmarks, collection]
 created: 2026-08-07
-updated: 2026-08-07
-sources: ["[[raw/web/chrome-bookmarks]]"]
+updated: 2026-09-01
+sources: ["[[raw/web/chrome-bookmarks]]", "[[raw/articles/awesome-llm-apps]]"]
 status: active
 ---
 
@@ -52,6 +52,14 @@ status: active
 
 - Anthropic · LAION Open-Assistant · ChatGPT-Next-Web（开源仓库）
 
+## 代码样例库（2026-09-01 新增）
+
+> 上面都是**产品**，这一节是**代码**——可以直接 clone 下来跑的开源实现。
+
+- **[[awesome-llm-apps]]**（135k stars · Apache-2.0 · Python）：100+ 个端到端实测的 AI Agent / Agent Skills / RAG 应用，每个条目都是可运行代码目录。分 16 类：Starter（13）、Advanced 单/多 Agent（17）、Agent Teams（13）、Always-on（2）、Voice（4）、Generative UI（7）、MCP（6）、RAG（21）、Memory（6）、Chat with X（6）、微调（2）、成本优化（2）、框架课（2）等。
+- 与 [[awesome-agi-agents]]（Agent 生态横向清单）、[[public-apis]]（免费 API 数据源）构成完整资源链：**API 数据源 → 可运行样例 → 生态全景**。
+- 使用建议：需要「某个形态的 Agent 到底怎么写」时，先在这里找一个最接近的样例，跑通再改——比从零写快一个数量级。
+
 ## 我的观点
 
 - 这批收藏是 2023 年「百模大战」的缩影，很多聚合站/套壳产品已被淘汰，真正存活的是 ChatGPT/Claude/通义/Kimi/Perplexity/Copilot/Dify/Coze 等头部
@@ -91,3 +99,4 @@ github.com · chatgpt.com · claude.ai · perplexity.ai · poe.com · huggingfac
 ## 来源
 
 - [[raw/web/chrome-bookmarks]]（本地，chartGPT 文件夹）
+- [[raw/articles/awesome-llm-apps]]（2026-09-01，代码样例库一节）

@@ -5,7 +5,7 @@ tags: [ai-fullstack, learning-plan, python, fastapi, mysql, vue3, agent, rag, do
 created: 2026-08-27
 updated: 2026-08-27
 status: active
-sources: ["[[raw/articles/前端转AI全栈顺序图-2026-08-27]]"]
+sources: []
 ---
 
 # 前端转AI全栈学习计划（180天）
@@ -37,10 +37,11 @@ sources: ["[[raw/articles/前端转AI全栈顺序图-2026-08-27]]"]
 | 180 | 职业 | 面试准备与职业规划 | 面试题梳理、简历优化、职业发展路线 | 简历+面试题集 |
 
 ## 相关已存知识库页面
-- [[Agent开发学习计划.md]] — 现有Agent开发学习计划（Python路线）
-- [[learning-ai-agent.md]] — AI Agent 工程实践
-- [[wiki/topics/AI素养.md]] — AI基础认知参考
-- [[wiki/concepts/Agent.md]] / [[Agent持续进化.md]] — Agent原理参考
+- [[前端转AI全栈顺序图]] — 本计划的 19 阶段顺序图（时间轴版，一眼看全程）
+- [[Agent开发学习计划]] — 现有Agent开发学习计划（Python路线）
+- [[learning-ai-agent]] — AI Agent 工程实践
+- [[AI素养]] — AI基础认知参考
+- [[Agent]] / [[Agent持续进化]] — Agent原理参考
 
 ## 使用建议
 - 每阶段约2–3周，建议按周复盘并写入 `daily/YYYY-MM-DD.md`

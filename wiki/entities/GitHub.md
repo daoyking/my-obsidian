@@ -36,9 +36,14 @@ status: active
 - 是 AI Agent 开发（如 Claude Code、Cursor）的重要集成平台
 - 提供 GitHub Models API（基于 OpenAI、Anthropic 等模型）
 
+## 相关主题
+
+- [[GitHub热门项目速览2026-09]]（2026 年 9 月 trending 速览）
+- [[awesome-llm-apps]]（本库已 Ingest 的 135k stars 样例库）
+
 ## 相关实体
 
-- [[Git]] · [[GitLab]] · [[Hugging-Face]] · [[Claude-Code]] · [[Cursor]] · [[vol-rs]]
+- [[Git]] · [[GitLab]] · [[Hugging-Face]] · [[Claude-Code]] · [[Cursor]] · [[vol-rs]] · [[IKONA-Security]]
 
 ## 相关概念
 
@@ -48,3 +53,4 @@ status: active
 
 - [raw/articles/github-trending-2026-08-31.md](../../raw/articles/github-trending-2026-08-31.md)：2026-08-31 热门项目快照
 - [raw/articles/github-trending-2026-09-01.md](../../raw/articles/github-trending-2026-09-01.md)：2026-09-01 热门项目快照（DLSS5-Feeder ⭐417 / open-seo-mcp-skills ⭐190 / useagent ⭐151）
+- [raw/articles/awesome-llm-apps.md](../../raw/articles/awesome-llm-apps.md)：awesome-llm-apps README 快照（2026-09-01，135,538 stars）

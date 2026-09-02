@@ -33,6 +33,7 @@ DeepSeek 于 2026-08-14 推出的开发者预览版智能体框架（v0.1），�
 > 关联到 projects/ 下的具体项目。
 
 - 暂无直接使用，但作为 [[Harness工程]] 「五功能（上下文 / 工具 / 记忆 / 编排 / 护栏）」的极致插件化参考实现，值得在 WorkBuddy Skill 体系演进时对照借鉴
+- 已落地衍生项目：**[[dsh-multiplatform]]**（把 DeepSeek Harness 从 Web 扩展到桌面端 + 移动端 + 鸿蒙，v0.1.2）
 
 ## 相关实体
 

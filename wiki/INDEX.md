@@ -3,7 +3,7 @@ title: 知识库总索引
 type: topic
 tags: [index, moc]
 created: 2026-08-07
-updated: 2026-08-19
+updated: 2026-09-01
 sources: []
 status: active
 ---
@@ -70,7 +70,11 @@ LIMIT 10
 
 > 由 AI 在 Lint 与 Query 中累积，主人择优深入。
 
-- （待补充）
+- [[生成式UI]] 走的是 MCP Apps 还是 AG-UI？在 Vue 3 里如何实现 schema→组件渲染层？
+- [[awesome-llm-apps]] 里 `trust_gated_agent_team` 的哈希链审计日志怎么实现？能否作为 [[Agent安全]] 的落地参考？
+- Agent Skills 的「安全 + eval CI 门禁」具体检查什么？能否套用在我自己的 `~/.workbuddy/skills/` 上？
+- [[常驻Agent]] 的「值不值得打扰」判断如何量化？成本控制与幂等策略？
+- 上下文优化工具（TOON / Headroom）声称降本 30–90%，缺少第三方基准验证，需实测（见 [[上下文工程]]）
 
 ## 维护说明
 

@@ -1,7 +1,11 @@
 ---
 title: 前端转AI全栈顺序图
+aliases: [180天顺序图, AI全栈路线顺序图]
 type: topic
 tags: [ai-fullstack, learning-plan, roadmap, 180days]
+created: 2026-08-31
+updated: 2026-09-02
+sources: ["[[前端转AI全栈学习计划]]"]
 status: active
 ---
 

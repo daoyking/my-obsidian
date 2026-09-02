@@ -1,3 +1,14 @@
+---
+title: Mac-iPhone 免费 App 推荐 2025-2026
+aliases: [Mac/iPhone 免费 App 推荐, 免费App推荐]
+type: topic
+tags: [mac, iphone, app, 效率工具, 推荐]
+created: 2026-08-12
+updated: 2026-08-20
+sources: ["[[raw/articles/mac-iphone-free-apps-2026-08-12]]"]
+status: active
+---
+
 # Mac / iPhone 免费效率工具与 AI Agent 推荐（2026-08）
 
 > 来源：自动化任务每日推送（自动化 ID：automation-1786437213877）
