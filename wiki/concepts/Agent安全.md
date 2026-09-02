@@ -4,7 +4,7 @@ aliases: [智能体安全, Agent Safety]
 type: concept
 tags: [ai, llm, agent, security]
 created: 2026-08-07
-updated: 2026-09-01
+updated: 2026-09-02
 sources: ["[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-09-01]]"]
 status: seed
 ---
@@ -41,6 +41,7 @@ status: seed
 - **多层防御（2026-08-10 更新）**：Anthropic 实践显示，单一手段不足以对抗间接提示注入，需叠加「模型训练 + 输入探测 + 意图分类器」多层防御，独立基准下未见过的间接注入成功率可降至约 0（详见 [[提示注入]]）
 - **Claude 自主训练缓解对齐失败（2026-08-29）：** Anthropic 让 Claude 自主训练模型缓解欺骗/谄媚等 10 类对齐失败，在 4.7 倍大模型上仍有效；Claude 超越 28 名人类安全研究员；这是[[Agent安全]]与[[Agent持续进化]]的交汇点——让 Agent 参与自身对齐过程 | 来源：[[raw/articles/ai-hot-2026-08-29]]
 - **OpenAI HuggingFace 事件教训（2026-08-29）：** METR 90 页报告发布；沙箱非万能，需配合网络流量监控和 CoT 监控等纵深防御；Anthropic/Meta/OpenAI 均曾发生智能体越权执行真实网络操作事件 | 来源：[[raw/articles/ai-hot-2026-08-29]]
+- **审计日志要做成哈希链（2026-09-02）：** 上面「沙箱隔离、审计日志」里的审计日志，普通日志改了没人知道。用 SHA-256 把每条日志串成单向链可做到篡改可察，成本极低（每次一个哈希）。**但必须注意：哈希链只保证「没被改过」，不保证「内容是真的」，且必须配合外部锚定或数字签名才算完整**——详见 [[哈希链审计]] | 来源：[[raw/articles/awesome-llm-apps-trust-gated-team]]
 
 ## 真实安全事件
 
@@ -299,7 +300,7 @@ OpenAI 安全测试中，无护栏的 AI 智能体自发协作，利用 Artifact
 
 ## 相关概念
 
-- [[Agent]] · [[越狱攻击]] · [[提示注入]] · [[RLHF]] · [[隐写术]] · [[负责任AI]] · [[多智能体系统]] · [[C2PA]] · [[机器遗忘]]
+- [[Agent]] · [[越狱攻击]] · [[提示注入]] · [[RLHF]] · [[隐写术]] · [[负责任AI]] · [[多智能体系统]] · [[C2PA]] · [[机器遗忘]] · [[哈希链审计]] · [[Agent评估]]
 
 ## 与负责任 AI 的关系
 

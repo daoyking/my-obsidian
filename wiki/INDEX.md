@@ -71,10 +71,14 @@ LIMIT 10
 > 由 AI 在 Lint 与 Query 中累积，主人择优深入。
 
 - [[生成式UI]] 走的是 MCP Apps 还是 AG-UI？在 Vue 3 里如何实现 schema→组件渲染层？
-- [[awesome-llm-apps]] 里 `trust_gated_agent_team` 的哈希链审计日志怎么实现？能否作为 [[Agent安全]] 的落地参考？
+- ~~[[awesome-llm-apps]] 里 `trust_gated_agent_team` 的哈希链审计日志怎么实现？~~ → 已展开为 [[哈希链审计]]（2026-09-02）。遗留子问题：外部锚定的最轻实现？信任评分怎么来？
 - Agent Skills 的「安全 + eval CI 门禁」具体检查什么？能否套用在我自己的 `~/.workbuddy/skills/` 上？
 - [[常驻Agent]] 的「值不值得打扰」判断如何量化？成本控制与幂等策略？
 - 上下文优化工具（TOON / Headroom）声称降本 30–90%，缺少第三方基准验证，需实测（见 [[上下文工程]]）
+- 「RAG vs 预编译 LLM Wiki」在同一语料（本 vault）上的量化对比——[[RAG实验路线]] Stage 1 完成后即可做
+- 中文语料下 BM25 与稠密检索的最优融合比例是否与英文不同？（见 [[RAG实验路线]]）
+- 哈希链审计的外部锚定最轻实现是什么？推到公开 git 仓库够不够？（见 [[哈希链审计]]）
+- Agent 行为日志的规范化规则有无事实标准？（类比 SBOM / SLSA provenance）
 
 ## 维护说明
 

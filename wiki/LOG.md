@@ -718,3 +718,37 @@ status: active
 - CLAUDE.md：sources 字段示例 `[[raw/articles/xxx]]` 加反引号——符合第 150 行「LOG 描述性文字里的双链用反引号包裹，避免被 Lint 误判为悬空」
 - 复检结果：悬空=0、孤立=0、frontmatter=0 ✅（页面总数 216，唯一链接目标 272）
   - 较上轮 273 少 1，正是 INDEX/LOG 两种写法归一后合并为一个链接目标所致，属预期
+
+### 2026-09-02 15:45 | Ingest | awesome-llm-apps 深挖一：generative_ui_agents 渲染协议（补记）
+- 来源：`gh api repos/Shubhamsaboo/awesome-llm-apps/contents/generative_ui_agents/<project>/README.md` 逐个抓取 8 个项目
+  - ⚠️ 数量修正：主 README 目录表写 7 个项目，实测目录 8 个（多出 `mcp-apps-generative-ui-showcase`）
+- 新建 raw 源 1 个：`raw/articles/awesome-llm-apps-generative-ui.md`（38.5KB，8 个项目 README 全文 + 目录文件清单）
+- 新建 10 页：`concepts/生成式UI渲染协议`（核心技术方案）、`entities/AG-UI`、`entities/A2UI`、`entities/CopilotKit`、`concepts/结构化输出`、`concepts/人机协同`、`entities/Element-Plus`、`entities/LangGraph`、`entities/Tailwind`（另 `concepts/Computer-Use` 等 4 页在前一轮已建）
+- 更新 2 页：[[生成式UI]]（重写核心机制为协议分层视角）、[[Agent]]（形态谱系表新增协议列）
+- commit `e4d57e6` 已 push（当时漏写本条 LOG，本次补记）
+
+### 2026-09-02 16:05 | Ingest | awesome-llm-apps 深挖二：rag_tutorials → 个人 RAG 实验路线
+- 来源：`gh api .../contents/rag_tutorials/<project>/README.md` 逐个抓取 **24 个**项目
+  - ⚠️ 数量修正：主 README 目录表写 21 个 RAG 教程，实测 24 个（README 未同步更新）。以目录实测为准，已在 `raw` 快照与 `[[RAG]]` 页双处标注
+- 新建 raw 源 1 个：`raw/articles/awesome-llm-apps-rag-tutorials.md`（62KB，24 个项目 README + 技术栈分布统计）
+- 新建 5 页：`topics/RAG实验路线`（核心交付）、`concepts/重排序`、`concepts/知识图谱`、`entities/Ollama`、`entities/Qdrant`
+- 更新 1 页：[[RAG]]（阶梯表 21→24、补指向实验路线的入口、相关概念/实体/来源扩充）
+- 核心设计判断（写进 `[[RAG实验路线]]`）：
+  - **前置必做基线评测集**（50 题：30 事实型 + 10 多跳型 + 10 陷阱型），每阶段结束重跑填同一张表——没有评测集的 RAG 优化是玄学调参
+  - 语料选本 vault（`wiki/` + `projects/` 约 225 页）：我熟悉能判对错、双链天然支持多跳、且能与「LLM Wiki 预编译」路线做同语料对照实验
+  - 24 个样例压成 6 阶段，**必跑的只有 6 个标 ★ 的**，其余扫 README 提炼技术点
+  - 技术选型：用 [[Mastra]] + [[Vercel-AI-SDK]] 的 TS 栈**复刻** Python 样例的架构逻辑而非照抄语法——前端是我的护城河（检索过程可视化 / 引用高亮 / 低置信度标黄），且「TS 复刻 + 横向对比」本身是可讲的 portfolio 故事
+
+### 2026-09-02 16:20 | Ingest | awesome-llm-apps 深挖三：trust_gated_agent_team → 哈希链审计
+- 来源：`gh api .../contents/advanced_ai_agents/multi_agent_apps/trust_gated_agent_team/README.md`
+  - ⚠️ 路径坑：主 README 链接写在 `multi_agent_apps/` 下，与 `agent_teams/` **同级而非其内**，容易被误当成 16 个 agent_teams 之一；`gh api .../agent_teams/trust_gated_agent_team` 返回 404
+  - 目录只有 3 个文件（README / requirements / 单文件 py），无测试无签名，**演示级非生产级**
+- 新建 raw 源 1 个：`raw/articles/awesome-llm-apps-trust-gated-team.md`
+- 新建 1 页：`concepts/哈希链审计`（机制拆解 + 四点「不保证」+ 与 C2PA/区块链/签名/trace 的对比 + 落地建议）
+- 更新 2 页：[[Agent安全]]（防护方向新增哈希链条目）、[[多智能体系统]]（待研究问题勾选办结 + 补链）
+- 核心分析结论（写进 `[[哈希链审计]]`）：
+  - **哈希链是 tamper-evident 不是 tamper-proof**。四点「不保证」：①不保证内容为真（记的是 Agent 自报内容）②不防整链重造（算法公开无签名）③不防尾部截断（需外部锚定）④不提供不可否认性
+  - **信任门控的真正难题是分数从哪来**——样例里分数是硬编码的，README 完全回避。门控强度 = 最弱的评分环节，是新的攻击面
+  - **最关键的一条设计是「日志外部存储」**（README 一句话带过）：被审计对象能改日志则任何密码学都无效，这条比哈希链本身更重要
+  - **洞察：git 本身就是哈希链**（commit 含 parent hash），理解这点后哈希链审计没有神秘感
+- INDEX 待研究问题：勾选办结 1 条，新增 4 条（RAG vs LLM Wiki 同语料对比 / 中文 BM25 融合比例 / 外部锚定最轻实现 / 行为日志规范化标准）

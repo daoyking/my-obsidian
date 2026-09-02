@@ -4,8 +4,8 @@ aliases: [检索增强生成, Retrieval-Augmented Generation]
 type: concept
 tags: [ai, llm, rag, retrieval]
 created: 2026-08-07
-updated: 2026-09-01
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/awesome-llm-apps]]"]
+updated: 2026-09-02
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/awesome-llm-apps]]", "[[raw/articles/awesome-llm-apps-rag-tutorials]]"]
 status: active
 ---
 
@@ -37,9 +37,11 @@ status: active
 - 一次性检索 → Agent 主动检索（工具化）
 - 静态库 → 带治理的时效知识库
 
-## 进阶路线：21 个可运行样例构成的 RAG 阶梯（2026-09-01）
+## 进阶路线：24 个可运行样例构成的 RAG 阶梯（2026-09-01）
 
-来自 [[raw/articles/awesome-llm-apps]] 的 `rag_tutorials`（21 个端到端可跑的项目）。这是目前见过最完整的 RAG 实践阶梯——每一级都对应上面「核心管道」里某个环节的升级：
+来自 [[raw/articles/awesome-llm-apps]] 的 `rag_tutorials`（**24 个**端到端可跑的项目；主 README 目录表写 21 个，实测 24 个，README 未同步）。这是目前见过最完整的 RAG 实践阶梯——每一级都对应上面「核心管道」里某个环节的升级：
+
+> **想动手？** 下面的阶梯是「认知地图」，可执行的实验步骤见 [[RAG实验路线]]（6 阶段 + 贯穿全程的 50 题基线评测集 + 每阶段可量化验收）。
 
 | 阶梯 | 项目 | 解决什么问题 |
 |---|---|---|
@@ -56,20 +58,25 @@ status: active
 
 **关键范式跃迁**：④（检索工具化）是分水岭——这正对应上面「智能体化 RAG」一节。而 ⑤ 的「证据不足时拒答」是被严重低估的工程实践：RAG 系统最贵的失败不是答错，是**自信地答错**。
 
+⑥—⑩ 都建立在 ④ 之上：先让检索变成可按需调用的工具，才谈得上多源路由、图谱多跳、失败诊断。
+
+**可执行的动手路线**：[[RAG实验路线]]（六阶段 / 必跑样例 6 个 / 每阶段可量化验收）
+
 ## 相关概念
 
-- [[记忆系统]] · [[上下文工程]] · [[知识编辑]] · [[Agent]] · [[语义搜索]] · [[向量数据库]] · [[嵌入]]
+- [[记忆系统]] · [[上下文工程]] · [[知识编辑]] · [[Agent]] · [[语义搜索]] · [[向量数据库]] · [[嵌入]] · [[重排序]] · [[知识图谱]] · [[多文档RAG]] · [[结构化输出]] · [[工具调用]] · [[人机协同]] · [[Agent评估]]
 
 ## 相关实体
 
-- [[awesome-llm-apps]] · [[Python]]
+- [[awesome-llm-apps]] · [[Python]] · [[Ollama]] · [[Qdrant]] · [[Mastra]] · [[Vercel-AI-SDK]]
 
 ## 相关主题
 
-- [[AI-Agents-in-Depth]] · [[AI]]
+- [[RAG实验路线]] · [[AI-Agents-in-Depth]] · [[AI]]
 
 ## 来源
 
 - [[raw/papers/ai-agents-in-depth]]（第 3 章 3.2-3.3）
-- [[raw/articles/awesome-llm-apps]]（RAG 分类，21 个教程）
+- [[raw/articles/awesome-llm-apps]]（RAG 分类，目录表写 21 个教程）
+- [[raw/articles/awesome-llm-apps-rag-tutorials]]（24 个项目 README 全文快照 + 技术栈统计，2026-09-02）
 - [[raw/articles/ai-hot-2026-08-27]]
