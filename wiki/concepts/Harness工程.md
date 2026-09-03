@@ -5,7 +5,7 @@ type: concept
 tags: [ai, llm, agent, engineering, harness]
 created: 2026-08-07
 updated: 2026-08-22
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-22]]"]
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-09-03]]"]
 status: active
 ---
 
@@ -48,6 +48,7 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 - **DeepSeek Harness v0.1"一切皆插件"（2026-08-14）**：DeepSeek 以 MIT 许可证开源的智能体框架，基于 Cordis 元框架构建。核心设计"一切皆插件"——模型、工具、技能、会话、沙箱、文件系统、循环、编排及 UI **九大要素全部插件化**，无任何"硬编码"特例。这是 Harness 五功能（上下文 / 工具 / 记忆 / 编排 / 护栏）的极致插件化表达——把"模型本身"也插件化（而不仅是工具/记忆），是对"模型 × Harness 协同"的激进推演。见 [[DeepSeek-Harness]] · [[raw/articles/ai-hot-2026-08-14]] · [[Agent持续进化]]。
 - **Boris Cherny 让 Claude 接管应用日常维护（2026-08-14）**：通过 Slack 频道运行崩溃模糊测试、重复代码统一、死代码移除等日常任务，数周内自动开出 388 个 PR，其中 180 个经 Claude Code Review 和人工审核后合并。Claude 通常一次就能改对，出错时通过调整例程次日改进。这是 Harness 在"日常维护"场景的实证——**Agent 在"重复性 / 边界明确"任务上已达生产可用**（180/388 ≈ 46% 合并率），但 Harness 仍需提供"例程可调整"的反馈通道。见 [[raw/articles/ai-hot-2026-08-14]] · [[Coding-Agent]] · [[Agent持续进化]]。
 - **Anthropic AI 原生 SDLC 实战手册（2026-08-22）**：Anthropic 发布 AI 原生 SDLC 手册，将传统六阶段软件开发生命周期重构为 AI 嵌入各环的闭环流程。核心思路：当代代码不再瓶颈时，规划/审查/部署等人速环节成为新约束，需通过 Claude 将需求压缩为 `intent.md`、以技能编码标准、用持续评测替代阶段门控，并保留人工对关键代码的审查。这是 [[Harness工程]] 在企业级 SDLC 场景的实证——"把流程编码进 AI 工作流"而非依赖人工纪律。见 [[raw/articles/ai-hot-2026-08-22]] · [[Agent]] · [[Coding-Agent]]。
+- **Google harness 工程定义 + ADK 2.0 / Antigravity SDK（2026-09-03）**：Google 员工 Shir Meir Lador 正式介绍 harness 工程概念——用确定性组件包裹 LLM，包括编排层、执行沙箱、状态持久化和验证工具，让 Agent 不需逐行人工审查即可安全生成代码。ADK 2.0 与 Antigravity SDK 用于演示自动修复编码循环。见 [[raw/articles/ai-hot-2026-09-03]]。
 
 ## 相关概念
 

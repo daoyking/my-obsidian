@@ -4,7 +4,7 @@ aliases: [谷歌, Google LLC, Google Cloud]
 type: entity
 tags: [tech-company, google, search, ai, tpu, cloud]
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-03
 sources: []
 status: seed
 ---
@@ -17,10 +17,11 @@ status: seed
 
 ## 核心 AI 产品
 
-- **Gemini**：多模态大模型（Gemini 1.5 / 2.0 / 2.5 Pro）
+- **Gemini**：多模态大模型（Gemini 1.5 / 2.0 / 2.5 Pro / 3.8 Flash）
 - **Google AI Search**：AI 驱动搜索实验（SGE）
 - **Vertex AI**：企业级 ML 平台
 - **PaLM / Gemini API**：模型 API 服务
+- **ADK 2.0 / Antigravity SDK（2026-09-03）**：用于 harness 工程与自动修复编码循环的框架。见 [[Harness工程]]。
 
 ## 在 AI 研究中的贡献
 

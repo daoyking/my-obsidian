@@ -5,7 +5,7 @@ type: entity
 tags: [ai, llm, google, multimodal, agent]
 created: 2026-08-15
 updated: 2026-08-28
-sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+sources: ["[[raw/articles/ai-hot-2026-09-03]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-15]]"]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: active
 ---
 
@@ -28,6 +28,7 @@ Google DeepMind 推出的多模态大模型家族，是 Google AI 战略的核�
 - **Gemini 3.5 Transcribe（2026-08-27）：** 高精度语音转文本模型，流式 WER 4.0%、非流式 2.6%，支持 85+ 语言、自定义词汇及三人说话人识别。见 [[raw/articles/ai-hot-2026-08-27]]。
 
 - **Gemini 3.7 Flash（2026-08-14）**：距 3.6 Flash 仅三周，主打编程与智能体任务；输入 $0.75 / 百万 token，输出 $3.75 / 百万 token（3.6 Flash 一半价格）
+- **Gemini 3.8 Flash & 3.8 Flash Cyber（2026-09-03）**：Google DeepMind 发布的两款新模型，延续 Flash 系列的编程/智能体优化路线。见 [[raw/articles/ai-hot-2026-09-03]]。
 - **Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户（2026-08-15）**：3.7 Flash 向 Gemini 聊天中的 Pro 和 Ultra 用户开放，提升多步骤任务推理与准确性（如智能整合数十个文件和邮件为一份主文档）。同时 **Gemini Spark 运行于 3.7 Flash**，通过改进对 Google Workspace 应用的工具调用让个人 AI 智能体更精准。见 [[raw/articles/ai-hot-2026-08-15]]。
 - **Gemini 月活破 10 亿（2026-08-12）**：见 [[raw/articles/ai-hot-2026-08-12]]
 - **Gemini 助力 Database Migration Service（2026-08-12）**：将 Oracle/SQL Server 存储过程转 PostgreSQL PL/pgSQL，见 [[raw/articles/ai-hot-2026-08-12]]

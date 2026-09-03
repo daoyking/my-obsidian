@@ -5,7 +5,7 @@ type: entity
 tags: [ai, coding, ide, agent, tool]
 created: 2026-08-08
 updated: 2026-08-16
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
+sources: ["[[raw/articles/ai-hot-2026-09-03]]", "[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]"]
 status: active
 ---
 

@@ -752,3 +752,18 @@ status: active
   - **最关键的一条设计是「日志外部存储」**（README 一句话带过）：被审计对象能改日志则任何密码学都无效，这条比哈希链本身更重要
   - **洞察：git 本身就是哈希链**（commit 含 parent hash），理解这点后哈希链审计没有神秘感
 - INDEX 待研究问题：勾选办结 1 条，新增 4 条（RAG vs LLM Wiki 同语料对比 / 中文 BM25 融合比例 / 外部锚定最轻实现 / 行为日志规范化标准）
+
+### 2026-09-03 08:46 | Ingest | AI HOT 日报 2026-09-03
+- 来源：`raw/articles/ai-hot-2026-09-03.md`（aihot skill，北京时间 08:46 抓取）
+- 新建页：0（日报内容全数追加/更新已有页面）
+- 更新页：4 页
+  - `wiki/topics/AI资讯.md` — 新增 2026-09-03 当日条目（4 分区 × 表格式，含 19 条事件），更新 sources 与 updated
+  - `wiki/entities/Claude.md` — 新增「后台操作电脑」核心特性（2026-09-03），更新 sources 与 updated
+  - `wiki/entities/Gemini.md` — 新增「Gemini 3.8 Flash & 3.8 Flash Cyber」版本演进，更新 sources 与 updated
+  - `wiki/entities/Qwen.md` — 新增「Qwen3.8-Max-0902 登顶 Code Arena」，更新 sources 与 updated
+  - `wiki/entities/Cursor.md` — 新增「Self-Hosted Machines」核心特性（2026-09-03），更新 sources 与 updated
+  - `wiki/entities/Google.md` — 状态 seed→active，新增 ADK 2.0 / Antigravity SDK、AI Agents Challenge 工程模式条目，更新 sources 与 updated
+  - `wiki/entities/NVIDIA.md` — 新增「接近 129 亿美元收购 Hugging Face」核心动态（2026-09-03），更新 sources 与 updated
+  - `wiki/concepts/Harness工程.md` — 新增「Google harness 工程定义 + ADK 2.0/Antigravity SDK」近期动态，更新 sources 与 updated
+- 链接数：约 30 条双链（含 AI资讯 当日条目表内的关联双链 + 各实体/概念页新增 source 引用）
+- 备注：本日日报无 08-30/08-30 两日的空白，08-31 后直接跳到 09-01、09-03，符合自动化运行惯例（周末跳过）

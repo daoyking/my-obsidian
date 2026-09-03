@@ -21,6 +21,7 @@ Anthropic 开发的 Claude 大模型系列，覆盖从轻量到旗舰的全谱�
 - **Claude Enterprise**：企业级部署，支持 Managed Agents
 - **Claude 文本水印**：SynthID-Text + 欧盟 AI 法案合规
 - **Computer Use / Skills API / Files API（2026-08-21）**：Claude Platform 正式上线，支持浏览器操作、团队技能调用、成品文件返回
+- **后台操作电脑（2026-09-03）**：Claude Cowork 与 Claude Code 新增后台使用电脑的能力——把任务交给 Claude 后，它会像人一样点击、输入和打开应用，用户可同时去做其他事，无需等待或盯着屏幕。来源：[[raw/articles/ai-hot-2026-09-03]]
 - **Claude Academy（2026-08-21）**：面向全球用户的 AI 教学资源，借鉴内部 4D AI Fluency Framework 及"ever-boarding"持续学习项目
 - **Claude Mythos 5 网络安全能力扩展（2026-08-22）**：Claude Mythos 5 已集成至 Claude Security，即将登陆合作伙伴的网络安全防御工具；同时推出 3500 万美元 Defender Advantage Fund（0xDAF）资助开源软件漏洞修复与安全自动化。这是"AI 安全能力产品化"的关键一步。来源：[[raw/articles/ai-hot-2026-08-22]]
 
