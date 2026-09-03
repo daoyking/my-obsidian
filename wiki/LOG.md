@@ -767,3 +767,13 @@ status: active
   - `wiki/concepts/Harness工程.md` — 新增「Google harness 工程定义 + ADK 2.0/Antigravity SDK」近期动态，更新 sources 与 updated
 - 链接数：约 30 条双链（含 AI资讯 当日条目表内的关联双链 + 各实体/概念页新增 source 引用）
 - 备注：本日日报无 08-30/08-30 两日的空白，08-31 后直接跳到 09-01、09-03，符合自动化运行惯例（周末跳过）
+
+### 2026-09-03 09:10 | Ingest | Mac-iPhone 免费效率工具 & AI Agent 推荐
+- 来源：`raw/articles/github-mac-apps-search-2026-09-03.md`（自动化任务 automation-1786437213877）
+- 新建页：1 页
+  - `wiki/topics/AI-Agent-免费工具推荐-2026-09.md` — AI Agent 免费工具专题页，含消费级 Agent/开源编程 Agent/本地 AI 客户端/框架与自动化 4 类，15+ 工具，216k Stars OpenClaw、180k Stars opencode 等
+- 更新页：2 页
+  - `wiki/entities/Mac-免费效率工具推荐-2026-09.md` — 新增 iPhone 工具节（LocalSend/Enchanted/Obsidian/Todoist/Notion/Joplin 等）+ AI Agent 节增量，更新 sources 与 updated
+  - `wiki/INDEX.md` — 待更新（下次 Lint 时自动补充双链）
+- 推送结果：✅ 飞书成功推送到「金道洋的飞书 CLI」群聊（message_id: om_x100b66b8d99ec4b0b034b97746b33a2）；❌ 微信推送不可用（未配置 IMA/qclaw 微信渠道）
+- 备注：筛选标准与上次一致（免费/开源 + 长期维护 + 效率/有趣），本次新增 40+ AI Agent 工具，OpenClaw 216k Stars 为目前最高星 Agent 项目
