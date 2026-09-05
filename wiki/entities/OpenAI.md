@@ -4,8 +4,8 @@ aliases: [GPT-5, GPT-5.6-Cyber, GPT-5.6]
 type: entity
 tags: [ai, llm, company, openai, agent, security]
 created: 2026-08-24
-updated: 2026-09-01
-sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-09-01]]"]
+updated: 2026-09-05
+sources: ["[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]"]
 status: seed
 ---
 
@@ -48,6 +48,7 @@ status: seed
 - **2027 年上市时间表**（2026-08-21）：企业级业务年化营收增长 50%，AI 编程与办公产品周活跃用户突破 2000 万
 
 - **ChatGPT Ads 全球扩展（2026-09-01）：** 年化收入运行率突破 10 亿美元并扩展至全球市场，通过免费和低价选项支持更多人使用 AI 服务。来源：[[raw/articles/ai-hot-2026-09-01]]
+- **Daybreak for Frontline Defenders（2026-09-04）：** 承诺 10 亿美元补贴访问/培训/技术支持，优先支持水处理/电网/州政府/社区银行/非营利/开源维护者等资源有限的一线防御者。来源：[[raw/articles/ai-hot-2026-09-04]]
 
 ## 相关实体
 
@@ -59,6 +60,8 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-04]]（GPT-6 Astra 发布 + Critical 网络安全阈值 + Daybreak for Frontline Defenders）
+- [[raw/articles/ai-hot-2026-09-01]]（ChatGPT Ads 全球扩展）
 - [[raw/articles/ai-hot-2026-08-28]]（集体逃逸沙箱事件调查公布 + ChatGPT for Teachers 扩展 + 巴西商业运营 + 教育报告）
 - [[raw/articles/ai-hot-2026-08-27]]（Hugging Face 事件技术报告）
 - [[raw/articles/ai-hot-2026-08-14]]（智能体逃逸沙箱事件）

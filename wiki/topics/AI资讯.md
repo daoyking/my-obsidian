@@ -4,9 +4,9 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]"]
 status: active
-updated: 2026-09-03
+updated: 2026-09-05
 ---
 
 # AI资讯
@@ -743,7 +743,61 @@ updated: 2026-09-03
 | **Claude Code 初创公司指南** | 五大规则：人人皆可交付、自动化繁琐工作、信任但验证、为重构而构建、原型-自用-产品化 | [[Claude-Code]] · [[Harness工程]] · [[Agent持续进化]] |
 | **OpenAI AI Futures 博客** | 探讨自由社会如何应对变革性 AI，保障个人权利与自主权 | [[负责任AI]] · [[AI]] |
 
-## 我的观点
+### 2026-09-04（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-09-04]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-09-04)
+> 注：4 个分区共 17 条事件（模型 8 / 产品 4 / 行业 1 / 观点 8）。
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **OpenAI 发布 GPT-6 Astra** | 1.05M 上下文、128K 最大输出，OSWorld V2-Offline 72.6%（GPT-5.6 Sol 65.7%），Arc-AGI-3 得分 99.9%，ExploitBench 100%；首个达到 Critical 网络安全阈值模型 | [[OpenAI]] · [[Agent安全]] · [[Coding-Agent]] |
+| **IFM 发布 K2 Horizon 开源模型系列** | 六款模型（375B-A23B / 36B-A4B / 32B / 7B / 3.7B / 0.9B），Apache 2.0；36B-A4B 采用新稀疏注意力架构 MoVA | [[开放权重]] · [[NVIDIA]] |
+| **François Chollet 评 GPT-6 Astra** | 交互式推理阶跃式提升，ARC-AGI-3 得 66%（标准）/ 接近 100%（持续对话 + 自定义 compaction），每局成本约 $360 | [[GPT-6-Astra]] |
+| **Rohan Paul 解读系统卡** | Astra 控制自身链式思维能力从 16.1% 跃升至 60.9%，可监控性相应下降 | [[Agent安全]] · [[GPT-6-Astra]] |
+| **Gary Marcus 评 GPT-6 Astra** | 进步明显，OpenAI 产品显式创建并操纵符号世界模型 | [[GPT-6-Astra]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Hugging Face 发布 funes** | 开源编码智能体本地记忆层，支持 Claude Code / Codex / pi / Hermes；索引已有会话记录为 Lance 数据集 | [[记忆系统]] · [[Coding-Agent]] · [[Hugging-Face]] |
+| **xAI 发布 Grok Bot 设计文章** | 为持久化智能体重构交互界面：Bot 拥有身份/记忆/自己的计算机和工具 | [[Coding-Agent]] · [[Grok]] |
+| **OpenAI Daybreak for Frontline Defenders** | 承诺 10 亿美元补贴访问/培训/技术支持，优先支持水处理/电网/州政府/社区银行 | [[Agent安全]] · [[OpenAI]] |
+| **xAI 发布 Grok Bot 企业版** | Grok 和 Cursor Enterprise 客户两周免费 | [[Grok]] · [[Cursor]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **NVIDIA 宣布以 129.303 亿美元收购 Hugging Face** | 黄仁勋官方博客公布；HF 现有 1800 万开发者、300 万模型、20 万+企业客户 | [[NVIDIA]] · [[Hugging-Face]] · [[开放权重]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Artificial Analysis 评测 GPT-6 Astra** | Coding Agent Index 67 分，约等于 Claude Opus 5 / Fable 5，成本不到一半；token 效率比 GPT-5.6 Sol (max) 高约 70% | [[GPT-6-Astra]] · [[Coding-Agent]] |
+| **Google Cloud 常驻 Agent 搭建指南** | Cloud Run instances 每月 $5.70（1 vCPU/1Gi/共享 CPU）24/7 运行常驻 Agent | [[常驻Agent]] · [[云计算]] |
+| **Meta Muse Spark 1.3 编码智能体指数** | Muse Code 下 68 分，与 Claude Code + Opus 5 (xhigh) 并列第一 | [[Meta]] · [[Coding-Agent]] |
+| **Tom Tunguz 解析 Meta Muse Spark 双轨定价** | Standard Tier 输入 $1.25/m，数据换算力逻辑 | [[Meta]] · [[开放权重]] |
+
+#### 观点
+
+- **GPT-6 Astra 是计算机操作型 Agent 的里程碑**——1.05M 上下文 + 基准全面超越 Fable 5.1 + 价格更低，标志"Agent 替代人类操作 GUI"进入新阶段
+- **NVIDIA 收购 Hugging Face 是"硬件+平台"垂直整合的标志性事件**——AI 基础设施巨头从芯片层向开发者生态全面延伸，129 亿美元规模仅次于 OpenAI 融资
+- **HF funes 是编码智能体记忆层的重要实践**——让 Claude Code/Codex 等工具能自主召回会话上下文，与 [[记忆系统]] 概念直接呼应
+- **Astra 可监控性下降是 Agent 安全的持续关注点**——控制自身链式思维能力从 16.1% 跃升至 60.9%，意味着安全测试难度同步上升
+
+#### 待研究问题
+
+- GPT-6 Astra 的 1.05M 上下文在真实编码智能体工作流中的利用率如何？是否存在"上下文膨胀"导致性能下降的风险？
+- NVIDIA 收购 Hugging Face 后，HF 的开源社区文化是否会受到 NVIDIA 商业化的影响？
+- funes 的 Lance 数据集索引策略在大规模会话（1000+ 轮）下的检索精度与延迟如何？
+- Astra 的"控制自身链式思维"能力（60.9%）与可监控性下降的 trade-off 如何量化？
+- Meta Muse Spark 的"数据换算力"双轨定价模型是否会在其他模型供应商中复制？
+
+### 2026-08-21（AI HOT 日报）
 
 > 主观判断与倾向，这是自成长的种子。
 
@@ -968,3 +1022,4 @@ updated: 2026-09-03
 - [[raw/articles/ai-hot-2026-08-31]] — AI HOT 日报 2026-08-31
 - [[raw/articles/ai-hot-2026-09-01]] — AI HOT 日报 2026-09-01
 - [[raw/articles/ai-hot-2026-09-03]] — AI HOT 日报 2026-09-03
+- [[raw/articles/ai-hot-2026-09-04]] — AI HOT 日报 2026-09-04（GPT-6 Astra 发布 + NVIDIA 收购 Hugging Face + HF funes）

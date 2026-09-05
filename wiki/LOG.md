@@ -753,6 +753,18 @@ status: active
   - **洞察：git 本身就是哈希链**（commit 含 parent hash），理解这点后哈希链审计没有神秘感
 - INDEX 待研究问题：勾选办结 1 条，新增 4 条（RAG vs LLM Wiki 同语料对比 / 中文 BM25 融合比例 / 外部锚定最轻实现 / 行为日志规范化标准）
 
+### 2026-09-05 08:00 | Ingest | AI HOT 日报 2026-09-04
+- 来源：[[raw/articles/ai-hot-2026-09-04]]（aihot skill，北京时间 08:00 抓取）
+- 新建页：0（日报内容全数追加/更新已有页面）
+- 更新页：4 页
+  - `wiki/topics/AI资讯.md` — 新增 2026-09-04 当日条目（4 分区 × 表格式，含 17 条事件），更新 sources 与 updated
+  - `wiki/entities/OpenAI.md` — 新增「GPT-6 Astra 发布」核心特性（1.05M 上下文/Critical 网络安全阈值）+ Daybreak for Frontline Defenders，更新 sources 与 updated
+  - `wiki/entities/NVIDIA.md` — 新增「宣布以 129.303 亿美元收购 Hugging Face」核心动态（2026-09-04），更新 sources 与 updated
+  - `wiki/entities/Hugging-Face.md` — 新增「NVIDIA 收购」+「funes 发布」节，更新 sources 与 updated
+  - `wiki/concepts/Agent安全.md` — 新增「GPT-6 Astra 达到 Critical 网络安全阈值」节（含可监控性下降分析），更新 sources 与 updated
+- 链接数：约 20 条双链（含 AI资讯 当日条目表内的关联双链 + 各实体/概念页新增 source 引用）
+- 备注：本日核心暗线是「NVIDIA 硬件+平台垂直整合 + GPT-6 Astra 达到 Critical 网络安全阈值」——NVIDIA 129 亿美元收购 Hugging Face 是 AI 基础设施巨头从芯片层向开发者生态全面延伸的标志性事件；GPT-6 Astra 首个达到 Critical 网络安全阈值意味着模型已具备独立发现零日漏洞能力，OpenAI 同步推出 Daybreak for Frontline Defenders（10 亿美元补贴一线防御者）承认"人类防御 AI 攻击人类"的新范式。所有页面 sources 挂回 `[[raw/articles/ai-hot-2026-09-04]]`。
+
 ### 2026-09-03 08:46 | Ingest | AI HOT 日报 2026-09-03
 - 来源：`raw/articles/ai-hot-2026-09-03.md`（aihot skill，北京时间 08:46 抓取）
 - 新建页：0（日报内容全数追加/更新已有页面）

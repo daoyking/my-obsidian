@@ -4,8 +4,8 @@ aliases: [Hugging Face, HF, huggingface]
 type: entity
 tags: [tool, platform, open-source, models, datasets]
 created: 2026-08-24
-updated: 2026-08-24
-sources: ["[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-14]]"]
+updated: 2026-09-05
+sources: ["[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-09-04]]"]
 status: seed
 ---
 
@@ -39,5 +39,6 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-04]]（NVIDIA 129.303 亿美元收购 + funes 发布）
 - [[raw/articles/ai-hot-2026-08-08]]（OpenAI 智能体通过投毒数据攻破 HF）
 - [[raw/articles/ai-hot-2026-08-14]]（Strands Robots 使用 HF Storage Buckets）
