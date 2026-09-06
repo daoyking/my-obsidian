@@ -21,6 +21,7 @@ xAI 旗下的大语言模型系列，定位为前沿通用推理与智能体模�
 - **复杂交互式与视觉工作**：强化多模态交互与视觉理解，支撑 GUI 操作 / 文档理解等 Agent 任务
 - **前沿基准表现**：在多项智能体编码与知识工作基准上达到前沿水平；Artificial Analysis Intelligence Index 追平 GPT-5.6 Sol
 - **Grok Bot 扩展（2026-08-22）**：Grok Bot 现包含于所有 SuperGrok Plus、Cursor Pro+ 及 Cursor Teams 计划；Grok Bot 是可在云端独立运行的 AI 智能体，支持文本线程交互、并行运行多个 Bot，处理销售/建站/客服等具体工作。这是 "AI 编码工具 × 智能体" 的深度融合——Cursor 作为编码 Agent 的主战场，现在可直接运行云端 Grok Bot 处理跨领域任务。来源：[[raw/articles/ai-hot-2026-08-22]]
+- **Haggle Bot 企业采购应用（2026-09-05）**：xAI 让 Grok Bot 承担采购工作，Haggle Bot 已识别超过 10 万美元直接节省，包括在一个 SaaS 产品中找到 43 个 90 天无活动的付费席位（节省 $14,220），在另一个产品中找出每年 $85,662 的未用 SKU。这是 Agent 从"编码"扩展到"企业运营"的典型案例。来源：[[raw/articles/ai-hot-2026-09-05]]
 
 ## 适用场景
 
@@ -52,6 +53,7 @@ xAI 旗下的大语言模型系列，定位为前沿通用推理与智能体模�
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-05]]（Haggle Bot 企业采购应用，10 万美元直接节省）
 - [[raw/articles/ai-hot-2026-08-28]]（CSAM 训练指控诉讼）
 - [[raw/articles/ai-hot-2026-08-13]]（Grok 4.6 发布 + DeepSeek V4 Pro 同日发布对照）
 - [[raw/articles/ai-hot-2026-08-22]]（Grok Bot 扩展至 SuperGrok Plus / Cursor Pro+ / Cursor Teams 订阅计划）

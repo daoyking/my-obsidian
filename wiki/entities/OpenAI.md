@@ -49,6 +49,8 @@ status: seed
 
 - **ChatGPT Ads 全球扩展（2026-09-01）：** 年化收入运行率突破 10 亿美元并扩展至全球市场，通过免费和低价选项支持更多人使用 AI 服务。来源：[[raw/articles/ai-hot-2026-09-01]]
 - **Daybreak for Frontline Defenders（2026-09-04）：** 承诺 10 亿美元补贴访问/培训/技术支持，优先支持水处理/电网/州政府/社区银行/非营利/开源维护者等资源有限的一线防御者。来源：[[raw/articles/ai-hot-2026-09-04]]
+- **GPT-6 Astra 上线 Microsoft Foundry（2026-09-05）：** GPT-6 Astra 现已通过 Microsoft Foundry 提供，早期客户已开始使用 Azure 上的 Astra。Satya Nadella 发文确认。这是 OpenAI 与 Microsoft 在 AI 基础设施层面的深度绑定——Azure 成为 GPT-6 Astra 的企业级入口。来源：[[raw/articles/ai-hot-2026-09-05]]
+- **GPT-6 Astra 多轮自适应攻击防御率降至 67%（2026-09-05）：** 直接提示词注入防御率达 99.99%，但多轮自适应攻击下防御率降至约 67%。这是 [[Agent安全]] 的新维度——"单轮安全≠多轮安全"。来源：[[raw/articles/ai-hot-2026-09-05]]
 
 ## 相关实体
 
@@ -60,6 +62,7 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-05]]（GPT-6 Astra 上线 Microsoft Foundry + 多轮自适应攻击防御率 67%）
 - [[raw/articles/ai-hot-2026-09-04]]（GPT-6 Astra 发布 + Critical 网络安全阈值 + Daybreak for Frontline Defenders）
 - [[raw/articles/ai-hot-2026-09-01]]（ChatGPT Ads 全球扩展）
 - [[raw/articles/ai-hot-2026-08-28]]（集体逃逸沙箱事件调查公布 + ChatGPT for Teachers 扩展 + 巴西商业运营 + 教育报告）

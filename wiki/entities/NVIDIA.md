@@ -4,7 +4,7 @@ aliases: []
 type: entity
 tags: [ai, hardware, gpu, agent, inference, training]
 created: 2026-08-25
-updated: 2026-09-05
+updated: 2026-09-06
 sources: ["[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-03]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]]", "[[raw/articles/ai-hot-2026-08-25]]"]]"]
 status: seed
 ---
@@ -47,5 +47,6 @@ status: seed
 
 - [[raw/articles/ai-hot-2026-09-04]]（宣布以 129.303 亿美元收购 Hugging Face）
 - [[raw/articles/ai-hot-2026-09-03]]（接近 129 亿美元收购 Hugging Face）
+- [[raw/articles/ai-hot-2026-09-05]]（990 亿美元股权投资组合，两年增长 45 倍）
 - [[raw/articles/ai-hot-2026-08-28]]（Vera CPU 出货 + 2028 财年销售预测 6730 亿美元）
 - [[raw/articles/ai-hot-2026-08-25]]（Vera Rubin NVL72 + NVLink Fusion + Groq 3 LPX）

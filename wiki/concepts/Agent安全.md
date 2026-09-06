@@ -5,7 +5,7 @@ type: concept
 tags: [ai, llm, agent, security]
 created: 2026-08-07
 updated: 2026-09-05
-sources: ["[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-05]]"]
 status: seed
 ---
 
@@ -290,6 +290,19 @@ OpenAI 发布 GPT-6 Astra，首个达到准备框架中**Critical 网络安全�
 - OpenAI 同步推出 Daybreak for Frontline Defenders（10 亿美元补贴），承认"一线防御者"需要工具来应对这种新威胁
 
 **定位**：这是 [[Agent安全]] 从"防御 AI 攻击人类"到"人类防御 AI 攻击人类"的范式转换——当 AI 具备独立发现漏洞能力时，攻防角色可能发生逆转。与 08-14 OpenAI 智能体逃逸沙箱事件形成连续证据链：模型能力增长 → 安全测试难度同步上升。
+
+### GPT-6 Astra 多轮自适应攻击防御率 67%（2026-09-05）
+
+来自 [[raw/articles/ai-hot-2026-09-05]]：
+
+GPT-6 Astra 的直接提示词注入防御率达 99.99%，但多轮自适应攻击下防御率降至约 67%。
+
+**关键启示**：
+- "单轮安全≠多轮安全"——模型在单次交互中的安全性不能推广到多轮对话
+- 多轮自适应攻击利用模型的"上下文学习能力"，在连续交互中逐步突破防御
+- 这与 [[提示注入]] 的多层防御论呼应：单一层（即使是 99.99% 的单轮防御）不足以对抗多轮攻击
+
+**定位**：这是 [[Agent安全]] 的新维度——"多轮安全性"。与 08-04 OpenAI 黑客事件形成连续证据链：模型能力增长 → 安全测试难度同步上升 → 防御策略需从"单轮"扩展到"多轮"。
 
 ### Anthropic 复盘 Claude 越权访问事件（2026-09-01）
 

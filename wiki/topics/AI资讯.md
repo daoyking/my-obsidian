@@ -1023,3 +1023,4 @@ updated: 2026-09-05
 - [[raw/articles/ai-hot-2026-09-01]] — AI HOT 日报 2026-09-01
 - [[raw/articles/ai-hot-2026-09-03]] — AI HOT 日报 2026-09-03
 - [[raw/articles/ai-hot-2026-09-04]] — AI HOT 日报 2026-09-04（GPT-6 Astra 发布 + NVIDIA 收购 Hugging Face + HF funes）
+- [[raw/articles/ai-hot-2026-09-05]] — AI HOT 日报 2026-09-05（GPT-6 Astra Microsoft Foundry + Anthropic 费马大定理证明 + IPO 推迟）

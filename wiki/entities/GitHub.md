@@ -29,6 +29,7 @@ status: active
 - **GitHub Copilot**：AI 编程助手，支持代码补全、对话式编码
 - **GitHub SOS Fund**：第四期 50 个开源项目结合 AI 辅助工作流进行安全加固
 - **GitHub 智能体**：支持 AI 辅助的代码审查与漏洞发现
+- **Project HydraFusion 研究预览（2026-09-05）**：通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为每个任务选择工作流，以平衡质量、成本和延迟。这是「不同任务用不同模型」的工程实践，与 [[OpenRouter]] 的 Auto 路由器思路同构但更轻量。来源：[[raw/articles/ai-hot-2026-09-05]]
 
 ## 与大模型生态的关系
 
@@ -54,3 +55,4 @@ status: active
 - [raw/articles/github-trending-2026-08-31.md](../../raw/articles/github-trending-2026-08-31.md)：2026-08-31 热门项目快照
 - [raw/articles/github-trending-2026-09-01.md](../../raw/articles/github-trending-2026-09-01.md)：2026-09-01 热门项目快照（DLSS5-Feeder ⭐417 / open-seo-mcp-skills ⭐190 / useagent ⭐151）
 - [raw/articles/awesome-llm-apps.md](../../raw/articles/awesome-llm-apps.md)：awesome-llm-apps README 快照（2026-09-01，135,538 stars）
+- [raw/articles/ai-hot-2026-09-05.md](../../raw/articles/ai-hot-2026-09-05.md)：Project HydraFusion 研究预览（多模型运行时编排）
