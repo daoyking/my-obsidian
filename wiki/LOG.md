@@ -23,7 +23,13 @@ status: active
 
 ---
 
-### 2026-08-07 12:15 | Init | 知识库初始化
+### 2026-09-06 09:02 | Ingest | GitHub每日Star飙升项目
+- 查询 GitHub Trending（daily）+ Search API（本周新晋），筛选开源项目
+- 创建 raw 源文件：`raw/articles/github-daily-trending-2026-09-06.md`
+- 更新 wiki 页面：`wiki/topics/GitHub热门项目速览2026-09.md`（新增今日Star飙升章节 + 更新时间戳）
+- 今日亮点：ponytail (+2,845)、mattpocock/skills (+2,692)、ECC (+1,314)、humanizer (+990)
+- 趋势：AI Agent 技能生态爆发，12/15 项目与 Agent 开发直接相关；本地优先趋势强化
+- 备注：所有项目均公开开源（private: false），符合用户筛选条件
 - 按「卡帕西 LLM Wiki 方法」搭建三层架构：raw / wiki / schema
 - 创建目录骨架、CLAUDE.md（Schema）、INDEX.md、LOG.md、README.md
 - 创建 Templater 模板集（概念/实体/主题/QA/项目/日记）
