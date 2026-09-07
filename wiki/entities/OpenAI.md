@@ -62,6 +62,7 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-07]]（自动化研究实习生达标 + 《An Alien Mind》对齐监测困境 + GPT-6 Astra 基准数据修改争议）
 - [[raw/articles/ai-hot-2026-09-05]]（GPT-6 Astra 上线 Microsoft Foundry + 多轮自适应攻击防御率 67%）
 - [[raw/articles/ai-hot-2026-09-04]]（GPT-6 Astra 发布 + Critical 网络安全阈值 + Daybreak for Frontline Defenders）
 - [[raw/articles/ai-hot-2026-09-01]]（ChatGPT Ads 全球扩展）
