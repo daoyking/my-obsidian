@@ -23,6 +23,14 @@ status: active
 
 ---
 
+### 2026-09-07 09:12 | Ingest | GitHub每日Star飙升项目
+- 查询 GitHub Search API（created:>=2026-09-06 stars:>30），排除游戏/作弊类，筛选公开开源项目
+- 创建 raw 源文件：`raw/articles/github-daily-trending-2026-09-07.md`
+- 更新 wiki 页面：`wiki/topics/GitHub热门项目速览2026-09.md`（新增 今日新晋热门章节 + 更新时间戳）
+- 今日 Star 飙升 Top 3：cloudflare-turnstile-solver (⭐224)、awesome-submitlist (⭐87)、awesome-seo-agent-skills (⭐86)
+- 趋势：AI Agent 技能生态持续扩展（RankSpotAI 三件套 SEO MCP/Skills/GEO 工具），macOS 本地 Agent 控制崛起（huashu-mac-use），语音合成优化突破（BreezeTTS2 RTF 4→1）
+- 备注：所有项目均公开开源（private: false），12 个项目入选，符合用户筛选条件
+
 ### 2026-09-06 09:02 | Ingest | GitHub每日Star飙升项目
 - 查询 GitHub Trending（daily）+ Search API（本周新晋），筛选开源项目
 - 创建 raw 源文件：`raw/articles/github-daily-trending-2026-09-06.md`
