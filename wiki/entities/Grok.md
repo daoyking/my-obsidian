@@ -37,7 +37,7 @@ xAI 旗下的大语言模型系列，定位为前沿通用推理与智能体模�
 
 ## 相关实体
 
-- [[Claude-Code]]（Fable 5 是 Grok 4.6 的对照标杆）· [[OpenRouter]]（多模型路由可接入 Grok）· [[AI]]
+- [[Claude-Code]]（Fable 5 是 Grok 4.6 的对照标杆）· [[OpenRouter]]（多模型路由可接入 Grok）· [[AI]] · [[xAI]]（Grok 所属公司）
 
 ## 相关概念
 

@@ -3,6 +3,7 @@ title: "Mac + iPhone 免费效率工具 & AI Agent 推荐"
 aliases:
   - Mac-免费效率工具
   - iPhone-免费App
+  - Mac-免费效率工具推荐-2026-09
 tags:
   - mac
   - iphone
@@ -10,7 +11,9 @@ tags:
   - productivity
   - open-source
 created: 2026-09-05
-source: raw/articles/2026-09-06-mac-apps-agents-search.md
+updated: 2026-09-07
+sources: ["[[raw/articles/2026-09-06-mac-apps-agents-search]]"]
+status: active
 ---
 
 # Mac + iPhone 免费效率工具 & AI Agent 推荐
@@ -79,3 +82,7 @@ source: raw/articles/2026-09-06-mac-apps-agents-search.md
 ---
 
 *最后更新：2026-09-06（新增 Abu-Cowork、AionUI、Phosphor、rootshell 等）*
+
+## 来源
+
+- [[raw/articles/2026-09-06-mac-apps-agents-search]]

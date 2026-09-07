@@ -145,3 +145,7 @@ brew install opencode
 - **长期维护判断**：GitHub Stars > 1k 且近 6 个月有提交记录的项目视为长期维护。
 - **免费判断**：以 MIT/GPL/Apache 开源协议或明确免费版为准，付费功能单独标注。
 - 本页面与 [[Mac-免费效率工具推荐-2026-09]] 互补，后者侧重系统工具，本页面侧重 AI Agent 工具。
+
+## 来源
+
+- [[raw/articles/github-mac-apps-search-2026-09-03]]（首批工具收录）

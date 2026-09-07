@@ -231,7 +231,7 @@ updated: 2026-09-07
 
 | 事件 | 要点 | 关联 |
 |---|---|---|
-| **OpenAI Astra 攻克 10 道数学难题** | 未发布的 Astra 模型解决球体堆积/纠错码/非 sofic 群等长期悬而未决难题；超 250 页论文 + Lean 验证 | [[AI]] |
+| **OpenAI Astra 攻克 10 道数学难题** | 未发布的 Astra 模型解决球体堆积/纠错码/非 sofic 群等长期悬而未决难题；超 250 页论文 + Lean 验证 | [[AI]] · [[Lean-形式化证明]] |
 | **ComfyUI API 实现 MiniMax-H3 多模态流水线** | 以 ComfyUI 为无头推理后端，Python 直接构建执行图，支持文生视频/首尾帧/参考图像条件生成 | [[多模态大模型]] |
 | **GitHub Copilot MitM 代理逆向** | mitmproxy 拦截 VS Code Copilot 流量；Electron 应用共享网络栈，探测可迁移至同类应用 | [[Coding-Agent]] · [[Agent安全]] |
 | **编写智能体用哪种编程语言** | GPT-5.6 Sol 实测 zstd 解码器：medium 努力动态语言优，ultra 静态语言优；琐碎任务性能不可推广 | [[Coding-Agent]] |
@@ -248,7 +248,7 @@ updated: 2026-09-07
 
 | 事件 | 要点 | 关联 |
 |---|---|---|
-| **xAI Grok 4.6** | 强化长时运行智能体与复杂交互式/视觉工作；Artificial Analysis Intelligence Index 追平 GPT-5.6 Sol | [[Grok]] · [[Agent]] |
+| **xAI Grok 4.6** | 强化长时运行智能体与复杂交互式/视觉工作；Artificial Analysis Intelligence Index 追平 GPT-5.6 Sol | [[Grok]] · [[Agent]] · [[xAI]] |
 | **阿里 Qwen3.8-2.4T-A95B 开放权重** | Qwen-Max 级别首次开源；2.4T MoE、激活 95B、原生 256K 可扩展至 1.01M 上下文 | [[Qwen]] · [[开放权重]] · [[SGLang]] |
 | **LTX-2.5 视频生成模型** | 10 秒 720P 视频仅需 6.8 秒（超实时）；原生集成 ComfyUI；0.09 美元/秒，年营收<1000 万美元免费 | [[LTX]] · [[多模态大模型]] |
 | **微软 MAI-Thinking-1** | 微软首个自研推理模型，从零构建；Microsoft Foundry 上线；微软摆脱 OpenAI 单一依赖信号 | [[MAI-Thinking-1]] · [[AI]] |

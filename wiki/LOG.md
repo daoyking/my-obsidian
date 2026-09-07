@@ -803,3 +803,13 @@ status: active
   - `wiki/INDEX.md` — 待更新（下次 Lint 时自动补充双链）
 - 推送结果：✅ 飞书成功推送到「金道洋的飞书 CLI」群聊（message_id: om_x100b66b8d99ec4b0b034b97746b33a2）；❌ 微信推送不可用（未配置 IMA/qclaw 微信渠道）
 - 备注：筛选标准与上次一致（免费/开源 + 长期维护 + 效率/有趣），本次新增 40+ AI Agent 工具，OpenClaw 216k Stars 为目前最高星 Agent 项目
+
+### 2026-09-07 09:45 | Lint | 每周体检
+- 发现：6 悬空链接、4 孤立页、1 frontmatter 缺失
+- 修复：
+  - 新建 6 页（悬空补建）：`wiki/entities/GPT-6-Astra.md`、`wiki/entities/Microsoft.md`、`wiki/concepts/云计算.md`、`wiki/concepts/依赖类型.md`、`wiki/concepts/形式化验证.md`、`wiki/concepts/数学证明.md`
+  - 补建页内交叉链接 + 更新 AI资讯：[[Lean-形式化证明]]、[[xAI]]
+  - 修复 4 孤立页：Mac-免费效率工具推荐-2026-09.md 相关主题节补链，AI-Agent-免费工具推荐-2026-09.md + Mac-iPhone-免费效率工具-2026-09.md 补 sources/frontmatter
+  - 修复 frontmatter 缺失：Mac-iPhone-免费效率工具-2026-09.md 补 updated/sources/status，修正 raw source 引用格式
+- 复检：悬空 0、孤立 0 ✅
+- 统计：wiki/projects 页面 243，唯一链接目标 309

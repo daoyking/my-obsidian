@@ -4,8 +4,8 @@ aliases: [Always-on Agent, 后台智能体, 常驻智能体, 主动式Agent]
 type: concept
 tags: [ai, llm, agent, automation, scheduling]
 created: 2026-09-01
-updated: 2026-09-02
-sources: ["[[raw/articles/awesome-llm-apps]]"]
+updated: 2026-09-06
+sources: ["[[raw/articles/awesome-llm-apps]]", "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/always_on_agents"]
 status: active
 ---
 
@@ -35,6 +35,19 @@ status: active
 
 - **Always-on Hacker News Briefing Agent**：定时侦察 → 排序好的每日简报 → 推送 Slack 或邮件
 - **Release Radar Agent**：盯依赖发布 → 简报 breaking / deprecated / security / 大版本变更
+
+## 实现解剖（awesome-llm-apps 两套样例，源码级）
+
+把 `always_on_hn_briefing_agent` 与 `release_radar_agent` 的源码抽象成**可复用的 6 层模板**——两者同构，仅 Scout/Rank 不同：
+
+1. **采集 Scout**：标准库 `urllib` 直连，零重依赖。`hn_briefing/scout.py` 抓 `news.ycombinator.com/news` 并用 `HNFrontPageParser(HTMLParser)` 解析标题/分数/评论；`release_radar/radar.py` 调 GitHub REST Releases（`ThreadPoolExecutor` 并发，可选 Bearer token 提额度）。二者都支持 **sample 确定性模式**（不联网也能跑测试）。
+2. **排序 Rank**：`hn_briefing` 加权 = 关键词命中×16 + min(评论,150)/3 + min(分数,500)/10 + max(0,35−rank)；`release_radar/ranker.py` 用信号词典打分——安全修复 100 / 破坏性 90 / 撤回 85 / 大版本 70 / 废弃 60，并**丢弃纯 patch 噪声**（classify 无信号即丢弃）。
+3. **LLM 层**：Google ADK `LlmAgent`（`gemini-3-flash-preview`）暴露 `root_agent`，工具函数（`preview_agent_builder_brief` / `preview_dependency_brief`）包成「对话可调用 + 调度可调用」统一入口。
+4. **渲染**：同时产 text + HTML brief（条目/理由/信号/链接/next_actions）。
+5. **调度 Scheduler API**：FastAPI 暴露 `/health`、`/dry-run`(GET)、`/trigger`(POST)、`/pubsub`(POST)；Cloud Scheduler cron `0 9 * * 1-5` 或本地 `cron-job.org` 触发。
+6. **投递 Delivery**：Gmail（OAuth refresh token，multipart text+html）或通用 webhook（路由 Slack/Linear/Jira/内部）。**双闸门**：`dry_run=false` 且至少一个 provider 配齐才真正发送。
+
+**安全纪律**：`dry_run` 默认 true、投递默认关；先渲染后投递，渲染成功才允许发送。这是生产级常驻 Agent 的底线，本库 4 项自动化应原样搬入。
 
 ## 与本知识库的映射（已在跑的实例）
 
