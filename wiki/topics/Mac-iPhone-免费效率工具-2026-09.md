@@ -11,7 +11,7 @@ tags:
   - productivity
   - open-source
 created: 2026-09-05
-updated: 2026-09-07
+updated: 2026-09-08
 sources: ["[[raw/articles/2026-09-06-mac-apps-agents-search]]"]
 status: active
 ---
@@ -19,7 +19,7 @@ status: active
 # Mac + iPhone 免费效率工具 & AI Agent 推荐
 
 > 筛选标准：免费/开源 + GitHub Stars > 500 或近 6 月活跃 + 长期维护
-> 最后更新：2026-09-07（新增 Goose、LocalSend、CC-Switch、Dayflow、Atomic Agent、Enchanted 等）
+> 最后更新：2026-09-08（新增 Goose v1.49.0/54k Stars、AeroSpace、June AI、Lapu AI、OpenCoDesign、Agent!、AionUI、FSNotes、Loop、Working Copy 等）
 
 ## 🔥 AI Agent 类（5 款）
 
