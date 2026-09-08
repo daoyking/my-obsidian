@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-09-01
-sources: ["[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]"]
+updated: 2026-09-08
+sources: ["[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-05]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]"]
 status: seed
 ---
 
@@ -52,6 +52,7 @@ status: seed
 ## 来源
 
 - [[raw/articles/ai-hot-2026-09-05]]（费马大定理 Lean 形式化证明 + Anthropic IPO 推迟至中期选举前）
+- [[raw/articles/ai-hot-2026-09-08]]（Anthropic 签约 5170 亿美元算力协议，锁定 14.8 GW 算力）
 - [[raw/articles/ai-hot-2026-08-29]]（Claude 自主训练缓解对齐失败 + 联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法）
 - [[raw/articles/ai-hot-2026-08-31]]（索尼与华纳音乐起诉 Anthropic 版权侵权）
 - [[raw/articles/ai-hot-2026-08-28]]（MHS 模型硬件标准研究预览 + 科学家支持计划扩展至 1 万席位）

@@ -813,3 +813,13 @@ status: active
   - 修复 frontmatter 缺失：Mac-iPhone-免费效率工具-2026-09.md 补 updated/sources/status，修正 raw source 引用格式
 - 复检：悬空 0、孤立 0 ✅
 - 统计：wiki/projects 页面 243，唯一链接目标 309
+
+### 2026-09-08 08:00 | Ingest | AI HOT 日报 2026-09-08
+- 来源：`raw/articles/ai-hot-2026-09-08.md`（aihot skill，北京时间 08:00 抓取）
+- 新建页：1 页
+  - `raw/articles/ai-hot-2026-09-08.md` — AI HOT 日报 2026-09-08 原始源文件
+- 更新页：2 页
+  - `wiki/topics/AI资讯.md` — 新增 2026-09-08 当日条目（2 分区 × 表格式，含 2 条事件），更新 sources 与 updated
+  - `wiki/entities/Anthropic.md` — 新增「5170 亿美元算力协议 + 14.8 GW 算力锁定」核心动态，更新 sources 与 updated
+- 链接数：约 5 条双链（AI资讯当日条目表内关联 + Anthropic 实体页 source 引用）
+- 备注：本日日报仅 2 条内容（行业动态 1 + 技巧观点 1），Anthropic 5170 亿美元算力协议是 AI 算力军备竞赛标志性事件；GPT-6 Astra 执行能力讨论印证 Agent 自主性跃升

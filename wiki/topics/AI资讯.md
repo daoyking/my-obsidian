@@ -4,9 +4,9 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-07]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-07]]", "[[raw/articles/ai-hot-2026-09-08]]"]
 status: active
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # AI资讯
@@ -1025,3 +1025,5 @@ updated: 2026-09-07
 - [[raw/articles/ai-hot-2026-09-04]] — AI HOT 日报 2026-09-04（GPT-6 Astra 发布 + NVIDIA 收购 Hugging Face + HF funes）
 - [[raw/articles/ai-hot-2026-09-05]] — AI HOT 日报 2026-09-05（GPT-6 Astra Microsoft Foundry + Anthropic 费马大定理证明 + IPO 推迟）
 - [[raw/articles/ai-hot-2026-09-07]] — AI HOT 日报 2026-09-07（OpenAI 自动化研究实习生达标 + GPT-6 Astra 基准数据争议 + 《An Alien Mind》对齐监测困境）
+- [[raw/articles/ai-hot-2026-09-08]] — AI HOT 日报 2026-09-08（Anthropic 5170 亿美元算力协议 + GPT-6 Astra 执行能力讨论）
+- [[raw/articles/ai-hot-2026-09-08]] — AI HOT 日报 2026-09-08（Anthropic 5170 亿美元算力协议 + GPT-6 Astra 执行能力讨论）
