@@ -11,8 +11,8 @@ tags:
   - productivity
   - open-source
 created: 2026-09-05
-updated: 2026-09-08
-sources: ["[[raw/articles/2026-09-06-mac-apps-agents-search]]"]
+updated: 2026-09-09
+sources: ["[[raw/articles/2026-09-06-mac-apps-agents-search]]", "[[raw/articles/mac-iphone-free-apps-2026-09-09]]"]
 status: active
 ---
 
@@ -48,7 +48,7 @@ status: active
 | [Keka](https://github.com/aonez/Keka) | 5k+ | 压缩解压工具 |
 | [OnlySwitch](https://github.com/samost97/OnlySwitch) | - | 菜单栏一键切换（深色模式/隐藏文件等）|
 
-## 📱 iPhone 专属（5 款）
+## 📱 iPhone 专属（6 款）
 
 | 项目 | 功能 |
 |------|------|
@@ -57,6 +57,7 @@ status: active
 | [Claudoscope](https://github.com/) | Claude Code 会话监控 |
 | [2Do](https://github.com/) | 强大灵活的任务管理（GTD）|
 | [rootshell](https://github.com/) | 原生终端，支持 SSH/tmux，Agent Inbox 集成 |
+| [grok-build-ios](https://github.com/Pedroshakoor/grok-build-ios) | iOS 遥控器，控制 Mac 端 Agent，ACP 协议，WebSocket 配对 |
 
 ## 💡 2026-09-06 新增亮点
 
