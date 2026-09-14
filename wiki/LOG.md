@@ -836,3 +836,20 @@ status: active
   - `wiki/concepts/Harness工程.md` — 新增 Agent 长任务上下文工程四类机制，说明与 Harness 五功能的互补关系
 - 链接数：约 12 条双链（AI资讯当日条目表内关联 5 + Anthropic 实体页 source 1 + 上下文工程 source 1 + Harness工程 source 1 + 观点/待研究问题交叉链 4）
 - 备注：本日日报最小量（3 条），但「胡塞组织使用 Claude Code 开发制导软件」是 Agent 武器化首次公开报告，具有标志性安全意义；Gary Marcus 对 Amodei 放慢 AI 发展提议的质疑揭示了 AI 治理结构性矛盾（Anthropic 同时扮演安全倡导者 + 加速竞争者双重角色）
+
+### 2026-09-14 16:17 | Ingest | GitHub每日热门项目
+- 来源：GitHub Search API（stars:>200 pushed:>=2026-09-13 + created:>=2026-09-13），北京时间2026-09-14
+- 数据源：[[raw/articles/github-daily-trending-2026-09-14]]
+- 精选项目：10个昨日新增（stars>50）+ 10个活跃高星（stars>200）
+- 重点亮点：
+  - DeepSeek v4.1 Flash 量化版发布（AGPL-3.0）
+  - ECC Agent Harness 突破 25万 stars，成为最大 Agent 增强框架
+  - Claude Code 官方库 14.5万 stars，本地编程 Agent 生态成熟
+  - langflow/open-webui/dify 三大 LLM 应用平台持续活跃
+- 新建页：1 页
+  - `raw/articles/github-daily-trending-2026-09-14.md` — GitHub 每日热门项目 2026-09-14 原始源文件
+- 更新页：1 页
+  - `wiki/topics/GitHub热门项目速览2026-09.md` — 新增 2026-09-14 两个分区（新晋热门+活跃高星），更新 sources 与 updated
+- 链接数：约 20 条双链（各项目源码链接）
+- 备注：GitHub Trending 页面被限流（返回空内容），改用 GitHub Search API 直接查询；筛选排除游戏/作弊/多账号工具，保留技术价值项目
+
