@@ -1,10 +1,10 @@
 ---
 title: hmnmt-web
 type: project
-tags: [vue3, element-plus, sqlite, express, enterprise-site, 1-1-replica]
+tags: [vue3, element-plus, sqlite, express, enterprise-site, 1-1-replica, alibaba-cloud-ecs]
 created: 2026-08-10
-updated: 2026-08-13
-sources: ["[[raw/articles/github-hmnmt-web-2026-08-10]]", "[[raw/articles/github-hmnmt-web-2026-08-13]]"]
+updated: 2026-09-14
+sources: ["[[raw/articles/github-hmnmt-web-2026-08-10]]", "[[raw/articles/github-hmnmt-web-2026-08-13]]", "[[raw/articles/github-hmnmt-web-2026-09-14]]"]
 status: active
 tech_stack: [Vue 3, Element Plus, Vite, Vue Router, Axios, Express, Node.js SQLite, Multer]
 repo: "https://github.com/daoyking/hmnmt-web"
@@ -19,7 +19,7 @@ repo: "https://github.com/daoyking/hmnmt-web"
 - 核心原则：「复印机，不是编辑」——不美化、不臆造
 - 数据规模：156 款产品，与原站严格 1:1（零缺漏 / 零虚构 / 零命名残留 / 三存储一致）
 - 验收标准：结构 / 视觉 / 容器三层对齐原站，由独立零漂移校验脚本把关
-- 当前状态：✅ v1.0 复刻完成
+- 当前状态：✅ v1.0 复刻完成 + 品牌资产落地 + 明暗主题适配 + 阿里云 ECS 部署
 
 ## 技术栈
 
@@ -40,9 +40,25 @@ repo: "https://github.com/daoyking/hmnmt-web"
 - **品牌资产双主题矢量 Logo**: 纯矢量 Logo（图标 / 横版，浅色 + 深色变体），前后台与首屏加载态按 `data-theme` 切换，保证明暗主题下品牌一致性
 - **页脚产品中心数据保真**: DB seed 7 条 + 前端 `HIDDEN_CATEGORIES` 过滤 0 产品分类（数据保留不删），展示 5 条；幂等补种 + 对账脚本双保险
 
-## 本周变更（2026-08-06 ~ 2026-08-13）
+## 本周变更（2026-09-07 ~ 2026-09-14）
 
-> 详见 `[[raw/articles/github-hmnmt-web-2026-08-13]]`（本周新增聚焦 08-10 及之后；08-08 / 08-09 提交见上周 `[[raw/articles/github-hmnmt-web-2026-08-10]]`）
+> 详见 `[[raw/articles/github-hmnmt-web-2026-09-14]]`（本周聚焦 ECS 部署迁移）
+
+### 部署阿里云 ECS（3affb641，09-10）⭐ 重大
+
+阿里云 ECS 部署关键修复：
+
+- **CORS 白名单**：新增 8443 端口到白名单，允许管理后台跨域请求后端 API
+- **构建同步**：前后端构建产物同步更新
+- **Nginx 配置修复**：修正 ECS 上 Nginx 反向代理配置，确保前后端路径正确转发
+
+此提交标志着 hmnmt-web 项目从本地开发环境向生产环境迁移完成。
+
+## 历史变更
+
+### 本周变更（2026-08-06 ~ 2026-08-13）
+
+> 详见 `[[raw/articles/github-hmnmt-web-2026-08-13]]`
 
 ### 品牌矢量 Logo + 前后台明暗主题 + 联系我们区块（e071a59，08-12）⭐ 重大
 - `brand/` 新增纯矢量 Logo（图标 / 横版，浅色 + 深色变体），部署到前后台 `public/logo`
@@ -67,6 +83,7 @@ repo: "https://github.com/daoyking/hmnmt-web"
 - **主题管理**: 早期用 `store/theme.js` 管理主题，后改为全局 CSS 变量更简洁；本周品牌 Logo 落地后，首屏加载态需按 `data-theme` 切换双 Logo，避免主题闪烁
 - **DeepSeek 不支持 embedding / json_schema**（同 learning-ai-agent）：影响 RAG 与评测管线的接口选型
 - **验证截图膨胀仓库**: 一次性视觉验收截图不应入 git，改用 `.gitignore` + 脚本按需重新生成
+- **CORS 与 Nginx 配置**: ECS 部署时前台 8443 端口需加入后端 CORS 白名单；Nginx 反向代理需同步修正前后端路径转发规则
 
 ## 复盘结论
 
@@ -87,3 +104,5 @@ repo: "https://github.com/daoyking/hmnmt-web"
 ## 来源
 
 - `[[raw/articles/github-hmnmt-web-2026-08-10]]`
+- `[[raw/articles/github-hmnmt-web-2026-08-13]]`
+- `[[raw/articles/github-hmnmt-web-2026-09-14]]`

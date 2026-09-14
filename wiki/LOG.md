@@ -853,3 +853,13 @@ status: active
 - 链接数：约 20 条双链（各项目源码链接）
 - 备注：GitHub Trending 页面被限流（返回空内容），改用 GitHub Search API 直接查询；筛选排除游戏/作弊/多账号工具，保留技术价值项目
 
+
+### 2026-09-14 16:52 | Ingest | GitHub周动态（daoyking 仓库）
+- 查询范围：2026-09-07 ~ 2026-09-14，daoyking 名下仓库
+- 仓库列表：49 个仓库，其中 3 个有近期活动（my-obsidian / hmnmt-web / learning-ai-agent）
+- 重要变更：1 个仓库有实质提交
+  - **hmnmt-web**：1 次提交（3affb641，09-10）——部署阿里云 ECS，修复 CORS 白名单（8443 端口）、同步构建、修复 Nginx 配置
+- 新建 raw 源文件：`raw/articles/github-hmnmt-web-2026-09-14.md`
+- 更新项目页：`projects/hmnmt-web.md`（补充 ECS 部署里程碑、CORS/Nginx 踩坑、更新 sources）
+- 链接数：约 5 条双链（raw 源文件引用 + 项目页交叉链接）
+- 备注：my-obsidian 仓库本周提交均为自动化任务（AI HOT 日报 / Mac+iPhone 工具推荐），无手动重要变更；learning-ai-agent / a2ui-vue / dsh-multiplatform / dsh-harness-fork 本周无提交
