@@ -823,3 +823,16 @@ status: active
   - `wiki/entities/Anthropic.md` — 新增「5170 亿美元算力协议 + 14.8 GW 算力锁定」核心动态，更新 sources 与 updated
 - 链接数：约 5 条双链（AI资讯当日条目表内关联 + Anthropic 实体页 source 引用）
 - 备注：本日日报仅 2 条内容（行业动态 1 + 技巧观点 1），Anthropic 5170 亿美元算力协议是 AI 算力军备竞赛标志性事件；GPT-6 Astra 执行能力讨论印证 Agent 自主性跃升
+
+### 2026-09-14 15:00 | Ingest | AI HOT 日报 2026-09-14
+- 来源：aihot skill 调用 `/api/v1/dailies/2026-09-14`，日报生成于 2026-09-14T00:01:17.539Z，覆盖 2026-09-13 00:00 ~ 2026-09-14 00:00 UTC，存入 `raw/articles/ai-hot-2026-09-14.md`
+- 日报内容：3 条（行业动态 1 · 技巧与观点 2），无模型/产品/论文/快讯
+- 新建页：1 页
+  - `raw/articles/ai-hot-2026-09-14.md` — AI HOT 日报 2026-09-14 原始源文件
+- 更新页：3 页
+  - `wiki/topics/AI资讯.md` — 新增 2026-09-14 当日条目（4 分区 × 表格式，含 3 条事件 + 3 条观点 + 3 条待研究问题），更新 sources 与 updated
+  - `wiki/entities/Anthropic.md` — 新增「胡塞组织用 Claude Code 开发制导火箭软件」核心动态，更新 sources 与 updated
+  - `wiki/concepts/上下文工程.md` — 新增 Agent 长任务上下文工程四类机制（预算控制/压缩/todo-state 复述/跨会话记忆）
+  - `wiki/concepts/Harness工程.md` — 新增 Agent 长任务上下文工程四类机制，说明与 Harness 五功能的互补关系
+- 链接数：约 12 条双链（AI资讯当日条目表内关联 5 + Anthropic 实体页 source 1 + 上下文工程 source 1 + Harness工程 source 1 + 观点/待研究问题交叉链 4）
+- 备注：本日日报最小量（3 条），但「胡塞组织使用 Claude Code 开发制导软件」是 Agent 武器化首次公开报告，具有标志性安全意义；Gary Marcus 对 Amodei 放慢 AI 发展提议的质疑揭示了 AI 治理结构性矛盾（Anthropic 同时扮演安全倡导者 + 加速竞争者双重角色）

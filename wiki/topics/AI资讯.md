@@ -4,9 +4,9 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-07]]", "[[raw/articles/ai-hot-2026-09-08]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-07]]", "[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-14]]"]
 status: active
-updated: 2026-09-08
+updated: 2026-09-14
 ---
 
 # AI资讯
@@ -701,6 +701,47 @@ updated: 2026-09-08
 | **本地 AI 模型已能媲美云端前沿模型** | 斯坦福 + Together AI 研究：本地模型对 89% 日常聊天与推理问题回答质量已与云端前沿相当；胜率/平局率从 2023 年 23.2% 升至 2025 年 71.3%，智能每瓦特效率提升 5.3 倍；组合可削减 80% 能耗、77% 算力与 74% 成本 | [[开放权重]] · [[Agent]] · [[Agent持续进化]] |
 | **数据中心狂热：AI 行业的经济账与政治反噬** | Gary Marcus 分析：AI 数据中心当前收入仅数百亿至低千亿美元量级，资本开支已达数万亿，收支严重失衡；政治毒性加剧，大公司处境或比预期更糟 | [[Agent安全]] · [[负责任AI]] · [[AI]] |
 
+### 2026-09-14（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-09-14]]` · [AI HOT 原页](https://aihot.news/daily/2026-09-14)
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Anthropic 报告胡塞组织用 Claude Code 开发制导火箭软件** | Anthropic 9 月威胁报告披露，极可能关联胡塞组织的也门小组使用 Claude Code 开发制导火箭、射程超 2,000 公里弹道导弹及 R2000 高超声速滑翔载具概念软件；这是 Agent 被武器化的首次公开报告 | [[Anthropic]] · [[Agent安全]] · [[Claude-Code]] |
+
+#### 模型发布/更新
+
+（本日无）
+
+#### 产品发布/更新
+
+（本日无）
+
+#### 论文研究
+
+（本日无）
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Agent 长任务上下文工程解析** | MarkTechPost 文章解析 harness 层四类机制：上下文预算与卸载、压缩、todo-state 复述、跨会话记忆——对抗长程 Agent 的上下文溢出与目标丢失 | [[上下文工程]] · [[Harness工程]] · [[记忆系统]] |
+| **Gary Marcus 评 Dario Amodei 放慢 AI 发展提议** | 三份赞誉加两分怀疑：肯定透明度承诺，但质疑 METR 与 AI 公司关系过近、Anthropic 借对华威胁维持加速、以及提议可能意在抢先于真正监管 | [[Anthropic]] · [[负责任AI]] |
+
+#### 观点
+
+- **胡塞组织使用 Claude Code 开发制导软件是 Agent 武器化的标志性事件**——Claude Code 作为编码 Agent 首次被用于军事目的，验证了 [[Agent安全]] 中"工具扩散风险"的担忧；这与 Anthropic 的"安全优先"定位形成尖锐张力
+- **Agent 上下文工程四类机制（预算/压缩/todo-state/记忆）是对长程 Agent 工程化的系统化总结**——与本库 [[Harness工程]] 五功能形成互补：Harness 管"模型之外"，上下文工程管"喂给模型的上下文本身"
+- **Gary Marcus 对 Amodei 放慢提议的质疑揭示了 AI 治理的结构性矛盾**——Anthropic 同时扮演"安全倡导者"和"加速竞争者"双重角色，其立场可信度存疑
+
+#### 待研究问题
+
+- Claude Code 被用于军事用途，是否属于"开源工具中立性"的经典案例？Anthropic 对此是否有技术层面的应对措施（如使用监控/水印）？
+- Agent 上下文工程四类机制中，"todo-state 复述"与 [[上下文工程]] 已有的"压缩"机制有何具体差异？是否有量化对比？
+- Gary Marcus 质疑 Anthropic "借对华威胁维持加速"——这一说法是否有 Anthropic 官方报告或公开言论支撑？
+
 ### 2026-08-21（AI HOT 日报）
 
 > 来源：`[[raw/articles/ai-hot-2026-08-21]]` · [AI HOT 原页](https://aihot.virxact.com/daily/2026-08-21)
@@ -1026,4 +1067,4 @@ updated: 2026-09-08
 - [[raw/articles/ai-hot-2026-09-05]] — AI HOT 日报 2026-09-05（GPT-6 Astra Microsoft Foundry + Anthropic 费马大定理证明 + IPO 推迟）
 - [[raw/articles/ai-hot-2026-09-07]] — AI HOT 日报 2026-09-07（OpenAI 自动化研究实习生达标 + GPT-6 Astra 基准数据争议 + 《An Alien Mind》对齐监测困境）
 - [[raw/articles/ai-hot-2026-09-08]] — AI HOT 日报 2026-09-08（Anthropic 5170 亿美元算力协议 + GPT-6 Astra 执行能力讨论）
-- [[raw/articles/ai-hot-2026-09-08]] — AI HOT 日报 2026-09-08（Anthropic 5170 亿美元算力协议 + GPT-6 Astra 执行能力讨论）
+- [[raw/articles/ai-hot-2026-09-14]] — AI HOT 日报 2026-09-14（胡塞组织用 Claude Code 开发制导软件 + Agent 上下文工程 + Gary Marcus 评放慢 AI 发展）

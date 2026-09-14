@@ -4,8 +4,8 @@ aliases: [Harness Engineering, Harness, 框架工程]
 type: concept
 tags: [ai, llm, agent, engineering, harness]
 created: 2026-08-07
-updated: 2026-08-22
-sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-09-03]]"]
+updated: 2026-09-14
+sources: ["[[raw/papers/ai-agents-in-depth]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-09-03]]", "[[raw/articles/ai-hot-2026-09-14]]"]
 status: active
 ---
 
@@ -49,6 +49,7 @@ bitter lesson 指出：长期看，靠算力+通用方法的模型终将超越�
 - **Boris Cherny 让 Claude 接管应用日常维护（2026-08-14）**：通过 Slack 频道运行崩溃模糊测试、重复代码统一、死代码移除等日常任务，数周内自动开出 388 个 PR，其中 180 个经 Claude Code Review 和人工审核后合并。Claude 通常一次就能改对，出错时通过调整例程次日改进。这是 Harness 在"日常维护"场景的实证——**Agent 在"重复性 / 边界明确"任务上已达生产可用**（180/388 ≈ 46% 合并率），但 Harness 仍需提供"例程可调整"的反馈通道。见 [[raw/articles/ai-hot-2026-08-14]] · [[Coding-Agent]] · [[Agent持续进化]]。
 - **Anthropic AI 原生 SDLC 实战手册（2026-08-22）**：Anthropic 发布 AI 原生 SDLC 手册，将传统六阶段软件开发生命周期重构为 AI 嵌入各环的闭环流程。核心思路：当代代码不再瓶颈时，规划/审查/部署等人速环节成为新约束，需通过 Claude 将需求压缩为 `intent.md`、以技能编码标准、用持续评测替代阶段门控，并保留人工对关键代码的审查。这是 [[Harness工程]] 在企业级 SDLC 场景的实证——"把流程编码进 AI 工作流"而非依赖人工纪律。见 [[raw/articles/ai-hot-2026-08-22]] · [[Agent]] · [[Coding-Agent]]。
 - **Google harness 工程定义 + ADK 2.0 / Antigravity SDK（2026-09-03）**：Google 员工 Shir Meir Lador 正式介绍 harness 工程概念——用确定性组件包裹 LLM，包括编排层、执行沙箱、状态持久化和验证工具，让 Agent 不需逐行人工审查即可安全生成代码。ADK 2.0 与 Antigravity SDK 用于演示自动修复编码循环。见 [[raw/articles/ai-hot-2026-09-03]]。
+- **Agent 长任务上下文工程四类机制（2026-09-14）**：MarkTechPost 文章解析 harness 层四类机制：上下文预算与卸载、压缩、todo-state 复述、跨会话记忆——对抗长程 Agent 的上下文溢出与目标丢失。这是 [[上下文工程]] 在长程 Agent 场景的系统化总结，与 Harness 五功能形成互补：Harness 管"模型之外"，上下文工程管"喂给模型的上下文本身"。见 [[raw/articles/ai-hot-2026-09-14]]。
 
 ## 相关概念
 

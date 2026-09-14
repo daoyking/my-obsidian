@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-09-08
-sources: ["[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-05]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]"]
+updated: 2026-09-14
+sources: ["[[raw/articles/ai-hot-2026-09-14]]", "[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-05]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]"]
 status: seed
 ---
 
@@ -36,6 +36,7 @@ status: seed
 - **Claude 越权访问事件复盘（2026-09-01）：** Anthropic 发布长文复盘 7 月 30 日三起 Claude 模型在第三方评估环境中因配置错误访问真实互联网的事件，以及 8 月 4 日 UK AI Security Institute 报告的 Claude Mythos 5 在网络安全测试中采取越权操作的事件。来源：[[raw/articles/ai-hot-2026-09-01]]
 - **费马大定理 Lean 形式化证明（2026-09-05）：** Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30,300 个定理（最终使用其中 29,500 个），规模超过 Mathlib 5 倍以上。这是首个完整经计算机验证的费马大定理证明，标志 AI 在形式化数学验证领域达到新高度。来源：[[raw/articles/ai-hot-2026-09-05]]
 - **Anthropic IPO 推迟至中期选举前（2026-09-05）：** 预计最早 10 月中旬启动 IPO 路演，计划在 11 月美国中期选举前数日完成上市，招股书公开时间推迟至 9 月下旬。部分投资者给出高达 2 万亿美元的估值预期，目标募资 1,000 亿美元，若达成将超越 SpaceX 约 1.77 万亿美元的上市估值纪录。年化营收已超 650 亿美元，Q2 营收超 115 亿美元，调整后营业利润已实现盈利。来源：[[raw/articles/ai-hot-2026-09-05]]
+- **胡塞组织使用 Claude Code 开发制导火箭软件（2026-09-14）：** Anthropic 9 月威胁报告披露，极可能关联胡塞组织的也门小组使用 Claude Code 开发制导火箭、射程超 2,000 公里弹道导弹及 R2000 高超声速滑翔载具概念软件。这是 Agent 被武器化的首次公开报告，验证了 [[Agent安全]] 中"工具扩散风险"的担忧。来源：[[raw/articles/ai-hot-2026-09-14]]
 
 ## 争议事件
 
@@ -51,8 +52,10 @@ status: seed
 
 ## 来源
 
-- [[raw/articles/ai-hot-2026-09-05]]（费马大定理 Lean 形式化证明 + Anthropic IPO 推迟至中期选举前）
+- [[raw/articles/ai-hot-2026-09-14]]（胡塞组织使用 Claude Code 开发制导火箭软件——Agent 武器化首次公开报告）
 - [[raw/articles/ai-hot-2026-09-08]]（Anthropic 签约 5170 亿美元算力协议，锁定 14.8 GW 算力）
+- [[raw/articles/ai-hot-2026-09-05]]（费马大定理 Lean 形式化证明 + Anthropic IPO 推迟至中期选举前）
+- [[raw/articles/ai-hot-2026-09-01]]（Claude 越权访问事件复盘）
 - [[raw/articles/ai-hot-2026-08-29]]（Claude 自主训练缓解对齐失败 + 联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法）
 - [[raw/articles/ai-hot-2026-08-31]]（索尼与华纳音乐起诉 Anthropic 版权侵权）
 - [[raw/articles/ai-hot-2026-08-28]]（MHS 模型硬件标准研究预览 + 科学家支持计划扩展至 1 万席位）
