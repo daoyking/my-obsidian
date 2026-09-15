@@ -4,8 +4,8 @@ aliases: []
 type: entity
 tags: [ai, llm, company, anthropic, agent, security]
 created: 2026-08-24
-updated: 2026-09-14
-sources: ["[[raw/articles/ai-hot-2026-09-14]]", "[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-05]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]"]
+updated: 2026-09-15
+sources: ["[[raw/articles/ai-hot-2026-09-15]]", "[[raw/articles/ai-hot-2026-09-14]]", "[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-05]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-31]]"]
 status: seed
 ---
 
@@ -37,6 +37,8 @@ status: seed
 - **费马大定理 Lean 形式化证明（2026-09-05）：** Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30,300 个定理（最终使用其中 29,500 个），规模超过 Mathlib 5 倍以上。这是首个完整经计算机验证的费马大定理证明，标志 AI 在形式化数学验证领域达到新高度。来源：[[raw/articles/ai-hot-2026-09-05]]
 - **Anthropic IPO 推迟至中期选举前（2026-09-05）：** 预计最早 10 月中旬启动 IPO 路演，计划在 11 月美国中期选举前数日完成上市，招股书公开时间推迟至 9 月下旬。部分投资者给出高达 2 万亿美元的估值预期，目标募资 1,000 亿美元，若达成将超越 SpaceX 约 1.77 万亿美元的上市估值纪录。年化营收已超 650 亿美元，Q2 营收超 115 亿美元，调整后营业利润已实现盈利。来源：[[raw/articles/ai-hot-2026-09-05]]
 - **胡塞组织使用 Claude Code 开发制导火箭软件（2026-09-14）：** Anthropic 9 月威胁报告披露，极可能关联胡塞组织的也门小组使用 Claude Code 开发制导火箭、射程超 2,000 公里弹道导弹及 R2000 高超声速滑翔载具概念软件。这是 Agent 被武器化的首次公开报告，验证了 [[Agent安全]] 中"工具扩散风险"的担忧。来源：[[raw/articles/ai-hot-2026-09-14]]
+- **Anthropic 计划登陆纳斯达克，连续 Q2 盈利，瞄准 2 万亿美元估值（2026-09-15）：** 毛利率超 80%，基于剔除股权激励等成本的调整后指标；尚未计入对 Amazon 分成和模型训练成本。是 AI 行业资本化的重要信号，验证了 [[AI]] 的"商业化"与"安全承诺"之间的张力。来源：[[raw/articles/ai-hot-2026-09-15]]
+- **Anthropic 重构测试影响分析服务应对 Agent 编码 CI 压力（2026-09-15）：** 工程师每季度交付代码量是 2021-2025 均值 8 倍，80% 由 Claude 编写，6 个月 CI 任务增长 25 倍。是 [[Harness工程]] 的实战案例。来源：[[raw/articles/ai-hot-2026-09-15]]
 
 ## 争议事件
 
@@ -52,6 +54,7 @@ status: seed
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-15]]（Anthropic IPO 连续 Q2 盈利 + CI 压力测试影响分析重构）
 - [[raw/articles/ai-hot-2026-09-14]]（胡塞组织使用 Claude Code 开发制导火箭软件——Agent 武器化首次公开报告）
 - [[raw/articles/ai-hot-2026-09-08]]（Anthropic 签约 5170 亿美元算力协议，锁定 14.8 GW 算力）
 - [[raw/articles/ai-hot-2026-09-05]]（费马大定理 Lean 形式化证明 + Anthropic IPO 推迟至中期选举前）

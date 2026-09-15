@@ -4,8 +4,8 @@ aliases: [深度求索, DeepSeek 模型, DeepSeek-V4]
 type: entity
 tags: [ai, llm, model, deepseek, open-weights, moe]
 created: 2026-08-16
-updated: 2026-09-01
-sources: ["[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-09-01]]"]
+updated: 2026-09-15
+sources: ["[[raw/articles/ai-hot-2026-09-15]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-09-01]]"]
 status: seed
 ---
 
@@ -34,6 +34,7 @@ DeepSeek（深度求索）推出的大语言模型家族，以 MIT 开源协议�
   - 硅基流动 Day-0 上线详情见 [[raw/articles/ai-hot-2026-08-15]]。
 - **DeepSeek V4 Flash-0731**：面向追求速度与成本效益的日常生产场景。见 [[raw/articles/ai-hot-2026-08-15]]。
 - **DeepSeek-V4-Flash-Vision-Exp（2026-08-31 开源，09-01 日报收录）**：首个多模态模型正式开源，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。多模态 Agent 能力接近 Opus-4.8。来源：[[raw/articles/ai-hot-2026-09-01]]
+- **DeepSeek-V4.1-Flash (Max)（2026-09-15）：** 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07。成本比 Hy4 preview 低 68%、成绩仅差 0.09pp；总榜第 12，Confirmed Success 信号第 4（+13.75%）。验证国产开源模型在 Agent 场景的性价比优势。来源：[[raw/articles/ai-hot-2026-09-15]]
 
 ## 适用场景
 
@@ -61,6 +62,8 @@ DeepSeek（深度求索）推出的大语言模型家族，以 MIT 开源协议�
 
 ## 来源
 
+- [[raw/articles/ai-hot-2026-09-15]]（DeepSeek-V4.1-Flash (Max) 进入 Agent Arena 开源模型第 3 名）
+- [[raw/articles/ai-hot-2026-09-01]]（DeepSeek-V4-Flash-Vision-Exp 开源：首个多模态模型正式开源）
 - [[raw/articles/ai-hot-2026-08-13]]（DeepSeek V4 Pro 与 Grok 4.6 同日发布，逼近 Claude Fable 5）
 - [[raw/articles/ai-hot-2026-08-15]]（DeepSeek V4 Pro 登陆硅基流动，1M 上下文 + Day-0 + 定价）
 - [[raw/articles/ai-hot-2026-08-22]]（DeepSeek-V4-Flash-Vision-Exp 发布：实验性多模态视觉理解模型）

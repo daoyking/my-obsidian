@@ -4,9 +4,9 @@ aliases: [AI新闻, AI日报, AI动态]
 type: topic
 tags: [ai, news, aihot, topic]
 created: 2026-08-08
-sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-07]]", "[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-14]]"]
+sources: ["[[raw/articles/ai-hot-2026-08-07]]", "[[raw/articles/ai-hot-2026-08-08]]", "[[raw/articles/ai-hot-2026-08-10]]", "[[raw/articles/ai-hot-2026-08-11]]", "[[raw/articles/ai-hot-2026-08-12]]", "[[raw/articles/ai-hot-2026-08-13]]", "[[raw/articles/ai-hot-2026-08-14]]", "[[raw/articles/ai-hot-2026-08-15]]", "[[raw/articles/ai-hot-2026-08-16]]", "[[raw/articles/ai-hot-2026-08-17]]", "[[raw/articles/ai-hot-2026-08-18]]", "[[raw/articles/ai-hot-2026-08-19]]", "[[raw/articles/ai-hot-2026-08-21]]", "[[raw/articles/ai-hot-2026-08-22]]", "[[raw/articles/ai-hot-2026-08-23]]", "[[raw/articles/ai-hot-2026-08-24]]", "[[raw/articles/ai-hot-2026-08-25]]", "[[raw/articles/ai-hot-2026-08-26]]", "[[raw/articles/ai-hot-2026-08-27]]", "[[raw/articles/ai-hot-2026-08-28]]", "[[raw/articles/ai-hot-2026-08-29]]", "[[raw/articles/ai-hot-2026-08-31]]", "[[raw/articles/ai-hot-2026-09-01]]", "[[raw/articles/ai-hot-2026-09-04]]", "[[raw/articles/ai-hot-2026-09-07]]", "[[raw/articles/ai-hot-2026-09-08]]", "[[raw/articles/ai-hot-2026-09-14]]", "[[raw/articles/ai-hot-2026-09-15]]"]
 status: active
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # AI资讯
@@ -741,6 +741,60 @@ updated: 2026-09-14
 - Claude Code 被用于军事用途，是否属于"开源工具中立性"的经典案例？Anthropic 对此是否有技术层面的应对措施（如使用监控/水印）？
 - Agent 上下文工程四类机制中，"todo-state 复述"与 [[上下文工程]] 已有的"压缩"机制有何具体差异？是否有量化对比？
 - Gary Marcus 质疑 Anthropic "借对华威胁维持加速"——这一说法是否有 Anthropic 官方报告或公开言论支撑？
+
+### 2026-09-15（AI HOT 日报）
+
+> 来源：`[[raw/articles/ai-hot-2026-09-15]]` · [AI HOT 原页](https://aihot.news/daily/2026-09-15)
+
+#### 模型发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **小红书 AllSpark 开源 Search Agent 模型 Iris** | 35B 与 397B 版本同量级成绩领先，权重与评测代码已公开，数据与训练配方将陆续公布 | [[小红书]] · [[Search-Agent]] · [[开源模型]] |
+| **硅基流动上线 Hy4 preview** | 770B 总参数、每 token 激活 49B、1M 上下文，Apache 2.0 开源，面向编码/分析/研究；支持接入 Claude Code/Cursor 等工具 | [[硅基流动]] · [[开源模型]] · [[大模型]] |
+
+#### 产品发布/更新
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Apple 发布新一代 Apple Intelligence，Siri AI 测试版上线** | 全面重构 Siri，支持个人语境理解、屏幕感知、系统级应用操作、跨设备对话；英文测试版随 2027 系统推出，下月扩至法语/日语/韩语/葡语/西班牙语 | [[Apple]] · [[Apple-Intelligence]] · [[Siri]] |
+
+#### 行业动态
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **Anthropic 计划登陆纳斯达克，连续 Q2 盈利，瞄准 2 万亿美元估值** | 毛利率超 80%，基于剔除股权激励等成本的调整后指标；尚未计入对 Amazon 分成和模型训练成本 | [[Anthropic]] · [[AI]] · [[IPO]] |
+
+#### 论文研究
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **DeepSeek-V4.1-Flash (Max) 进入 Agent Arena 开源模型第 3 名** | 净提升 +4.87%，每任务中位成本 $0.07；成本比 Hy4 preview 低 68%，成绩仅差 0.09pp；总榜第 12，Confirmed Success 信号第 4（+13.75%） | [[DeepSeek]] · [[Agent]] · [[基准评测]] |
+
+#### 技巧与观点
+
+| 事件 | 要点 | 关联 |
+|---|---|---|
+| **科技巨头放缓 AI 开发口头协议：安全共识还是卡特尔** | Altman/Amodei/Hassabis/Musk 周末粗略同意放慢开发、引入第三方审计、监管国内实验室；批评者称其为压制竞争者与开源的"卡特尔" | [[Anthropic]] · [[OpenAI]] · [[负责任AI]] · [[Google]] |
+| **GPT-5.6 Luna 对比 GPT-6 Astra 代码评审：$1.20 够用吗** | 50 个公开 PR 测试，Luna 找到 69 个 bug（Astra 92 个），成本 $0.20 vs $5.66，精度 74% vs 96% | [[OpenAI]] · [[GPT]] · [[Coding-Agent]] |
+| **Tomer Tunguz 解析 Amodei 放缓提议五派立场** | 梳理可解释性/劳工/经济/地缘政治/监管俘获五派，指出无任何一派给出具体速度 | [[Anthropic]] · [[负责任AI]] |
+| **Anthropic 重构测试影响分析应对 Agent 编码 CI 压力** | 工程师每季度交付量是 2021-2025 均值 8 倍，80% 由 Claude 编写，6 个月 CI 任务增长 25 倍 | [[Anthropic]] · [[Harness工程]] · [[CI/CD]] |
+
+#### 观点
+
+- **Apple 新一代 Siri AI 是"系统级 Agent"的关键标志**——屏幕感知+系统级操作+跨设备对话，标志着 Apple Intelligence 从辅助功能转向真正的个人 Agent；与 [[Claude-Code]] 的终端编码场景互补，形成"跨平台 Personal Agent"竞争格局
+- **Anthropic IPO 与连续 Q2 盈利是 AI 行业资本化的重要信号**——2 万亿美元估值若成现实将超越 SpaceX；但调整后盈利指标引发"会计修饰"质疑，验证了 [[AI]] 的"商业化"与"安全承诺"之间的张力
+- **DeepSeek-V4.1-Flash (Max) 以 68% 更低成本逼近 Hy4 preview**——再次验证"性价比 Pareto 前沿"由国产开源模型主导，与 [[Agent]] 场景结合后价值凸显
+- **科技巨头"放缓 AI"协议引发卡特尔质疑**——Amodei 的透明度承诺与 Anthropic 的商业竞争立场形成张力，与本周 Anthropic IPO 新闻互为呼应
+- **GPT-5.6 Luna 代码评审性价比验证"够用原则"**——74% 精度 + $0.20 成本，对多数日常 code review 场景足够，呼应 [[Claude-Code]] 等工具的"够用即最优"工程哲学
+- **Anthropic CI 压力报告揭示了 Agent 编码时代的工程挑战**——80% 代码由 Claude 编写、CI 任务 25 倍增长，是 [[Harness工程]] 的实战案例，值得持续关注其测试影响分析架构
+
+#### 待研究问题
+
+- Apple Intelligence 的"屏幕感知"技术原理是什么？是否基于视觉语言模型（VLM）实时分析屏幕内容？与 [[多模态大模型]] 的关系？
+- Hy4 preview 的 770B 总参数 / 49B 激活参数 MoE 架构，与 DeepSeek-V4 系列 MoE 设计有何异同？
+- Anthropic IPO 的"调整后盈利"口径与 Google / Meta 的 FAANG 盈利口径有何可比性？投资者如何评估 AI 公司真实盈利能力？
+- 科技巨头"放缓协议"若成真，对 [[OpenSource]] 生态与独立 AI 实验室（如 Anthropic、Mistral）的生存空间有何影响？
 
 ### 2026-08-21（AI HOT 日报）
 

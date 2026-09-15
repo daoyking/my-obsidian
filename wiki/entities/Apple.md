@@ -4,8 +4,8 @@ aliases: [苹果公司, 苹果]
 type: entity
 tags: [tech-company, apple, hardware, silicon, privacy]
 created: 2026-08-31
-updated: 2026-08-31
-sources: []
+updated: 2026-09-15
+sources: ["[[raw/articles/ai-hot-2026-09-15]]"]
 status: seed
 ---
 
@@ -27,6 +27,10 @@ status: seed
 - 机器遗忘（Machine Unlearning）：低影响力数据点优化降低遗忘开销
 - 视觉思维链（Visual CoT）：主动视频推理框架
 - Private LLM：隐私保护的本地 LLM 推理
+
+## 来源
+
+- [[raw/articles/ai-hot-2026-09-15]]（Apple 发布新一代 Apple Intelligence，Siri AI 测试版上线）
 
 ## 相关实体
 

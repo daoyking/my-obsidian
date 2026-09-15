@@ -863,3 +863,17 @@ status: active
 - 更新项目页：`projects/hmnmt-web.md`（补充 ECS 部署里程碑、CORS/Nginx 踩坑、更新 sources）
 - 链接数：约 5 条双链（raw 源文件引用 + 项目页交叉链接）
 - 备注：my-obsidian 仓库本周提交均为自动化任务（AI HOT 日报 / Mac+iPhone 工具推荐），无手动重要变更；learning-ai-agent / a2ui-vue / dsh-multiplatform / dsh-harness-fork 本周无提交
+
+### 2026-09-15 08:00 | Ingest | AI HOT 日报 2026-09-15
+- 获取日报 11 条，含模型发布 2 条、产品发布 1 条、行业动态 1 条、论文研究 1 条、技巧与观点 4 条
+- 新建 raw 源：`raw/articles/ai-hot-2026-09-15.md`
+- 更新页：4 页
+  - `wiki/topics/AI资讯.md` — 新增 2026-09-15 日报条目（全部分区 + 观点 + 待研究问题），更新 sources 与 updated
+  - `wiki/entities/Anthropic.md` — 新增 IPO 盈利 + CI 压力两处动态，更新 sources 与 updated
+  - `wiki/entities/Apple.md` — 新增 Siri AI 测试版上线动态，补全 sources 与 updated
+  - `wiki/entities/DeepSeek.md` — 新增 V4.1-Flash 排名第 3 动态，更新 sources 与 updated
+- 新建页：2 页
+  - `wiki/entities/小红书.md` — 新增 AllSpark 开源 Search Agent 模型 Iris（35B/397B）
+  - `wiki/entities/硅基流动.md` — 新增 Hy4 preview 上线（770B/1M 上下文/Apache 2.0）
+- 链接数：约 25 条双链（含交叉引用与 raw 源链接）
+- 观点摘要：Apple Siri 全面重构标志系统级 Agent 落地；Anthropic IPO 验证 AI 商业化；DeepSeek 性价比持续领先；科技巨头"放缓协议"引发卡特尔争议
